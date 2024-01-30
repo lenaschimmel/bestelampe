@@ -41,14 +41,14 @@ These are the design goals of *besteLampe!*
 The besteLampe! project has multiple parts. In the future, they might be moved into separate repositories. They are:
 
  - Hardware
-   - [x] **[Main module](hardware/mainmodule/)** • Control board with power supply, micro controller, 6-channel PWM (pulse width modulation) dimmer and many ports. *First version shipped and tested*
-   - [ ] **Extension module** • Additional simultaneous wireless protocols, 16 additional PWM channels.
-   - [ ] **LED modules** • Stuff that actually emits light. *only handmade prototypes*
-   - [-] **Enclosure** • To hold the electronics together, protect it from the environment, and guide the light.
+   - 🟢 **[Main module](hardware/mainmodule/)** • Control board with power supply, micro controller, 6-channel PWM (pulse width modulation) dimmer and many ports. *First version shipped and tested*
+   - 🔴 **Extension module** • Additional simultaneous wireless protocols, 16 additional PWM channels.
+   - 🔴 **LED modules** • Stuff that actually emits light. *only handmade prototypes*
+   - 🟡 **Enclosure** • To hold the electronics together, protect it from the environment, and guide the light.
  - Software
-   - [-] **[Firmware]() for main- and extension module**
-   - [-] **Control software (Web, Desktop, Mobile, CLI, M5Paper...)**
-   - [-] **Common code library** • The firmware and all control software variants are written in Rust and use a common code base.
+   - 🟡 **[Firmware]() for main- and extension module**
+   - 🟡 **Control software (Web, Desktop, Mobile, CLI, M5Paper...)**
+   - 🟡 **Common code library** • The firmware and all control software variants are written in Rust and use a common code base.
 
 The hardware modules are intended like to be used like this:
 
