@@ -37,7 +37,7 @@ These are the design goals of *besteLampe!*
  - Battery charging, photovoltaic, etc.
  - Addressable LEDs. There is a pin called "Neopixel" but that's not really a design priority, since most addressable LEDs lack in light quality (dimming steps, CRI, flicker)
 
-## Parts
+## Parts and Modules
 The besteLampe! project has multiple parts. In the future, they might be moved into separate repositories. They are:
 
  - Hardware
@@ -49,6 +49,16 @@ The besteLampe! project has multiple parts. In the future, they might be moved i
    - [-] **[Firmware]() for main- and extension module**
    - [-] **Control software (Web, Desktop, Mobile, CLI, M5Paper...)**
    - [-] **Common code library** • The firmware and all control software variants are written in Rust and use a common code base.
+
+The hardware modules are intended like to be used like this:
+
+<img src="assets/modules.jpg" width="49%" />
+
+The main module with its ESP32-C6 can control one chain of LED modules (within a chain, all modules show the same color/brightness). It offers four wireless protocols, but only one or two of them can be used at the same time.
+
+The extension module can control up to three chains of LED modules (each chain has individual color/brightness). Its ESP32 only has two wireless protocols, but they can be used at the same time, so that a total of three protocols can be combined.
+
+All modules have many connectors to attach additional hardware.
 
 ## State of the project
 ### Software

@@ -49,6 +49,8 @@ The through hole components are 4.30 Euro per board and will drop top 2.70 for v
 So the full v1.1 board will be around 10.80 Euro.
 
 ## Known problems for v1
+_Should be converted into issues soon, but it's quicker to just list them here._
+
 ### High severity
 _No known fix_
 
