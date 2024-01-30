@@ -1,0 +1,39 @@
+import { Button, VerticalBox } from "std-widgets.slint";
+
+export component AppWindow inherits Window {
+    in-out property<int> counter: 42;
+    in property <image> overlay-image;
+
+    callback request-increase-value();
+
+    pure callback render_image(length, length) ->  image;
+
+    preferred-height: 600px;
+    preferred-width: 500px;
+
+    VerticalBox {
+        Text {
+            text: "Counter: \{root.counter}";
+        }
+        Button {
+            text: "Increase value";
+            clicked => {
+                root.request-increase-value();
+            }
+        }
+        image-container := Rectangle {
+
+            inner-image := Image {
+                x: 0;
+                y: 0;
+                width: 100%;
+                height: 100%;
+                image-fit: contain;
+                source: root.render_image(image-container.width, image-container.height);
+            }
+        }
+
+       
+        
+    }
+}

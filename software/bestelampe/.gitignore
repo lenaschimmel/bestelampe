@@ -1,0 +1,6 @@
+/.vscode
+/.embuild
+/target
+/Cargo.lock
+software/bestelampe/bestelampe.code-workspace
+bestelampe.code-workspace
