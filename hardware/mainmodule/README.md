@@ -37,3 +37,12 @@
 - 1-wire bus for temperature sensors and other devices
 	- onboard 12 bit temperature sensor between Mosfet and capacitors
 	- bus is also connected to J2, J3, J5 and J8
+
+## Cost
+I've ordered 10 PCBs from JLCPCB, with SMD components included and soldered, but without any through-hole components. I payed about 100 Euro incl. tax and shipping, so around 10 Euros per PCB. This does not include the ESP32-C6 (3.60 Euro) because they didn't have it in stock, nor the VEML6040 Light sensor (0.90 Euro) because I forgot to place it. So the actual price would be 14.50 Euro per board.
+
+When ordering 100 pieces, and with some very minor tweaks in v1.1 to reduce the assembly fees, price per PCB incl. SMD assembly will drop to 8.10 Euro incl. ESP and light sensor.
+
+The through hole components are 4.30 Euro per board and will drop top 2.70 for v1.1.
+
+So the full v1.1 board will be around 10.80 Euro.

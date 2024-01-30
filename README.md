@@ -78,5 +78,22 @@ The next steps for the hardware could be:
  - Design the first LED module and order them
  - Put a second ESP32 into the prototype to test ESP-AT or similar communication between both ESPs
 
+ ## Price
+ I've tried to estimate the prices for a complete lamp, but excluding the enclosure (because I have no idea how to estimate that). The calculation is based on ordering 100 PCBs per type, and some optimizations in Main Module v1.1 which are not yet done. 
+ 
+ The two lamp configurations are:
+ - **Simple:** 6 color channels (R,G,B,Warm White, Cold White, Amber). Needs the Main Module and 1 LED Module
+ - **Extended:** 4*6 color channels (same colors as above, but control 4 groups independently). Needs the Main Module, Extension Module and 4 LED Modules. To drive all four groups at full brightness simultaneously, you'd need a bigger power supply.
+
+ | **Part**                      | **Price (Euro)** | **Comment**                                    | **Count in simple lamp** | **Count in extended lamp** |
+|-------------------------------|------------------|------------------------------------------------|--------------------------|----------------------------|
+| Main Module v1.1              | 10.80            | incl. SMD and through-hole components          | 1                        | 1                          |
+| Power supply                  | 14.00            | 15W, input 220-240V AC, output 24V DC          | 1                        | 1                          |
+| Presence sensor               | 3.00             |                                                | 1                        | 1                          |
+| Extension module              | 13.00            | very rough estimate                            | 0                        | 1                          |
+| LED module                    | 5.70             | Assuming RGBCCT and Amber LEDs, 20 pieces each | 1                        | 4                          |
+| **Sum: Simple besteLampe!**   | **33.50**        | Enclosure not included                         |                          |                            |
+| **Sum: Extended besteLampe!** | **63.60**        | Enclosure not included                         |                          |                            |
+
  ## License
- This project *should* really be open. I have not yet decided on a license, bit feel like that should longer stop me from publishing it. So technical, this is not yet open hardware / free software. I'll fix that soon!
+ This project *should* really be open. I have not yet decided on a license, bit feel like that should no longer stop me from publishing it. So technically, this is not yet open hardware / free software. I'll fix that soon!
