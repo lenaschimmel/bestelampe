@@ -10,4 +10,4 @@ There is also a short ring of addressable LEDs that illuminate the front plate. 
 **Everything in this directory is very messy and work in progress - you are not (yet) suppose to understand the files and how to assemble this lamp.**
 
 ## Principle and Prototype
-<img src="/assets/round_schema.jpg" width="49%" /> <img src="/assets/round_prototype.jpg" width="49%" />
+<img src="/assets/round_schema.jpg" width="34%" /> <img src="/assets/round_prototype.jpg" width="64%" />
