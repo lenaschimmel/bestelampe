@@ -1,6 +1,7 @@
 
 # Main module 
 
+<img src="/assets/schematic.jpg" width="49%"/><img src="/assets/layout.jpg" width="49%"/>
 
 ## Hardware features / components
 - Standard 2-layer PCB
