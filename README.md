@@ -67,7 +67,7 @@ For the hardware, multiple prototypes with various degrees of sophistication exi
 <img src="assets/first_prototype.jpg" width="49%" /><img src="assets/second_prototype.jpg" width="49%" />
 <img src="assets/pcb_assembled.jpg" width="98%" />
 
-I already ordered PCBs from JLCPCB for the Main Module v1, and even though they have a lot of minor bugs, they look great and - even more important - are fully functional apart from the missing light sensor. **I do not recommend to order Main Module v1.** There are a lot of really easy-to-fix nuisances, so please wait for version 1.1 or version 2. **If you really want a v1 board in your hands quickly, just contact me. I have a few spare ones (partly assembled).**
+I already ordered PCBs from JLCPCB for the Main Module v1, and even though they have [a lot of minor bugs](/hardware/mainmodule/README.md#Known-problems-for-v1), they look great and - even more important - are fully functional apart from the missing light sensor. **I do not recommend to order Main Module v1.** There are a lot of really easy-to-fix nuisances, so please wait for version 1.1 or version 2. **If you really want a v1 board in your hands quickly, just contact me. I have a few spare ones (partly assembled).**
 
 I'm working on multiple enclosure designs, one based on a transparent flower pot, and one based on an existing lamp where I replace all the electronics with my own. Both contain many 3d-printed parts,  and a lot of manual labour to make them look *less 3d-printed*.
 

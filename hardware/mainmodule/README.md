@@ -21,6 +21,7 @@
 		- view logs
 		- power the board (Powers everything but LEDs. You may combine USB power and DC power, and switch between both at runtime)
 	- J2: LED module. Supports temperature sensor(s) on the LED module.
+	    - **Attention: Pins 8, 10 and 12 are GND. In future versions, only pin 12 will remain GND. Pins 8 and 10 will be +24V.**
 	- J3: Extension module. Usually contains a secondary MCU and additional LEDs and/or hardware.
 	- J4: Power. DC Input 6V to 24V.
 		- Must be the same as LED voltage.
@@ -46,3 +47,35 @@ When ordering 100 pieces, and with some very minor tweaks in v1.1 to reduce the 
 The through hole components are 4.30 Euro per board and will drop top 2.70 for v1.1.
 
 So the full v1.1 board will be around 10.80 Euro.
+
+## Known problems for v1
+### High severity
+_No known fix_
+
+* The inductor of the 5V buck converter makes an audible noise, especially when the presence sensor is connected
+
+### Medium severity
+_Prevent the board from working, but can easily be fixed manually_
+
+* Wrong footprint for R11 and R15, so they are not assembled. Because they are not really needed, you can bridge them with a drop of solder.
+* Pin 1 of VR1 (Enable of the 3.3V voltage regulator) needs to be connected to 5V. You can place a very short wire or even a drop of of solder over to Pin 2.
+* Pin 3 of the ESP (Enable) module needs a pull up resistor. You can hand-solder one to the bottom of J8, or instead of J8 if you don't need the connector.
+* Light sensor is no placed, and it's unknown if it would work if placed
+
+### Low severiy
+_Would be nice to fix these, but it's ok as it is_
+
+* The antenna of the ESP extends over the rectangular board footprint. That was a deliberate design choice, but I regret it.
+* Mounting holes are too small for M3 screws.
+* An additional mounting hole at the top right would be nice.
+* USB data lines are length-matched and work just fine (it's just USB 2.0), but violate many rules:
+   * not impedance-controlled (I tried, but used totally wrong numbers)
+   * opposite ground plane is not continous
+   * four vias when it could be done with zero or two
+* Thick wires have tiny vias
+* Net `Pres_B` of the presence sensor is shifted down to 3.3V but not connected to the ESP or anything else
+* Would be nice to have some small LEDs on board
+	* Power LEDs that light up as long as there is 24V, 5V and 3,3V (should be very dim)
+	* 1 LED per PWM channel to test it without an LED module attached (common +24V could be switched with a jumper)
+* It would also be nice to support USB Power Delivery, so that the LEDs could light up when only USB is connected, for easier development. PD does not support 24V, only 20V, but the LEDs that I tested are ok with that.
+* use an SMD version of the temperature sensor because it's much cheaper
