@@ -64,11 +64,8 @@ Possible next steps:
 ### Hardware
 For the hardware, multiple prototypes with various degrees of sophistication exist:
 
-![First prototype](assets/first_prototype.jpg | width=100)
-
-![Second prototype](assets/second_prototype.jpg | width=100)
-
-![Main Module v1](assets/pcb_assembled.jpg | width=100)
+<img src="assets/first_prototype.jpg" width="49%" /><img src="assets/second_prototype.jpg" width="49%" />
+<img src="assets/pcb_assembled.jpg" width="98%" />
 
 I already ordered PCBs from JLCPCB for the Main Module v1, and even though they have a lot of minor bugs, they look great and - even more important - are fully functional apart from the missing light sensor. **I do not recommend to order Main Module v1.** There are a lot of really easy-to-fix nuisances, so please wait for version 1.1 or version 2. **If you really want a v1 board in your hands quickly, just contact me. I have a few spare ones (partly assembled).**
 
