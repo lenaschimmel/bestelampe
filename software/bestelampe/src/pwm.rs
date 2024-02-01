@@ -1,7 +1,5 @@
-use esp_idf_hal::ledc::LEDC;
-use esp_idf_hal::ledc::{config::TimerConfig, LedcDriver, LedcTimerDriver, Resolution};
-use esp_idf_svc::hal::prelude::Peripherals;
-use esp_idf_hal::prelude::*;
+use esp_idf_hal::ledc::LedcDriver;
+
 use esp_idf_sys::EspError;
 
 use log::info;
@@ -295,5 +293,22 @@ impl<'p> Pwm<'p> {
 		//info!("set_temperature_and_brightness temperature: {}, brightness: {} (gamma corrected: {}) results in target_xy: {:?}", temperature, brightness, self.gamma_correct(brightness), target_xy);
 		//info!("target_xyz: {}", target_xyz);
 		return self.set_color(target_xyz);
+	}
+
+	pub fn set_amber(self: &mut Self, brightness_up_to_one: f32) -> Result<(), EspError> {
+		for i in 0..5 {
+			self.leds[i].borrow_mut().driver.set_duty(0);
+		}
+		let amber_driver = &mut self.leds[5].borrow_mut().driver;
+		amber_driver.set_duty((amber_driver.get_max_duty() as f32 * brightness_up_to_one) as u32);
+		Ok(())
+	}
+
+	pub fn set_duties(self: &mut Self, brightness_up_to_one: Vec<f32>) -> Result<(), EspError> {
+		for i in 0..6 {
+			let driver = &mut self.leds[i].borrow_mut().driver;
+			driver.set_duty((driver.get_max_duty() as f32 * brightness_up_to_one[i]) as u32);
+		}
+		Ok(())
 	}
 }

@@ -1,30 +1,44 @@
-use std::num::NonZeroU32;
 use std::thread;
 use std::time::Duration;
 
 use enumset::EnumSet;
 use esp_idf_hal::prelude::*;
-use esp_idf_hal::gpio::{AnyIOPin, InputOutput, InterruptType, Pin, PinDriver};
+use esp_idf_hal::gpio::{AnyIOPin, InputOutput, Pin, PinDriver};
 use esp_idf_hal::ledc::config::TimerConfig;
 use esp_idf_hal::ledc::{LedcDriver, LedcTimerDriver, LEDC};
-use esp_idf_hal::task::notification::Notification;
-use esp_idf_hal::timer::{config, TimerDriver};
 use esp_idf_hal::units::Hertz;
 use esp_idf_svc::hal::prelude::Peripherals;
 use esp_idf_svc::log::EspLogger;
-use esp_idf_hal::{peripherals, uart};
+use esp_idf_hal::{uart, modem::Modem};
 use esp_idf_hal::delay::TickType;
 use esp_idf_hal::uart::config::*;
 use esp_idf_hal::delay::Delay;
 
-use ds18b20::{Ds18b20, Resolution, SensorData};
+use ds18b20::{Ds18b20, Resolution};
 use esp_idf_sys::EspError;
 use one_wire_bus::{OneWire, OneWireError};
 
-mod pwm;
-use crate::pwm::{Pwm, XyColor};
+use core::convert::TryInto;
+use anyhow::{ Result, anyhow };
 
-fn main() -> anyhow::Result<()> {
+use esp_idf_svc::{
+    io::{Read, Write},
+    http::Method,
+    eventloop::EspSystemEventLoop,
+    http::server::EspHttpServer,
+    nvs::EspDefaultNvsPartition,
+    wifi::AuthMethod,
+    wifi::{BlockingWifi, EspWifi},
+};
+
+use log::*;
+
+use serde::Deserialize;
+
+mod pwm;
+use crate::pwm::Pwm;
+
+fn main() -> Result<()> {
     esp_idf_svc::sys::link_patches();
     EspLogger::initialize_default();
 
@@ -38,7 +52,8 @@ fn main() -> anyhow::Result<()> {
         test_temperature_sensor(PinDriver::input_output(peripherals.pins.gpio15).expect("Should be able to take Gpio15 for temperature measurement."));
     });
     
-    //let led_thread = thread::spawn(|| {
+    
+    let led_thread = thread::spawn(|| {
         let ledc = peripherals.ledc;
         let pin_r  : AnyIOPin = peripherals.pins.gpio10.into();
         let pin_g  : AnyIOPin = peripherals.pins.gpio11.into();
@@ -48,15 +63,20 @@ fn main() -> anyhow::Result<()> {
         let pin_a  : AnyIOPin = peripherals.pins.gpio21.into();
     
         test_leds(ledc, pin_r, pin_g, pin_b, pin_cw, pin_ww, pin_a).expect("LEDs should just work.");
-    //});
+    });
 
-    //led_thread.join();
-    //temperature_thread.join();
+    let wifi_thread = thread::spawn(|| {
+        test_wifi(peripherals.modem);
+    });
 
-    Ok(())
+    led_thread.join();
+    temperature_thread.join();
+
+    println!("Entering infinite loop in main thread...");
+    loop {}
 }
 
-fn dump_sensor(peripherals: &mut Peripherals) -> anyhow::Result<()> {
+fn dump_sensor(peripherals: &mut Peripherals) -> Result<()> {
     let tx = &mut peripherals.pins.gpio16;
     let rx = &mut peripherals.pins.gpio17;
 
@@ -68,7 +88,6 @@ fn dump_sensor(peripherals: &mut Peripherals) -> anyhow::Result<()> {
     // crashes on ESP32-C6 due to an invalid SourceClock.
     let config = uart::config::Config {
         baudrate: Hertz(115_200),
-        //baudrate: Hertz(5_830),
         data_bits: DataBits::DataBits8,
         parity: Parity::ParityNone,
         stop_bits: StopBits::STOP1,
@@ -102,53 +121,6 @@ fn dump_sensor(peripherals: &mut Peripherals) -> anyhow::Result<()> {
     return Ok(());
 }
 
-
-// Failed code to determine the bit rate of the presence sensor
-//
-// Using it, I got:
-// 39.65 Million timer ticks = about 1 Second (used stop watch to count 20 packets)
-// 6800 timer ticks = 1 Bit
-// Factor 5830, e.g. this should be the baud rate
-// I think I measured the time it takes to print the debug output to the console, instead of measuring the input signal timing.
-// fn get_sensor_timing(peripherals: &mut Peripherals) -> anyhow::Result<()> {
-//     let mut sensor_in_pin = PinDriver::input(peripherals.pins.gpio17)?;
-//     sensor_in_pin.set_interrupt_type(InterruptType::AnyEdge)?;
-
-//     let timer_conf = config::Config::new().auto_reload(false).divider(2);
-//     let mut timer = TimerDriver::new(peripherals.timer10, &timer_conf)?;
-
-
-//     // Configures the notification
-//     let notification = Notification::new();
-//     let notifier = notification.notifier();
-
-//     timer.enable(true)?;
-
-//     // Safety: make sure the `Notification` object is not dropped while the subscription is active
-//     unsafe {
-//         sensor_in_pin.subscribe(move || {
-//             let time = timer.counter().unwrap_or_default();
-//             notifier.notify_and_yield(NonZeroU32::new((1 + time) as u32).unwrap());
-//         })?;
-//     }
-
-//     loop {
-//         // enable_interrupt should also be called after each received notification from non-ISR context
-//         sensor_in_pin.enable_interrupt()?;
-//         let time = notification.wait(esp_idf_svc::hal::delay::BLOCK);
-//         match time {
-//             Some(t) => {
-//                 let outer_time = 34; // timer.counter().unwrap_or(1200);
-//                 println!("t: {} or {}", t, outer_time);
-//             },
-//             None => print!("t: error")
-//         }
-//         //notification.wait(esp_idf_svc::hal::delay::BLOCK);
-//         println!("Int!");
-        
-//     }
-// }
-
 fn test_leds(
     ledc: LEDC,
     pin_r:  AnyIOPin,
@@ -157,7 +129,7 @@ fn test_leds(
     pin_cw: AnyIOPin,
     pin_ww: AnyIOPin,
     pin_a:  AnyIOPin,
-) -> anyhow::Result<()> {
+) -> Result<()> {
 
     let timer_driver: LedcTimerDriver<'_> = LedcTimerDriver::new(
         ledc.timer0, 
@@ -187,27 +159,13 @@ fn test_leds(
     loop {
         std::thread::sleep(core::time::Duration::from_millis(50));
         time += 50.0;
-
-        let mut t =  (time % 20_000.0) / 10_000.0;
-        if t > 1.0 {
-            t = 2.0 - t;
-        }
-        let x = t * 0.8 + 0.2;
-
-        let mired = (1.0-x).powf(2.5) * 950.0 + 50.0;
-        let temperature = 1_000_000.0 / mired;
-        let brightness = 6.0; 
-        // time / 20_000.0 + 17.0;
-        if((time as i64) % 1000 == 0) {
-            println!("Time: {}, brightness: {:2.4}, temperature: {:5.0}", time, brightness, temperature);
-        }
-        pwm.set_temperature_and_brightness(temperature, brightness).ok();
+        pwm.set_amber(0.5);
     }
     
 }
 
 
-fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, InputOutput>)  -> anyhow::Result<()> {
+fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, InputOutput>)  -> Result<()> {
     println!("Before temperature sensor init...");
     let mut delay = Delay::new_default();
 
@@ -230,7 +188,7 @@ fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, In
     // iterate over all the devices, and report their temperature
     let mut search_state = None;
     loop {
-        if let Some((device_address, state)) = one_wire_bus.device_search(search_state.as_ref(), false, &mut delay).expect("Device search") {
+        if let Ok(Some((device_address, state))) = one_wire_bus.device_search(search_state.as_ref(), false, &mut delay) {
             search_state = Some(state);
             if device_address.family_code() != ds18b20::FAMILY_CODE {
                 // skip other devices
@@ -248,7 +206,7 @@ fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, In
         }
     }
 
-    println!("Before continous temperature sensor measurement loop...");
+    println!("Before continuos temperature sensor measurement loop...");
     loop {
         // Start all measurements
         for sensor in &sensors {
@@ -268,4 +226,126 @@ fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, In
     }
 
     Ok(())
+}
+
+#[derive(Deserialize)]
+struct FormData<'a> {
+    first_name: &'a str,
+    age: u32,
+    birthplace: &'a str,
+}
+
+fn test_wifi(modem: Modem) -> Result<()> {
+    // this used to be the main method of an example program
+
+    let mut server = create_server(modem)?;
+    println!("Created the server. Attaching handlers.");
+
+    server.fn_handler("/", Method::Get, |req| {
+        req.into_ok_response()?
+            .write_all(INDEX_HTML.as_bytes())
+            .map(|_| ())
+    })?;
+
+    server.fn_handler::<anyhow::Error, _>("/post", Method::Post, |mut req| {
+        let len = req.header("Content-Length") .and_then(|v| v.parse::<u64>().ok()).unwrap_or(0) as usize;
+
+        if len > MAX_LEN {
+            req.into_status_response(413)?
+                .write_all("Request too big".as_bytes())?;
+            return Ok(());
+        }
+
+        let mut buf = vec![0; len];
+        req.read_exact(&mut buf)?;
+        let mut resp = req.into_ok_response()?;
+
+        if let Ok(form) = serde_json::from_slice::<FormData>(&buf) {
+            write!(
+                resp,
+                "Hello, {}-year-old {} from {}!",
+                form.age, form.first_name, form.birthplace
+            )?;
+        } else {
+            resp.write_all("JSON error".as_bytes())?;
+        }
+
+        Ok(())
+    })?;
+
+    println!("Handlers attached.");
+
+
+    loop {
+        println!("Inside server keep-alive loop.");
+        std::thread::sleep(core::time::Duration::from_millis(2000));
+    }
+
+    println!("The server is over now.");
+
+    // Keep server running beyond when main() returns (forever)
+    // Do not call this if you ever want to stop or access it later.
+    // Otherwise you can either add an infinite loop so the main task
+    // never returns, or you can move it to another thread.
+    // https://doc.rust-lang.org/stable/core/mem/fn.forget.html
+    core::mem::forget(server);
+
+    // Main task no longer needed, free up some memory
+    Ok(())
+}
+
+#[toml_cfg::toml_config]
+pub struct Config {
+    #[default("")]
+    wifi_ssid: &'static str,
+    #[default("")]
+    wifi_psk: &'static str,
+}
+
+static INDEX_HTML: &str = include_str!("http_server_page.html");
+
+// Max payload length
+const MAX_LEN: usize = 128;
+
+// Need lots of stack to parse JSON
+const STACK_SIZE: usize = 10240;
+
+// Wi-Fi channel, between 1 and 11
+const CHANNEL: u8 = 11;
+
+fn create_server(modem: Modem) -> Result<EspHttpServer<'static>> {
+    println!("Inside 'create_server'...");
+    let sys_loop = EspSystemEventLoop::take()?;
+    let nvs = EspDefaultNvsPartition::take()?;
+
+    let mut wifi = BlockingWifi::wrap(
+        EspWifi::new(modem, sys_loop.clone(), Some(nvs))?,
+        sys_loop,
+    )?;
+
+    let wifi_configuration = esp_idf_svc::wifi::Configuration::AccessPoint(esp_idf_svc::wifi::AccessPointConfiguration {
+        ssid: CONFIG.wifi_ssid.try_into().or(Err(anyhow!("Invalid SSID config.")))?,
+        password: CONFIG.wifi_psk.try_into().or(Err(anyhow!("Invalid PSK config.")))?,
+        ssid_hidden: false,
+        auth_method: AuthMethod::WPA2Personal,
+        channel: CHANNEL,
+        ..Default::default()
+    });
+    wifi.set_configuration(&wifi_configuration)?;
+    wifi.start()?;
+    wifi.wait_netif_up()?;
+
+    info!(
+        "Created Wi-Fi with WIFI_SSID `{}` and WIFI_PASS `{}`",
+        CONFIG.wifi_ssid, CONFIG.wifi_psk
+    );
+
+    let server_configuration = esp_idf_svc::http::server::Configuration {
+        stack_size: STACK_SIZE,
+        ..Default::default()
+    };
+
+    core::mem::forget(wifi);
+
+    return EspHttpServer::new(&server_configuration).or(Err(anyhow!("Could not create server.")));
 }

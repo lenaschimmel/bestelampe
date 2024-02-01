@@ -1,5 +1,14 @@
-# Rust often needs a bit of an extra main task stack size compared to C (the default is 3K)
-CONFIG_ESP_MAIN_TASK_STACK_SIZE=8000
+# Rust often needs a bit of an extra main task stack size compared to C (the default is 3K):
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=20000
+# From a HTTP Server example project:
+CONFIG_ESP_SYSTEM_EVENT_TASK_STACK_SIZE=4096
+# This should prevent the stack overflow in wifi/server:
+CONFIG_PTHREAD_TASK_STACK_SIZE_DEFAULT=10000
+
+# This turns off the watchdog timer
+CONFIG_INT_WDT=n
+CONFIG_ESP_TASK_WDT=n
+
 
 # Use this to set FreeRTOS kernel tick frequency to 1000 Hz (100 Hz by default).
 # This allows to use 1 ms granuality for thread sleeps (10 ms by default).
