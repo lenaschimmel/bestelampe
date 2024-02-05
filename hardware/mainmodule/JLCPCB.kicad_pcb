@@ -2629,6 +2629,7 @@
   (footprint "footprints:OPLGA4" (layer "F.Cu")
     (tstamp 67e43bb4-3566-41ba-9ebf-0e23e72e0fe6)
     (at 67.558883 106.687909 135)
+    (property "LCSC" "C78465")
     (property "Sheetfile" "JLCPCB.kicad_sch")
     (property "Sheetname" "")
     (path "/c42a2c94-ca67-4583-8685-31c9a770e064")
@@ -2637,7 +2638,7 @@
         (effects (font (size 0.2 0.2) (thickness 0.05)))
       (tstamp 98b76aec-72b4-4f3f-bbdc-e4c451e63400)
     )
-    (fp_text value "~" (at 0 0.95 135) (layer "F.SilkS") hide
+    (fp_text value "VEML6040A3OG" (at 0 0.95 135) (layer "F.SilkS") hide
         (effects (font (size 0.2 0.2) (thickness 0.05)))
       (tstamp f70a5ede-a204-49bc-9306-bf0ba96b165f)
     )
