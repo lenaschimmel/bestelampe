@@ -80,4 +80,4 @@ _Would be nice to fix these, but it's ok as it is_
 	* Power LEDs that light up as long as there is 24V, 5V and 3,3V (should be very dim)
 	* 1 LED per PWM channel to test it without an LED module attached (common +24V could be switched with a jumper)
 * [ ] It would also be nice to support USB Power Delivery, so that the LEDs could light up when only USB is connected, for easier development. PD does not support 24V, only 20V, but the LEDs that I tested are ok with that.
-* [ ] use an SMD version of the temperature sensor because it's much cheaper
+* [x] use an SMD version of the temperature sensor because it's ~~much cheaper~~ also available and can be assembled
