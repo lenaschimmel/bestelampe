@@ -1,5 +1,6 @@
 use std::thread;
 use std::time::Duration;
+use std::sync::{Arc, RwLock};
 
 use enumset::EnumSet;
 use esp_idf_hal::prelude::*;
@@ -39,13 +40,14 @@ use serde::Deserialize;
 mod pwm;
 use crate::pwm::Pwm;
 
-static mut TERMAL : f32 = 0.0;
-static mut LIGHT_TEMPERATURE_TARGET : f32 = 3000.0;
-static mut LIGHT_BRIGHTNESS_TARGET : f32 = 2.0;
 
 fn main() -> ! {
     esp_idf_svc::sys::link_patches();
     EspLogger::initialize_default();
+    
+    let thermal: Arc<RwLock<f32>> = Arc::new(RwLock::new(0.0));
+    let light_temperature_target: Arc<RwLock<f32>> = Arc::new(RwLock::new(3000.0));
+    let light_brightness_target: Arc<RwLock<f32>> = Arc::new(RwLock::new(2.0));
 
     let peripherals: Peripherals = Peripherals::take().expect("Need Peripherals.");
 
@@ -57,7 +59,8 @@ fn main() -> ! {
     //     test_temperature_sensor(PinDriver::input_output(peripherals.pins.gpio15).expect("Should be able to take Gpio15 for temperature measurement."));
     // });
     
-    
+    let light_temperature_target_clone = light_temperature_target.clone();
+    let light_brightness_target_clone = light_brightness_target.clone();
     let _led_thread = thread::spawn(|| {
         let ledc = peripherals.ledc;
         let pin_r  : AnyIOPin = peripherals.pins.gpio10.into();
@@ -67,11 +70,11 @@ fn main() -> ! {
         let pin_ww : AnyIOPin = peripherals.pins.gpio20.into();
         let pin_a  : AnyIOPin = peripherals.pins.gpio21.into();
     
-        test_leds(ledc, pin_r, pin_g, pin_b, pin_cw, pin_ww, pin_a).expect("LEDs should just work.");
+        test_leds(ledc, pin_r, pin_g, pin_b, pin_cw, pin_ww, pin_a, light_temperature_target_clone, light_brightness_target_clone).expect("LEDs should just work.");
     });
 
     let _wifi_thread = thread::spawn(|| {
-        test_wifi(peripherals.modem);
+        test_wifi(peripherals.modem, light_brightness_target, light_temperature_target);
     });
 
     println!("Entering infinite loop in main thread...");
@@ -129,6 +132,8 @@ fn test_leds(
     pin_cw: AnyIOPin,
     pin_ww: AnyIOPin,
     pin_a:  AnyIOPin,
+    light_temperature_target: Arc<RwLock<f32>>,
+    light_brightness_target: Arc<RwLock<f32>>,
 ) -> Result<()> {
 
     // FIXME For ESP32-C6 `Resolution::Bits14` is the largest enum that is defined. But the C6 supports resolutions up to Bits20.
@@ -158,27 +163,36 @@ fn test_leds(
         driver_5,
     )?;
     
-    let mut brightness = 0.0;
-    let mut temperature = 0.0;
-    unsafe {
-        brightness = LIGHT_BRIGHTNESS_TARGET;
-        temperature = LIGHT_TEMPERATURE_TARGET;
+    let mut target_brightness = 0.0;
+    let mut target_temperature = 0.0;
+    {
+        target_brightness = *(light_brightness_target.read().unwrap());
+        target_temperature = *(light_temperature_target.read().unwrap());
     }
+    let mut brightness = target_brightness;
+    let mut temperature = target_temperature;
+
     let lerp_speed = 0.01;
+
     loop {
         std::thread::sleep(core::time::Duration::from_millis(50));
         time += 50.0;
-        pwm.set_temperature_and_brightness(temperature, brightness)?;
-        unsafe {
-            brightness = brightness.lerp(&LIGHT_BRIGHTNESS_TARGET, lerp_speed);
-            temperature = temperature.lerp(&LIGHT_TEMPERATURE_TARGET, lerp_speed);
+        
+        {
+            target_brightness = *(light_brightness_target.read().unwrap());
+            target_temperature = *(light_temperature_target.read().unwrap());
         }
+        
+        brightness = brightness.lerp(&target_brightness, lerp_speed);
+        temperature = temperature.lerp(&target_temperature, lerp_speed);
+
+        pwm.set_temperature_and_brightness(temperature, brightness)?;
     }
     
 }
 
 
-fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, InputOutput>)  -> ! {
+fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, InputOutput>, thermal: Arc<RwLock<f32>>)  -> ! {
     println!("Before temperature sensor init...");
     let mut delay = Delay::new_default();
 
@@ -232,11 +246,10 @@ fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, In
         std::thread::sleep(core::time::Duration::from_millis(2000));
 
         // Read all measurements
+        let mut thermal_write = thermal.write().unwrap();
         for sensor in &sensors {
             let sensor_data = sensor.read_data(&mut one_wire_bus, &mut delay).expect("Read sensor data");
-            unsafe {
-                TERMAL = sensor_data.temperature;
-            }
+            *thermal_write = sensor_data.temperature;
             println!("Device at {:?} is {}°C.", sensor.address(), sensor_data.temperature);
         }
     }
@@ -248,7 +261,11 @@ struct FormData {
     temperature: f32,
 }
 
-fn test_wifi(modem: Modem) -> Result<()> {
+fn test_wifi(
+    modem: Modem,
+    light_temperature_target: Arc<RwLock<f32>>,
+    light_brightness_target: Arc<RwLock<f32>>,
+) -> Result<()> {
     // this used to be the main method of an example program
 
     let mut server = create_server(modem)?;
@@ -278,10 +295,9 @@ fn test_wifi(modem: Modem) -> Result<()> {
                 "Set color temperature to {}K, brightness to {}...",
                 form.temperature, form.brightness
             )?;
-            unsafe {
-                LIGHT_BRIGHTNESS_TARGET = form.brightness;
-                LIGHT_TEMPERATURE_TARGET = form.temperature;
-            }
+            *light_brightness_target.write().unwrap() = form.brightness;
+            *light_temperature_target.write().unwrap() = form.temperature;
+            
         } else {
             resp.write_all("JSON error".as_bytes())?;
         }
