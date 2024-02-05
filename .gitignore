@@ -4,4 +4,6 @@ hardware/steinelmod/
 photos/
 screenshots/
 hardware/**/GERBER-JLCPCB.zip
-hardware/round/CE3MAX_BesteLampe.3mf
+hardware/**/*.3mf
+hardware/**/*.lck
+hardware/**/#auto_saved_files#
