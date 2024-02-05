@@ -297,17 +297,17 @@ impl<'p> Pwm<'p> {
 
 	pub fn set_amber(self: &mut Self, brightness_up_to_one: f32) -> Result<(), EspError> {
 		for i in 0..5 {
-			self.leds[i].borrow_mut().driver.set_duty(0);
+			self.leds[i].borrow_mut().driver.set_duty(0)?;
 		}
 		let amber_driver = &mut self.leds[5].borrow_mut().driver;
-		amber_driver.set_duty((amber_driver.get_max_duty() as f32 * brightness_up_to_one) as u32);
+		amber_driver.set_duty((amber_driver.get_max_duty() as f32 * brightness_up_to_one) as u32)?;
 		Ok(())
 	}
 
-	pub fn set_duties(self: &mut Self, brightness_up_to_one: Vec<f32>) -> Result<(), EspError> {
+	pub fn set_duties(self: &mut Self, brightness_up_to_one: &Vec<f32>) -> Result<(), EspError> {
 		for i in 0..6 {
 			let driver = &mut self.leds[i].borrow_mut().driver;
-			driver.set_duty((driver.get_max_duty() as f32 * brightness_up_to_one[i]) as u32);
+			driver.set_duty((driver.get_max_duty() as f32 * brightness_up_to_one[i]) as u32)?;
 		}
 		Ok(())
 	}

@@ -1,1 +1,25 @@
-<html><body>Hello!</body></html>
+<html>
+	<head>
+		<title>besteLampe! Web interface</title>
+	</head>
+	<body>
+		<script>
+			async function sendData() {
+				const data = {
+					brightness: Number.parseFloat(document.forms.inputs['brightness'].value),
+					temperature: Number.parseFloat(document.forms.inputs['temperature'].value),
+				};
+				const result = await fetch("/post", {
+					method: "POST",
+					body: JSON.stringify(data),
+				});
+				console.log(result.status);
+			}
+		</script>
+		<form id="inputs">
+			Brightness: <input id="brightness" value="2" /><br/>
+			Color temperature: <input id="temperature" value="3000" /><br />
+			<button onclick="sendData(); return false;">Setzen</button>
+		</form>
+	</body>
+</html>

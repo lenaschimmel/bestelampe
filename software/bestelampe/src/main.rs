@@ -17,6 +17,7 @@ use esp_idf_hal::delay::Delay;
 use ds18b20::{Ds18b20, Resolution};
 use esp_idf_sys::EspError;
 use one_wire_bus::{OneWire, OneWireError};
+use prisma::Lerp;
 
 use core::convert::TryInto;
 use anyhow::{ Result, anyhow };
@@ -38,22 +39,26 @@ use serde::Deserialize;
 mod pwm;
 use crate::pwm::Pwm;
 
-fn main() -> Result<()> {
+static mut TERMAL : f32 = 0.0;
+static mut LIGHT_TEMPERATURE_TARGET : f32 = 3000.0;
+static mut LIGHT_BRIGHTNESS_TARGET : f32 = 2.0;
+
+fn main() -> ! {
     esp_idf_svc::sys::link_patches();
     EspLogger::initialize_default();
 
-    let mut peripherals: Peripherals = Peripherals::take()?;
+    let peripherals: Peripherals = Peripherals::take().expect("Need Peripherals.");
 
     //return dump_sensor(&mut peripherals);
     //return get_sensor_timing();
     //return test_leds();
     //return test_temperature_sensor();
-    let temperature_thread = thread::spawn(|| {
-        test_temperature_sensor(PinDriver::input_output(peripherals.pins.gpio15).expect("Should be able to take Gpio15 for temperature measurement."));
-    });
+    // let _temperature_thread = thread::spawn(|| {
+    //     test_temperature_sensor(PinDriver::input_output(peripherals.pins.gpio15).expect("Should be able to take Gpio15 for temperature measurement."));
+    // });
     
     
-    let led_thread = thread::spawn(|| {
+    let _led_thread = thread::spawn(|| {
         let ledc = peripherals.ledc;
         let pin_r  : AnyIOPin = peripherals.pins.gpio10.into();
         let pin_g  : AnyIOPin = peripherals.pins.gpio11.into();
@@ -65,18 +70,15 @@ fn main() -> Result<()> {
         test_leds(ledc, pin_r, pin_g, pin_b, pin_cw, pin_ww, pin_a).expect("LEDs should just work.");
     });
 
-    let wifi_thread = thread::spawn(|| {
+    let _wifi_thread = thread::spawn(|| {
         test_wifi(peripherals.modem);
     });
-
-    led_thread.join();
-    temperature_thread.join();
 
     println!("Entering infinite loop in main thread...");
     loop {}
 }
 
-fn dump_sensor(peripherals: &mut Peripherals) -> Result<()> {
+fn test_presence_sensor(peripherals: &mut Peripherals) -> ! {
     let tx = &mut peripherals.pins.gpio16;
     let rx = &mut peripherals.pins.gpio17;
 
@@ -102,7 +104,7 @@ fn dump_sensor(peripherals: &mut Peripherals) -> Result<()> {
         _non_exhaustive: (),
     };
 
-    let mut uart: uart::UartDriver = uart::UartDriver::new(
+    let uart: uart::UartDriver = uart::UartDriver::new(
         &mut peripherals.uart1,
         tx,
         rx,
@@ -117,8 +119,6 @@ fn dump_sensor(peripherals: &mut Peripherals) -> Result<()> {
         uart.read(&mut buf, TickType::from(Duration::from_millis(500)).ticks()).unwrap();
         println!("read 0x{:02x}", buf[0]);
     }
-
-    return Ok(());
 }
 
 fn test_leds(
@@ -131,6 +131,8 @@ fn test_leds(
     pin_a:  AnyIOPin,
 ) -> Result<()> {
 
+    // FIXME For ESP32-C6 `Resolution::Bits14` is the largest enum that is defined. But the C6 supports resolutions up to Bits20.
+    // I'd like to use Bits16 and 1000 Hz here, which should be okay.
     let timer_driver: LedcTimerDriver<'_> = LedcTimerDriver::new(
         ledc.timer0, 
         &TimerConfig::default().frequency(4600.Hz().into()).resolution(esp_idf_hal::ledc::Resolution::Bits14)
@@ -155,17 +157,28 @@ fn test_leds(
         driver_4,
         driver_5,
     )?;
-
+    
+    let mut brightness = 0.0;
+    let mut temperature = 0.0;
+    unsafe {
+        brightness = LIGHT_BRIGHTNESS_TARGET;
+        temperature = LIGHT_TEMPERATURE_TARGET;
+    }
+    let lerp_speed = 0.01;
     loop {
         std::thread::sleep(core::time::Duration::from_millis(50));
         time += 50.0;
-        pwm.set_amber(0.5);
+        pwm.set_temperature_and_brightness(temperature, brightness)?;
+        unsafe {
+            brightness = brightness.lerp(&LIGHT_BRIGHTNESS_TARGET, lerp_speed);
+            temperature = temperature.lerp(&LIGHT_TEMPERATURE_TARGET, lerp_speed);
+        }
     }
     
 }
 
 
-fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, InputOutput>)  -> Result<()> {
+fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, InputOutput>)  -> ! {
     println!("Before temperature sensor init...");
     let mut delay = Delay::new_default();
 
@@ -221,18 +234,18 @@ fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, In
         // Read all measurements
         for sensor in &sensors {
             let sensor_data = sensor.read_data(&mut one_wire_bus, &mut delay).expect("Read sensor data");
+            unsafe {
+                TERMAL = sensor_data.temperature;
+            }
             println!("Device at {:?} is {}°C.", sensor.address(), sensor_data.temperature);
         }
     }
-
-    Ok(())
 }
 
 #[derive(Deserialize)]
-struct FormData<'a> {
-    first_name: &'a str,
-    age: u32,
-    birthplace: &'a str,
+struct FormData {
+    brightness: f32,
+    temperature: f32,
 }
 
 fn test_wifi(modem: Modem) -> Result<()> {
@@ -241,10 +254,9 @@ fn test_wifi(modem: Modem) -> Result<()> {
     let mut server = create_server(modem)?;
     println!("Created the server. Attaching handlers.");
 
-    server.fn_handler("/", Method::Get, |req| {
-        req.into_ok_response()?
-            .write_all(INDEX_HTML.as_bytes())
-            .map(|_| ())
+    server.fn_handler::<anyhow::Error, _>("/", Method::Get, |req| {
+        req.into_ok_response()?.write_all(INDEX_HTML.as_bytes()).map(|_| ())?;
+        return Ok(());
     })?;
 
     server.fn_handler::<anyhow::Error, _>("/post", Method::Post, |mut req| {
@@ -263,9 +275,13 @@ fn test_wifi(modem: Modem) -> Result<()> {
         if let Ok(form) = serde_json::from_slice::<FormData>(&buf) {
             write!(
                 resp,
-                "Hello, {}-year-old {} from {}!",
-                form.age, form.first_name, form.birthplace
+                "Set color temperature to {}K, brightness to {}...",
+                form.temperature, form.brightness
             )?;
+            unsafe {
+                LIGHT_BRIGHTNESS_TARGET = form.brightness;
+                LIGHT_TEMPERATURE_TARGET = form.temperature;
+            }
         } else {
             resp.write_all("JSON error".as_bytes())?;
         }
@@ -294,6 +310,7 @@ fn test_wifi(modem: Modem) -> Result<()> {
     Ok(())
 }
 
+// FIXME Configuration is not read, strings will be empty.
 #[toml_cfg::toml_config]
 pub struct Config {
     #[default("")]
@@ -324,8 +341,9 @@ fn create_server(modem: Modem) -> Result<EspHttpServer<'static>> {
     )?;
 
     let wifi_configuration = esp_idf_svc::wifi::Configuration::AccessPoint(esp_idf_svc::wifi::AccessPointConfiguration {
-        ssid: CONFIG.wifi_ssid.try_into().or(Err(anyhow!("Invalid SSID config.")))?,
-        password: CONFIG.wifi_psk.try_into().or(Err(anyhow!("Invalid PSK config.")))?,
+        // FIXME I hard-coded the strings here because the configuration is not read.
+        ssid: "BesteLampe".try_into().or(Err(anyhow!("Invalid SSID config.")))?,
+        password: "allerbestelampe".try_into().or(Err(anyhow!("Invalid PSK config.")))?,
         ssid_hidden: false,
         auth_method: AuthMethod::WPA2Personal,
         channel: CHANNEL,
@@ -336,6 +354,7 @@ fn create_server(modem: Modem) -> Result<EspHttpServer<'static>> {
     wifi.wait_netif_up()?;
 
     info!(
+        // This will output the configuration as it is read, e.g. currently empty strings.
         "Created Wi-Fi with WIFI_SSID `{}` and WIFI_PASS `{}`",
         CONFIG.wifi_ssid, CONFIG.wifi_psk
     );
