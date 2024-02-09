@@ -8,6 +8,8 @@ use prisma::Xyz;
 use std::rc::Rc;
 use std::cell::RefCell;
 
+/// A chromaticity on the CIE 1931 xy chromaticity diagram.
+/// This can be interpreted as the hue and saturation of light, without brightness information.
 #[derive(Clone, Debug)]
 pub struct XyColor {
 	x: f32,
@@ -32,6 +34,8 @@ impl XyColor {
 		return XyColor{x, y};
 	}
 
+	/// Combine the xy value with a Y value for brightness in the xyY color space 
+	/// and convert the result to a color in the XYZ color space.
 	#[allow(non_snake_case)]
 	pub fn with_brightness(&self, Y: f32) -> Xyz<f32> {
 		let z = 1.0 - (self.x+self.y);
@@ -42,12 +46,7 @@ impl XyColor {
 	}
 }
 
-pub struct Pwm<'p> {
-	//timer_driver: LedcTimerDriver<'p>,
-	leds: Vec<Rc<RefCell<Led<'p>>>>,
-	triangles: Vec<LedTriangle<'p>>,
-	gamma: f32,
-}
+
 
 pub struct Led<'p> {
 	driver: LedcDriver<'p>,
@@ -88,7 +87,17 @@ impl<'p> LedTriangle<'p> {
 	}
 }
 
+
+/// Pwm controller for a specific set of LEDs
+pub struct Pwm<'p> {
+	//timer_driver: LedcTimerDriver<'p>,
+	leds: Vec<Rc<RefCell<Led<'p>>>>,
+	triangles: Vec<LedTriangle<'p>>,
+	gamma: f32,
+}
+
 impl<'p> Pwm<'p> {
+	/// create a Pwm object with 6 LED driver channels
 	pub fn new(
 		driver_0: LedcDriver<'p>,
 		driver_1: LedcDriver<'p>,
@@ -124,6 +133,8 @@ impl<'p> Pwm<'p> {
 			led_a.clone(),
 		].to_vec();
 
+		// TODO: implement triangulation for an arbitrary number of LED channels 
+		// (given as xy color). For now, these are just hardcoded values for the first prototype.
 		let t0 = LedTriangle::new(led_r.clone(), led_a.clone() , led_ww.clone());
 		let t1 = LedTriangle::new(led_g.clone(), led_a.clone() , led_ww.clone());
 		let t2 = LedTriangle::new(led_r.clone(), led_cw.clone(), led_ww.clone());
@@ -256,6 +267,10 @@ impl<'p> Pwm<'p> {
 	// 	}
 	// }
 
+	/// Set the LEDs to the specified color. 
+	/// Returns ok if the requested color is invalid (outside of the displayable range) - 
+	/// this is not really ok and should be changed to return an error.
+	/// Returns an EspError if the color is valid, but some kind of hardware failure happened.
 	pub fn set_color(self: &mut Self, color: Xyz<f32>) -> Result<(), EspError>  {
 		for i in 0..6 {
 			// TODO don't set all LEDs to 0, only those that are not used now
@@ -287,8 +302,17 @@ impl<'p> Pwm<'p> {
 		return Ok(()); // Not really ok.
 	}
 
-	pub fn set_temperature_and_brightness(self: &mut Self, temperature: f32, brightness: f32) -> Result<(), EspError> {
-		let target_xy = Self::temperature_to_xy(temperature)?;
+	/// Set the LEDs to light with a given color temperature (in K) and brightness ().
+	/// Currently, temperatures between _ and _ K are supported.
+	/// 
+	/// TODO: Implement a check for the power consumption of the given brightness, 
+	/// to prevent overheating of the LED module!
+	pub fn set_temperature_and_brightness(
+		self: &mut Self, 
+		temperature: f32, 
+		brightness: f32,
+	) -> Result<(), EspError> {
+		let target_xy: XyColor = Self::temperature_to_xy(temperature)?;
 		let target_xyz: Xyz<f32> = target_xy.with_brightness(self.gamma_correct(brightness));
 		//info!("set_temperature_and_brightness temperature: {}, brightness: {} (gamma corrected: {}) results in target_xy: {:?}", temperature, brightness, self.gamma_correct(brightness), target_xy);
 		//info!("target_xyz: {}", target_xyz);
