@@ -8,6 +8,7 @@
 				const data = {
 					brightness: Number.parseFloat(document.forms.inputs['brightness'].value),
 					temperature: Number.parseFloat(document.forms.inputs['temperature'].value),
+					speed: Number.parseFloat(document.forms.inputs['speed'].value),
 				};
 				const result = await fetch("/post", {
 					method: "POST",
@@ -17,8 +18,9 @@
 			}
 		</script>
 		<form id="inputs">
-			Brightness: <input id="brightness" value="2" /><br/>
-			Color temperature: <input id="temperature" value="3000" /><br />
+			Brightness (0.0 to ca. 20): <input id="brightness" value="2" /><br/>
+			Color temperature (1000 to 25,000): <input id="temperature" value="3000" /><br />
+			Dim speed (0.0 to 1.0, typically 0.01): <input id="speed" value="0.01" /><br />
 			<button onclick="sendData(); return false;">Setzen</button>
 		</form>
 	</body>

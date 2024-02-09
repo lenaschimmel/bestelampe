@@ -48,6 +48,7 @@ fn main() -> ! {
     let thermal: Arc<RwLock<f32>> = Arc::new(RwLock::new(0.0));
     let light_temperature_target: Arc<RwLock<f32>> = Arc::new(RwLock::new(3000.0));
     let light_brightness_target: Arc<RwLock<f32>> = Arc::new(RwLock::new(2.0));
+    let light_dim_speed: Arc<RwLock<f32>> = Arc::new(RwLock::new(0.01));
 
     let peripherals: Peripherals = Peripherals::take().expect("Need Peripherals.");
 
@@ -61,6 +62,7 @@ fn main() -> ! {
     
     let light_temperature_target_clone = light_temperature_target.clone();
     let light_brightness_target_clone = light_brightness_target.clone();
+    let light_dim_speed_clone = light_dim_speed.clone();
     let _led_thread = thread::spawn(|| {
         let ledc = peripherals.ledc;
         let pin_r  : AnyIOPin = peripherals.pins.gpio10.into();
@@ -70,12 +72,12 @@ fn main() -> ! {
         let pin_ww : AnyIOPin = peripherals.pins.gpio20.into();
         let pin_a  : AnyIOPin = peripherals.pins.gpio21.into();
     
-        test_leds(ledc, pin_r, pin_g, pin_b, pin_cw, pin_ww, pin_a, light_temperature_target_clone, light_brightness_target_clone).expect("LEDs should just work.");
+        test_leds(ledc, pin_r, pin_g, pin_b, pin_cw, pin_ww, pin_a, light_temperature_target_clone, light_brightness_target_clone, light_dim_speed_clone).expect("LEDs should just work.");
     });
 
     let _wifi_thread = thread::spawn(|| {
         start_wifi(peripherals.modem, true).unwrap();
-        run_server(light_temperature_target, light_brightness_target).unwrap();
+        run_server(light_temperature_target, light_brightness_target, light_dim_speed).unwrap();
     });
 
     println!("Entering infinite loop in main thread...");
@@ -135,6 +137,7 @@ fn test_leds(
     pin_a:  AnyIOPin,
     light_temperature_target: Arc<RwLock<f32>>,
     light_brightness_target: Arc<RwLock<f32>>,
+    light_dim_speed: Arc<RwLock<f32>>,
 ) -> Result<()> {
 
     // FIXME For ESP32-C6 `Resolution::Bits14` is the largest enum that is defined. But the C6 supports resolutions up to Bits20.
@@ -164,24 +167,32 @@ fn test_leds(
         driver_5,
     )?;
     
-    let (mut target_brightness, mut target_temperature) = {(
+    let (mut target_brightness, mut target_temperature, mut dim_speed) = {(
         *(light_brightness_target.read().unwrap()),
-        *(light_temperature_target.read().unwrap())
+        *(light_temperature_target.read().unwrap()),
+        *(light_dim_speed.read().unwrap()),
+
     )};
     let (mut brightness, mut temperature) = (target_brightness, target_temperature);
-    let lerp_speed = 0.01;
 
+    let mut count: i32 = 0;
     loop {
         std::thread::sleep(core::time::Duration::from_millis(50));
         time += 50.0;
+        count += 1;
         
         {
             target_brightness = *(light_brightness_target.read().unwrap());
             target_temperature = *(light_temperature_target.read().unwrap());
+            dim_speed = *(light_dim_speed.read().unwrap());
         }
         
-        brightness = brightness.lerp(&target_brightness, lerp_speed);
-        temperature = temperature.lerp(&target_temperature, lerp_speed);
+        brightness = brightness.lerp(&target_brightness, dim_speed);
+        temperature = temperature.lerp(&target_temperature, dim_speed);
+
+        if count % 40 == 0 {
+            println!("Current temp: {}, brightness: {}", temperature, brightness);
+        }
 
         pwm.set_temperature_and_brightness(temperature, brightness)?;
     }
@@ -256,11 +267,13 @@ fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, In
 struct FormData {
     brightness: f32,
     temperature: f32,
+    speed: f32,
 }
 
 fn run_server(
     light_temperature_target: Arc<RwLock<f32>>,
     light_brightness_target: Arc<RwLock<f32>>,
+    light_dim_speed: Arc<RwLock<f32>>,
 ) -> Result<()> {
     
     let server_configuration = esp_idf_svc::http::server::Configuration {
@@ -291,12 +304,12 @@ fn run_server(
         if let Ok(form) = serde_json::from_slice::<FormData>(&buf) {
             write!(
                 resp,
-                "Set color temperature to {}K, brightness to {}...",
-                form.temperature, form.brightness
+                "Set color temperature to {}K, brightness to {} with speed {}...",
+                form.temperature, form.brightness, form.speed
             )?;
             *light_brightness_target.write().unwrap() = form.brightness;
             *light_temperature_target.write().unwrap() = form.temperature;
-            
+            *light_dim_speed.write().unwrap() = form.speed;   
         } else {
             resp.write_all("JSON error".as_bytes())?;
         }
