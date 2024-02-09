@@ -74,7 +74,7 @@ fn main() -> ! {
     });
 
     let _wifi_thread = thread::spawn(|| {
-        test_wifi(peripherals.modem, light_brightness_target, light_temperature_target);
+        test_wifi(peripherals.modem, light_temperature_target, light_brightness_target, true);
     });
 
     println!("Entering infinite loop in main thread...");
@@ -265,10 +265,16 @@ fn test_wifi(
     modem: Modem,
     light_temperature_target: Arc<RwLock<f32>>,
     light_brightness_target: Arc<RwLock<f32>>,
+    as_access_point: bool
 ) -> Result<()> {
     // this used to be the main method of an example program
 
-    let mut server = create_server(modem)?;
+    let mut server: EspHttpServer<'_>;
+    if (as_access_point) {
+        server = create_access_point_server(modem)?;
+    } else {
+        server = create_station_server(modem)?;
+    }
     println!("Created the server. Attaching handlers.");
 
     server.fn_handler::<anyhow::Error, _>("/", Method::Get, |req| {
@@ -326,7 +332,6 @@ fn test_wifi(
     Ok(())
 }
 
-// FIXME Configuration is not read, strings will be empty.
 #[toml_cfg::toml_config]
 pub struct Config {
     #[default("")]
@@ -346,8 +351,44 @@ const STACK_SIZE: usize = 10240;
 // Wi-Fi channel, between 1 and 11
 const CHANNEL: u8 = 11;
 
-fn create_server(modem: Modem) -> Result<EspHttpServer<'static>> {
-    println!("Inside 'create_server'...");
+fn create_station_server(modem: Modem) -> Result<EspHttpServer<'static>> {
+    println!("Inside 'create_station_server'...");
+    let sys_loop = EspSystemEventLoop::take()?;
+    let nvs = EspDefaultNvsPartition::take()?;
+
+    let mut wifi = BlockingWifi::wrap(
+        EspWifi::new(modem, sys_loop.clone(), Some(nvs))?,
+        sys_loop,
+    )?;
+
+    let wifi_configuration = esp_idf_svc::wifi::Configuration::Client(esp_idf_svc::wifi::ClientConfiguration {
+        ssid: CONFIG.wifi_ssid.try_into().or(Err(anyhow!("Invalid SSID config.")))?,
+        password: CONFIG.wifi_psk.try_into().or(Err(anyhow!("Invalid PSK config.")))?,
+        auth_method: AuthMethod::WPA2Personal,
+        ..Default::default()
+    });
+    wifi.set_configuration(&wifi_configuration)?;
+    wifi.start()?;
+    wifi.connect()?;
+    wifi.wait_netif_up()?;
+
+    info!(
+        "Joined Wi-Fi with WIFI_SSID `{}` and WIFI_PASS `{}`",
+        CONFIG.wifi_ssid, CONFIG.wifi_psk
+    );
+
+    let server_configuration = esp_idf_svc::http::server::Configuration {
+        stack_size: STACK_SIZE,
+        ..Default::default()
+    };
+
+    core::mem::forget(wifi);
+
+    return EspHttpServer::new(&server_configuration).or(Err(anyhow!("Could not create server.")));
+}
+
+fn create_access_point_server(modem: Modem) -> Result<EspHttpServer<'static>> {
+    println!("Inside 'create_access_point_server'...");
     let sys_loop = EspSystemEventLoop::take()?;
     let nvs = EspDefaultNvsPartition::take()?;
 
@@ -357,9 +398,8 @@ fn create_server(modem: Modem) -> Result<EspHttpServer<'static>> {
     )?;
 
     let wifi_configuration = esp_idf_svc::wifi::Configuration::AccessPoint(esp_idf_svc::wifi::AccessPointConfiguration {
-        // FIXME I hard-coded the strings here because the configuration is not read.
-        ssid: "BesteLampe".try_into().or(Err(anyhow!("Invalid SSID config.")))?,
-        password: "allerbestelampe".try_into().or(Err(anyhow!("Invalid PSK config.")))?,
+        ssid: CONFIG.wifi_ssid.try_into().or(Err(anyhow!("Invalid SSID config.")))?,
+        password: CONFIG.wifi_psk.try_into().or(Err(anyhow!("Invalid PSK config.")))?,
         ssid_hidden: false,
         auth_method: AuthMethod::WPA2Personal,
         channel: CHANNEL,
