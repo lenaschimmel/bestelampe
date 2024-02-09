@@ -211,9 +211,22 @@ impl<'p> Pwm<'p> {
 		let x: f32;
 		let y: f32;
 
+		if t < 1005.0 {
+			info!("Can't use temperatures below 1005.0: {}", t);
+			t = 1005.0;
+		}
 		if t < 1667.0 {
-			info!("Can't use temperatures below 1667.0: {}", t);
-			t = 1667.0;
+			// Interpolate between computation for 1667 K and pure red.
+			let a = (1667.0 - t) / 667.0; // amount of red
+			let color_1667 = Self::temperature_to_xy(1667.0)?;
+			// FIXME these are the xy coordinates of our current red LEDs.
+			// According to https://www.waveformlighting.com/tech/calculate-cie-1931-xy-coordinates-from-cct/
+			// it should be 0.65275, 0.34446 but the triangulation cannot handle values
+			// outside the polygon (yet).
+			return Ok(XyColor::new(
+				0.628 * a + color_1667.x * (1.0 - a),
+				0.295 * a + color_1667.y * (1.0 - a),
+			));
 		}
 		if t > 25000.0 {
 			info!("Can't use temperatures above 25000.0: {}", t);
