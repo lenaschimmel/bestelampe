@@ -52,7 +52,7 @@ The besteLampe! project has multiple parts. In the future, they might be moved i
 
 The hardware modules are intended like to be used like this:
 
-<img src="assets/modules.jpg" width="49%" />
+<img src="assets/modules.drawio.png" width="49%" />
 
 The main module with its ESP32-C6 can control one chain of LED modules (within a chain, all modules show the same color/brightness). It offers four wireless protocols, but only one or two of them can be used at the same time.
 
