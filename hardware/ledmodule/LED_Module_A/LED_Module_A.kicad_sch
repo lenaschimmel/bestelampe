@@ -2757,7 +2757,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 260.985 148.59 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 36d205da-65aa-4d43-80de-a033af3e0e91)
     (property "Reference" "H4" (at 263.525 147.32 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2777,7 +2777,7 @@
     (property "Note" "DNP" (at 260.985 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Number" "" (at 260.985 148.59 0)
+    (property "Part Number" "DNP" (at 260.985 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
@@ -2790,7 +2790,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 260.985 154.94 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 36fad910-c9b6-4df4-92ce-d6297c902581)
     (property "Reference" "H5" (at 263.525 153.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2810,7 +2810,7 @@
     (property "Note" "DNP" (at 260.985 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Number" "" (at 260.985 154.94 0)
+    (property "Part Number" "DNP" (at 260.985 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
@@ -3209,7 +3209,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 260.985 161.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 476de1cf-e827-48c4-b98c-975e73f3bfda)
     (property "Reference" "H6" (at 263.525 160.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -3229,7 +3229,7 @@
     (property "Note" "DNP" (at 260.985 161.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Number" "" (at 260.985 161.29 0)
+    (property "Part Number" "DNP" (at 260.985 161.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
@@ -4627,7 +4627,7 @@
   )
 
   (symbol (lib_id "Sensor_Temperature:DS18B20U") (at 178.435 167.005 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 7f8f2832-b708-44f4-b14b-129c82419a58)
     (property "Reference" "U1" (at 171.45 165.735 0)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4647,7 +4647,7 @@
     (property "Note" "DNP" (at 178.435 167.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Number" "DS18B20U+" (at 178.435 167.005 0)
+    (property "Part Number" "DNP" (at 178.435 167.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "4" (uuid 85801487-614a-4986-9b39-6ef08ee3a076))
@@ -4761,7 +4761,7 @@
     (property "Note" "" (at 184.785 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Number" "" (at 184.785 142.24 0)
+    (property "Part Number" "710-610114249121 " (at 184.785 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "8" (uuid 294bd9e0-19f6-48dc-89a3-0b599905ae4d))
@@ -4793,7 +4793,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 260.985 129.54 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 84a57f03-9012-4717-bcaf-6c91b7390a14)
     (property "Reference" "H1" (at 263.525 128.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -4813,7 +4813,7 @@
     (property "Note" "DNP" (at 260.985 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Number" "" (at 260.985 129.54 0)
+    (property "Part Number" "DNP" (at 260.985 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
@@ -4826,7 +4826,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 260.985 135.89 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8589585c-8858-4736-8600-6dfdb64cc9d5)
     (property "Reference" "H2" (at 263.525 134.62 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -4846,7 +4846,7 @@
     (property "Note" "DNP" (at 260.985 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Number" "" (at 260.985 135.89 0)
+    (property "Part Number" "DNP" (at 260.985 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
@@ -5967,7 +5967,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 260.985 142.24 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b4a084d0-9916-44f3-bddb-a7c7062b76cf)
     (property "Reference" "H3" (at 263.525 140.97 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5987,7 +5987,7 @@
     (property "Note" "DNP" (at 260.985 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Number" "" (at 260.985 142.24 0)
+    (property "Part Number" "DNP" (at 260.985 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
@@ -7296,7 +7296,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 260.985 167.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f15047b6-c898-48f8-9ddb-b26be883eb44)
     (property "Reference" "H7" (at 263.525 166.37 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -7316,7 +7316,7 @@
     (property "Note" "DNP" (at 260.985 167.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Number" "" (at 260.985 167.64 0)
+    (property "Part Number" "DNP" (at 260.985 167.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
