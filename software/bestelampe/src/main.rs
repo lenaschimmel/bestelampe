@@ -33,12 +33,16 @@ use esp_idf_svc::{
     wifi::{BlockingWifi, EspWifi},
 };
 
+use esp_idf_hal::delay::BLOCK;
+use esp_idf_hal::i2c::*;
 use log::*;
 
 use serde::Deserialize;
 
 mod pwm;
 use crate::pwm::Pwm;
+
+const LIGHT_SENSOR_ADDRESS: u8 = 0x10;
 
 
 fn main() -> ! {
@@ -51,6 +55,13 @@ fn main() -> ! {
     let light_dim_speed: Arc<RwLock<f32>> = Arc::new(RwLock::new(0.01));
 
     let peripherals: Peripherals = Peripherals::take().expect("Need Peripherals.");
+
+    let i2c = peripherals.i2c0;
+    let _light_thread = thread::spawn(|| {
+        test_light_sensor(i2c, peripherals.pins.gpio6.into(), peripherals.pins.gpio7.into()).unwrap_or_default();
+        println!("Light sensor has ended :(");
+    });
+
 
     //return dump_sensor(&mut peripherals);
     //return get_sensor_timing();
@@ -82,6 +93,42 @@ fn main() -> ! {
 
     println!("Entering infinite loop in main thread...");
     loop {}
+}
+
+const R_DATA: u8 = 0x08;
+const G_DATA: u8 = 0x09;
+const B_DATA: u8 = 0x0A;
+const W_DATA: u8 = 0x0B;
+
+fn test_light_sensor(i2c: I2C0, scl: AnyIOPin, sda: AnyIOPin) -> Result<()> {
+    let config = I2cConfig::new().baudrate(100.kHz().into());
+    let mut i2c = I2cDriver::new(i2c, sda, scl, &config)?;
+
+    println!("Shut Down Color Sensor");
+    i2c.write(LIGHT_SENSOR_ADDRESS, &[0, 0x21, 0x00], BLOCK)?;
+
+    println!("Enable Color Sensor");
+    i2c.write(LIGHT_SENSOR_ADDRESS, &[0, 0x20, 0x00], 2)?; 
+    
+    println!("Read VEML6040 Data Loop");
+    loop {
+        std::thread::sleep(core::time::Duration::from_millis(200));
+        println!("Read R Channel Data");
+        let data_r = read_veml6040_data(&mut i2c, R_DATA)?;
+        println!("Read G Channel Data");
+        let data_g = read_veml6040_data(&mut i2c, G_DATA)?;
+        println!("Read B Channel Data");
+        let data_b = read_veml6040_data(&mut i2c, B_DATA)?;
+        println!("Read W Channel Data");
+        let data_w = read_veml6040_data(&mut i2c, W_DATA)?;
+        println!("Read values: R = {}, G = {}, B = {}, W = {}", data_r, data_g, data_b, data_w);
+    }
+}
+
+fn read_veml6040_data(i2c: &mut I2cDriver, channel: u8) -> Result<u16> {
+    let mut buff: [u8; 2] = [0, 0];
+    i2c.write_read(LIGHT_SENSOR_ADDRESS, &[channel], &mut buff, BLOCK)?;
+    return Ok((buff[1] as u16) << 8 | buff[0] as u16);
 }
 
 fn test_presence_sensor(peripherals: &mut Peripherals) -> ! {
