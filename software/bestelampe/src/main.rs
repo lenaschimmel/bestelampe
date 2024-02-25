@@ -7,8 +7,6 @@ use esp_idf_hal::prelude::*;
 use esp_idf_hal::gpio::{AnyIOPin, InputOutput, Pin, PinDriver};
 use esp_idf_hal::ledc::config::TimerConfig;
 use esp_idf_hal::ledc::{LedcDriver, LedcTimerDriver, LEDC};
-use esp_idf_hal::units::Hertz;
-use esp_idf_svc::hal::prelude::Peripherals;
 use esp_idf_svc::log::EspLogger;
 use esp_idf_hal::{uart, modem::Modem};
 use esp_idf_hal::delay::TickType;
@@ -20,7 +18,6 @@ use esp_idf_sys::EspError;
 use one_wire_bus::{OneWire, OneWireError};
 use prisma::Lerp;
 
-use core::convert::TryInto;
 use anyhow::{ Result, anyhow };
 
 use esp_idf_svc::{
@@ -33,7 +30,8 @@ use esp_idf_svc::{
     wifi::{BlockingWifi, EspWifi},
 };
 
-use esp_idf_hal::delay::BLOCK;
+use veml6040::{Veml6040, IntegrationTime, MeasurementMode};
+
 use esp_idf_hal::i2c::*;
 use log::*;
 
@@ -55,7 +53,6 @@ fn main() -> ! {
     let light_dim_speed: Arc<RwLock<f32>> = Arc::new(RwLock::new(0.01));
 
     let peripherals: Peripherals = Peripherals::take().expect("Need Peripherals.");
-
     let i2c = peripherals.i2c0;
     let _light_thread = thread::spawn(|| {
         test_light_sensor(i2c, peripherals.pins.gpio6.into(), peripherals.pins.gpio7.into()).unwrap_or_default();
@@ -95,40 +92,105 @@ fn main() -> ! {
     loop {}
 }
 
-const R_DATA: u8 = 0x08;
-const G_DATA: u8 = 0x09;
-const B_DATA: u8 = 0x0A;
-const W_DATA: u8 = 0x0B;
+const DARK_THRESHOLD_SOFT: u16 = 500;
+const DARK_THRESHOLD_HARD: u16 = 10;
+const BRIGHT_THRESHOLD_SOFT: u16 = 20_000;
+const BRIGHT_THRESHOLD_HARD: u16 = 64_000;
+
+const INTEGRATION_TIMES: [IntegrationTime; 6] = [
+    IntegrationTime::_40ms,
+    IntegrationTime::_80ms,
+    IntegrationTime::_160ms,
+    IntegrationTime::_320ms,
+    IntegrationTime::_640ms,
+    IntegrationTime::_1280ms,
+];
+
+const WAIT_TIMES: [u16; 6] = [
+    40 + 40,
+    40 + 80,
+    40 + 160,
+    40 + 320,
+    40 + 640,
+    40 + 1280,
+];
+
+const SENSITIVITIES: [f32; 6] = [
+    0.25168,
+    0.12584,
+    0.06292,
+    0.03146,
+    0.01573,
+    0.007865,
+];
 
 fn test_light_sensor(i2c: I2C0, scl: AnyIOPin, sda: AnyIOPin) -> Result<()> {
-    let config = I2cConfig::new().baudrate(100.kHz().into());
+    let config = I2cConfig::new().baudrate(100.kHz().into()).scl_enable_pullup(false).sda_enable_pullup(false);
     let mut i2c = I2cDriver::new(i2c, sda, scl, &config)?;
 
-    println!("Shut Down Color Sensor");
-    i2c.write(LIGHT_SENSOR_ADDRESS, &[0, 0x21, 0x00], BLOCK)?;
+    println!("Creating the Veml device...");
 
-    println!("Enable Color Sensor");
-    i2c.write(LIGHT_SENSOR_ADDRESS, &[0, 0x20, 0x00], 2)?; 
-    
-    println!("Read VEML6040 Data Loop");
+    let mut sensor = Veml6040::new(i2c);
+    println!("Trying to enable and set config...");
+    sensor.enable().unwrap();
+
+    let mut integration_time_index = 3;
+    sensor.set_integration_time(INTEGRATION_TIMES[integration_time_index]).unwrap();
+    sensor.set_measurement_mode(MeasurementMode::Manual).unwrap();
+
+    let mut index_changed = false;
+
+    println!("Reading values...");
     loop {
-        std::thread::sleep(core::time::Duration::from_millis(200));
-        println!("Read R Channel Data");
-        let data_r = read_veml6040_data(&mut i2c, R_DATA)?;
-        println!("Read G Channel Data");
-        let data_g = read_veml6040_data(&mut i2c, G_DATA)?;
-        println!("Read B Channel Data");
-        let data_b = read_veml6040_data(&mut i2c, B_DATA)?;
-        println!("Read W Channel Data");
-        let data_w = read_veml6040_data(&mut i2c, W_DATA)?;
-        println!("Read values: R = {}, G = {}, B = {}, W = {}", data_r, data_g, data_b, data_w);
-    }
-}
+        sensor.trigger_measurement().unwrap();
+        let min_wait_time = if index_changed { 0 } else { 1000 };
+        let wait_time = u16::max(min_wait_time, WAIT_TIMES[integration_time_index]);
+        index_changed = false;
 
-fn read_veml6040_data(i2c: &mut I2cDriver, channel: u8) -> Result<u16> {
-    let mut buff: [u8; 2] = [0, 0];
-    i2c.write_read(LIGHT_SENSOR_ADDRESS, &[channel], &mut buff, BLOCK)?;
-    return Ok((buff[1] as u16) << 8 | buff[0] as u16);
+        std::thread::sleep(core::time::Duration::from_millis(wait_time as u64));
+
+        let reading = sensor.read_all_channels().unwrap();
+        
+        // println!("Combined measurements: red = {}, green = {}, blue = {}, white = {}",  
+        //    reading.red, reading.green, reading.blue, reading.white);
+
+        let green = reading.green;
+
+        if green < DARK_THRESHOLD_HARD {
+            println!("Too dark for accurate lux measurement");
+        } else if green > BRIGHT_THRESHOLD_HARD {
+            println!("Too bright for accurate lux measurement");
+        } else {
+            let lux = green as f32 * SENSITIVITIES[integration_time_index];
+           
+            let blue = reading.blue;
+            let red = reading.red;
+            if red > DARK_THRESHOLD_HARD && red < BRIGHT_THRESHOLD_HARD 
+                && blue > DARK_THRESHOLD_HARD && blue < BRIGHT_THRESHOLD_HARD 
+            {
+                let ccti = (red as f32 - blue as f32) / (green as f32) + 0.5;
+                let cct = 4278.6 * ccti.powf(-1.2455);
+                println!("Brightness: {} lx, color temperature: {} K", lux, cct);
+            } else {
+                println!("Brightness: {} lx, color temperature unknown", lux);
+            }
+        }
+          
+        if green < DARK_THRESHOLD_SOFT && integration_time_index < 5 {
+            integration_time_index += 1;
+            sensor.set_integration_time(INTEGRATION_TIMES[integration_time_index]).unwrap();
+            println!("Switching to longer integration time {:?}...", INTEGRATION_TIMES[integration_time_index]);
+            index_changed = true;
+        }
+        if green > BRIGHT_THRESHOLD_SOFT  && integration_time_index > 0 {
+            integration_time_index -= 1;
+            sensor.set_integration_time(INTEGRATION_TIMES[integration_time_index]).unwrap();
+            println!("Switching to shorter integration time {:?}...", INTEGRATION_TIMES[integration_time_index]);
+            index_changed = true;
+        }
+    }
+
+    return Ok(());
 }
 
 fn test_presence_sensor(peripherals: &mut Peripherals) -> ! {
