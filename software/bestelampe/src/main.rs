@@ -10,7 +10,7 @@ use esp_idf_hal::ledc::{LedcDriver, LedcTimerDriver, LEDC};
 use esp_idf_svc::log::EspLogger;
 use esp_idf_hal::{uart, modem::Modem};
 use esp_idf_hal::delay::TickType;
-use esp_idf_hal::uart::config::*;
+use esp_idf_hal::uart::{UART1, config::*};
 use esp_idf_hal::delay::Delay;
 
 use ds18b20::{Ds18b20, Resolution};
@@ -50,6 +50,7 @@ fn main() -> ! {
     EspLogger::initialize_default();
     debug!(target: function_name!(), "Logger initialized.");
     
+    // Thread safe globals for communication across tasks
     let thermal: Arc<RwLock<f32>> = Arc::new(RwLock::new(0.0));
     let light_temperature_target: Arc<RwLock<f32>> = Arc::new(RwLock::new(3000.0));
     let light_brightness_target: Arc<RwLock<f32>> = Arc::new(RwLock::new(2.0));
@@ -57,22 +58,28 @@ fn main() -> ! {
 
     let peripherals: Peripherals = Peripherals::take().expect("Need Peripherals.");
 
+    // Light sensor
     let i2c = peripherals.i2c0;
-    let _light_thread = thread::spawn(|| {
+    let _light_sensor_thread = thread::spawn(|| {
         test_light_sensor(i2c, peripherals.pins.gpio6.into(), peripherals.pins.gpio7.into()).unwrap_or_default();
         error!(target: function_name!(), "Light sensor has ended :(");
     });
 
-
-    //return dump_sensor(&mut peripherals);
-    //return get_sensor_timing();
-    //return test_leds();
-    //return test_temperature_sensor();
+    // Temperature sensor
     let _temperature_thread = thread::spawn(|| {
         let pin_driver = PinDriver::input_output(peripherals.pins.gpio15).expect("Should be able to take Gpio15 for temperature measurement.");
         test_temperature_sensor(pin_driver, thermal);
     });
+
+    // Presence sensor
+    let _presence_thread = thread::spawn(|| {
+        test_presence_sensor(
+            peripherals.pins.gpio17.into(), 
+            peripherals.pins.gpio16.into(), 
+            peripherals.uart1);
+    });
     
+    // LED control
     let light_temperature_target_clone = light_temperature_target.clone();
     let light_brightness_target_clone = light_brightness_target.clone();
     let light_dim_speed_clone = light_dim_speed.clone();
@@ -88,11 +95,13 @@ fn main() -> ! {
         test_leds(ledc, pin_r, pin_g, pin_b, pin_cw, pin_ww, pin_a, light_temperature_target_clone, light_brightness_target_clone, light_dim_speed_clone).expect("LEDs should just work.");
     });
 
+    // Wifi & web interface server
     let _wifi_thread = thread::spawn(|| {
         start_wifi(peripherals.modem, true).unwrap();
         run_server(light_temperature_target, light_brightness_target, light_dim_speed).unwrap();
     });
 
+    // Keep the main thread alive
     info!(target: function_name!(), "Entering infinite loop in main thread...");
     loop {
         std::thread::sleep(core::time::Duration::from_millis(1000));
@@ -202,10 +211,11 @@ fn test_light_sensor(i2c: I2C0, scl: AnyIOPin, sda: AnyIOPin) -> Result<()> {
 }
 
 #[named]
-fn test_presence_sensor(peripherals: &mut Peripherals) -> ! {
-    let tx = &mut peripherals.pins.gpio16;
-    let rx = &mut peripherals.pins.gpio17;
-
+fn test_presence_sensor(
+    pin_rx: AnyIOPin,
+    pin_tx: AnyIOPin,
+    uart_device: UART1, 
+) -> ! {
     info!(target: function_name!(), "Connecting to GPIO 17 to sample the sensor");
 
     std::thread::sleep(core::time::Duration::from_millis(500));
@@ -229,9 +239,9 @@ fn test_presence_sensor(peripherals: &mut Peripherals) -> ! {
     };
 
     let uart: uart::UartDriver = uart::UartDriver::new(
-        &mut peripherals.uart1,
-        tx,
-        rx,
+        uart_device,
+        pin_tx,
+        pin_rx,
         Option::<AnyIOPin>::None,
         Option::<AnyIOPin>::None,
         &config
@@ -375,9 +385,13 @@ fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, In
         // Read all measurements
         let mut thermal_write = thermal.write().unwrap();
         for sensor in &sensors {
-            let sensor_data = sensor.read_data(&mut one_wire_bus, &mut delay).expect("Read sensor data");
-            *thermal_write = sensor_data.temperature;
-            info!(target: function_name!(), "Device at {:?} is {}°C.", sensor.address(), sensor_data.temperature);
+            match sensor.read_data(&mut one_wire_bus, &mut delay) {
+                Ok(sensor_data) => {
+                    *thermal_write = sensor_data.temperature;
+                    info!(target: function_name!(), "Device at {:?} is {}°C.", sensor.address(), sensor_data.temperature);
+                },
+                Err(e) => warn!(target: function_name!(), "Error while reading thermal temperature: {:?}", e),
+            }
         }
     }
 }
