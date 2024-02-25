@@ -1,3 +1,4 @@
 [bestelampe]
-wifi_ssid = "BesteLampe"
-wifi_psk = "allerbestelampe"
+wifi_ssid = "Nordfluegel"
+wifi_psk = "******"
+time_zone = "Europe/Berlin"

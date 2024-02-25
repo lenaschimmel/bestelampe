@@ -3,36 +3,41 @@ use std::time::Duration;
 use std::sync::{Arc, RwLock};
 
 use enumset::EnumSet;
-use esp_idf_hal::prelude::*;
-use esp_idf_hal::gpio::{AnyIOPin, InputOutput, Pin, PinDriver};
-use esp_idf_hal::ledc::config::TimerConfig;
-use esp_idf_hal::ledc::{LedcDriver, LedcTimerDriver, LEDC};
-use esp_idf_svc::log::EspLogger;
-use esp_idf_hal::{uart, modem::Modem};
-use esp_idf_hal::delay::TickType;
-use esp_idf_hal::uart::{UART1, config::*};
-use esp_idf_hal::delay::Delay;
 
-use ds18b20::{Ds18b20, Resolution};
+use esp_idf_hal::prelude::*;
+
+use esp_idf_hal::{uart, modem::Modem};
+use esp_idf_hal::delay::{Delay, TickType};
+use esp_idf_hal::gpio::{AnyIOPin, InputOutput, Pin, PinDriver};
+use esp_idf_hal::i2c::*;
+use esp_idf_hal::ledc::{LedcDriver, LedcTimerDriver, LEDC, config::TimerConfig};
+use esp_idf_hal::uart::{UART1, config::*};
+
+use esp_idf_svc::{
+    eventloop::EspSystemEventLoop,
+    http::Method,
+    http::server::EspHttpServer,
+    io::{Read, Write},
+    log::EspLogger,
+    nvs::EspDefaultNvsPartition,
+    sntp,
+    wifi::{BlockingWifi, EspWifi, AuthMethod},
+};
+
 use esp_idf_sys::EspError;
+
+use chrono::{Utc, offset::Local};
+use chrono_tz::Tz;
+
 use one_wire_bus::{OneWire, OneWireError};
 use prisma::Lerp;
 
+use ds18b20::{Ds18b20, Resolution};
 use anyhow::{ Result, anyhow };
 
-use esp_idf_svc::{
-    io::{Read, Write},
-    http::Method,
-    eventloop::EspSystemEventLoop,
-    http::server::EspHttpServer,
-    nvs::EspDefaultNvsPartition,
-    wifi::AuthMethod,
-    wifi::{BlockingWifi, EspWifi},
-};
 
 use veml6040::{Veml6040, IntegrationTime, MeasurementMode};
 
-use esp_idf_hal::i2c::*;
 use log::*;
 
 use serde::Deserialize;
@@ -97,13 +102,20 @@ fn main() -> ! {
 
     // Wifi & web interface server
     let _wifi_thread = thread::spawn(|| {
-        start_wifi(peripherals.modem, true).unwrap();
+        start_wifi(peripherals.modem, false).unwrap();
+        let _sntp = sntp::EspSntp::new_default().unwrap();
+        info!(target: function_name!(), "SNTP initialized");
         run_server(light_temperature_target, light_brightness_target, light_dim_speed).unwrap();
     });
+
+    let tz: Tz = CONFIG.time_zone.parse().unwrap();
 
     // Keep the main thread alive
     info!(target: function_name!(), "Entering infinite loop in main thread...");
     loop {
+        let now = Utc::now();
+        let local_now = now.with_timezone(&tz);
+        info!("Current time: {:?}", local_now); 
         std::thread::sleep(core::time::Duration::from_millis(1000));
     }
 }
@@ -251,7 +263,7 @@ fn test_presence_sensor(
     loop {
         let mut buf = [0_u8; 1];
         uart.read(&mut buf, TickType::from(Duration::from_millis(500)).ticks()).unwrap();
-        info!(target: function_name!(), "read 0x{:02x}", buf[0]);
+        trace!(target: function_name!(), "read 0x{:02x}", buf[0]);
     }
 }
 
@@ -362,9 +374,14 @@ fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, In
             let sensor = Ds18b20::new::<OneWireError<EspError>>(device_address).expect("Create device by address");
             
             // contains the read temperature, as well as config info such as the resolution used
-            let sensor_data = sensor.read_data(&mut one_wire_bus, &mut delay).expect("Read sensor data");
-            info!(target: function_name!(), "Device at {:?} is {}°C. Resolution is {:?}.", device_address, sensor_data.temperature, sensor_data.resolution);
-            sensors.push(sensor);
+            match sensor.read_data(&mut one_wire_bus, &mut delay) {
+                Ok(sensor_data) => {
+                    info!(target: function_name!(), "Device at {:?} is {}°C. Resolution is {:?}.", device_address, sensor_data.temperature, sensor_data.resolution);
+                    sensors.push(sensor);
+                },
+                Err(e) => warn!(target: function_name!(), "Error reading sensor data for the first time: {:?}", e),
+            }
+            
         } else {
             break;
         }
@@ -464,7 +481,9 @@ pub struct Config {
     #[default("")]
     wifi_ssid: &'static str,
     #[default("")]
-    wifi_psk: &'static str,
+    wifi_psk: &'static str,   
+    #[default("Etc/GMT")]
+    time_zone: &'static str,
 }
 
 static INDEX_HTML: &str = include_str!("http_server_page.html");
@@ -510,11 +529,15 @@ fn start_wifi(modem: Modem, as_access_point: bool) -> Result<()> {
         })
     };
 
+    info!(target: function_name!(), "Setting configuration...");
     wifi.set_configuration(&wifi_configuration)?;
+    info!(target: function_name!(), "Starting...");
     wifi.start()?;
     if !as_access_point {
+        info!(target: function_name!(), "Connecting...");
         wifi.connect()?;
     }
+    info!(target: function_name!(), "Waiting for netif...");
     wifi.wait_netif_up()?;
 
     info!(target: function_name!(), 
