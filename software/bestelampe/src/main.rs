@@ -37,15 +37,18 @@ use log::*;
 
 use serde::Deserialize;
 
+use ::function_name::named;
+
 mod pwm;
 use crate::pwm::Pwm;
 
 const LIGHT_SENSOR_ADDRESS: u8 = 0x10;
 
-
+#[named]
 fn main() -> ! {
     esp_idf_svc::sys::link_patches();
     EspLogger::initialize_default();
+    debug!(target: function_name!(), "Logger initialized.");
     
     let thermal: Arc<RwLock<f32>> = Arc::new(RwLock::new(0.0));
     let light_temperature_target: Arc<RwLock<f32>> = Arc::new(RwLock::new(3000.0));
@@ -53,10 +56,11 @@ fn main() -> ! {
     let light_dim_speed: Arc<RwLock<f32>> = Arc::new(RwLock::new(0.01));
 
     let peripherals: Peripherals = Peripherals::take().expect("Need Peripherals.");
+
     let i2c = peripherals.i2c0;
     let _light_thread = thread::spawn(|| {
         test_light_sensor(i2c, peripherals.pins.gpio6.into(), peripherals.pins.gpio7.into()).unwrap_or_default();
-        println!("Light sensor has ended :(");
+        error!(target: function_name!(), "Light sensor has ended :(");
     });
 
 
@@ -64,9 +68,10 @@ fn main() -> ! {
     //return get_sensor_timing();
     //return test_leds();
     //return test_temperature_sensor();
-    // let _temperature_thread = thread::spawn(|| {
-    //     test_temperature_sensor(PinDriver::input_output(peripherals.pins.gpio15).expect("Should be able to take Gpio15 for temperature measurement."));
-    // });
+    let _temperature_thread = thread::spawn(|| {
+        let pin_driver = PinDriver::input_output(peripherals.pins.gpio15).expect("Should be able to take Gpio15 for temperature measurement.");
+        test_temperature_sensor(pin_driver, thermal);
+    });
     
     let light_temperature_target_clone = light_temperature_target.clone();
     let light_brightness_target_clone = light_brightness_target.clone();
@@ -88,8 +93,10 @@ fn main() -> ! {
         run_server(light_temperature_target, light_brightness_target, light_dim_speed).unwrap();
     });
 
-    println!("Entering infinite loop in main thread...");
-    loop {}
+    info!(target: function_name!(), "Entering infinite loop in main thread...");
+    loop {
+        std::thread::sleep(core::time::Duration::from_millis(1000));
+    }
 }
 
 const DARK_THRESHOLD_SOFT: u16 = 500;
@@ -124,14 +131,15 @@ const SENSITIVITIES: [f32; 6] = [
     0.007865,
 ];
 
+#[named]
 fn test_light_sensor(i2c: I2C0, scl: AnyIOPin, sda: AnyIOPin) -> Result<()> {
     let config = I2cConfig::new().baudrate(100.kHz().into()).scl_enable_pullup(false).sda_enable_pullup(false);
     let mut i2c = I2cDriver::new(i2c, sda, scl, &config)?;
 
-    println!("Creating the Veml device...");
+    info!(target: function_name!(), "Creating the Veml device...");
 
     let mut sensor = Veml6040::new(i2c);
-    println!("Trying to enable and set config...");
+    info!(target: function_name!(), "Trying to enable and set config...");
     sensor.enable().unwrap();
 
     let mut integration_time_index = 3;
@@ -140,7 +148,7 @@ fn test_light_sensor(i2c: I2C0, scl: AnyIOPin, sda: AnyIOPin) -> Result<()> {
 
     let mut index_changed = false;
 
-    println!("Reading values...");
+    info!(target: function_name!(), "Reading values...");
     loop {
         sensor.trigger_measurement().unwrap();
         let min_wait_time = if index_changed { 0 } else { 1000 };
@@ -157,9 +165,9 @@ fn test_light_sensor(i2c: I2C0, scl: AnyIOPin, sda: AnyIOPin) -> Result<()> {
         let green = reading.green;
 
         if green < DARK_THRESHOLD_HARD {
-            println!("Too dark for accurate lux measurement");
+            debug!(target: function_name!(), "Too dark for accurate lux measurement");
         } else if green > BRIGHT_THRESHOLD_HARD {
-            println!("Too bright for accurate lux measurement");
+            debug!(target: function_name!(), "Too bright for accurate lux measurement");
         } else {
             let lux = green as f32 * SENSITIVITIES[integration_time_index];
            
@@ -170,22 +178,22 @@ fn test_light_sensor(i2c: I2C0, scl: AnyIOPin, sda: AnyIOPin) -> Result<()> {
             {
                 let ccti = (red as f32 - blue as f32) / (green as f32) + 0.5;
                 let cct = 4278.6 * ccti.powf(-1.2455);
-                println!("Brightness: {} lx, color temperature: {} K", lux, cct);
+                info!(target: function_name!(), "Brightness: {} lx, color temperature: {} K", lux, cct);
             } else {
-                println!("Brightness: {} lx, color temperature unknown", lux);
+                info!(target: function_name!(), "Brightness: {} lx, color temperature unknown", lux);
             }
         }
           
         if green < DARK_THRESHOLD_SOFT && integration_time_index < 5 {
             integration_time_index += 1;
             sensor.set_integration_time(INTEGRATION_TIMES[integration_time_index]).unwrap();
-            println!("Switching to longer integration time {:?}...", INTEGRATION_TIMES[integration_time_index]);
+            debug!(target: function_name!(), "Switching to longer integration time {:?}...", INTEGRATION_TIMES[integration_time_index]);
             index_changed = true;
         }
         if green > BRIGHT_THRESHOLD_SOFT  && integration_time_index > 0 {
             integration_time_index -= 1;
             sensor.set_integration_time(INTEGRATION_TIMES[integration_time_index]).unwrap();
-            println!("Switching to shorter integration time {:?}...", INTEGRATION_TIMES[integration_time_index]);
+            debug!(target: function_name!(), "Switching to shorter integration time {:?}...", INTEGRATION_TIMES[integration_time_index]);
             index_changed = true;
         }
     }
@@ -193,11 +201,12 @@ fn test_light_sensor(i2c: I2C0, scl: AnyIOPin, sda: AnyIOPin) -> Result<()> {
     return Ok(());
 }
 
+#[named]
 fn test_presence_sensor(peripherals: &mut Peripherals) -> ! {
     let tx = &mut peripherals.pins.gpio16;
     let rx = &mut peripherals.pins.gpio17;
 
-    println!("Connecting to GPIO 17 to sample the sensor");
+    info!(target: function_name!(), "Connecting to GPIO 17 to sample the sensor");
 
     std::thread::sleep(core::time::Duration::from_millis(500));
 
@@ -228,14 +237,15 @@ fn test_presence_sensor(peripherals: &mut Peripherals) -> ! {
         &config
     ).unwrap();
 
-    println!("Try to read stuff...");
+    info!(target: function_name!(), "Try to read stuff...");
     loop {
         let mut buf = [0_u8; 1];
         uart.read(&mut buf, TickType::from(Duration::from_millis(500)).ticks()).unwrap();
-        println!("read 0x{:02x}", buf[0]);
+        info!(target: function_name!(), "read 0x{:02x}", buf[0]);
     }
 }
 
+#[named]
 fn test_leds(
     ledc: LEDC,
     pin_r:  AnyIOPin,
@@ -263,7 +273,7 @@ fn test_leds(
     let driver_4 = LedcDriver::new(ledc.channel4, &timer_driver, pin_ww).expect("Get LEDC driver.");
     let driver_5 = LedcDriver::new(ledc.channel5, &timer_driver, pin_a ).expect("Get LEDC driver.");
 
-    println!("Before LED main loop...");
+    info!(target: function_name!(), "Before LED main loop...");
     std::thread::sleep(core::time::Duration::from_millis(500));
     
     let mut time: f32 = 0.0;
@@ -300,7 +310,7 @@ fn test_leds(
         temperature = temperature.lerp(&target_temperature, dim_speed);
 
         if count % 40 == 0 {
-            println!("Current temp: {}, brightness: {}", temperature, brightness);
+            info!(target: function_name!(), "Current temp: {}, brightness: {}", temperature, brightness);
         }
 
         pwm.set_temperature_and_brightness(temperature, brightness)?;
@@ -308,9 +318,9 @@ fn test_leds(
     
 }
 
-
+#[named]
 fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, InputOutput>, thermal: Arc<RwLock<f32>>)  -> ! {
-    println!("Before temperature sensor init...");
+    info!(target: function_name!(), "Before temperature sensor init...");
     let mut delay = Delay::new_default();
 
     let mut one_wire_bus = OneWire::new(one_wire_pin).unwrap();
@@ -328,7 +338,7 @@ fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, In
 
     let mut sensors: Vec<Ds18b20> = Vec::new();
 
-    println!("Before temperature sensor search loop...");
+    info!(target: function_name!(), "Before temperature sensor search loop...");
     // iterate over all the devices, and report their temperature
     let mut search_state = None;
     loop {
@@ -343,14 +353,14 @@ fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, In
             
             // contains the read temperature, as well as config info such as the resolution used
             let sensor_data = sensor.read_data(&mut one_wire_bus, &mut delay).expect("Read sensor data");
-            println!("Device at {:?} is {}°C. Resolution is {:?}.", device_address, sensor_data.temperature, sensor_data.resolution);
+            info!(target: function_name!(), "Device at {:?} is {}°C. Resolution is {:?}.", device_address, sensor_data.temperature, sensor_data.resolution);
             sensors.push(sensor);
         } else {
             break;
         }
     }
 
-    println!("Before continuos temperature sensor measurement loop...");
+    info!(target: function_name!(), "Before continuos temperature sensor measurement loop...");
     loop {
         // Start all measurements
         for sensor in &sensors {
@@ -367,7 +377,7 @@ fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, In
         for sensor in &sensors {
             let sensor_data = sensor.read_data(&mut one_wire_bus, &mut delay).expect("Read sensor data");
             *thermal_write = sensor_data.temperature;
-            println!("Device at {:?} is {}°C.", sensor.address(), sensor_data.temperature);
+            info!(target: function_name!(), "Device at {:?} is {}°C.", sensor.address(), sensor_data.temperature);
         }
     }
 }
@@ -379,6 +389,7 @@ struct FormData {
     speed: f32,
 }
 
+#[named]
 fn run_server(
     light_temperature_target: Arc<RwLock<f32>>,
     light_brightness_target: Arc<RwLock<f32>>,
@@ -390,7 +401,7 @@ fn run_server(
         ..Default::default()
     };
     let mut server: EspHttpServer<'_> = EspHttpServer::new(&server_configuration).or(Err(anyhow!("Could not create server.")))?;
-    println!("Created the server. Attaching handlers.");
+    info!(target: function_name!(), "Created the server. Attaching handlers.");
 
     server.fn_handler::<anyhow::Error, _>("/", Method::Get, |req| {
         req.into_ok_response()?.write_all(INDEX_HTML.as_bytes()).map(|_| ())?;
@@ -426,10 +437,10 @@ fn run_server(
         Ok(())
     })?;
 
-    println!("Handlers attached.");
+    info!(target: function_name!(), "Handlers attached.");
 
     loop {
-        println!("Inside server keep-alive loop.");
+        trace!(target: function_name!(), "Inside server keep-alive loop.");
         std::thread::sleep(core::time::Duration::from_millis(2000));
     }
 }
@@ -456,8 +467,9 @@ const CHANNEL: u8 = 11;
 /// Starts the wifi either as station ("client") or access point.
 /// Does not have any retry-loop or error handling.
 /// Method returns when the wifi is ready to be used.
+#[named]
 fn start_wifi(modem: Modem, as_access_point: bool) -> Result<()> {
-    println!("Inside 'start_wifi'...");
+    info!(target: function_name!(), "Inside 'start_wifi'...");
     let sys_loop = EspSystemEventLoop::take()?;
     let nvs = EspDefaultNvsPartition::take()?;
 
@@ -491,7 +503,7 @@ fn start_wifi(modem: Modem, as_access_point: bool) -> Result<()> {
     }
     wifi.wait_netif_up()?;
 
-    info!(
+    info!(target: function_name!(), 
         "Joined Wi-Fi with WIFI_SSID `{}` and WIFI_PASS `{}` as {}",
         CONFIG.wifi_ssid, CONFIG.wifi_psk, if as_access_point { "access point" } else { "station" }
     );

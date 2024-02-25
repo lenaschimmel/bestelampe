@@ -2,7 +2,7 @@ use esp_idf_hal::ledc::LedcDriver;
 
 use esp_idf_sys::EspError;
 
-use log::info;
+use log::*;
 use prisma::Xyz;
 
 use std::rc::Rc;
@@ -212,7 +212,7 @@ impl<'p> Pwm<'p> {
 		let y: f32;
 
 		if t < 1005.0 {
-			info!("Can't use temperatures below 1005.0: {}", t);
+			warn!("Can't use temperatures below 1005.0: {}", t);
 			t = 1005.0;
 		}
 		if t < 1667.0 {
@@ -229,7 +229,7 @@ impl<'p> Pwm<'p> {
 			));
 		}
 		if t > 25000.0 {
-			info!("Can't use temperatures above 25000.0: {}", t);
+			warn!("Can't use temperatures above 25000.0: {}", t);
 			t = 25000.0;
 		}
 
@@ -311,7 +311,7 @@ impl<'p> Pwm<'p> {
 			}
 		}
 
-		info!("No triangle matched color {:?}!", xy_color);
+		warn!("No triangle matched color {:?}!", xy_color);
 		return Ok(()); // Not really ok.
 	}
 
