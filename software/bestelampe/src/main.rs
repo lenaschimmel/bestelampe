@@ -44,6 +44,8 @@ use serde::Deserialize;
 
 use ::function_name::named;
 
+use simple_error::{SimpleError, try_with};
+
 mod pwm;
 use crate::pwm::Pwm;
 
@@ -171,51 +173,60 @@ fn test_light_sensor(i2c: I2C0, scl: AnyIOPin, sda: AnyIOPin) -> Result<()> {
 
     info!(target: function_name!(), "Reading values...");
     loop {
-        sensor.trigger_measurement().unwrap();
-        let min_wait_time = if index_changed { 0 } else { 1000 };
-        let wait_time = u16::max(min_wait_time, WAIT_TIMES[integration_time_index]);
-        index_changed = false;
+        // This is my attempt at something like try-catch in Rust, so that an error in the
+        // loop iteration just skips to the next iteration. Is there an easier way?
+        let mut iteration = || -> Result<(), SimpleError> {
+            sensor.trigger_measurement().map_err(|_e| SimpleError::new("Failed triggering measurement."))?;
+            let min_wait_time = if index_changed { 0 } else { 1000 };
+            let wait_time = u16::max(min_wait_time, WAIT_TIMES[integration_time_index]);
+            index_changed = false;
 
-        std::thread::sleep(core::time::Duration::from_millis(wait_time as u64));
+            std::thread::sleep(core::time::Duration::from_millis(wait_time as u64));
 
-        let reading = sensor.read_all_channels().unwrap();
-        
-        // println!("Combined measurements: red = {}, green = {}, blue = {}, white = {}",  
-        //    reading.red, reading.green, reading.blue, reading.white);
+            let reading = sensor.read_all_channels().map_err(|_e| SimpleError::new("Failed reading all channels for the first time."))?;
+            
+            // println!("Combined measurements: red = {}, green = {}, blue = {}, white = {}",  
+            //    reading.red, reading.green, reading.blue, reading.white);
 
-        let green = reading.green;
+            let green = reading.green;
 
-        if green < DARK_THRESHOLD_HARD {
-            debug!(target: function_name!(), "Too dark for accurate lux measurement");
-        } else if green > BRIGHT_THRESHOLD_HARD {
-            debug!(target: function_name!(), "Too bright for accurate lux measurement");
-        } else {
-            let lux = green as f32 * SENSITIVITIES[integration_time_index];
-           
-            let blue = reading.blue;
-            let red = reading.red;
-            if red > DARK_THRESHOLD_HARD && red < BRIGHT_THRESHOLD_HARD 
-                && blue > DARK_THRESHOLD_HARD && blue < BRIGHT_THRESHOLD_HARD 
-            {
-                let ccti = (red as f32 - blue as f32) / (green as f32) + 0.5;
-                let cct = 4278.6 * ccti.powf(-1.2455);
-                info!(target: function_name!(), "Brightness: {} lx, color temperature: {} K", lux, cct);
+            if green < DARK_THRESHOLD_HARD {
+                debug!(target: function_name!(), "Too dark for accurate lux measurement");
+            } else if green > BRIGHT_THRESHOLD_HARD {
+                debug!(target: function_name!(), "Too bright for accurate lux measurement");
             } else {
-                info!(target: function_name!(), "Brightness: {} lx, color temperature unknown", lux);
+                let lux = green as f32 * SENSITIVITIES[integration_time_index];
+            
+                let blue = reading.blue;
+                let red = reading.red;
+                if red > DARK_THRESHOLD_HARD && red < BRIGHT_THRESHOLD_HARD 
+                    && blue > DARK_THRESHOLD_HARD && blue < BRIGHT_THRESHOLD_HARD 
+                {
+                    let ccti = (red as f32 - blue as f32) / (green as f32) + 0.5;
+                    let cct = 4278.6 * ccti.powf(-1.2455);
+                    info!(target: function_name!(), "Brightness: {} lx, color temperature: {} K", lux, cct);
+                } else {
+                    info!(target: function_name!(), "Brightness: {} lx, color temperature unknown", lux);
+                }
             }
-        }
-          
-        if green < DARK_THRESHOLD_SOFT && integration_time_index < 5 {
-            integration_time_index += 1;
-            sensor.set_integration_time(INTEGRATION_TIMES[integration_time_index]).unwrap();
-            debug!(target: function_name!(), "Switching to longer integration time {:?}...", INTEGRATION_TIMES[integration_time_index]);
-            index_changed = true;
-        }
-        if green > BRIGHT_THRESHOLD_SOFT  && integration_time_index > 0 {
-            integration_time_index -= 1;
-            sensor.set_integration_time(INTEGRATION_TIMES[integration_time_index]).unwrap();
-            debug!(target: function_name!(), "Switching to shorter integration time {:?}...", INTEGRATION_TIMES[integration_time_index]);
-            index_changed = true;
+            
+            if green < DARK_THRESHOLD_SOFT && integration_time_index < 5 {
+                integration_time_index += 1;
+                sensor.set_integration_time(INTEGRATION_TIMES[integration_time_index]).map_err(|_e| SimpleError::new("Failed setting integration time."))?;
+                debug!(target: function_name!(), "Switching to longer integration time {:?}...", INTEGRATION_TIMES[integration_time_index]);
+                index_changed = true;
+            }
+            if green > BRIGHT_THRESHOLD_SOFT  && integration_time_index > 0 {
+                integration_time_index -= 1;
+                sensor.set_integration_time(INTEGRATION_TIMES[integration_time_index]).map_err(|_e| SimpleError::new("Failed setting integration time."))?;
+                debug!(target: function_name!(), "Switching to shorter integration time {:?}...", INTEGRATION_TIMES[integration_time_index]);
+                index_changed = true;
+            }     
+            Ok(())   
+        };
+        if let Err(err) = iteration() {
+            warn!(target: function_name!(), "Error in sensor loop iteration: {}", err);
+            std::thread::sleep(core::time::Duration::from_millis(750));
         }
     }
 
@@ -285,7 +296,7 @@ fn test_leds(
     // I'd like to use Bits16 and 1000 Hz here, which should be okay.
     let timer_driver: LedcTimerDriver<'_> = LedcTimerDriver::new(
         ledc.timer0, 
-        &TimerConfig::default().frequency(4600.Hz().into()).resolution(esp_idf_hal::ledc::Resolution::Bits14)
+        &TimerConfig::default().frequency(2400.Hz().into()).resolution(esp_idf_hal::ledc::Resolution::Bits15)
     ).expect("Get LEDC timer.");
     
     let driver_0 = LedcDriver::new(ledc.channel0, &timer_driver, pin_r ).expect("Get LEDC driver.");
@@ -296,7 +307,7 @@ fn test_leds(
     let driver_5 = LedcDriver::new(ledc.channel5, &timer_driver, pin_a ).expect("Get LEDC driver.");
 
     info!(target: function_name!(), "Before LED main loop...");
-    std::thread::sleep(core::time::Duration::from_millis(500));
+    std::thread::sleep(core::time::Duration::from_millis(550));
     
     let mut time: f32 = 0.0;
     let mut pwm = Pwm::new(
@@ -318,7 +329,7 @@ fn test_leds(
 
     let mut count: i32 = 0;
     loop {
-        std::thread::sleep(core::time::Duration::from_millis(50));
+        std::thread::sleep(core::time::Duration::from_millis(500));
         time += 50.0;
         count += 1;
         
