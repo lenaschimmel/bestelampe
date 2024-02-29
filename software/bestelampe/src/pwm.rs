@@ -302,7 +302,7 @@ impl<'p> Pwm<'p> {
 					let max_brightness = led.max_brightness;
 					let duty: u32 = (bc[i] * color.y() * max_duty as f32 / max_brightness) as u32;
 					
-					//info!("Setting duty for led {} to {} of {}. ", led.name, duty, max_duty);
+					info!("Set {} to {} / {}. ", led.name, duty, max_duty);
 					//info!("Brightness of color {} is {}, max_brightness of LED is {}, which makes {}% of maximum.", 
 					//	color, color.y(), max_brightness, color.y() / max_brightness * 100.0);
 					led.driver.set_duty(duty)?;
@@ -344,7 +344,9 @@ impl<'p> Pwm<'p> {
 	pub fn set_duties(self: &mut Self, brightness_up_to_one: &Vec<f32>) -> Result<(), EspError> {
 		for i in 0..6 {
 			let driver = &mut self.leds[i].borrow_mut().driver;
-			driver.set_duty((driver.get_max_duty() as f32 * brightness_up_to_one[i]) as u32)?;
+			let target_duty = (driver.get_max_duty() as f32 * brightness_up_to_one[i]) as u32;
+			debug!("target_duty: {}", target_duty);
+			driver.set_duty(target_duty)?;
 		}
 		Ok(())
 	}
