@@ -21,7 +21,8 @@ use esp_idf_svc::{
     log::EspLogger,
     nvs::EspDefaultNvsPartition,
     sntp,
-    wifi::{BlockingWifi, EspWifi, AuthMethod},
+    wifi::{BlockingWifi, EspWifi, AuthMethod, WifiDriver},
+    netif::{EspNetif, NetifConfiguration, NetifStack},
 };
 
 use esp_idf_sys::EspError;
@@ -34,6 +35,7 @@ use prisma::Lerp;
 
 use ds18b20::{Ds18b20, Resolution};
 use anyhow::{ Result, anyhow };
+use heapless::String;
 
 
 use veml6040::{Veml6040, IntegrationTime, MeasurementMode};
@@ -517,8 +519,28 @@ fn start_wifi(modem: Modem, as_access_point: bool) -> Result<()> {
     let sys_loop = EspSystemEventLoop::take()?;
     let nvs = EspDefaultNvsPartition::take()?;
 
+    let ipv4_client_cfg =
+        esp_idf_svc::ipv4::ClientConfiguration::DHCP(esp_idf_svc::ipv4::DHCPClientSettings {
+            hostname: Some(heapless::String::<30>::try_from("besteLampe").unwrap()),
+            ..Default::default()
+        });
+    let new_c = NetifConfiguration {
+        ip_configuration: esp_idf_svc::ipv4::Configuration::Client(ipv4_client_cfg),
+        ..NetifConfiguration::wifi_default_client()
+    };
+
+    let esp_wifi = EspWifi::wrap_all(
+        WifiDriver::new(
+            modem,
+            sys_loop.clone(),
+            Some(nvs),
+        )?,
+        EspNetif::new_with_conf(&new_c)?,
+        EspNetif::new(NetifStack::Ap)?,
+    )?;
+
     let mut wifi = BlockingWifi::wrap(
-        EspWifi::new(modem, sys_loop.clone(), Some(nvs))?,
+        esp_wifi,
         sys_loop,
     )?;
 
