@@ -7,3 +7,7 @@ hardware/**/GERBER-JLCPCB.zip
 hardware/**/*.3mf
 hardware/**/*.lck
 hardware/**/#auto_saved_files#
+hardware/**/jlcpcb
+software/**/dist
+software/**/python_env
+software/**/tools
