@@ -8,3 +8,6 @@ hardware/**/*.3mf
 hardware/**/*.lck
 hardware/**/#auto_saved_files#
 hardware/ledmodule/**/*.zip
+**/python_env
+hardware/**/jlcpcb/**
+software/bestefernbedienung/.embuild
