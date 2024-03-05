@@ -45,7 +45,10 @@ chrono = "0.4.34"
 chrono-tz = "0.8.6"
 simple-error = "0.3.0"
 heapless = "0.8.0"
-# veml6040 = { path = "../veml6040-rs"}
+nom = "7.1.3"
+hex-literal = "0.4.1"
+# veml6040 = { path = "../veml6040-rs" }
+mr24hpc1 = { path = "../mr24hpc1" }
 
 [build-dependencies]
 embuild = "0.31.3"

@@ -48,6 +48,8 @@ use ::function_name::named;
 
 use simple_error::{SimpleError, try_with};
 
+use mr24hpc1::{mr_parser, Frame, HumanPresence, Motion};
+
 mod pwm;
 use crate::pwm::Pwm;
 
@@ -81,11 +83,13 @@ fn main() -> ! {
     });
 
     // Presence sensor
+    let light_brightness_target_clone_for_presence = light_brightness_target.clone();
     let _presence_thread = thread::spawn(|| {
         test_presence_sensor(
             peripherals.pins.gpio17.into(), 
             peripherals.pins.gpio16.into(), 
-            peripherals.uart1);
+            peripherals.uart1,
+            light_brightness_target_clone_for_presence);
     });
     
     // LED control
@@ -240,6 +244,7 @@ fn test_presence_sensor(
     pin_rx: AnyIOPin,
     pin_tx: AnyIOPin,
     uart_device: UART1, 
+    light_brightness_target: Arc<RwLock<f32>>,
 ) -> ! {
     info!(target: function_name!(), "Connecting to GPIO 17 to sample the sensor");
 
@@ -274,9 +279,35 @@ fn test_presence_sensor(
 
     info!(target: function_name!(), "Try to read stuff...");
     loop {
-        let mut buf = [0_u8; 1];
-        uart.read(&mut buf, TickType::from(Duration::from_millis(500)).ticks()).unwrap();
-        trace!(target: function_name!(), "read 0x{:02x}", buf[0]);
+        let mut buf = [0_u8; 20];
+        let len = uart.read(&mut buf, TickType::from(Duration::from_millis(50)).ticks()).unwrap();
+        if len >= 9 {
+            match mr_parser(&buf[0..len]) {
+                Ok((_, frame)) => {
+                    info!(target: function_name!(), "Parsed presence data: {:?}", frame);
+                    match frame {
+                        // Frame::HumanPresenceReport(HumanPresence::BodyMovementParameter(movement)) => {
+                        //     *light_brightness_target.write().unwrap() = movement as f32;
+                        // },
+                        Frame::HumanPresenceReport(HumanPresence::MotionInformation(motion)) => {
+                            // *light_brightness_target.write().unwrap() = match motion {
+                            //     Motion::None => 0.0,
+                            //     Motion::Motionless => 0.5,
+                            //     Motion::Active => 1.5,
+                            // }
+                        },
+                        _ => {
+
+                        }
+                    }
+                },
+                Err(_) => {
+                    warn!(target: function_name!(), "Error while parsing presence data '{:x?}'", buf);
+                },
+            }
+        } else if len > 9 {
+            warn!(target: function_name!(), "Short resence data '{:x?}'", buf);
+        }
     }
 }
 
@@ -298,7 +329,7 @@ fn test_leds(
     // I'd like to use Bits16 and 1000 Hz here, which should be okay.
     let timer_driver: LedcTimerDriver<'_> = LedcTimerDriver::new(
         ledc.timer0, 
-        &TimerConfig::default().frequency(2400.Hz().into()).resolution(esp_idf_hal::ledc::Resolution::Bits15)
+        &TimerConfig::default().frequency(2400.Hz().into()).resolution(esp_idf_hal::ledc::Resolution::Bits14)
     ).expect("Get LEDC timer.");
     
     let driver_0 = LedcDriver::new(ledc.channel0, &timer_driver, pin_r ).expect("Get LEDC driver.");
