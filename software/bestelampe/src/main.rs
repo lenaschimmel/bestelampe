@@ -119,7 +119,7 @@ fn main() -> ! {
     loop {
         let now = Utc::now();
         let local_now = now.with_timezone(&tz);
-        info!("Current time: {:?}", local_now); 
+        trace!("Current time: {:?}", local_now);
         std::thread::sleep(core::time::Duration::from_millis(1000));
     }
 }
