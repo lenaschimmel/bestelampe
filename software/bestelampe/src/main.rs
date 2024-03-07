@@ -2,58 +2,52 @@ use std::thread;
 use std::time::Duration;
 use std::sync::{Arc, RwLock};
 
-use enumset::EnumSet;
-
-use esp_idf_hal::prelude::*;
-
-use esp_idf_hal::{uart, modem::Modem};
-use esp_idf_hal::delay::{Delay, TickType};
-use esp_idf_hal::gpio::{AnyIOPin, InputOutput, Pin, PinDriver};
-use esp_idf_hal::i2c::*;
-use esp_idf_hal::ledc::{LedcDriver, LedcTimerDriver, LEDC, config::TimerConfig};
-use esp_idf_hal::uart::{UART1, config::*};
+use esp_idf_hal::{
+    prelude::*,
+    delay::{Delay, TickType},
+    gpio::{AnyIOPin, InputOutput, Pin, PinDriver},
+    i2c::*,
+    ledc::{LedcDriver, LedcTimerDriver, LEDC, config::TimerConfig},
+    modem::Modem,
+    uart, 
+    uart::{UART1, config::*},
+};
 
 use esp_idf_svc::{
     eventloop::EspSystemEventLoop,
-    http::Method,
-    http::server::EspHttpServer,
+    http::{
+        Method,
+        client::{Configuration as HttpConfig, EspHttpConnection},
+        server::EspHttpServer,
+    },
     io::{Read, Write},
     log::EspLogger,
+    netif::{EspNetif, NetifConfiguration, NetifStack},
     nvs::EspDefaultNvsPartition,
+    ota::EspOta,
     sntp,
     wifi::{BlockingWifi, EspWifi, AuthMethod, WifiDriver},
-    netif::{EspNetif, NetifConfiguration, NetifStack},
 };
 
 use esp_idf_sys::EspError;
 
-use chrono::{Utc, offset::Local};
-use chrono_tz::Tz;
-
-use one_wire_bus::{OneWire, OneWireError};
-use prisma::Lerp;
-
-use ds18b20::{Ds18b20, Resolution};
-use anyhow::{ Result, anyhow };
-use heapless::String;
-
-
-use veml6040::{Veml6040, IntegrationTime, MeasurementMode};
-
-use log::*;
-
-use serde::Deserialize;
 
 use ::function_name::named;
-
-use simple_error::{SimpleError, try_with};
-
-use mr24hpc1::{mr_parser, Frame, HumanPresence, Motion};
+use anyhow::{ Result, anyhow };
+use chrono_tz::Tz;
+use chrono::Utc;
+use ds18b20::{Ds18b20, Resolution};
+use enumset::EnumSet;
+use log::*;
+use mr24hpc1::{mr_parser, Frame, HumanPresence};
+use one_wire_bus::{OneWire, OneWireError};
+use prisma::Lerp;
+use serde::Deserialize;
+use simple_error::SimpleError;
+use veml6040::{Veml6040, IntegrationTime, MeasurementMode};
 
 mod pwm;
 use crate::pwm::Pwm;
-
-const LIGHT_SENSOR_ADDRESS: u8 = 0x10;
 
 #[named]
 fn main() -> ! {
@@ -66,6 +60,7 @@ fn main() -> ! {
     let light_temperature_target: Arc<RwLock<f32>> = Arc::new(RwLock::new(3000.0));
     let light_brightness_target: Arc<RwLock<f32>> = Arc::new(RwLock::new(2.0));
     let light_dim_speed: Arc<RwLock<f32>> = Arc::new(RwLock::new(0.01));
+    let update_requested: Arc<RwLock<bool>> = Arc::new(RwLock::new(false));
 
     let peripherals: Peripherals = Peripherals::take().expect("Need Peripherals.");
 
@@ -108,12 +103,18 @@ fn main() -> ! {
         test_leds(ledc, pin_r, pin_g, pin_b, pin_cw, pin_ww, pin_a, light_temperature_target_clone, light_brightness_target_clone, light_dim_speed_clone).expect("LEDs should just work.");
     });
 
+    // OTA
+    let update_requested_clone = update_requested.clone();
+    let _ota_thread = thread::spawn(|| {
+        test_ota(update_requested_clone).unwrap();
+    });
+
     // Wifi & web interface server
     let _wifi_thread = thread::spawn(|| {
         start_wifi(peripherals.modem, false).unwrap();
         let _sntp = sntp::EspSntp::new_default().unwrap();
         info!(target: function_name!(), "SNTP initialized");
-        run_server(light_temperature_target, light_brightness_target, light_dim_speed).unwrap();
+        run_server(light_temperature_target, light_brightness_target, light_dim_speed, update_requested).unwrap();
     });
 
     let tz: Tz = CONFIG.time_zone.parse().unwrap();
@@ -457,6 +458,91 @@ fn test_temperature_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, In
     }
 }
 
+
+#[named]
+fn test_ota(
+    update_requested: Arc<RwLock<bool>>,
+) -> Result<()> {
+    let buf = vec![0; 512];
+
+    /*
+
+
+    let mut client = Client::<EspHttpConnection>::wrap(&mut http_connection);
+    let headers = [("accept", "text/plain")];
+    */
+    
+    let url = "http://192.168.1.21:8000/esp32c6.upd";
+    
+    //let url = "http://shininggrandinnermorning.neverssl.com/online/";
+
+    let mut client = EspHttpConnection::new(&HttpConfig {
+        crt_bundle_attach: Some(esp_idf_sys::esp_crt_bundle_attach),
+        ..Default::default()
+    })
+    .expect("creation of EspHttpConnection should have worked");
+
+
+
+    loop {
+        if *(update_requested.read().unwrap()) {
+
+
+            let resp = match client.initiate_request(
+                esp_idf_svc::http::Method::Get,
+                url,
+                &[],
+            ) {
+                Ok(c) => c,
+                Err(err) => {
+                    error!("Failed to initiate request {}", err);
+                }
+            };
+            info!("-> GET {}", url);
+
+            client.initiate_response()?;
+
+            let len = client.header("Content-Length") .and_then(|v| v.parse::<u64>().ok()).unwrap_or(0) as usize;
+           
+            if len == 0 {
+                warn!(target: function_name!(), "Got ota file with out Content-Length header, aborting.");
+                return Ok(());
+            }
+            info!(target: function_name!(), "Got ota file response with Content-Length header {}.", len);
+
+            let mut ota = EspOta::new()?;
+            let mut ota_update = ota.initiate_update()?;
+
+            let mut buf = vec![0; 512];
+            let mut total_bytes_read: usize = 0;
+            loop {
+                let bytes_read = client.read(&mut buf)?;
+                if bytes_read == 0 {
+                    break;
+                }
+                total_bytes_read += bytes_read;
+                //info!(target: function_name!(), "Read {} bytes from the ota request, in total {}: {:?}", bytes_read, total_bytes_read, &buf[0..bytes_read]);
+                
+                ota_update.write(&buf[0..bytes_read])?;
+                //info!(target: function_name!(), "Written into the updater.");   
+                debug!(".");
+            }
+
+            info!(target: function_name!(), "Reading and writing done: {} bytes", total_bytes_read);
+
+            let finisher = ota_update.finish()?;
+            info!(target: function_name!(), "Finished.");
+            
+            finisher.activate()?;
+            info!(target: function_name!(), "Activated.");
+            
+            return Ok(());
+        }
+        trace!(target: function_name!(), "Inside ota keep-alive loop.");
+        std::thread::sleep(core::time::Duration::from_millis(2000));
+    }
+}
+
 #[derive(Deserialize)]
 struct FormData {
     brightness: f32,
@@ -469,8 +555,8 @@ fn run_server(
     light_temperature_target: Arc<RwLock<f32>>,
     light_brightness_target: Arc<RwLock<f32>>,
     light_dim_speed: Arc<RwLock<f32>>,
+    update_requested: Arc<RwLock<bool>>,
 ) -> Result<()> {
-    
     let server_configuration = esp_idf_svc::http::server::Configuration {
         stack_size: STACK_SIZE,
         ..Default::default()
@@ -509,6 +595,14 @@ fn run_server(
             resp.write_all("JSON error".as_bytes())?;
         }
 
+        Ok(())
+    })?;
+
+    server.fn_handler::<anyhow::Error, _>("/ota/start", Method::Post, |mut req| {
+        info!(target: function_name!(), "Got ota start request.");
+        *update_requested.write().unwrap() = true;
+        let mut resp = req.into_ok_response()?;
+        resp.write_all("Seems to be ok.".as_bytes())?;
         Ok(())
     })?;
 
