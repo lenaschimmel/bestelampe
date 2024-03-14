@@ -71,7 +71,16 @@ fn main() -> ! {
         error!(target: function_name!(), "Light sensor has ended :(");
     });
 
-    // Temperature sensor
+   // Buttons
+    let _button_thread = thread::spawn(|| {
+        let pin_a : AnyIOPin = peripherals.pins.gpio22.into();
+        let pin_b : AnyIOPin = peripherals.pins.gpio23.into();
+        let pin_c : AnyIOPin = peripherals.pins.gpio0.into();
+        test_buttons(pin_a, pin_b, pin_c).unwrap_or_default();
+        error!(target: function_name!(), "Button thread has ended :(");
+    });
+
+   // Temperature sensor
     let _temperature_thread = thread::spawn(|| {
         let pin_driver = PinDriver::input_output(peripherals.pins.gpio15).expect("Should be able to take Gpio15 for temperature measurement.");
         test_temperature_sensor(pin_driver, thermal);
@@ -162,6 +171,18 @@ const SENSITIVITIES: [f32; 6] = [
 ];
 
 #[named]
+fn test_buttons(pin_a: AnyIOPin, pin_b: AnyIOPin, pin_c: AnyIOPin) -> Result<()> {
+    let in_a = PinDriver::input(pin_a)?;
+    let in_b = PinDriver::input(pin_b)?;
+    let in_c = PinDriver::input(pin_c)?;
+    loop {
+        println!("Buttons: {}, {}, {}", in_a.is_high(), in_b.is_high(), in_c.is_high());
+        std::thread::sleep(core::time::Duration::from_millis(100));
+    }
+    Ok(())
+}
+
+#[named]
 fn test_light_sensor(i2c: I2C0, scl: AnyIOPin, sda: AnyIOPin) -> Result<()> {
     let config = I2cConfig::new().baudrate(100.kHz().into()).scl_enable_pullup(false).sda_enable_pullup(false);
     let mut i2c = I2cDriver::new(i2c, sda, scl, &config)?;
@@ -192,7 +213,7 @@ fn test_light_sensor(i2c: I2C0, scl: AnyIOPin, sda: AnyIOPin) -> Result<()> {
 
             let reading = sensor.read_all_channels().map_err(|_e| SimpleError::new("Failed reading all channels for the first time."))?;
             
-            // println!("Combined measurements: red = {}, green = {}, blue = {}, white = {}",  
+            // println!("Combined measurements: red = {}, green = {}, blue = {}, white = {}",
             //    reading.red, reading.green, reading.blue, reading.white);
 
             let green = reading.green;
@@ -341,7 +362,7 @@ fn test_leds(
     let driver_5 = LedcDriver::new(ledc.channel5, &timer_driver, pin_a ).expect("Get LEDC driver.");
 
     info!(target: function_name!(), "Before LED main loop...");
-    std::thread::sleep(core::time::Duration::from_millis(550));
+    std::thread::sleep(core::time::Duration::from_millis(50));
     
     let mut time: f32 = 0.0;
     let mut pwm = Pwm::new(
@@ -363,7 +384,7 @@ fn test_leds(
 
     let mut count: i32 = 0;
     loop {
-        std::thread::sleep(core::time::Duration::from_millis(500));
+        std::thread::sleep(core::time::Duration::from_millis(50));
         time += 50.0;
         count += 1;
         
