@@ -168,13 +168,13 @@ fn test_light_sensor(i2c: I2C0, scl: AnyIOPin, sda: AnyIOPin) -> Result<()> {
 
     info!(target: function_name!(), "Creating the Veml device...");
 
-    let mut sensor = Veml6040::new(i2c);
+    let mut sensor: Veml6040<I2cDriver<'_>> = Veml6040::new(i2c);
     info!(target: function_name!(), "Trying to enable and set config...");
-    sensor.enable().unwrap();
+    sensor.enable()?;
 
     let mut integration_time_index = 3;
-    sensor.set_integration_time(INTEGRATION_TIMES[integration_time_index]).unwrap();
-    sensor.set_measurement_mode(MeasurementMode::Manual).unwrap();
+    sensor.set_integration_time(INTEGRATION_TIMES[integration_time_index])?;
+    sensor.set_measurement_mode(MeasurementMode::Manual)?;
 
     let mut index_changed = false;
 
