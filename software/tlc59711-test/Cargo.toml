@@ -1,0 +1,47 @@
+[package]
+name = "tlc59711-test"
+version = "0.1.0"
+authors = ["Lena Schimmel <mail@lenaschimmel.de>"]
+edition = "2021"
+resolver = "2"
+rust-version = "1.71"
+
+[profile.release]
+opt-level = "s"
+
+[profile.dev]
+debug = true    # Symbols are nice and they don't increase the size on Flash
+opt-level = "z"
+
+[features]
+default = ["std", "embassy", "esp-idf-svc/native"]
+
+pio = ["esp-idf-svc/pio"]
+std = ["alloc", "esp-idf-svc/binstart", "esp-idf-svc/std"]
+alloc = ["esp-idf-svc/alloc"]
+nightly = ["esp-idf-svc/nightly"]
+experimental = ["esp-idf-svc/experimental"]
+embassy = ["esp-idf-svc/embassy-sync", "esp-idf-svc/critical-section", "esp-idf-svc/embassy-time-driver"]
+
+[dependencies]
+esp-idf-sys = "0.34.0"
+esp-idf-hal = "0.43.0"
+esp-idf-svc = { version = "0.48.0", default-features = true }
+embedded-svc = { version = "0.26.4" }
+embedded-hal = "0.2.7"
+
+anyhow = "1.0.76"
+log = { version = "0.4", default-features = false }
+tlc59xxx = { path = "../tlc59xxx"}
+num = "0.4.1"
+rand = "0.8.5"
+fastapprox = "0.3.1"
+
+[build-dependencies]
+embuild = "0.31.3"
+
+[patch.crates-io]
+cc = { git = "https://github.com/rust-lang/cc-rs", tag = "1.0.83" }
+
+[package.metadata.espflash]
+partition_table = "partitions.csv"

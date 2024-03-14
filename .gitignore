@@ -14,4 +14,4 @@ software/**/.embuild
 software/**/dist
 software/**/python_env
 software/**/tools
-software/bestelampe/**/*.upd
+software/**/*.upd
