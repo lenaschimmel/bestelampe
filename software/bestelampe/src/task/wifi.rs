@@ -1,3 +1,5 @@
+use crate::prelude::*;
+
 use esp_idf_hal::modem::Modem;
 
 use esp_idf_svc::{
@@ -6,12 +8,6 @@ use esp_idf_svc::{
     nvs::EspDefaultNvsPartition,
     wifi::{BlockingWifi, EspWifi, AuthMethod, WifiDriver},
 };
-
-use ::function_name::named;
-use anyhow::{ Result, anyhow };
-use log::info;
-
-use crate::config::CONFIG;
 
 // Wi-Fi channel, between 1 and 11
 const CHANNEL: u8 = 11;

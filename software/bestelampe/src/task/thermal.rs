@@ -1,12 +1,11 @@
+use crate::prelude::*;
+
 use std::sync::{Arc, RwLock};
 
 use ds18b20::{Ds18b20, Resolution};
 use esp_idf_hal::{delay::Delay, gpio::{InputOutput, Pin, PinDriver}};
 use esp_idf_sys::EspError;
-use log::info;
 use one_wire_bus::{OneWire, OneWireError};
-use ::function_name::named;
-use log::*;
 
 #[named]
 pub fn test_thermal_sensor<PinType: Pin>(one_wire_pin: PinDriver<'_, PinType, InputOutput>, thermal: Arc<RwLock<f32>>)  -> ! {

@@ -1,6 +1,7 @@
+use crate::prelude::*;
+
 use std::time::Duration;
 use std::sync::{Arc, RwLock};
-use ::function_name::named;
 
 use enumset::EnumSet;
 use esp_idf_hal::{
@@ -11,9 +12,7 @@ use esp_idf_hal::{
     uart::{UART1, config::*},
 };
 
-use log::*;
 use mr24hpc1::{mr_parser, Frame, HumanPresence};
-
 
 #[named]
 pub fn test_presence_sensor(

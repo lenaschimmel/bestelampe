@@ -1,3 +1,5 @@
+use crate::prelude::*;
+
 use esp_idf_hal::{
     prelude::*,
     gpio::AnyIOPin, i2c::*
@@ -5,12 +7,6 @@ use esp_idf_hal::{
 
 use simple_error::SimpleError;
 use veml6040::{Veml6040, IntegrationTime, MeasurementMode};
-
-use ::function_name::named;
-use anyhow::Result;
-use log::*;
-
-use crate::config::CONFIG;
 
 const DARK_THRESHOLD_SOFT: u16 = 500;
 const DARK_THRESHOLD_HARD: u16 = 10;

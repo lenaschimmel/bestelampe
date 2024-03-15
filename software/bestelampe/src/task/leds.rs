@@ -1,5 +1,6 @@
+use crate::prelude::*;
+
 use std::sync::{Arc, RwLock};
-use anyhow::Result;
 
 use esp_idf_hal::{
     prelude::*,
@@ -7,9 +8,6 @@ use esp_idf_hal::{
     ledc::{LedcDriver, LedcTimerDriver, LEDC, config::TimerConfig},
 };
 
-use ::function_name::named;
-
-use log::*;
 use prisma::Lerp;
 
 use crate::pwm::Pwm;

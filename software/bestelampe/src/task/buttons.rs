@@ -1,12 +1,6 @@
+use crate::prelude::*;
 use std::sync::{Arc, RwLock};
-
 use esp_idf_hal::gpio::{AnyIOPin, PinDriver};
-
-use anyhow::Result;
-use log::*;
-
-use ::function_name::named;
-
 
 #[named]
 pub fn test_buttons(

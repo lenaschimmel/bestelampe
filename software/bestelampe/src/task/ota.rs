@@ -1,11 +1,13 @@
-use esp_idf_svc::{http::client::{Configuration, EspHttpConnection}, ota::EspOta};
-use ::function_name::named;
+use crate::prelude::*;
 
-use log::*;
+use esp_idf_svc::{
+    http::client::{
+        Configuration, EspHttpConnection
+    }, 
+    ota::EspOta
+};
 
 use std::sync::{Arc, RwLock};
-use anyhow::Result;
-
 
 #[named]
 pub fn test_ota(

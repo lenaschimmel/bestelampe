@@ -31,6 +31,13 @@ use crate::task::light_sensor::test_light_sensor;
 mod config;
 use crate::config::CONFIG;
 
+mod prelude {
+    pub use log::*;
+    pub use ::function_name::named;
+    pub use crate::config::CONFIG;
+    pub use anyhow::{ Result, anyhow };
+}
+
 #[named]
 fn main() -> ! {
     esp_idf_svc::sys::link_patches();
