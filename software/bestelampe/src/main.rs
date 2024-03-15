@@ -86,6 +86,7 @@ fn main() -> ! {
             peripherals.pins.gpio16.into(), 
             peripherals.uart1,
             light_brightness_target_clone_for_presence);
+        warn!("Presence senspr has ended :(");
     });
     
     // LED control

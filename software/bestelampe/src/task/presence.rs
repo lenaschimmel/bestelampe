@@ -20,7 +20,7 @@ pub fn test_presence_sensor(
     pin_tx: AnyIOPin,
     uart_device: UART1, 
     light_brightness_target: Arc<RwLock<f32>>,
-) -> ! {
+) ->  Result<()>  {
     info!(target: function_name!(), "Connecting to GPIO 17 to sample the sensor");
 
     std::thread::sleep(core::time::Duration::from_millis(500));
@@ -50,20 +50,24 @@ pub fn test_presence_sensor(
         Option::<AnyIOPin>::None,
         Option::<AnyIOPin>::None,
         &config
-    ).unwrap();
+    )?;
 
+    let mut cycles_without_data = 0;
     info!(target: function_name!(), "Try to read stuff...");
     loop {
         let mut buf = [0_u8; 20];
-        let len = uart.read(&mut buf, TickType::from(Duration::from_millis(50)).ticks()).unwrap();
+        let len: usize = uart.read(&mut buf, TickType::from(Duration::from_millis(50)).ticks())?;
+        
         if len >= 9 {
+            cycles_without_data = 0;
             match mr_parser(&buf[0..len]) {
                 Ok((_, frame)) => {
                     info!(target: function_name!(), "Parsed presence data: {:?}", frame);
                     match frame {
-                        // Frame::HumanPresenceReport(HumanPresence::BodyMovementParameter(movement)) => {
-                        //     *light_brightness_target.write().unwrap() = movement as f32;
-                        // },
+                        Frame::HumanPresenceReport(HumanPresence::BodyMovementParameter(movement)) => {
+                            println!("Movement: {:?}", movement);
+                           // *light_brightness_target.write().unwrap() = movement as f32;
+                        },
                         Frame::HumanPresenceReport(HumanPresence::MotionInformation(motion)) => {
                             println!("Motion: {:?}", motion);
                             // *light_brightness_target.write().unwrap() = match motion {
@@ -81,8 +85,14 @@ pub fn test_presence_sensor(
                     warn!(target: function_name!(), "Error while parsing presence data '{:x?}'", buf);
                 },
             }
-        } else if len > 9 {
-            warn!(target: function_name!(), "Short resence data '{:x?}'", buf);
+        } else if len > 0 {
+            warn!(target: function_name!(), "Short presence data '{:x?}'", buf);
+            cycles_without_data = 0;
+        } else {
+            cycles_without_data += 1;
+            if cycles_without_data > 100 && cycles_without_data % 100 == 0 {
+                warn!("Had {} cycles without any data.", cycles_without_data);
+            }
         }
     }
 }
