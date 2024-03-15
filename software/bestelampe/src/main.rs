@@ -115,7 +115,7 @@ fn main() -> ! {
 
     // Wifi & web interface server
     let _wifi_thread = thread::spawn(|| {
-        start_wifi(peripherals.modem, false).unwrap();
+        start_wifi(peripherals.modem, CONFIG.wifi_ap_active).unwrap();
         let _sntp = sntp::EspSntp::new_default().unwrap();
         info!(target: function_name!(), "SNTP initialized");
         run_server(light_temperature_target, light_brightness_target, light_dim_speed, update_requested).unwrap();

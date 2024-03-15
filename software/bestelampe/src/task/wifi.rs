@@ -49,14 +49,14 @@ pub fn start_wifi(modem: Modem, as_access_point: bool) -> Result<()> {
     let wifi_configuration = match as_access_point {
         false => 
             esp_idf_svc::wifi::Configuration::Client(esp_idf_svc::wifi::ClientConfiguration {
-            ssid: CONFIG.wifi_ssid.try_into().or(Err(anyhow!("Invalid SSID config.")))?,
-            password: CONFIG.wifi_psk.try_into().or(Err(anyhow!("Invalid PSK config.")))?,
+            ssid: CONFIG.wifi_client_ssid.try_into().or(Err(anyhow!("Invalid SSID config.")))?,
+            password: CONFIG.wifi_client_psk.try_into().or(Err(anyhow!("Invalid PSK config.")))?,
             auth_method: AuthMethod::WPA2Personal,
             ..Default::default()
         }),
         true => esp_idf_svc::wifi::Configuration::AccessPoint(esp_idf_svc::wifi::AccessPointConfiguration {
-            ssid: CONFIG.wifi_ssid.try_into().or(Err(anyhow!("Invalid SSID config.")))?,
-            password: CONFIG.wifi_psk.try_into().or(Err(anyhow!("Invalid PSK config.")))?,
+            ssid: CONFIG.wifi_ap_ssid.try_into().or(Err(anyhow!("Invalid SSID config.")))?,
+            password: CONFIG.wifi_ap_psk.try_into().or(Err(anyhow!("Invalid PSK config.")))?,
             ssid_hidden: false,
             auth_method: AuthMethod::WPA2Personal,
             channel: CHANNEL,
@@ -76,8 +76,8 @@ pub fn start_wifi(modem: Modem, as_access_point: bool) -> Result<()> {
     wifi.wait_netif_up()?;
 
     info!(target: function_name!(), 
-        "Joined Wi-Fi with WIFI_SSID `{}` and WIFI_PASS `{}` as {}",
-        CONFIG.wifi_ssid, CONFIG.wifi_psk, if as_access_point { "access point" } else { "station" }
+        "Joined Wi-Fi with as {}",
+        if as_access_point { "access point" } else { "station" }
     );
 
     core::mem::forget(wifi);
