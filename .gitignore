@@ -9,7 +9,9 @@ hardware/**/*.lck
 hardware/**/#auto_saved_files#
 hardware/ledmodule/**/*.zip
 hardware/**/jlcpcb
+hardware/**/place_footprints.log
 software/**/.embuild
 software/**/dist
 software/**/python_env
 software/**/tools
+software/**/*.upd

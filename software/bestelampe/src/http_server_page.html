@@ -23,5 +23,11 @@
 			Dim speed (0.0 to 1.0, typically 0.01): <input id="speed" value="0.01" /><br />
 			<button onclick="sendData(); return false;">Setzen</button>
 		</form>
+		<div> 
+			Over the Air update:
+			<form id="ota" method="post" enctype="text/plain" action="/ota/start" >
+				<button>Submit</button>
+			</form>
+		</div>
 	</body>
 </html>
