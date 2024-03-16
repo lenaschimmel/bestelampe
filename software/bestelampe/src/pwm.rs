@@ -46,9 +46,8 @@ impl XyColor {
 	}
 }
 
-
-
 pub struct Led<'p> {
+	index: usize,
 	driver: LedcDriver<'p>,
 	xy_color: XyColor,
 	//xyz_color: Xyz<f32>,
@@ -57,10 +56,10 @@ pub struct Led<'p> {
 }
 
 impl<'p> Led<'p> {
-	pub fn new(name: &'p str, driver: LedcDriver<'p>, x: f32, y: f32, max_brightness: f32) -> Self {
+	pub fn new(index: usize, name: &'p str, driver: LedcDriver<'p>, x: f32, y: f32, max_brightness: f32) -> Self {
 		let xy_color = XyColor {x, y};
 		//let xyz_color = xy_color.with_brightness(max_brightness);
-		return Self { name, driver, xy_color, max_brightness };
+		return Self { index, name, driver, xy_color, max_brightness };
 	}
 }
 
@@ -117,12 +116,12 @@ impl<'p> Pwm<'p> {
 		// 4 LEDs active at all times, I could use up to 2 drivers for non-LED pins.
 
 
-		let led_r  = Rc::new(RefCell::new(Led::new( "R", driver_0, 0.630, 0.295,  25.0)));
-		let led_g  = Rc::new(RefCell::new(Led::new( "G", driver_1, 0.153, 0.682,  48.0)));
-		let led_b  = Rc::new(RefCell::new(Led::new( "B", driver_2, 0.146, 0.058,  48.0)));
-		let led_cw = Rc::new(RefCell::new(Led::new("CW", driver_3, 0.317, 0.318,  40.0)));
-		let led_ww = Rc::new(RefCell::new(Led::new("WW", driver_4, 0.485, 0.394,  29.0)));
-		let led_a  = Rc::new(RefCell::new(Led::new( "A", driver_5, 0.573, 0.421, 110.0)));
+		let led_r  = Rc::new(RefCell::new(Led::new(0, "R", driver_0, 0.630, 0.295,  25.0)));
+		let led_g  = Rc::new(RefCell::new(Led::new(1,  "G", driver_1, 0.153, 0.682,  48.0)));
+		let led_b  = Rc::new(RefCell::new(Led::new(2,  "B", driver_2, 0.146, 0.058,  48.0)));
+		let led_cw = Rc::new(RefCell::new(Led::new(3, "CW", driver_3, 0.317, 0.318,  40.0)));
+		let led_ww = Rc::new(RefCell::new(Led::new(4, "WW", driver_4, 0.485, 0.394,  29.0)));
+		let led_a  = Rc::new(RefCell::new(Led::new(5,  "A", driver_5, 0.573, 0.421, 110.0)));
 
 		let leds: Vec<Rc<RefCell<Led<'_>>>> = [
 			led_r.clone(),
@@ -285,11 +284,8 @@ impl<'p> Pwm<'p> {
 	/// this is not really ok and should be changed to return an error.
 	/// Returns an EspError if the color is valid, but some kind of hardware failure happened.
 	pub fn set_color(self: &mut Self, color: Xyz<f32>) -> Result<(), EspError>  {
-		for i in 0..6 {
-			// TODO don't set all LEDs to 0, only those that are not used now
-			self.leds[i].borrow_mut().driver.set_duty(0)?;
-		}
 		let xy_color: XyColor = color.into();
+		let mut active_leds = Vec::<usize>::new();
 		//info!("Target color: {:?} from {}", xy_color, color);
 		for triangle in &mut self.triangles {
 			//info!("Checking triangle...");
@@ -306,8 +302,17 @@ impl<'p> Pwm<'p> {
 					//info!("Brightness of color {} is {}, max_brightness of LED is {}, which makes {}% of maximum.", 
 					//	color, color.y(), max_brightness, color.y() / max_brightness * 100.0);
 					led.driver.set_duty(duty)?;
+
+					active_leds.push(led.index);
 				}
 				return Ok(());
+			}
+		}
+
+		// Turn off all LEDs that were not turned on just now.
+		for i in 0..6 {
+			if !active_leds.contains(&i) {
+				self.leds[i].borrow_mut().driver.set_duty(0)?;
 			}
 		}
 
