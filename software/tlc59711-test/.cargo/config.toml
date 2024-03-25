@@ -5,7 +5,7 @@ target = "riscv32imac-esp-espidf"
 linker = "ldproxy"
 # runner = "espflash --monitor" # Select this runner for espflash v1.x.x
 runner = "espflash flash --monitor" # Select this runner for espflash v2.x.x
-rustflags = [ "--cfg",  "espidf_time64"] # Extending time_t for ESP IDF 5: https://github.com/esp-rs/rust/issues/110
+rustflags = ["--cfg", "espidf_time64", "-C", "default-linker-libraries", "-C", "force-frame-pointers"]
 
 [unstable]
 build-std = ["std", "panic_abort"]

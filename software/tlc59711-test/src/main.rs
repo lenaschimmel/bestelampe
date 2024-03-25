@@ -6,7 +6,7 @@ use esp_idf_hal::gpio::*;
 use esp_idf_hal::peripherals::Peripherals;
 use esp_idf_hal::spi::*;
 use esp_idf_hal::units::FromValueType;
-use embedded_hal::digital::v1::OutputPin;
+use embedded_hal::digital::v2::OutputPin;
 use std::thread;
 use std::time::Duration;
 use num::clamp;
@@ -28,14 +28,29 @@ fn main() -> anyhow::Result<()>  {
     let peripherals = Peripherals::take()?;
     let spi = peripherals.spi2;
 
-    let rst = PinDriver::output(peripherals.pins.gpio3)?;
-    let dc = PinDriver::output(peripherals.pins.gpio4)?;
-    let mut backlight = PinDriver::output(peripherals.pins.gpio5)?;
-    let sclk: AnyIOPin = peripherals.pins.gpio10.into();
-    let sdo : AnyIOPin = peripherals.pins.gpio11.into();
+    let sclk: AnyIOPin = peripherals.pins.gpio22.into(); // Pin 1 on Ext
+    let sdo : AnyIOPin = peripherals.pins.gpio23.into(); // Pin 3 (above 1) on Ext
     // Latch pin is not attached, but the lib needs it anyway
     let lat = PinDriver::output(peripherals.pins.gpio7)?;
 
+    // PWM pulse we be input into GOIP0.
+
+    let mut _led_0 = PinDriver::disabled(peripherals.pins.gpio10)?;
+    //let mut led_0 = PinDriver::input(peripherals.pins.gpio10)?;
+    let mut led_1 = PinDriver::output(peripherals.pins.gpio11)?;
+    let mut led_2 = PinDriver::output(peripherals.pins.gpio18)?;
+    let mut led_3 = PinDriver::output(peripherals.pins.gpio19)?;
+    let mut led_4 = PinDriver::output(peripherals.pins.gpio20)?;
+    let mut led_5 = PinDriver::output(peripherals.pins.gpio21)?;
+
+    //led_0.set_pull(Pull::Down);
+    led_1.set_low()?;
+    led_2.set_low()?;
+    led_3.set_low()?;
+    led_4.set_low()?;
+    led_5.set_low()?;
+
+    println!("All LEDs should be low now.");
 
     let delay = Ets;
 
@@ -67,8 +82,9 @@ fn main() -> anyhow::Result<()>  {
     let mut offset : f32 = 0.2;
     loop {
         let tf = (t as f32) * 0.00004;
-        let perception = 0.02 - faster::cosfull(tf) * 0.02;
-        let corrected = faster::pow(perception, 2.2);
+        //let perception = 0.08 - 0.08 * faster::cosfull(tf);
+        let perception = 0.09 - 0.09 * faster::cosfull(tf);
+        let corrected = faster::pow(perception, 2.2) + 0.001926;
         //let ran = rng.gen::<f32>();
         let pwm_f = corrected * max; // + offset
         let mut pwm_r = pwm_f.round();
@@ -85,7 +101,7 @@ fn main() -> anyhow::Result<()>  {
             pwm_r -= 1.0;
             err += 1.0;
         }
-        let pwm = (pwm_r as u16).clamp(0, 65525);
+        let pwm = 65535 - (pwm_r as u16).clamp(0, 65535);
         //let pwm = 5;
 
         tlc.set_pwm(8, pwm);
@@ -102,6 +118,7 @@ fn main() -> anyhow::Result<()>  {
         }
         if (t % 2500 == 0) {
             println!("   {:.4}", pwm_f);
+            //led_1.toggle();
         }
 
         //thread::sleep(Duration::from_millis(10));
