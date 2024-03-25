@@ -43,12 +43,12 @@ The besteLampe! project has multiple parts. In the future, they might be moved i
  - Hardware
    - 🟢 **[Main module](hardware/mainmodule/)** • Control board with power supply, micro controller, 6-channel PWM (pulse width modulation) dimmer and many ports. *First version shipped and tested*
    - 🔴 **Extension module** • Additional simultaneous wireless protocols, 16 additional PWM channels.
-   - 🔴 **LED modules** • Stuff that actually emits light. *only handmade prototypes*
+   - 🟢 **LED modules** • Stuff that actually emits light. *only handmade prototypes*
    - 🟡 **Enclosure** • To hold the electronics together, protect it from the environment, and guide the light.
  - Software
-   - 🟡 **[Firmware]() for main- and extension module**
+   - 🟢  **[Firmware]() for main- and extension module**
    - 🟡 **Control software (Web, Desktop, Mobile, CLI, M5Paper...)**
-   - 🟡 **Common code library** • The firmware and all control software variants are written in Rust and use a common code base.
+   - 🔴 **Common code library** • The firmware and all control software variants are written in Rust and use a common code base.
 
 The hardware modules are intended like to be used like this:
 
@@ -61,6 +61,9 @@ The extension module can control up to three chains of LED modules (each chain h
 All modules have many connectors to attach additional hardware.
 
 ## State of the project
+### Documentation
+This readme is not up-to-date. Both software and hardware are already more advanced than what the next paragraphs describe. Please look at the source code and/or the LED Modules' READMEs in the `hardware` directory to get a better impression of the current state.
+
 ### Software
 The actual software is basically non-existent. There are a few proof-of-concept projects written in Rust, but they don't have the proper architecture. Most of these projects are not even worth putting into git.
 
