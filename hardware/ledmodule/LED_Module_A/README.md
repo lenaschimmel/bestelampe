@@ -5,10 +5,12 @@ This iteration of the design is a single layer PCB, to be manufacuted with an al
 
 See [Module A2](../LED_Module_A2) for a variant with two layers and updated temperature sensor / memory chip.
 
+I will soon compare the thermal properties of the Aluminum version (A) and the FR4 version (A2) of the board.
+
 ### Cost
 *(This estimation is outdated. I will update this with real-live prices soon.)*
 
-Assuming 200 piecesof there boards, and 1 € == 1 USD:
+Assuming 200 pieces of these boards, sourcing components from Mouser, and 1 € == 1 USD:
 
 - LEDs: 14.18 €
 - Other components: ca. 2.00 €
@@ -16,3 +18,5 @@ Assuming 200 piecesof there boards, and 1 € == 1 USD:
 - PCB assembly 2.44 USD
 
 Sum: 20.14 € or USD
+
+For much lower quantities and/or sourcing components via the PCB manufacturer, prices may be three times higher.

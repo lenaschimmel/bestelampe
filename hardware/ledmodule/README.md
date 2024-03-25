@@ -8,9 +8,11 @@ More complex modules may have up to six color channels, and may contain one more
 ### Current state
 There are three modules online:
  * Module A and A2 use 6 to 21 mid-power LEDs for each of its six color channels. They are driven with 24V and current-limmiting resistors, so they are directly compatible with Main Module v1.
- * Module C is a testing module for a novel approach with 1 to 3 high-power LEDs per channel, and needs to be driven by a PWM-capable constand-current driver that does not yet exist. Compatibility with Main Module v1 may or may not be added later.
+ * Module B is / was a concept for a slim, quarter-circle module. It's not clear if it will be continued, or made obsolete by Module C.
+ * Module C is a testing module for a novel approach with 1 to 3 high-power LEDs per channel, and needs to be driven by a PWM-capable constand-current driver that does not yet exist. Compatibility with Main Module v1 is still unclear.
 
 ### Future changes (party implemented or obsoleted by Module C and its concept)
  * Might switch to a more compact connector
- * Should have more pins for +24V and less for GND
+ * Less pins for GND, could be used for +24V and / or additional channels / I2C communication (See LED Board A2 which already re-purposes some pins)
  * Maybe it would be better to have the Mosfets on the LED module. Then they could be sized appropriately for the number and power of the LEDs on the module. On the other hand, it should be possible to just chain larger Mosfets on a LED module to the small ones on the main module.
+ * A standalone PWM generator chip might replace the integrated PWM of the ESP32

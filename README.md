@@ -46,33 +46,29 @@ The besteLampe! project has multiple parts. In the future, they might be moved i
    - 🟢 **LED modules** • Stuff that actually emits light. *only handmade prototypes*
    - 🟡 **Enclosure** • To hold the electronics together, protect it from the environment, and guide the light.
  - Software
-   - 🟢  **[Firmware]() for main- and extension module**
+   - 🟢  **[Firmware](software/bestelampe) for main- and extension module**
    - 🟡 **Control software (Web, Desktop, Mobile, CLI, M5Paper...)**
-   - 🔴 **Common code library** • The firmware and all control software variants are written in Rust and use a common code base.
+   - 🔴 **Common code library** • The firmware and all control software variants are written in Rust and should all use a common, portable code base.
 
-The hardware modules are intended like to be used like this:
+In the initial concept, hardware modules are intended like to be used like this:
 
 <img src="assets/modules.drawio.png" width="49%" />
 
-The main module with its ESP32-C6 can control one chain of LED modules (within a chain, all modules show the same color/brightness). It offers four wireless protocols, but only one or two of them can be used at the same time.
+- The main module with its ESP32-C6 can control one chain of LED modules (within a chain, all modules show the same color/brightness). It offers four wireless protocols, but only one or two of them can be used at the same time.
+- The extension module can control up to three chains of LED modules (each chain has individual color/brightness). Its ESP32 only has two wireless protocols, but they can be used at the same time, so that a total of three protocols can be combined.
 
-The extension module can control up to three chains of LED modules (each chain has individual color/brightness). Its ESP32 only has two wireless protocols, but they can be used at the same time, so that a total of three protocols can be combined.
-
-All modules have many connectors to attach additional hardware.
+I'm currently exploring a different approach, starting with LED Module C, which might need changes to the whole modularization concept. Stay tuned...
 
 ## State of the project
 ### Documentation
 This readme is not up-to-date. Both software and hardware are already more advanced than what the next paragraphs describe. Please look at the source code and/or the LED Modules' READMEs in the `hardware` directory to get a better impression of the current state.
 
 ### Software
-The actual software is basically non-existent. There are a few proof-of-concept projects written in Rust, but they don't have the proper architecture. Most of these projects are not even worth putting into git.
-
-A concept for a reliable, flexible firmware exists in my head, but I did not yet have time to write it down.
+The firmware is currently in a transformation from messy, quick-and-dirty proof-of-concept to a more structured and reliable architecture. It supports all hardware components of the Main Module v1 and LED Module A.
 
 Possible next steps:
- - Fix multithreaded access to peripherals
  - Move code between bestelampe (hardware-dependent) and abstraktelampe (hardware-independent)
- - Check if fading and temporal dithering are already available in Rust
+ - Make PWM fading, 20 bit resoluition and temporal dithering are available in Rust (only partly supported by esp-idf-hal)
 
 ### Hardware
 For the hardware, multiple prototypes with various degrees of sophistication exist:
@@ -82,17 +78,17 @@ For the hardware, multiple prototypes with various degrees of sophistication exi
 
 I already ordered PCBs from JLCPCB for the Main Module v1, and even though they have [a lot of minor bugs](/hardware/mainmodule/README.md#Known-problems-for-v1), they look great and - even more important - are fully functional apart from the missing light sensor. **I do not recommend to order Main Module v1.** There are a lot of really easy-to-fix nuisances, so please wait for version 1.1 (see branch [`main-module-v1.1`](https://github.com/lenaschimmel/bestelampe/tree/main-module-v1.1)) or version 2. **If you really want a v1 board in your hands quickly, just contact me. I have a few spare ones (partly assembled).**
 
+Some LED boards are also designed and have been manufactured.
+
 I'm working on multiple enclosure designs, one based on a transparent flower pot, and one based on an existing lamp where I replace all the electronics with my own. Both contain many 3d-printed parts,  and a lot of manual labour to make them look *less 3d-printed*.
 
 The next steps for the hardware could be:
- - Order light the sensor and test it on v1
- - Fix bugs in Main Module v1 and release v1.1
- - Find high quality SMD LEDs that are in stock at JLCPCB, PcbWay or some similar manufacturer
- - Design the first LED module and order them
+ - Release Main Module v1.1
  - Put a second ESP32 into the prototype to test ESP-AT or similar communication between both ESPs
+ - Create constant-current PWM driver for LED Board C.
 
  ## Price
- I've tried to estimate the prices for a complete lamp, but excluding the enclosure (because I have no idea how to estimate that). The calculation is based on ordering 100 PCBs per type, and some optimizations in Main Module v1.1 which are not yet done. 
+ I've tried to estimate the prices for a complete lamp, but excluding the enclosure (because I have no idea how to estimate that). The calculation is based on ordering 100 PCBs per type, and some optimizations in Main Module v1.1, some of which are not yet done. 
  
  The two lamp configurations are:
  - **Simple:** 6 color channels (R,G,B,Warm White, Cold White, Amber). Needs the Main Module and 1 LED Module
@@ -109,4 +105,6 @@ The next steps for the hardware could be:
 | **Sum: Extended besteLampe!** | **63.60**        | Enclosure not included                         |                          |                            |
 
  ## License
- This project *should* really be open. I have not yet decided on a license, bit feel like that should no longer stop me from publishing it. So technically, this is not yet open hardware / free software. I'll fix that soon!
+ This project *should* really be open. I have not yet decided on a license, although I lean strongly towards a copyleft-style license.
+ 
+ I felt like this indecision should no longer stop me from publishing the project. So technically, this is not yet open hardware / free software. I'll fix that soon!
