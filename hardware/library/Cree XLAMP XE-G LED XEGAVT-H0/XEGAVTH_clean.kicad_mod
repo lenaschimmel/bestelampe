@@ -1,0 +1,167 @@
+(footprint "XEGAVTH_clean"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "XEGAVT-H0-0000-000-000000K2001-1")
+	(tags "LED")
+	(property "Reference" "LED**"
+		(at 0 1.75 0)
+		(layer "F.SilkS")
+		(uuid "c3659a19-d2c8-4474-87b1-75151fe761ec")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "XEGAVTH_clean"
+		(at 0.125 -3.25 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "886c6b2f-5440-4cad-a82e-c174f55dfd25")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "93accf99-e86e-45d9-8fe6-b6e07f7c1891")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "03f16871-c60b-4095-994d-d47672d6c12d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cc0eef59-2852-4475-8dba-ad4ea70a27db")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -0.85 -1.075)
+		(end 0.85 1.075)
+		(stroke
+			(width 0.02)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "a29badff-a1f9-4c93-9365-c82425a563dc")
+	)
+	(fp_line
+		(start -0.8 -1.025)
+		(end -0.8 1.025)
+		(stroke
+			(width 0.03)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b1cc4567-8c6a-4905-afad-13f625574f88")
+	)
+	(fp_line
+		(start -0.8 1.025)
+		(end 0.8 1.025)
+		(stroke
+			(width 0.03)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "208fc256-4feb-4efb-8dc0-409e6a4e51b3")
+	)
+	(fp_line
+		(start 0.8 -1.025)
+		(end -0.8 -1.025)
+		(stroke
+			(width 0.03)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dd5a2c27-6677-4bdb-9500-08506098492d")
+	)
+	(fp_line
+		(start 0.8 1.025)
+		(end 0.8 -1.025)
+		(stroke
+			(width 0.03)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9004877d-ba87-400b-a073-2f9fd4b99864")
+	)
+	(fp_text user "K"
+		(at 0.7 -0.125 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "863c42e8-fbe5-4a3c-beaa-f09cd22cd1bc")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(pad "1" smd rect
+		(at 0.43 -0.76 90)
+		(size 0.33 0.56)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_paste_margin -0.05)
+		(clearance 0.15)
+		(uuid "318c0ff0-1faf-4431-b750-5ae3e7c67f26")
+	)
+	(pad "2" smd rect
+		(at -0.43 -0.76 90)
+		(size 0.33 0.56)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_paste_margin -0.05)
+		(clearance 0.15)
+		(uuid "506f4dac-d3bf-4503-8ce4-0a94b369e990")
+	)
+	(pad "3" smd rect
+		(at 0 0.29 180)
+		(size 1.41 1.27)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_paste_margin -0.05)
+		(clearance 0.15)
+		(uuid "25965499-a385-41d7-ab4f-632878dae949")
+	)
+	(model "XEGAVT-H0-0000-000-000000K2001.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

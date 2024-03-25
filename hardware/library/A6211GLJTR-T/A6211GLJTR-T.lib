@@ -1,0 +1,30 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model A6211GLJTR-T
+#/650319/1330328/2.50/9/2/Integrated Circuit
+DEF A6211GLJTR-T IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "A6211GLJTR-T" 1050 200 50 H V L CNN
+F2 "SOIC127P600X170-9N" 1050 100 50 H I L CNN
+F3 "https://www.allegromicro.com/~/media/Files/Datasheets/A6211-Datasheet.ashx" 1050 0 50 H I L CNN
+F4 "Led Driver 2A Buck" 1050 -100 50 H I L CNN "Description"
+F5 "1.7" 1050 -200 50 H I L CNN "Height"
+F6 "250-A6211GLJTR-T" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Allegro-MicroSystems/A6211GLJTR-T?qs=pUKx8fyJudB6ktKC8t53Sg%3D%3D" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Allegro Microsystems" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "A6211GLJTR-T" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X VIN 1 0 0 200 R 50 50 0 0 P
+X TON 2 0 -100 200 R 50 50 0 0 P
+X EN 3 0 -200 200 R 50 50 0 0 P
+X CS 4 0 -300 200 R 50 50 0 0 P
+X GND_2 9 600 -1000 200 U 50 50 0 0 P
+X SW 8 1200 0 200 L 50 50 0 0 P
+X BOOT 7 1200 -100 200 L 50 50 0 0 P
+X GND_1 6 1200 -200 200 L 50 50 0 0 P
+X VCC 5 1200 -300 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1000 100 1000 -800 200 -800 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
