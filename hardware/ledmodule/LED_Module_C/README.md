@@ -1,3 +1,10 @@
+<!--
+SPDX-FileCopyrightText: 2024 Lena Schimmel <mail@lenaschimmel.de>
+SPDX-License-Identifier: CC-BY-SA-4.0
+
+[besteLampe!](https://lenaschimmel.de/besteLampe!) © 2024 by [Lena Schimmel](mailto:mail@lenaschimmel.de) is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
+-->
+
 ## LED Module C
 This module is very different from the previous ones. It can carry up to 25 small, high-powered *Cree XLamp Element* LEDs within a circle of just 17.5mm (of which the LEDs actually take up only 15.3mm). It is designed to fit a *HEKLA mounting adaptor* from *LEDiL*, which can carry many different reflectors or lenses from that manufacturer.
 

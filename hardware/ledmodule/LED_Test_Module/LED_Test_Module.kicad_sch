@@ -3,6 +3,14 @@
   (uuid 11b70607-84a3-41da-9ada-cc4dccab4249)
 
   (paper "A4")
+  (title_block
+		(title "LED Test Moudule")
+		(date "2024-03-02")
+		(rev "1.0")
+		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
+		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
+		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
+	)
 
   (lib_symbols
   )

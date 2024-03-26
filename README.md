@@ -1,3 +1,10 @@
+<!--
+SPDX-FileCopyrightText: 2024 Lena Schimmel <mail@lenaschimmel.de>
+SPDX-License-Identifier: CC-BY-SA-4.0
+
+[besteLampe!](https://lenaschimmel.de/besteLampe!) © 2024 by [Lena Schimmel](mailto:mail@lenaschimmel.de) is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
+-->
+
 <!-- *Apart from this README, most documentation and notes are in German. If this project becomes more than a proof-of-concept, all important parts the documentation will be translated to English. The name will remain German, as it should be understandable to English speakers as well.* -->
 
 ![Header image with PCB closeup](assets/header.jpg)
@@ -104,7 +111,13 @@ The next steps for the hardware could be:
 | **Sum: Simple besteLampe!**   | **33.50**        | Enclosure not included                         |                          |                            |
 | **Sum: Extended besteLampe!** | **63.60**        | Enclosure not included                         |                          |                            |
 
- ## License
- This project *should* really be open. I have not yet decided on a license, although I lean strongly towards a copyleft-style license.
- 
- I felt like this indecision should no longer stop me from publishing the project. So technically, this is not yet open hardware / free software. I'll fix that soon!
+## License
+The besteLampe! is open hardware: 
+
+- The hardware design is licensed under [CERN-OHL-S v2](https://ohwr.org/cern_ohl_s_v2.txt) or any later version.
+- The software is licensed under [GNU General Public Licence v3.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) or later
+- The documentation is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/)
+
+<img src="assets/oshw_facts.svg" width="20%" />
+
+See the [license](./license) directory for more details.

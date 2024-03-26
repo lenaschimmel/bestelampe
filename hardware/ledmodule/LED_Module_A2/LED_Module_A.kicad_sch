@@ -3,6 +3,14 @@
   (uuid 7a566d25-9b31-4d0c-b6cc-f02eac7154a2)
 
   (paper "A4")
+  (title_block
+		(title "besteLampe! LED Moudule A2")
+		(date "2024-03-02")
+		(rev "1.0")
+		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
+		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
+		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
+	)
 
   (lib_symbols
     (symbol "Connector_Generic:Conn_01x01" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
