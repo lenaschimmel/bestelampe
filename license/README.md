@@ -6,7 +6,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 
 ## License
-The besteLampe! is open hardware: 
+The besteLampe! is open hardware and tries to follow the [Best Practices for Open Source Hardware 1.0](https://www.oshwa.org/sharing-best-practices/) from the Open Source Hardware Association (OSHWA).
 
 - The hardware design is licensed under [CERN-OHL-S v2](https://ohwr.org/cern_ohl_s_v2.txt) or any later version.
 - The software is licensed under [GNU General Public Licence v3.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) or later
