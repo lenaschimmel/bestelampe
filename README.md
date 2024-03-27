@@ -21,7 +21,7 @@ The first case involves more direct, manual control of a single lamp, and the se
 ## What makes ~~a good~~ the best lamp?
 These are the design goals of *besteLampe!* 
 
- - **Open** •  open hardware, open software, open protocols *(Attention: see at the very bottom)*
+ - **Free and Open** • open hardware, open software, open protocols
  - **State-of-the-art dimming** • Flicker free, smooth dimming, extremely wide contrast ratio (a.k.a "dim to zero"), independent dimming of color and brightness. (See  ["The problem with driving LEDs with PWM"](https://codeinsecurity.wordpress.com/2023/07/17/the-problem-with-driving-leds-with-pwm/) by Graham to understand what's so hard about that.)
  - **Premium color control** • Use as many color channels as needed to extend the color gamut and achieve good color quality in a reasonable range of colors. (See [the wiki page "Colors"](https://github.com/lenaschimmel/bestelampe/wiki/Colors) for the complexities involved)
  - **Smart, but not smart-ass** • Offers a wide range of wireless connection option, but is also a good, usable device when it's only connection is to the power grid.
