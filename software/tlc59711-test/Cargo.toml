@@ -28,7 +28,8 @@ esp-idf-sys = "0.34.0"
 esp-idf-hal = "0.43.0"
 esp-idf-svc = { version = "0.48.0", default-features = true }
 embedded-svc = { version = "0.26.4" }
-embedded-hal = "0.2.7"
+embedded-hal = "1.0.0"
+veml6040 = { path = "../veml6040-rs" }
 
 anyhow = "1.0.76"
 log = { version = "0.4", default-features = false }
