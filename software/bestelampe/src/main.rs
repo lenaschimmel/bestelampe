@@ -100,7 +100,7 @@ fn main() -> ! {
             peripherals.pins.gpio17.into(), 
             peripherals.pins.gpio16.into(), 
             peripherals.uart1,
-            light_brightness_target_clone_for_presence);
+            light_brightness_target_clone_for_presence).unwrap();
         warn!("Presence senspr has ended :(");
     });
     

@@ -131,19 +131,19 @@ impl<'p> Pwm<'p> {
 		// 4 LEDs active at all times, I could use up to 2 drivers for non-LED pins.
 
 
-		let led_r  = Rc::new(RefCell::new(Led::new(0, "R", driver_0, 0.630, 0.295,  25.0)));
-		let led_g  = Rc::new(RefCell::new(Led::new(1,  "G", driver_1, 0.153, 0.682,  48.0)));
-		let led_b  = Rc::new(RefCell::new(Led::new(2,  "B", driver_2, 0.146, 0.058,  48.0)));
-		let led_cw = Rc::new(RefCell::new(Led::new(3, "CW", driver_3, 0.317, 0.318,  40.0)));
-		let led_ww = Rc::new(RefCell::new(Led::new(4, "WW", driver_4, 0.485, 0.394,  29.0)));
-		let led_a  = Rc::new(RefCell::new(Led::new(5,  "A", driver_5, 0.573, 0.421, 110.0)));
+		let led_r  = Rc::new(RefCell::new(Led::new(0, "R", driver_0, 0.630, 0.295,   416.0)));
+		let led_g  = Rc::new(RefCell::new(Led::new(1, "G", driver_1, 0.153, 0.682,   393.0)));
+		let led_b  = Rc::new(RefCell::new(Led::new(2, "B", driver_2, 0.146, 0.058,   241.0)));
+		let led_ww = Rc::new(RefCell::new(Led::new(3,"WW", driver_3, 0.485, 0.394,  1080.0)));
+		let led_cw = Rc::new(RefCell::new(Led::new(4,"CW", driver_4, 0.317, 0.318,  1134.0)));
+		let led_a  = Rc::new(RefCell::new(Led::new(5, "A", driver_5, 0.573, 0.421,   366.0)));
 
 		let leds: Vec<Rc<RefCell<Led<'_>>>> = [
 			led_r.clone(),
 			led_g.clone(),
 			led_b.clone(),
-			led_cw.clone(),
 			led_ww.clone(),
+			led_cw.clone(),
 			led_a.clone(),
 		].to_vec();
 

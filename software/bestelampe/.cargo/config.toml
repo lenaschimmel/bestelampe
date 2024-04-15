@@ -13,5 +13,5 @@ build-std = ["std", "panic_abort"]
 [env]
 MCU="esp32c6"
 # Note: this variable is not used by the pio builder (`cargo build --features pio`)
-ESP_IDF_VERSION = "v5.1.1"
-ESP_IDF_TOOLS_INSTALL_DIR = { value = "global" } # so that this project won't contain another copy of the ESP IDF
+ESP_IDF_VERSION = "v5.1.3"
+#ESP_IDF_TOOLS_INSTALL_DIR = { value = "global" } # so that this project won't contain another copy of the ESP IDF

@@ -1,4 +1,0 @@
-[toolchain]
-channel = "esp"
-#channel = "nightly"
-components = ["rust-src"]

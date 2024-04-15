@@ -27,33 +27,20 @@ use std::sync::{Arc, RwLock};
 #[named]
 pub fn test_ota(
     update_requested: Arc<RwLock<bool>>,
-) -> Result<()> {
-    let buf = vec![0; 512];
-
-    /*
-
-
-    let mut client = Client::<EspHttpConnection>::wrap(&mut http_connection);
-    let headers = [("accept", "text/plain")];
-    */
-    
+) -> Result<()> {  
     let url = "http://192.168.1.21:8000/esp32c6.upd";
     
-    //let url = "http://shininggrandinnermorning.neverssl.com/online/";
-
     let mut client = EspHttpConnection::new(&Configuration {
         crt_bundle_attach: Some(esp_idf_sys::esp_crt_bundle_attach),
         ..Default::default()
     })
     .expect("creation of EspHttpConnection should have worked");
 
-
-
     loop {
         if *(update_requested.read().unwrap()) {
 
 
-            let resp = match client.initiate_request(
+            let _resp = match client.initiate_request(
                 esp_idf_svc::http::Method::Get,
                 url,
                 &[],

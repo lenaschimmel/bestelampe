@@ -31,6 +31,11 @@ struct FormData {
     speed: f32,
 }
 
+#[derive(Deserialize)]
+struct FormDataChannels {
+    channels: [u16; 12],
+}
+
 static INDEX_HTML: &str = include_str!("../http_server_page.html");
 
 // Max payload length
@@ -57,6 +62,37 @@ pub fn run_server(
     server.fn_handler::<anyhow::Error, _>("/", Method::Get, |req| {
         req.into_ok_response()?.write_all(INDEX_HTML.as_bytes()).map(|_| ())?;
         return Ok(());
+    })?;
+
+
+    server.fn_handler::<anyhow::Error, _>("/channels", Method::Get, |mut req| {
+        let len = req.header("Content-Length") .and_then(|v| v.parse::<u64>().ok()).unwrap_or(0) as usize;
+
+        if len > MAX_LEN {
+            req.into_status_response(413)?
+                .write_all("Request too big".as_bytes())?;
+            return Ok(());
+        }
+
+        let mut buf = vec![0; len];
+        req.read_exact(&mut buf)?;
+        let mut resp = req.into_ok_response()?;
+
+        if let Ok(form) = serde_json::from_slice::<FormDataChannels>(&buf) {
+            warn!(target: function_name!(),
+                ": Got an HTTP request to set the channels to {:?}, but that is not yet implemented.",
+                form.channels
+            );
+            write!(
+                resp,
+                "WARNING: Got an HTTP request to set the channels to {:?}, but that is not yet implemented.",
+                form.channels
+            )?;
+        } else {
+            resp.write_all("JSON error".as_bytes())?;
+        }
+
+        Ok(())
     })?;
 
     server.fn_handler::<anyhow::Error, _>("/post", Method::Post, |mut req| {
@@ -88,7 +124,7 @@ pub fn run_server(
         Ok(())
     })?;
 
-    server.fn_handler::<anyhow::Error, _>("/ota/start", Method::Post, |mut req| {
+    server.fn_handler::<anyhow::Error, _>("/ota/start", Method::Post, |req| {
         info!(target: function_name!(), "Got ota start request.");
         *update_requested.write().unwrap() = true;
         let mut resp = req.into_ok_response()?;

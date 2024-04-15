@@ -58,7 +58,6 @@ pub fn test_leds(
     info!(target: function_name!(), "Before LED main loop...");
     std::thread::sleep(core::time::Duration::from_millis(50));
     
-    let mut time: f32 = 0.0;
     let mut pwm = Pwm::new(
         driver_0,
         driver_1,
@@ -78,8 +77,7 @@ pub fn test_leds(
 
     let mut count: i32 = 0;
     loop {
-        std::thread::sleep(core::time::Duration::from_millis(50));
-        time += 50.0;
+        std::thread::sleep(core::time::Duration::from_millis(10));
         count += 1;
         
         {
