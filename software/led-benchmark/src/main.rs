@@ -38,7 +38,6 @@ use embedded_hal_bus::{
 };
 
 use std::{
-    io::{stdin, stdout},
     time::Duration,
     ptr::null_mut,
     thread,
@@ -76,11 +75,11 @@ fn run_benchmark() -> anyhow::Result<()> {
     let peripherals = Peripherals::take()?;
 
     println!("Initialize the LED and LEDC for direct PWM output...");
-    let mut led_pin = peripherals.pins.gpio11;    
+    let led_pin = peripherals.pins.gpio11;    
     let ledc = peripherals.ledc;
     let mut timer_driver: LedcTimerDriver<'_> = LedcTimerDriver::new(
         ledc.timer0, 
-        &TimerConfig::default().frequency(2400.Hz().into()).resolution(esp_idf_hal::ledc::Resolution::Bits8)
+        &TimerConfig::default().frequency(2400.Hz().into()).resolution(esp_idf_hal::ledc::Resolution::Bits12)
     ).expect("Get LEDC timer.");
 
     let mut driver_0 = LedcDriver::new(ledc.channel0, &timer_driver, led_pin ).expect("Get LEDC driver.");
@@ -138,25 +137,51 @@ fn run_benchmark() -> anyhow::Result<()> {
     ina.init(Calibration::Calibration_32V_2A).unwrap();
     println!("Power sensor is initialized.");
 
+    println!("frequency; duty cycle; red; green; blue; white; temperature; voltage; current; power; efficiency");
 
-    for dc in [2,3,4,5,6,7,8,9,10,15,20,30,40,60,80,120,160,200,250] {
-        for frequency in [350, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600, 2800, 3000, 3500, 4000, 4500, 5000, 6000, 8000, 10000]{
-            timer_driver.set_frequency(Hertz(frequency as u32));
-            driver_0.set_duty_cycle(dc);
+    for dc in [1, 2,3,4,5,6,7,8,9,10,15,20,30,40,60,80,120,160,200,230,240,245,250,251,252,252,253,254,255] {
+   //     let frequency = 3000;
+        for frequency in [ 350, 400, 500, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600, 2800, 3000, 3500, 4000, 4500, 5000, 6000, 8000, 10000]{
+            timer_driver.set_frequency(Hertz(frequency as u32))?;
+            driver_0.set_duty_cycle(dc)?;
 
             thread::sleep(Duration::from_millis(10));
         
-            let mut sum: f32 = 0.0;
-            let mut count: f32 = 0.0;
-            for i in 1..10 {
+            let mut sum_r = 0.0;
+            let mut sum_g = 0.0;
+            let mut sum_b = 0.0;
+            let mut sum_w = 0.0;
+            let mut sum_voltage = 0.0;
+            let mut sum_current = 0.0;
+
+            thread::sleep(Duration::from_millis(100));
+
+            // The INA219 driver does not support multisampling, so I take many measurements and
+            // average them on the ESP.
+            // TODO use my own fork of the driver and enable multisampling.
+            
+            let mut light_count: f32 = 0.0;
+            let mut power_count: f32 = 0.0;
+            for i in 1..60 {
+                if i < 10 {
                 let result = light_sensor.read_absolute_retry();
-                if let Ok(measurement) = result {
-                    sum += measurement.white;
-                    count += 1.0;
+                    if let Ok(measurement) = result {
+                        sum_r += measurement.red;
+                        sum_g += measurement.green;
+                        sum_b += measurement.blue;
+                        sum_w += measurement.white;
+                        light_count += 1.0;
+                    }
+                    if i > 3 && light_count < 2.0 || i > 6 && light_count < 4.0 {
+                        break;
+                    }
                 }
-                if i > 3 && count < 2.0 || i > 6 && count < 4.0 {
-                    break;
-                }
+
+                sum_voltage += ina.getBusVoltage_V().unwrap();
+                sum_current += ina.getCurrent_mA().unwrap();    
+                power_count += 1.0;
+
+                thread::sleep(Duration::from_millis(3));
             }
 
 
@@ -165,18 +190,26 @@ fn run_benchmark() -> anyhow::Result<()> {
                 Err(_) => 0.0
             };
 
-            let brightness = if count > 7.0 {
-                sum / count
+            let brightness = if light_count > 7.0 {
+                (sum_r / light_count, sum_g / light_count, sum_b / light_count, sum_w / light_count)
             } else {
-                0.0
+                (0.0, 0.0, 0.0, 0.0)
             };
 
-            let voltage = ina.getBusVoltage_V().unwrap();
-            let current = ina.getCurrent_mA().unwrap();
+            let (voltage, current) = if power_count > 7.0 {
+                (sum_voltage / power_count, sum_current / power_count)
+            } else {
+                (0.0, 0.0)
+            };
 
-            println!("{}; {}; {}; {}; {} V; {} A", frequency, dc, brightness, temperature, voltage, current);
             
-            thread::sleep(Duration::from_millis(10));
+            println!("{}; {}; {}; {}; {}; {}; {}; {}; {}; {}; {}", frequency, dc, brightness.0, brightness.1, brightness.2, brightness.3, temperature, voltage, current, voltage * current, brightness.3 / (voltage * current + 0.01));        
+            
+            if voltage * current > 17_500.0 {
+                println!("Stopping measuement to keep the power supply safe.");
+                driver_0.set_duty_cycle(0)?;
+                return Ok(());
+            }
         }
     }
 
