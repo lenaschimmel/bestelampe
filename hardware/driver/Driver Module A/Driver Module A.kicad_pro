@@ -556,6 +556,12 @@
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Model",
+          "name": "Model",
+          "show": false
         }
       ],
       "filter_string": "",

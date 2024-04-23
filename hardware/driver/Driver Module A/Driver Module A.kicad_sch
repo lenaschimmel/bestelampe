@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "besteLampe! Driver Module A")
-		(date "2024-04-12")
-		(rev "1.0")
+		(date "2024-04-23")
+		(rev "1.1")
 		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
 		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
 		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
@@ -1654,6 +1654,12 @@
 		(uuid "06b5690a-fc8a-46c2-a025-ab1900cd3555")
 	)
 	(junction
+		(at 106.045 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c4ebfa9-0220-4fe9-b73d-31a7aaaa63be")
+	)
+	(junction
 		(at 172.085 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1712,12 +1718,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "89f6a1c4-881c-4aec-8d53-e48a89c4fa6d")
-	)
-	(junction
-		(at 106.045 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8ee6cc45-c70b-4514-8c0f-0bccd5d73bc9")
 	)
 	(junction
 		(at 50.165 65.405)
@@ -1779,7 +1779,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.045 45.72) (xy 106.045 48.26)
+			(xy 106.045 41.91) (xy 106.045 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1976,16 +1976,6 @@
 			(type default)
 		)
 		(uuid "6b598ff4-c616-4fec-a746-a12851d2e390")
-	)
-	(wire
-		(pts
-			(xy 106.045 41.91) (xy 106.045 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70dbf467-b2ab-431f-84c9-184ad97ac840")
 	)
 	(wire
 		(pts
@@ -2387,6 +2377,16 @@
 		)
 		(uuid "fc2200e3-c5db-4491-97ba-3825581e522c")
 	)
+	(text "open hardware"
+		(exclude_from_sim no)
+		(at 130.175 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "89fb0ee7-72c7-4563-9238-f765a76932fb")
+	)
 	(label "LED-"
 		(at 173.355 93.345 0)
 		(fields_autoplaced yes)
@@ -2410,7 +2410,7 @@
 		(uuid "cfc588c5-27a5-4d53-afae-633fcc2f44b9")
 	)
 	(label "Dim"
-		(at 91.44 74.93 0)
+		(at 92.71 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2433,16 +2433,16 @@
 	)
 	(symbol
 		(lib_id "Graphic:Logo_Open_Hardware_Small")
-		(at 173.99 111.76 0)
+		(at 130.175 175.26 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07ada401-c577-444a-b552-4cb71a2dc4bd")
 		(property "Reference" "#SYM1"
-			(at 173.99 104.775 0)
+			(at 130.175 168.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2451,7 +2451,7 @@
 			)
 		)
 		(property "Value" "Logo_Open_Hardware_Small"
-			(at 173.99 117.475 0)
+			(at 130.175 180.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2460,7 +2460,7 @@
 			)
 		)
 		(property "Footprint" "Symbol:OSHW-Logo_5.7x6mm_SilkScreen"
-			(at 173.99 111.76 0)
+			(at 130.175 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2469,7 +2469,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 173.99 111.76 0)
+			(at 130.175 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2478,16 +2478,7 @@
 			)
 		)
 		(property "Description" "Open Hardware logo, small"
-			(at 173.99 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 173.99 111.76 0)
+			(at 130.175 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2506,16 +2497,15 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 106.045 45.72 270)
+		(at 106.045 48.26 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "09fe9f3c-8ecb-443c-8069-5165025d4047")
 		(property "Reference" "TP3"
-			(at 111.125 44.4499 90)
+			(at 111.125 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2524,7 +2514,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 111.125 46.9899 90)
+			(at 111.125 49.5299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2534,7 +2524,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
-			(at 106.045 50.8 0)
+			(at 106.045 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2543,7 +2533,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 106.045 50.8 0)
+			(at 106.045 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2552,7 +2542,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 106.045 45.72 0)
+			(at 106.045 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2646,10 +2636,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "181e9c73-d821-4d58-ae78-0cc5c8aa915b")
 		(property "Reference" "TP5"
-			(at 96.52 76.9619 0)
+			(at 92.71 80.645 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2715,10 +2704,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1ff8971d-b56b-4f4a-a503-d65f36212538")
 		(property "Reference" "J2"
-			(at 178.435 80.6449 0)
+			(at 178.435 81.915 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2788,7 +2776,7 @@
 		(dnp no)
 		(uuid "31217222-8f5f-46bc-b4b7-42e78a322c6f")
 		(property "Reference" "J4"
-			(at 66.04 71.1201 90)
+			(at 62.23 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2856,7 +2844,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "348d2939-ae7a-4998-962a-7ad634fa4b6e")
 		(property "Reference" "R3"
 			(at 161.29 99.0599 0)
@@ -2904,6 +2891,14 @@
 				(hide yes)
 			)
 		)
+		(property "AltName" "Rsense"
+			(at 165.1 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f8977b03-e605-4d58-8a18-3f44d2e285c6")
 		)
@@ -2921,7 +2916,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 189.865 114.935 0)
+		(at 249.555 41.275 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -2930,7 +2925,7 @@
 		(fields_autoplaced yes)
 		(uuid "361a81e3-4dd2-4f3a-a070-ef9031b2b081")
 		(property "Reference" "H2"
-			(at 193.04 113.6649 0)
+			(at 252.73 40.0049 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2940,7 +2935,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 193.04 116.2049 0)
+			(at 252.73 42.5449 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2950,7 +2945,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 189.865 114.935 0)
+			(at 249.555 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2959,7 +2954,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 189.865 114.935 0)
+			(at 249.555 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2968,7 +2963,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 189.865 114.935 0)
+			(at 249.555 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2993,10 +2988,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3f928937-556f-40b0-9d0a-6185fdd595bd")
 		(property "Reference" "TP2"
-			(at 177.165 86.9949 90)
+			(at 177.165 88.265 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3127,10 +3121,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "43a1c90a-a94f-4cf2-94bf-b6c2603ebc23")
 		(property "Reference" "TP1"
-			(at 177.165 73.6599 90)
+			(at 177.165 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3195,10 +3188,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4afe47ff-13e2-45d5-bcb0-db2942bb0343")
 		(property "Reference" "TP4"
-			(at 133.35 80.0099 90)
+			(at 132.715 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3264,10 +3256,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "500a3c0f-91fa-4127-987b-1efa65814279")
 		(property "Reference" "J1"
-			(at 66.04 52.7049 90)
+			(at 62.23 51.435 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3401,10 +3392,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "602ffb7a-edcd-43af-afdd-fc7fc0e2c25d")
 		(property "Reference" "R1"
-			(at 104.14 67.31 90)
+			(at 99.06 70.485 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3412,7 +3402,7 @@
 			)
 		)
 		(property "Value" "68kR"
-			(at 104.14 69.85 90)
+			(at 98.425 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3463,7 +3453,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 189.865 109.855 0)
+		(at 249.555 36.195 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -3472,7 +3462,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d3abc88-3e68-498d-8c81-59f02d57c51e")
 		(property "Reference" "H1"
-			(at 193.04 108.5849 0)
+			(at 252.73 34.9249 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3482,7 +3472,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 193.04 111.1249 0)
+			(at 252.73 37.4649 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3492,7 +3482,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 189.865 109.855 0)
+			(at 249.555 36.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3501,7 +3491,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 189.865 109.855 0)
+			(at 249.555 36.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3510,7 +3500,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 189.865 109.855 0)
+			(at 249.555 36.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3611,13 +3601,12 @@
 			)
 		)
 		(property "Value" "2.2uF"
-			(at 170.18 81.915 90)
+			(at 163.195 84.455 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
@@ -3736,10 +3725,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "87606ce1-abed-4fe9-bec3-8790f631e1ed")
 		(property "Reference" "D1"
-			(at 148.59 74.0409 90)
+			(at 149.86 75.565 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3888,13 +3876,12 @@
 				)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "4.7uF"
 			(at 95.2563 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
@@ -3956,14 +3943,13 @@
 				)
 			)
 		)
-		(property "Value" "C_Small"
-			(at 125.73 80.645 90)
+		(property "Value" "0.1uF"
+			(at 124.46 82.55 90)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
@@ -4082,10 +4068,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b2e5c77b-4102-4c58-ad91-3a9de3525950")
 		(property "Reference" "L1"
-			(at 152.4 63.5 90)
+			(at 152.4 66.675 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4160,23 +4145,21 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b8d21e2b-fb36-4ef8-89fe-5be90e7810cd")
 		(property "Reference" "C2"
-			(at 95.2563 44.45 90)
+			(at 95.25 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "47 uF"
 			(at 95.2563 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
@@ -4238,13 +4221,12 @@
 				)
 			)
 		)
-		(property "Value" "C_Small"
-			(at 138.4363 68.58 90)
+		(property "Value" "0.1uF"
+			(at 138.43 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
@@ -4299,12 +4281,11 @@
 		(dnp no)
 		(uuid "cb5ec2d3-b2f1-4c41-9858-b7cf492cc5a2")
 		(property "Reference" "U1"
-			(at 106.045 60.325 0)
+			(at 116.84 65.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "~"
@@ -4452,10 +4433,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "eeeaad61-c917-493a-b31b-f960bca2dabe")
 		(property "Reference" "J3"
-			(at 86.995 69.85 0)
+			(at 86.36 73.025 0)
 			(effects
 				(font
 					(size 1.27 1.27)
