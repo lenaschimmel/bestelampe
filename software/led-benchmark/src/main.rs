@@ -137,11 +137,35 @@ fn run_benchmark() -> anyhow::Result<()> {
     ina.init(Calibration::Calibration_32V_2A).unwrap();
     println!("Power sensor is initialized.");
 
-    println!("frequency; duty cycle; red; green; blue; white; temperature; voltage; current; power; efficiency");
+    println!("header; frequency; duty cycle; red; green; blue; white; temperature; voltage; current; power; efficiency");
 
-    for dc in [1, 2,3,4,5,6,7,8,9,10,15,20,30,40,60,80,120,160,200,230,240,245,250,251,252,252,253,254,255] {
-   //     let frequency = 3000;
-        for frequency in [ 350, 400, 500, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600, 2800, 3000, 3500, 4000, 4500, 5000, 6000, 8000, 10000]{
+    for frequency in (1_000..10_001).step_by(500) {
+        let mut dc = 0;
+        loop {
+            if dc < 40 {
+                dc += 1;
+            } else if dc < 64 {
+                dc += 2;
+            } else if dc < 128 {
+                dc += 4;
+            } else if dc < 256 {
+                dc += 8;
+            } else if dc < 512 {
+                dc += 16;
+            } else if dc < 1024 {
+                dc += 32;
+            } else if dc < 2048 {
+                dc += 64;
+            } else {
+                dc += 128;
+            }
+
+            if dc > 4095 {
+                break;
+            }
+
+        
+
             timer_driver.set_frequency(Hertz(frequency as u32))?;
             driver_0.set_duty_cycle(dc)?;
 
@@ -203,13 +227,13 @@ fn run_benchmark() -> anyhow::Result<()> {
             };
 
             
-            println!("{}; {}; {}; {}; {}; {}; {}; {}; {}; {}; {}", frequency, dc, brightness.0, brightness.1, brightness.2, brightness.3, temperature, voltage, current, voltage * current, brightness.3 / (voltage * current + 0.01));        
+            println!("line; {}; {}; {}; {}; {}; {}; {}; {}; {}; {}; {}", frequency, dc, brightness.0, brightness.1, brightness.2, brightness.3, temperature, voltage, current, voltage * current, brightness.3 / (voltage * current + 0.01));        
             
             if voltage * current > 17_500.0 {
-                println!("Stopping measuement to keep the power supply safe.");
+                println!("Stopping measuement (at this frequency) to keep the power supply safe.");
                 driver_0.set_duty_cycle(0)?;
-                return Ok(());
-            }
+                break;
+            }   
         }
     }
 
