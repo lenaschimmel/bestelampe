@@ -47,4 +47,4 @@ Originally, this module should have a barrel jack connector to allow larger curr
 
  - somehow get your custom voltage onto a USB-C plug
  - use pin 21 and 22 on the pin header
- - use the through-hole test pad `VLED` (which was still named `+4V` on my first production run)
+ - use the through-hole test pad `VLED` (which was still named `+4V` on v1.0)

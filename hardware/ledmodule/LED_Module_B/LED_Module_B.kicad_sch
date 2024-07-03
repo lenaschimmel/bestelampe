@@ -3,6 +3,14 @@
   (uuid 064d0045-1b87-4e2a-b244-94f48f90e2b8)
 
   (paper "A4")
+  (title_block
+		(title "besteLampe! LED Module B")
+		(date "2024-03-16")
+		(rev "1.0")
+		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
+		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
+		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
+	)
 
   (lib_symbols
     (symbol "Connector_Generic:Conn_01x10" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)

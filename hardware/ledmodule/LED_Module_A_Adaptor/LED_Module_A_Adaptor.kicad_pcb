@@ -8,8 +8,13 @@
 	)
 	(paper "A4")
 	(title_block
+		(title "besteLampe! LED Module A Adaptor")
 		(date "2024-04-22")
 		(rev "v2")
+		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
+		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
+		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
+		(comment 4 "Design for JLCPCB 1-2 Layer Service")
 	)
 	(layers
 		(0 "F.Cu" signal)

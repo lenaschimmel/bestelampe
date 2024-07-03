@@ -4,6 +4,14 @@
 	(generator_version "8.0")
 	(uuid "271a71a9-d0cc-4466-ad75-113fb931f3c8")
 	(paper "A4")
+	(title_block
+		(title "besteLampe! LED Module D")
+		(date "2024-05-05")
+		(rev "1.1")
+		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
+		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
+		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
+	)
 	(lib_symbols
 		(symbol "74xx:74HCT244"
 			(exclude_from_sim no)
