@@ -20,5 +20,6 @@ Later I experimented a lot with different LEDs, reflectors, lenses, PWM generato
 
  * Module C is a testing module for a novel approach with 1 to 3 high-power LEDs per channel, and needs to be driven by a PWM-capable constand-current driver that does not yet exist. Compatibility with Main Module v1 is still unclear. It was mostly tested with low currents (60mA per LED) and worked very vell, but high-current testing is still needed.
  * Module D is a failed attempt. Do not use.
+ * Module E is a heavily modified version of Module D, which (hopefully) works better.
 
 It's still unclear how the future connector between a main module and LED module(s) will look like...
