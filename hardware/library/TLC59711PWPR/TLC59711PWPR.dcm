@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TLC59711PWPR
+D 12-Channel, 16-Bit, ES-PWM RGB LED Driver with 3.3V Linear Regulator and Watchdog Timer
+K
+F http://www.ti.com/lit/gpn/tlc59711
+$ENDCMP
+#
+#End Doc Library
