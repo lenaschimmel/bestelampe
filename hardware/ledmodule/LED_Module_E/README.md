@@ -47,4 +47,5 @@ Originally, this module should have a barrel jack connector to allow larger curr
 
  - somehow get your custom voltage onto a USB-C plug
  - use pin 21 and 22 on the pin header
+   - you can use the [LED Module E Adaptor](../LED_Module_E_Adaptor/) to inject the voltage using a screw terminal
  - use the through-hole test pad `VLED` (which was still named `+4V` on v1.0)
