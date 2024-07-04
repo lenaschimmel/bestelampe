@@ -7,7 +7,7 @@
 	(title_block
 		(title "besteLampe! LED Module E Adaptor")
 		(date "2024-07-02")
-		(rev "1.0")
+		(rev "1.1")
 		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
 		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
 		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
@@ -6325,7 +6325,7 @@
 		(lib_id "Graphic:Logo_Open_Hardware_Large")
 		(at 172.72 142.24 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -6368,15 +6368,6 @@
 			)
 		)
 		(property "Description" "Open Hardware logo, large"
-			(at 172.72 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 172.72 142.24 0)
 			(effects
 				(font

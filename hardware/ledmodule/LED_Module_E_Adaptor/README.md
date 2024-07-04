@@ -16,3 +16,10 @@ The four pads of `J4` are hooked up to VLED on the adaptor board, but there are 
 It's currently hard for me to find cable connectors with 2x11 pins. I could easily buy connectors with 2x13 pins though. For the through hole pads on the adaptor board, it's mandatory to have some extra holes to solder in the larger connector. On the LED modules, I use an SMD connector and don't have this problem.
 
 Connecting the four extra pins to `VLED` is just future-proofing for later LED modules which might actually have a 2x13 connector.
+
+### Revision 1.1
+In the initial v1.0, the GND copper planes were very fragmented on both layers. If you would use the screw terminal `J5` Adaptor to supply `VLED`, the return current might be rather suboptimal.
+
+So in v1.1, many tracks are re-routed to make better connections between `J5` and the GND pins on `J3`.
+
+The extra pads for 3.3V and 5V have also swapped their positions.
