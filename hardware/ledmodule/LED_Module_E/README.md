@@ -11,9 +11,9 @@ This LED module features 10 small, high-powered Cree XLamp Element LEDs on its s
 ### Important parts
  - CD74HCT244 as an 8-channel driver for the MOSFETs
  - optional pull-down resistors for the inputs and/or outputs of the CD74HCT244
- - MOSFETs
+ - 10 MOSFETs, type Si3456DDV
  - large series resistors
- - temperature sensor
+ - temperature sensor TMP1075 DSG/WSON
  - small EPROM for identification
 
 ### Improvements from Module D
