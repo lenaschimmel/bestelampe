@@ -4440,6 +4440,12 @@
 		(uuid "f60be7f1-7d4b-48df-beb7-40451b6a557c")
 	)
 	(junction
+		(at 146.05 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8c49168-ccea-4e82-8878-10af3a0a9568")
+	)
+	(junction
 		(at 226.06 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4847,6 +4853,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 76.2) (xy 146.05 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1daaadd1-134b-49be-b2bd-e7f761dd7ddc")
+	)
+	(wire
+		(pts
 			(xy 171.45 50.165) (xy 171.45 51.435)
 		)
 		(stroke
@@ -5154,6 +5170,16 @@
 			(type default)
 		)
 		(uuid "391f4eb5-02e0-4a5b-b418-a95a540f574d")
+	)
+	(wire
+		(pts
+			(xy 146.05 76.2) (xy 146.05 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39964b4c-4721-4132-acd9-3a9f839118dd")
 	)
 	(wire
 		(pts
@@ -6177,16 +6203,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.795 82.55) (xy 137.795 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e4a3dd2-83da-419e-a71a-8929f871f1e6")
-	)
-	(wire
-		(pts
 			(xy 67.31 76.2) (xy 81.915 76.2)
 		)
 		(stroke
@@ -6927,16 +6943,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 82.55) (xy 137.795 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c546cd27-c6e3-441e-8651-ad1ece3d5f02")
-	)
-	(wire
-		(pts
 			(xy 203.2 111.76) (xy 219.71 111.76)
 		)
 		(stroke
@@ -7014,16 +7020,6 @@
 			(type default)
 		)
 		(uuid "cc515fa6-7a98-4e5e-9efe-4c27d09c2823")
-	)
-	(wire
-		(pts
-			(xy 143.51 71.12) (xy 143.51 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc905623-62b6-4662-8a8e-0de0491cd55b")
 	)
 	(wire
 		(pts
@@ -7204,6 +7200,16 @@
 			(type default)
 		)
 		(uuid "d8bf830d-9590-4d0e-a457-3f1293224258")
+	)
+	(wire
+		(pts
+			(xy 143.51 71.12) (xy 143.51 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db0f9e97-b014-44ce-a7ed-cce0f61b7fdd")
 	)
 	(wire
 		(pts
@@ -7467,7 +7473,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 71.12) (xy 146.05 73.025)
+			(xy 146.05 71.12) (xy 146.05 76.2)
 		)
 		(stroke
 			(width 0)
@@ -8783,7 +8789,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 209.5499 136.525 0)
 			(effects
 				(font
@@ -9080,7 +9086,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 150.495 134.6199 0)
 			(effects
 				(font
@@ -9403,7 +9409,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 153.67 134.6199 0)
 			(effects
 				(font
@@ -9577,72 +9583,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+4V")
-		(at 137.795 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2361fe2a-dfd0-455d-9c98-4cc215f0589e")
-		(property "Reference" "#PWR017"
-			(at 137.795 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+4V"
-			(at 137.795 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.795 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.795 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+4V\""
-			(at 137.795 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6aa1e11b-1f2f-4fbb-81d9-b645eecb0e86")
-		)
-		(instances
-			(project "LED_Module_E"
-				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 76.2 116.84 90)
 		(unit 1)
@@ -9756,7 +9696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 168.91 90.8049 0)
 			(effects
 				(font
@@ -9855,7 +9795,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 234.95 134.6199 0)
 			(effects
 				(font
@@ -10142,7 +10082,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 166.37 134.6199 0)
 			(effects
 				(font
@@ -10467,7 +10407,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 228.6 134.6199 0)
 			(effects
 				(font
@@ -11554,7 +11494,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 165.735 90.8049 0)
 			(effects
 				(font
@@ -11843,7 +11783,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 162.56 90.8049 0)
 			(effects
 				(font
@@ -12614,7 +12554,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 238.125 134.6199 0)
 			(effects
 				(font
@@ -13195,7 +13135,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 146.05 73.025 0)
+		(at 146.05 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13204,7 +13144,7 @@
 		(fields_autoplaced yes)
 		(uuid "7eb32670-5664-4a63-8de2-2834eddda154")
 		(property "Reference" "#PWR01"
-			(at 146.05 79.375 0)
+			(at 146.05 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13213,7 +13153,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 146.05 78.105 0)
+			(at 146.05 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13222,7 +13162,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 73.025 0)
+			(at 146.05 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13231,7 +13171,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 73.025 0)
+			(at 146.05 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13240,7 +13180,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 146.05 73.025 0)
+			(at 146.05 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13280,7 +13220,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 225.425 134.6199 0)
 			(effects
 				(font
@@ -13379,7 +13319,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 144.145 134.6199 0)
 			(effects
 				(font
@@ -14243,7 +14183,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 160.02 134.6199 0)
 			(effects
 				(font
@@ -14342,7 +14282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 222.25 134.6199 0)
 			(effects
 				(font
@@ -15128,7 +15068,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 147.32 134.6199 0)
 			(effects
 				(font
@@ -15378,7 +15318,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 156.845 134.6199 0)
 			(effects
 				(font
@@ -16089,7 +16029,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 219.075 134.6199 0)
 			(effects
 				(font
@@ -16254,7 +16194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 163.195 134.6199 0)
 			(effects
 				(font
@@ -16813,7 +16753,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 231.775 134.6199 0)
 			(effects
 				(font
@@ -18909,7 +18849,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "2740R"
 			(at 241.3 134.6199 0)
 			(effects
 				(font
