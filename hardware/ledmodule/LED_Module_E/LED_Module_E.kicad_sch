@@ -3694,12 +3694,6 @@
 		)
 	)
 	(junction
-		(at 260.985 94.615)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0357501d-b070-4bb2-8baf-4cbad2770125")
-	)
-	(junction
 		(at 243.84 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3838,6 +3832,12 @@
 		(uuid "45322e84-1451-433e-ac99-b7db0e01809b")
 	)
 	(junction
+		(at 269.24 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a4bf8d9-90bb-4f6c-844b-fc4f50405bd2")
+	)
+	(junction
 		(at 36.83 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3848,6 +3848,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "510315ce-ebc2-4251-bed8-a32a6bca71e4")
+	)
+	(junction
+		(at 227.33 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5fb920bd-7a5e-4fb0-9544-2b472ab9bcaf")
 	)
 	(junction
 		(at 189.865 121.92)
@@ -3898,12 +3904,6 @@
 		(uuid "7550c3d4-671e-4cb8-b8c3-698d0d99c446")
 	)
 	(junction
-		(at 227.33 99.695)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "766ec7c9-c0dd-44de-af90-fdaf72d15415")
-	)
-	(junction
 		(at 36.83 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3944,6 +3944,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8cd213b2-4a5b-48f2-9b98-a8d4a7b2b5e6")
+	)
+	(junction
+		(at 269.24 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d0b76e3-a8e9-448e-a385-9a19dfe23183")
 	)
 	(junction
 		(at 36.83 76.2)
@@ -4060,6 +4066,12 @@
 		(uuid "d68b0a24-cb84-479d-9cce-21b137297458")
 	)
 	(junction
+		(at 227.33 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d8199758-6916-4d16-823f-4208cef34a20")
+	)
+	(junction
 		(at 36.83 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4154,18 +4166,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fedd23cd-69ef-4961-ae94-8fe1e58f1c9d")
-	)
-	(junction
-		(at 260.985 97.155)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ff995054-47cc-41ae-9ea7-c4a58cf5da05")
-	)
-	(junction
-		(at 227.33 97.155)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ffd9f886-6b14-49ed-88ad-fc0278d0a7f6")
 	)
 	(wire
 		(pts
@@ -4336,16 +4336,6 @@
 			(type default)
 		)
 		(uuid "0c06034f-182f-4ced-a637-30ad3526ac34")
-	)
-	(wire
-		(pts
-			(xy 227.33 97.155) (xy 227.33 99.695)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c3e3014-40f3-4d11-9a38-4ee8ed736827")
 	)
 	(wire
 		(pts
@@ -4669,27 +4659,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 99.695) (xy 260.985 99.695)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "298d91d7-df59-428a-ac8b-50baed423f67")
-	)
-	(wire
-		(pts
-			(xy 260.985 97.155) (xy 260.985 94.615)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a134aaf-2f0c-431b-bcd2-4291999704df")
-	)
-	(wire
-		(pts
-			(xy 256.54 94.615) (xy 260.985 94.615)
+			(xy 256.54 99.06) (xy 269.24 99.06)
 		)
 		(stroke
 			(width 0)
@@ -4796,16 +4766,6 @@
 			(type default)
 		)
 		(uuid "375a8f54-7d51-473c-972e-58c32f5603d3")
-	)
-	(wire
-		(pts
-			(xy 227.33 94.615) (xy 227.33 97.155)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37eb7c5c-72fc-4999-abde-7e803ec6c5cb")
 	)
 	(wire
 		(pts
@@ -4986,6 +4946,16 @@
 			(type default)
 		)
 		(uuid "448afa2d-ca47-4808-922f-6afc99ac4b1d")
+	)
+	(wire
+		(pts
+			(xy 269.24 93.98) (xy 269.24 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "459d7110-e94a-4f60-86a3-04263760b534")
 	)
 	(wire
 		(pts
@@ -5239,6 +5209,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 99.06) (xy 227.33 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fdb35b4-e0c5-4b02-a628-cd9bff7706c5")
+	)
+	(wire
+		(pts
 			(xy 275.59 121.92) (xy 275.59 124.46)
 		)
 		(stroke
@@ -5339,7 +5319,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 97.155) (xy 260.985 97.155)
+			(xy 256.54 96.52) (xy 269.24 96.52)
 		)
 		(stroke
 			(width 0)
@@ -5429,7 +5409,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.985 99.695) (xy 260.985 97.155)
+			(xy 269.24 93.98) (xy 269.24 96.52)
 		)
 		(stroke
 			(width 0)
@@ -6109,6 +6089,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 93.98) (xy 269.24 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8d0aa2c-e17f-4d8e-bc8d-594f053c55f4")
+	)
+	(wire
+		(pts
 			(xy 105.41 124.46) (xy 105.41 109.22)
 		)
 		(stroke
@@ -6179,7 +6169,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 102.235) (xy 236.22 102.235)
+			(xy 233.68 91.44) (xy 236.22 91.44)
 		)
 		(stroke
 			(width 0)
@@ -6189,7 +6179,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 97.155) (xy 227.33 97.155)
+			(xy 236.22 96.52) (xy 227.33 96.52)
 		)
 		(stroke
 			(width 0)
@@ -6329,16 +6319,6 @@
 	)
 	(wire
 		(pts
-			(xy 260.985 94.615) (xy 260.985 92.075)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb0374fb-4012-47f0-8f8f-f987b09296a7")
-	)
-	(wire
-		(pts
 			(xy 188.595 60.96) (xy 188.595 71.12)
 		)
 		(stroke
@@ -6409,7 +6389,17 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 99.695) (xy 227.33 99.695)
+			(xy 269.24 96.52) (xy 269.24 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf624fd1-45bf-4180-a6cb-9c657475c35c")
+	)
+	(wire
+		(pts
+			(xy 236.22 93.98) (xy 227.33 93.98)
 		)
 		(stroke
 			(width 0)
@@ -6429,7 +6419,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 99.695) (xy 227.33 100.965)
+			(xy 227.33 93.98) (xy 227.33 96.52)
 		)
 		(stroke
 			(width 0)
@@ -6536,6 +6526,16 @@
 			(type default)
 		)
 		(uuid "c7d747a8-1ad5-4c46-b2e1-b3f7b30614d5")
+	)
+	(wire
+		(pts
+			(xy 227.33 96.52) (xy 227.33 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7eab98e-cd33-416b-99c2-c393adab2fc0")
 	)
 	(wire
 		(pts
@@ -6669,7 +6669,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 102.235) (xy 261.62 106.68)
+			(xy 261.62 91.44) (xy 261.62 87.63)
 		)
 		(stroke
 			(width 0)
@@ -6679,7 +6679,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 102.235) (xy 261.62 102.235)
+			(xy 256.54 91.44) (xy 261.62 91.44)
 		)
 		(stroke
 			(width 0)
@@ -6779,7 +6779,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 107.315) (xy 233.68 102.235)
+			(xy 233.68 86.995) (xy 233.68 91.44)
 		)
 		(stroke
 			(width 0)
@@ -6949,7 +6949,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 94.615) (xy 227.33 94.615)
+			(xy 236.22 99.06) (xy 227.33 99.06)
 		)
 		(stroke
 			(width 0)
@@ -7275,7 +7275,7 @@
 		(uuid "78c904fd-5c9d-401f-beae-16436b4c3464")
 	)
 	(label "SCL"
-		(at 233.68 107.315 0)
+		(at 233.68 86.995 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7352,7 +7352,7 @@
 		(uuid "a5799924-f42c-49d7-a64a-aecfaebfa611")
 	)
 	(label "SDA"
-		(at 261.62 106.68 0)
+		(at 261.62 87.63 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8314,7 +8314,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "0b0cae02-eac1-47d3-998b-c34fb49c576c")
 		(property "Reference" "TP8"
 			(at 100.33 40.005 0)
@@ -8323,6 +8323,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -9076,6 +9077,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm"
@@ -9188,6 +9190,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm"
@@ -10320,7 +10323,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "29e38eee-b98f-4356-9b2f-eb88cf3cca62")
 		(property "Reference" "TP7"
 			(at 100.33 27.305 0)
@@ -10329,6 +10332,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -10645,7 +10649,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "2f9c6d3a-356f-4b04-89c6-a149496d63d7")
 		(property "Reference" "TP10"
 			(at 100.33 65.405 0)
@@ -10654,6 +10658,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -10839,7 +10844,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "42e77d20-c1aa-4b9a-8001-f63171ee281f")
 		(property "Reference" "TP14"
 			(at 100.33 116.205 0)
@@ -10848,6 +10853,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -11695,7 +11701,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 227.33 100.965 0)
+		(at 227.33 104.14 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11704,7 +11711,7 @@
 		(fields_autoplaced yes)
 		(uuid "5fcebecc-24f8-4d7d-810f-298b2aa02d3e")
 		(property "Reference" "#PWR017"
-			(at 227.33 107.315 0)
+			(at 227.33 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11713,15 +11720,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 227.33 106.045 0)
+			(at 229.87 105.4099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 227.33 100.965 0)
+			(at 227.33 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11730,7 +11738,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 100.965 0)
+			(at 227.33 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11739,7 +11747,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 227.33 100.965 0)
+			(at 227.33 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12278,7 +12286,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "6ed41f9c-fdfe-4eb6-8492-3189f8d22fb8")
 		(property "Reference" "TP13"
 			(at 100.33 102.235 0)
@@ -12287,6 +12295,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -12472,7 +12481,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "732252d2-1f0a-47bf-a19b-a378b19ab777")
 		(property "Reference" "TP11"
 			(at 100.33 76.835 0)
@@ -12481,6 +12490,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -13315,6 +13325,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm"
@@ -13745,6 +13756,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm"
@@ -14379,6 +14391,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm"
@@ -14533,7 +14546,8 @@
 	)
 	(symbol
 		(lib_id "power:+4V")
-		(at 260.985 92.075 0)
+		(at 269.24 88.9 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14542,7 +14556,7 @@
 		(fields_autoplaced yes)
 		(uuid "992fe444-a62c-4290-a575-7bf10296a1a1")
 		(property "Reference" "#PWR036"
-			(at 260.985 95.885 0)
+			(at 269.24 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14551,15 +14565,16 @@
 			)
 		)
 		(property "Value" "+4V"
-			(at 260.985 87.63 0)
+			(at 271.78 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 260.985 92.075 0)
+			(at 269.24 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14568,7 +14583,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.985 92.075 0)
+			(at 269.24 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14577,7 +14592,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+4V\""
-			(at 260.985 92.075 0)
+			(at 269.24 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15074,6 +15089,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm"
@@ -15252,6 +15268,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm"
@@ -15517,6 +15534,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm"
@@ -16122,7 +16140,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "c0dbcf4d-e25a-4761-8ff3-52216eaf1c1b")
 		(property "Reference" "TP12"
 			(at 100.33 90.805 0)
@@ -16131,6 +16149,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -16216,7 +16235,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "c2b75005-ab4b-4af5-b157-5e7b7dddbc6e")
 		(property "Reference" "TP3"
 			(at 109.855 164.465 0)
@@ -16225,6 +16244,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -16376,7 +16396,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "c5ac64bc-f415-4dcb-b7a8-df1f208e52a5")
 		(property "Reference" "TP5"
 			(at 121.285 164.465 0)
@@ -16385,6 +16405,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -16642,6 +16663,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm"
@@ -16929,7 +16951,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "cd01bee3-b151-42c6-96db-2bf2e72b2562")
 		(property "Reference" "TP9"
 			(at 100.33 52.705 0)
@@ -16938,6 +16960,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -17454,7 +17477,7 @@
 	)
 	(symbol
 		(lib_id "009159008603906:009159008603906")
-		(at 256.54 94.615 0)
+		(at 256.54 91.44 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17463,7 +17486,7 @@
 		(dnp no)
 		(uuid "db433bf1-7b17-4543-a64e-fd3134d07d73")
 		(property "Reference" "J3"
-			(at 246.38 87.63 0)
+			(at 246.38 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17471,7 +17494,7 @@
 			)
 		)
 		(property "Value" "009159008603906"
-			(at 246.38 90.17 0)
+			(at 246.38 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17479,7 +17502,7 @@
 			)
 		)
 		(property "Footprint" "009159008603906"
-			(at 240.03 189.535 0)
+			(at 240.03 186.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17489,7 +17512,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/9159-600.pdf"
-			(at 240.03 289.535 0)
+			(at 240.03 286.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17499,7 +17522,7 @@
 			)
 		)
 		(property "Description" "Standard Card Edge Connectors Dual Row Inverted Card Edge 2x4pos w/ Kapton"
-			(at 256.54 94.615 0)
+			(at 256.54 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17508,7 +17531,7 @@
 			)
 		)
 		(property "Height" "5.25"
-			(at 240.03 489.535 0)
+			(at 240.03 486.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17518,7 +17541,7 @@
 			)
 		)
 		(property "Mouser Part Number" "581-009159008603906"
-			(at 240.03 589.535 0)
+			(at 240.03 586.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17528,7 +17551,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/KYOCERA-AVX/009159008603906?qs=ST9lo4GX8V2gKYUgxLGO0Q%3D%3D"
-			(at 240.03 689.535 0)
+			(at 240.03 686.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17538,7 +17561,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Kyocera AVX"
-			(at 240.03 789.535 0)
+			(at 240.03 786.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17548,7 +17571,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "009159008603906"
-			(at 240.03 889.535 0)
+			(at 240.03 886.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17750,7 +17773,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "dfdcc417-fd75-4431-a826-8f7444420a1d")
 		(property "Reference" "TP2"
 			(at 104.14 164.465 0)
@@ -17759,6 +17782,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -17844,7 +17868,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "e2019527-c925-4361-9820-a390624d9430")
 		(property "Reference" "TP4"
 			(at 115.57 164.465 0)
@@ -17853,6 +17877,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -17938,7 +17963,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "e318407d-e08c-4ccc-876e-98ac40464cf2")
 		(property "Reference" "TP6"
 			(at 127 164.465 0)
@@ -17947,6 +17972,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -18409,7 +18435,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "f6910920-4016-4f39-88d2-40c154c53834")
 		(property "Reference" "TP1"
 			(at 99.06 164.465 0)
@@ -18418,6 +18444,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "TestPoint"
@@ -18963,6 +18990,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm"
