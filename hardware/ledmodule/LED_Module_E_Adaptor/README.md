@@ -8,7 +8,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 ## LED Module E Adaptor
 This was a quick and easy design, nothing fancy. The simple 2-layer board makes it easy to connect an ESP32-C6-DevKit-C1 to the LED Module E, and hook up a power source to `VLED`.
 
-It also adds two I2C ports as Grove connectors, one with 5V and the other one with 3.3V supply voltage. **Be careful with 5V though: This board has no level shifter and the ESP32 can't take 5V. Only use this port if you know what you are doing.
+It also adds two I2C ports as Grove connectors, one with 5V and the other one with 3.3V supply voltage. **Be careful with 5V though: This board has no level shifter and the ESP32 can't take 5V. Only use this port if you know what you are doing.**
 
 ### Connector J4
 The four pads of `J4` are hooked up to VLED on the adaptor board, but there are nor corresponding pins on the LED Module E. You might wonder: Why?
@@ -22,4 +22,4 @@ In the initial v1.0, the GND copper planes were very fragmented on both layers. 
 
 So in v1.1, many tracks are re-routed to make better connections between `J5` and the GND pins on `J3`.
 
-The extra pads for 3.3V and 5V have also swapped their positions.
+The extra pads for 3.3V and 5V have also swapped their positions (and are correctly labeled in both revisions).
