@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP VEML6040A3OG
+D Photo IC Sensors RGBW Clr Snsr w/I2C 16-Bit 2.5-3.6V
+K
+F https://www.vishay.com/docs/84276/veml6040.pdf
+$ENDCMP
+#
+#End Doc Library

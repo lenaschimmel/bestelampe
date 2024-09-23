@@ -12,7 +12,7 @@
 		(effects
 			(font
 				(size 0.8 0.8)
-				(thickness 0.254)
+				(thickness 0.2)
 			)
 		)
 	)
@@ -162,6 +162,17 @@
 		)
 		(rotate
 			(xyz 0 0 0)
+		)
+	)
+	(model "/Users/lena/bestelampe_repo/hardware/library/STEP-XLamp/XLamp XE-G.STEP"
+		(offset
+			(xyz 0 0 1)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 180)
 		)
 	)
 )
