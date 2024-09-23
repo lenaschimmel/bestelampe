@@ -7479,7 +7479,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0022faa8-56ae-4623-abb7-85a532675409")
 		(property "Reference" "R38"
 			(at 67.31 121.92 90)
@@ -7543,6 +7543,15 @@
 			)
 		)
 		(property "Ordered Previously" "95"
+			(at 67.31 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
 			(at 67.31 116.84 0)
 			(effects
 				(font
@@ -7726,7 +7735,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias"
+		(property "Footprint" "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm"
 			(at 202.565 67.31 0)
 			(effects
 				(font
@@ -7772,6 +7781,24 @@
 			)
 		)
 		(property "Ordered Previously" "10"
+			(at 200.66 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TMP1075DGKR"
+			(at 200.66 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2864807"
 			(at 200.66 60.96 0)
 			(effects
 				(font
@@ -8030,6 +8057,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "24AA02UIDT-I/OT"
+			(at 243.84 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C511274"
+			(at 243.84 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "120804dd-3858-49d7-98dc-c2d32dce3434")
 		)
@@ -8220,7 +8265,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0a851715-cf9f-414f-b9d0-df8d3375cc20")
 		(property "Reference" "R8"
 			(at 76.2 121.92 90)
@@ -8292,6 +8337,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" ""
+			(at 76.2 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "de75ebd5-4ab6-4562-81aa-61919f04c515")
 		)
@@ -8314,7 +8368,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0b0cae02-eac1-47d3-998b-c34fb49c576c")
 		(property "Reference" "TP8"
 			(at 100.33 40.005 0)
@@ -8502,7 +8556,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0eb3ad19-c5d1-4d8b-b4dd-d7b500aa2123")
 		(property "Reference" "R11"
 			(at 76.2 147.32 90)
@@ -8566,6 +8620,15 @@
 			)
 		)
 		(property "Ordered Previously" "95"
+			(at 76.2 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
 			(at 76.2 142.24 0)
 			(effects
 				(font
@@ -8731,6 +8794,24 @@
 			)
 		)
 		(property "Ordered Previously" "0"
+			(at 181.61 139.065 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 181.61 139.065 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
 			(at 181.61 139.065 0)
 			(effects
 				(font
@@ -9036,6 +9117,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 133.35 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
+			(at 133.35 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "88bd2a02-c02c-41ac-99aa-3aecae095aed")
 		)
@@ -9129,6 +9228,24 @@
 			)
 		)
 		(property "Ordered Previously" "100"
+			(at 95.25 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+			(at 95.25 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C145273"
 			(at 95.25 71.12 0)
 			(effects
 				(font
@@ -9250,6 +9367,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+			(at 95.25 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C145273"
+			(at 95.25 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "de70699b-9c61-437e-b6e6-34c5d4914a0a")
 		)
@@ -9361,6 +9496,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 135.89 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
+			(at 135.89 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b5c4a536-aecd-4a4a-8a9f-557bc7ec42e8")
 		)
@@ -9384,7 +9537,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "1a3ed6d7-2229-4e04-96f7-5dd7a341506c")
 		(property "Reference" "D12"
@@ -9537,7 +9690,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "201a658c-2995-4463-9926-16051dad4197")
 		(property "Reference" "D6"
@@ -9689,7 +9842,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "240cba7e-aca2-457a-bab4-09069d8460bc")
 		(property "Reference" "R6"
 			(at 76.2 96.52 90)
@@ -9761,6 +9914,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" ""
+			(at 76.2 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "855dc641-f5f9-4d66-ac61-a180bf908676")
 		)
@@ -9783,7 +9945,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "24cbbfa2-b030-4dd0-8040-4e7951e8fb4f")
 		(property "Reference" "R34"
 			(at 67.31 71.12 90)
@@ -9847,6 +10009,15 @@
 			)
 		)
 		(property "Ordered Previously" "95"
+			(at 67.31 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
 			(at 67.31 66.04 0)
 			(effects
 				(font
@@ -9946,6 +10117,24 @@
 			)
 		)
 		(property "Ordered Previously" "0"
+			(at 224.79 29.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 224.79 29.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
 			(at 224.79 29.845 0)
 			(effects
 				(font
@@ -10054,6 +10243,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 184.785 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
+			(at 184.785 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "659dea42-b1fa-423b-aa8c-f4b4bcf4c93e")
 		)
@@ -10076,7 +10283,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "27e62066-2354-484a-8920-6ef960314050")
 		(property "Reference" "R12"
 			(at 76.2 134.62 90)
@@ -10148,6 +10355,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" ""
+			(at 76.2 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9f354299-47c7-42d9-9491-639d29798875")
 		)
@@ -10171,7 +10387,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "298e810e-5f57-4249-a4c8-5570652f0ffc")
 		(property "Reference" "D7"
@@ -10323,7 +10539,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "29e38eee-b98f-4356-9b2f-eb88cf3cca62")
 		(property "Reference" "TP7"
 			(at 100.33 27.305 0)
@@ -10495,6 +10711,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 146.05 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
+			(at 146.05 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "14d2410b-4191-4e08-99d4-e3ce062db365")
 		)
@@ -10649,7 +10883,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "2f9c6d3a-356f-4b04-89c6-a149496d63d7")
 		(property "Reference" "TP10"
 			(at 100.33 65.405 0)
@@ -10822,6 +11056,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 184.785 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
+			(at 184.785 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1b38b241-d3b4-4459-a518-3a260b59b8e1")
 		)
@@ -10844,7 +11096,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "42e77d20-c1aa-4b9a-8001-f63171ee281f")
 		(property "Reference" "TP14"
 			(at 100.33 116.205 0)
@@ -10939,7 +11191,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "4565257b-eb09-4275-87b3-4009fefdbd32")
 		(property "Reference" "R37"
 			(at 67.31 109.22 90)
@@ -11011,6 +11263,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" ""
+			(at 67.31 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f12a97b8-037f-4901-8542-ebdd49099a79")
 		)
@@ -11034,7 +11295,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4b856cec-34fe-4a1b-bdec-9679a7d0dabd")
 		(property "Reference" "D1"
@@ -11395,6 +11656,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 221.615 29.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
+			(at 221.615 29.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c1022723-bd2c-4b69-9927-84cfc1afd45b")
 		)
@@ -11684,6 +11963,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 218.44 29.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
+			(at 218.44 29.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ae44e8d6-0957-415a-ae5e-9ebd50997ec0")
 		)
@@ -11847,6 +12144,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "CL05B103KB5NNNC"
+			(at 193.675 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C15195"
+			(at 193.675 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f318202c-81ef-4da1-be00-d4fdad8832ca")
 		)
@@ -11869,7 +12184,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "67e87918-460a-407c-8774-45f84df37838")
 		(property "Reference" "R5"
 			(at 76.2 83.82 90)
@@ -11941,6 +12256,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" ""
+			(at 76.2 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d15f82d2-5d0b-4131-93f4-0f114dd6747b")
 		)
@@ -11963,7 +12287,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "68a70fb5-27df-442c-bba7-f6248b325b8f")
 		(property "Reference" "R7"
 			(at 76.2 109.22 90)
@@ -12027,6 +12351,15 @@
 			)
 		)
 		(property "Ordered Previously" "95"
+			(at 76.2 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
 			(at 76.2 104.14 0)
 			(effects
 				(font
@@ -12124,6 +12457,24 @@
 			)
 		)
 		(property "Ordered Previously" "0"
+			(at 148.59 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RVT1A681M0810 680UF 10V"
+			(at 148.59 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2760485"
 			(at 148.59 37.465 0)
 			(effects
 				(font
@@ -12286,7 +12637,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6ed41f9c-fdfe-4eb6-8492-3189f8d22fb8")
 		(property "Reference" "TP13"
 			(at 100.33 102.235 0)
@@ -12459,6 +12810,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 184.785 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
+			(at 184.785 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5e915dff-1868-4255-a089-b50c15d45e70")
 		)
@@ -12481,7 +12850,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "732252d2-1f0a-47bf-a19b-a378b19ab777")
 		(property "Reference" "TP11"
 			(at 100.33 76.835 0)
@@ -12769,6 +13138,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C5407823"
+			(at 246.38 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "9"
 			(uuid "6868baa6-ed46-493c-9814-5aba242a15a0")
 		)
@@ -12851,7 +13229,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "779055c1-3cb2-4554-b4b5-ba1efafeae7f")
 		(property "Reference" "R36"
 			(at 67.31 96.52 90)
@@ -12915,6 +13293,15 @@
 			)
 		)
 		(property "Ordered Previously" "95"
+			(at 67.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
 			(at 67.31 91.44 0)
 			(effects
 				(font
@@ -13010,6 +13397,24 @@
 			)
 		)
 		(property "Ordered Previously" "20"
+			(at 240.03 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "0603B103K500NT"
+			(at 240.03 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C57112"
 			(at 240.03 46.99 0)
 			(effects
 				(font
@@ -13185,6 +13590,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 184.785 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
+			(at 184.785 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3a3e8c69-f8fc-476a-8efe-167e84f6e051")
 		)
@@ -13276,6 +13699,24 @@
 			)
 		)
 		(property "Ordered Previously" "0"
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
 			(at 128.27 133.35 0)
 			(effects
 				(font
@@ -13377,6 +13818,24 @@
 			)
 		)
 		(property "Ordered Previously" "100"
+			(at 95.25 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+			(at 95.25 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C145273"
 			(at 95.25 83.82 0)
 			(effects
 				(font
@@ -13578,7 +14037,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "828fae90-49ee-46ce-aea5-45acb9aa02cc")
 		(property "Reference" "R35"
 			(at 67.31 83.82 90)
@@ -13642,6 +14101,15 @@
 			)
 		)
 		(property "Ordered Previously" "95"
+			(at 67.31 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
 			(at 67.31 78.74 0)
 			(effects
 				(font
@@ -13816,6 +14284,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+			(at 95.25 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C145273"
+			(at 95.25 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "9a69660e-01bd-4252-b031-4cf0b8f584f5")
 		)
@@ -13916,7 +14402,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "8e117170-b924-4fe9-9fcb-f52802d2723e")
 		(property "Reference" "R40"
 			(at 67.31 147.32 90)
@@ -13980,6 +14466,15 @@
 			)
 		)
 		(property "Ordered Previously" "95"
+			(at 67.31 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
 			(at 67.31 142.24 0)
 			(effects
 				(font
@@ -14087,6 +14582,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 140.97 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
+			(at 140.97 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3cc88c1d-7e4c-4c1f-87c6-2285216ead0f")
 		)
@@ -14179,6 +14692,24 @@
 			)
 		)
 		(property "Ordered Previously" "0"
+			(at 184.785 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 184.785 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
 			(at 184.785 111.76 0)
 			(effects
 				(font
@@ -14350,6 +14881,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "RVT1A681M0810 680UF 10V"
+			(at 142.24 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2760485"
+			(at 142.24 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "be50f3b2-acb3-41b9-89fe-a34781e84acc")
 		)
@@ -14443,6 +14992,24 @@
 			)
 		)
 		(property "Ordered Previously" "100"
+			(at 95.25 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+			(at 95.25 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C145273"
 			(at 95.25 45.72 0)
 			(effects
 				(font
@@ -14778,7 +15345,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a19f97c6-c5a4-4129-a9f7-1230d8f27392")
 		(property "Reference" "R31"
 			(at 67.31 33.02 90)
@@ -14842,6 +15409,15 @@
 			)
 		)
 		(property "Ordered Previously" "95"
+			(at 67.31 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
 			(at 67.31 27.94 0)
 			(effects
 				(font
@@ -14949,6 +15525,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 130.81 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
+			(at 130.81 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "09cfa581-a3b0-4b36-908e-1bb48d077b99")
 		)
@@ -15040,6 +15634,24 @@
 			)
 		)
 		(property "Ordered Previously" "0"
+			(at 138.43 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 138.43 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
 			(at 138.43 133.35 0)
 			(effects
 				(font
@@ -15141,6 +15753,24 @@
 			)
 		)
 		(property "Ordered Previously" "100"
+			(at 95.25 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+			(at 95.25 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C145273"
 			(at 95.25 96.52 0)
 			(effects
 				(font
@@ -15328,6 +15958,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+			(at 95.25 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C145273"
+			(at 95.25 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "fa2435fb-c300-4d89-99bd-8ddfbbe5d2f6")
 		)
@@ -15363,7 +16011,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "acbdd494-acb2-4607-bdb7-1ea117faef34")
 		(property "Reference" "D2"
@@ -15594,6 +16242,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+			(at 95.25 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C145273"
+			(at 95.25 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d5f09fa9-955c-496e-bec9-08712496754b")
 		)
@@ -15628,7 +16294,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "bd82d625-6c09-4dba-a736-15dd9da12419")
 		(property "Reference" "R32"
 			(at 67.31 45.72 90)
@@ -15700,6 +16366,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" ""
+			(at 67.31 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "689f6033-6200-4392-a4a9-42f6c73b32ca")
 		)
@@ -15723,7 +16398,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "bfa65da7-5a99-4f0d-bfd7-3f501560d81b")
 		(property "Reference" "D4"
@@ -15953,6 +16628,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 184.785 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
+			(at 184.785 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1dbf0fce-8eb3-4368-ab9f-d01ca8a003f2")
 		)
@@ -16118,6 +16811,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 143.51 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
+			(at 143.51 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ddf760ec-5082-40ff-95f0-3ed0ae5798a5")
 		)
@@ -16140,7 +16851,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c0dbcf4d-e25a-4761-8ff3-52216eaf1c1b")
 		(property "Reference" "TP12"
 			(at 100.33 90.805 0)
@@ -16235,7 +16946,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c2b75005-ab4b-4af5-b157-5e7b7dddbc6e")
 		(property "Reference" "TP3"
 			(at 109.855 164.465 0)
@@ -16396,7 +17107,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c5ac64bc-f415-4dcb-b7a8-df1f208e52a5")
 		(property "Reference" "TP5"
 			(at 121.285 164.465 0)
@@ -16492,7 +17203,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c7edd247-6390-4d49-b72f-b9286fa9b4a8")
 		(property "Reference" "D3"
@@ -16723,6 +17434,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+			(at 95.25 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C145273"
+			(at 95.25 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d1f07bcb-05ad-4ad6-aa10-0da6936db425")
 		)
@@ -16835,6 +17564,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 184.785 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
+			(at 184.785 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bb65a40a-9b3f-4e09-b068-5bee70228fea")
 		)
@@ -16857,7 +17604,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "cc86bb8a-3eb1-4cd0-9a05-553f50268f45")
 		(property "Reference" "R1"
 			(at 76.2 33.02 90)
@@ -16929,6 +17676,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" ""
+			(at 76.2 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "eb99c88d-a6e7-4294-9bf5-cc92e10cf318")
 		)
@@ -16951,7 +17707,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "cd01bee3-b151-42c6-96db-2bf2e72b2562")
 		(property "Reference" "TP9"
 			(at 100.33 52.705 0)
@@ -17046,7 +17802,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d51c0035-f5e8-47d7-8ebf-83c7c54a2e93")
 		(property "Reference" "R33"
 			(at 67.31 58.42 90)
@@ -17110,6 +17866,15 @@
 			)
 		)
 		(property "Ordered Previously" "95"
+			(at 67.31 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
 			(at 67.31 53.34 0)
 			(effects
 				(font
@@ -17213,6 +17978,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603B103K500NT"
+			(at 168.275 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C57112"
+			(at 168.275 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a50ed42d-25e9-42bb-80f3-0d4c5795a18c")
 		)
@@ -17235,7 +18018,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d8ed342b-6993-403d-ba19-e0ec99c5a5e6")
 		(property "Reference" "R4"
 			(at 76.2 71.12 90)
@@ -17307,6 +18090,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" ""
+			(at 76.2 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1db46ba3-3023-42de-86ac-ffea3dbf0c0c")
 		)
@@ -17330,7 +18122,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d972441d-6c88-4570-9e8c-fcf2ceac0f98")
 		(property "Reference" "D8"
@@ -17483,7 +18275,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "db433bf1-7b17-4543-a64e-fd3134d07d73")
 		(property "Reference" "J3"
 			(at 246.38 84.455 0)
@@ -17621,7 +18413,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "dc2be20d-3081-44c3-a707-2f22d2c7dbc0")
 		(property "Reference" "D11"
@@ -17773,7 +18565,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "dfdcc417-fd75-4431-a826-8f7444420a1d")
 		(property "Reference" "TP2"
 			(at 104.14 164.465 0)
@@ -17868,7 +18660,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e2019527-c925-4361-9820-a390624d9430")
 		(property "Reference" "TP4"
 			(at 115.57 164.465 0)
@@ -17963,7 +18755,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e318407d-e08c-4ccc-876e-98ac40464cf2")
 		(property "Reference" "TP6"
 			(at 127 164.465 0)
@@ -18058,7 +18850,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e9898e1c-b89e-4ff5-bb0f-b3ddbecefa85")
 		(property "Reference" "R3"
 			(at 76.2 58.42 90)
@@ -18122,6 +18914,15 @@
 			)
 		)
 		(property "Ordered Previously" "95"
+			(at 76.2 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
 			(at 76.2 53.34 0)
 			(effects
 				(font
@@ -18219,6 +19020,24 @@
 			)
 		)
 		(property "Ordered Previously" "20"
+			(at 163.83 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+			(at 163.83 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C5978"
 			(at 163.83 121.92 0)
 			(effects
 				(font
@@ -18435,7 +19254,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "f6910920-4016-4f39-88d2-40c154c53834")
 		(property "Reference" "TP1"
 			(at 99.06 164.465 0)
@@ -18530,7 +19349,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "f758860c-6c24-41be-a356-9c3b58f88c1c")
 		(property "Reference" "R2"
 			(at 76.2 45.72 90)
@@ -18602,6 +19421,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" ""
+			(at 76.2 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f840b6dc-1e85-40a3-8454-099cd68f05dc")
 		)
@@ -18624,7 +19452,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "f97d3d19-8a1b-483a-8d44-8e5238d6ceb8")
 		(property "Reference" "R39"
 			(at 67.31 134.62 90)
@@ -18688,6 +19516,15 @@
 			)
 		)
 		(property "Ordered Previously" "95"
+			(at 67.31 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
 			(at 67.31 129.54 0)
 			(effects
 				(font
@@ -18796,6 +19633,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+			(at 184.785 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C13167"
+			(at 184.785 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ffaf8a80-16cd-455a-8c00-d6b0ad6813d1")
 		)
@@ -18819,7 +19674,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "fc3e6cc1-027b-4d38-81d7-cb467670b271")
 		(property "Reference" "D5"
@@ -19042,6 +19897,24 @@
 			)
 		)
 		(property "Ordered Previously" "100"
+			(at 95.25 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+			(at 95.25 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C145273"
 			(at 95.25 121.92 0)
 			(effects
 				(font
