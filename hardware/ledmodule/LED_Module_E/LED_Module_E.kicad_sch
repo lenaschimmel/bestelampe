@@ -3946,12 +3946,6 @@
 		(uuid "8cd213b2-4a5b-48f2-9b98-a8d4a7b2b5e6")
 	)
 	(junction
-		(at 269.24 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8d0b76e3-a8e9-448e-a385-9a19dfe23183")
-	)
-	(junction
 		(at 36.83 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4949,16 +4943,6 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 93.98) (xy 269.24 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "459d7110-e94a-4f60-86a3-04263760b534")
-	)
-	(wire
-		(pts
 			(xy 259.08 127) (xy 264.795 127)
 		)
 		(stroke
@@ -5409,7 +5393,7 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 93.98) (xy 269.24 96.52)
+			(xy 269.24 88.9) (xy 269.24 96.52)
 		)
 		(stroke
 			(width 0)
@@ -5919,6 +5903,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 93.98) (xy 256.54 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99bb2498-130f-4f87-9991-e38da168b758")
+	)
+	(wire
+		(pts
 			(xy 101.6 83.82) (xy 110.49 83.82)
 		)
 		(stroke
@@ -6086,16 +6080,6 @@
 			(type default)
 		)
 		(uuid "a7e6e0b1-9fcd-4524-aedc-449da55d102d")
-	)
-	(wire
-		(pts
-			(xy 256.54 93.98) (xy 269.24 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8d0aa2c-e17f-4d8e-bc8d-594f053c55f4")
 	)
 	(wire
 		(pts
@@ -6876,6 +6860,16 @@
 			(type default)
 		)
 		(uuid "eae634d5-486f-4bdf-800f-c9fa65ed9caf")
+	)
+	(wire
+		(pts
+			(xy 266.7 88.265) (xy 266.7 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed105465-b7bd-47f1-baa7-c4303bb671eb")
 	)
 	(wire
 		(pts
@@ -17790,6 +17784,72 @@
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
 					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 266.7 88.265 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4493704-37bc-4eb5-ab91-60754b7832dd")
+		(property "Reference" "#PWR03"
+			(at 266.7 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 266.7 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 266.7 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "414c7b64-0584-48ee-97f0-a26e1e0b102d")
+		)
+		(instances
+			(project "LED_Module_E"
+				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
