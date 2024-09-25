@@ -1728,108 +1728,6 @@
 				)
 			)
 		)
-		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "H"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole_Pad"
-				(at 0 4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Mounting Hole with connection"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*Pad*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MountingHole_Pad_0_1"
-				(circle
-					(center 0 1.27)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "MountingHole_Pad_1_1"
-				(pin input line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Regulator_Linear:AMS1117-3.3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2899,6 +2797,149 @@
 				)
 			)
 		)
+		(symbol "power:Earth_Protective"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "Earth_Protective"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"Earth_Protective\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global ground gnd clean"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Earth_Protective_0_1"
+				(circle
+					(center 0 -3.81)
+					(radius 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -4.445) (xy 0.635 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -5.08) (xy 0.127 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.81) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.81) (xy -1.27 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Earth_Protective_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -3069,12 +3110,6 @@
 		(uuid "52593f79-6ea1-4aef-97c9-9dcd07d6d20a")
 	)
 	(junction
-		(at 264.16 43.815)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "565bbda1-627a-4fd8-bca0-ef5eb3524f8f")
-	)
-	(junction
 		(at 266.7 46.355)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3121,6 +3156,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8b784ed3-0102-4188-a3c9-ee6269d6b110")
+	)
+	(junction
+		(at 264.16 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9be4346e-7726-410b-a98e-354186d568c6")
 	)
 	(junction
 		(at 66.675 45.72)
@@ -3189,12 +3230,6 @@
 		(uuid "e1440588-f941-45da-8042-515afd6e87d5")
 	)
 	(junction
-		(at 203.2 27.305)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e16d832a-a195-4050-b4be-61a5b9ddd518")
-	)
-	(junction
 		(at 266.7 92.075)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3211,16 +3246,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f1a74e88-6d17-469f-a7d1-1aab04386137")
-	)
-	(wire
-		(pts
-			(xy 203.2 27.305) (xy 264.16 27.305)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02de9b45-9c99-40dd-98ed-c8f5d70391e4")
 	)
 	(wire
 		(pts
@@ -3441,6 +3466,16 @@
 			(type default)
 		)
 		(uuid "30a6d31a-8335-4b9f-b4e4-8ada218ceb2f")
+	)
+	(wire
+		(pts
+			(xy 264.16 67.31) (xy 264.16 70.485)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31434c78-f6e6-4594-8a64-f9028c84825f")
 	)
 	(wire
 		(pts
@@ -3801,16 +3836,6 @@
 			(type default)
 		)
 		(uuid "82d384ae-7c3e-4deb-ae95-17c0c40f4e1f")
-	)
-	(wire
-		(pts
-			(xy 264.16 27.305) (xy 264.16 43.815)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82fca374-5384-4570-b277-b51c88470814")
 	)
 	(wire
 		(pts
@@ -4434,16 +4459,6 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 154.94) (xy 250.19 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ecf2cf54-e2e2-4515-91f7-ff74b929da1e")
-	)
-	(wire
-		(pts
 			(xy 66.675 36.83) (xy 66.675 37.465)
 		)
 		(stroke
@@ -5016,6 +5031,71 @@
 			(project "power"
 				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
 					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 264.16 70.485 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1de0cf04-396a-4415-a04c-dfc066e5aaed")
+		(property "Reference" "#PWR05"
+			(at 264.16 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 264.16 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 264.16 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 264.16 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 264.16 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3410f0a1-0c96-4936-a956-06b1fd48efa8")
+		)
+		(instances
+			(project "power"
+				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -5637,72 +5717,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 203.2 56.515 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4e3cb140-b53d-41ed-a1fc-c90c49b09c95")
-		(property "Reference" "#PWR01"
-			(at 203.2 62.865 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 203.2 61.595 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 203.2 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 203.2 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a30c48f9-c347-4c6d-bbf5-02381dd68206")
-		)
-		(instances
-			(project "power"
-				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 147.32 149.86 0)
 		(unit 1)
@@ -5902,6 +5916,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 250.19 150.495 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "62857690-b743-4da9-919a-9a070750849e")
+		(property "Reference" "H4"
+			(at 253.365 149.2249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 253.365 151.7649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
+			(at 250.19 150.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 150.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 250.19 150.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "power"
+				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 121.92 149.86 0)
 		(unit 1)
@@ -6069,6 +6147,72 @@
 			(project "power"
 				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth_Protective")
+		(at 203.2 56.515 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76606010-be96-4cad-b732-37c951a176ce")
+		(property "Reference" "#PWR04"
+			(at 203.2 66.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth_Protective"
+			(at 203.2 65.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.2 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth_Protective\""
+			(at 203.2 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca4ebe89-6189-4aa4-abfb-de0c77a69396")
+		)
+		(instances
+			(project "power"
+				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -6492,72 +6636,6 @@
 			(project "power"
 				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 250.19 158.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9db88113-bff3-4c81-aea5-45b274233f9d")
-		(property "Reference" "#PWR06"
-			(at 250.19 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 250.19 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 250.19 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 250.19 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 250.19 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f6f1d306-b81f-44ce-ae5b-70e22341f2c5")
-		)
-		(instances
-			(project "power"
-				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
-					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -7453,73 +7531,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 250.19 152.4 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "c3af0b4a-7c17-4a39-8620-80e4bbd49459")
-		(property "Reference" "H4"
-			(at 253.365 149.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 253.365 152.3999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 250.19 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 250.19 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 250.19 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "684aa9bb-a693-4180-a821-7b64df6b0900")
-		)
-		(instances
-			(project "power"
-				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 266.7 22.225 0)
 		(unit 1)
@@ -8014,7 +8025,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:Earth_Protective")
 		(at 168.91 56.515 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8022,9 +8033,9 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ee265d5a-61e6-409e-8819-ac8523f14ae7")
-		(property "Reference" "#PWR04"
-			(at 168.91 62.865 0)
+		(uuid "e8ad2782-cae3-4b37-bae5-c19b2566a87d")
+		(property "Reference" "#PWR01"
+			(at 168.91 66.675 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8032,8 +8043,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 168.91 61.595 0)
+		(property "Value" "Earth_Protective"
+			(at 168.91 65.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8041,7 +8052,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 56.515 0)
+			(at 168.91 59.055 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8049,8 +8060,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 168.91 56.515 0)
+		(property "Datasheet" "~"
+			(at 168.91 59.055 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8058,7 +8069,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"Earth_Protective\""
 			(at 168.91 56.515 0)
 			(effects
 				(font
@@ -8068,12 +8079,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b37eaa8a-172c-422a-9239-7f95a2e76f6f")
+			(uuid "e2bc4ca9-f7b8-4057-ba61-b660eef4e548")
 		)
 		(instances
 			(project "power"
 				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
-					(reference "#PWR04")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
