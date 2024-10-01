@@ -8,7 +8,7 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "besteLampe! LED Main Moudule")
+		(title "besteLampe! LED Main Module")
     	(date "2024-01-07")
 		(rev "1.0")
 		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")

@@ -5,7 +5,7 @@
 	(uuid "158daa50-c9fc-49fb-a041-1822899d5deb")
 	(paper "A4")
 	(title_block
-		(title "besteLampe! ABL Power Moudule")
+		(title "besteLampe! ABL Power Module")
 		(date "2024-10-01")
 		(rev "1.0")
 		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
