@@ -4,6 +4,15 @@
 	(generator_version "8.0")
 	(uuid "158daa50-c9fc-49fb-a041-1822899d5deb")
 	(paper "A4")
+	(title_block
+		(title "besteLampe! ABL Power Moudule")
+		(date "2024-10-01")
+		(rev "1.0")
+		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
+		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
+		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
+		(comment 4 "Design for JLCPCB 1-2 Layer Service")
+	)
 	(lib_symbols
 		(symbol "009159008603906:009159008603906"
 			(exclude_from_sim no)
@@ -3248,12 +3257,6 @@
 		(uuid "9c854ccb-17da-463f-8cf1-6aebb688d50e")
 	)
 	(junction
-		(at 64.135 113.665)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a27fcc61-f3e3-4755-9f4a-9ddfba59bace")
-	)
-	(junction
 		(at 208.28 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3294,6 +3297,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c7bab497-6296-4fb5-97de-dd939d023ac5")
+	)
+	(junction
+		(at 73.66 113.665)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cba8b702-43ef-46c3-b3f0-19ddd9eecad6")
 	)
 	(junction
 		(at 137.795 180.975)
@@ -3473,16 +3482,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.135 113.665) (xy 69.215 113.665)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ab70f99-4e1e-45a5-9c16-c21da1bc0907")
-	)
-	(wire
-		(pts
 			(xy 94.615 69.215) (xy 93.345 69.215)
 		)
 		(stroke
@@ -3603,6 +3602,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 109.22) (xy 35.56 113.665)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49f413a2-4ce7-4923-ac05-eb88b4f49192")
+	)
+	(wire
+		(pts
 			(xy 136.525 180.975) (xy 137.795 180.975)
 		)
 		(stroke
@@ -3653,7 +3662,7 @@
 	)
 	(wire
 		(pts
-			(xy 79.375 109.855) (xy 79.375 113.665)
+			(xy 73.66 109.855) (xy 73.66 113.665)
 		)
 		(stroke
 			(width 0)
@@ -3843,6 +3852,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 113.665) (xy 43.815 113.665)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7192518c-db8c-4954-a321-37deedef2b12")
+	)
+	(wire
+		(pts
 			(xy 120.015 64.135) (xy 122.555 64.135)
 		)
 		(stroke
@@ -3860,6 +3879,16 @@
 			(type default)
 		)
 		(uuid "73859dbc-5851-4163-90d4-b2c7331160e4")
+	)
+	(wire
+		(pts
+			(xy 73.66 113.665) (xy 79.375 113.665)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73e31ce2-fa70-431c-9327-512b90dc49c5")
 	)
 	(wire
 		(pts
@@ -4023,23 +4052,13 @@
 	)
 	(wire
 		(pts
-			(xy 64.135 113.665) (xy 64.135 104.775)
+			(xy 79.375 113.665) (xy 79.375 109.855)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "93fd0a85-1274-4f0b-8ebf-b7a9d617f3f4")
-	)
-	(wire
-		(pts
-			(xy 31.75 113.665) (xy 43.815 113.665)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9515c1e0-7159-4dda-8eaf-3f9cdfe33dcb")
 	)
 	(wire
 		(pts
@@ -4183,16 +4202,6 @@
 	)
 	(wire
 		(pts
-			(xy 79.375 113.665) (xy 69.215 113.665)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6b00c1e-1385-4bc0-8848-0ce90f463be9")
-	)
-	(wire
-		(pts
 			(xy 123.825 106.68) (xy 117.475 106.68)
 		)
 		(stroke
@@ -4263,6 +4272,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 113.665) (xy 69.215 113.665)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c16f40f3-340d-4fb2-aeee-84e02a94691a")
+	)
+	(wire
+		(pts
 			(xy 150.495 67.945) (xy 133.985 67.945)
 		)
 		(stroke
@@ -4293,7 +4312,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.865 113.665) (xy 64.135 113.665)
+			(xy 62.865 113.665) (xy 69.215 113.665)
 		)
 		(stroke
 			(width 0)
@@ -4691,16 +4710,62 @@
 		)
 		(uuid "fef47b5b-cc2c-416c-9e70-ee459da262be")
 	)
-	(text "If a future version of\nthis module had VLED != 5V,\nthey would connect like this:"
+	(text_box "Choice of I2C address indicates installed power supply wattage"
 		(exclude_from_sim no)
-		(at 96.52 171.45 0)
+		(at 257.81 106.045 0)
+		(size 19.05 12.065)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left top)
 		)
-		(uuid "18592c48-2c81-4652-b81b-df2127feba5e")
+		(uuid "8e367284-e05e-48a2-b864-fca9f8686661")
+	)
+	(text_box "If a future version of this module had a separate VLED != 5V, they would connect like this:"
+		(exclude_from_sim no)
+		(at 81.915 174.625 0)
+		(size 36.195 10.16)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "8fb7668c-bd7d-4ced-9476-79435d966f51")
+	)
+	(text_box "Optionally connect GND and PE to affect EMI"
+		(exclude_from_sim no)
+		(at 227.965 47.625 0)
+		(size 19.05 8.89)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "cf36bf18-89a0-4686-b27d-0c4a1b14e1e6")
 	)
 	(text "VLED ->"
 		(exclude_from_sim no)
@@ -4736,7 +4801,7 @@
 		(uuid "d40a4eeb-8cd9-4ffd-9e8f-299ddd876acf")
 	)
 	(label "5VMSR"
-		(at 31.75 113.665 180)
+		(at 35.56 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4778,17 +4843,6 @@
 			(justify left bottom)
 		)
 		(uuid "61503f21-b9cd-4a4c-83e0-90fc110bf662")
-	)
-	(label "Optionally connect GND and PE"
-		(at 229.235 57.15 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "91fd8843-8df5-42e9-895f-d05a9fae0d27")
 	)
 	(label "SDA"
 		(at 127 123.825 180)
@@ -5687,7 +5741,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 79.375 109.855 0)
+		(at 73.66 109.855 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5696,7 +5750,7 @@
 		(fields_autoplaced yes)
 		(uuid "383e58dc-70eb-4f03-acba-f427609920b1")
 		(property "Reference" "#PWR017"
-			(at 79.375 113.665 0)
+			(at 73.66 113.665 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5705,7 +5759,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 79.375 104.775 0)
+			(at 73.66 104.775 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5713,7 +5767,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 79.375 109.855 0)
+			(at 73.66 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5722,7 +5776,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 79.375 109.855 0)
+			(at 73.66 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5731,7 +5785,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 79.375 109.855 0)
+			(at 73.66 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6048,16 +6102,15 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 64.135 104.775 0)
+		(at 79.375 109.855 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4fed47b9-70cf-426f-a0fb-a079a6e73f02")
 		(property "Reference" "TP2"
-			(at 66.04 100.2029 0)
+			(at 81.28 105.2829 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6066,7 +6119,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 66.04 102.7429 0)
+			(at 81.28 107.8229 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6075,7 +6128,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
-			(at 69.215 104.775 0)
+			(at 84.455 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6084,7 +6137,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.215 104.775 0)
+			(at 84.455 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6093,7 +6146,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 64.135 104.775 0)
+			(at 79.375 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6102,7 +6155,7 @@
 			)
 		)
 		(property "Purpose" ""
-			(at 64.135 104.775 0)
+			(at 79.375 109.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7248,7 +7301,7 @@
 				)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x03"
+		(property "Value" "Terminal_01x03"
 			(at 106.68 73.66 0)
 			(effects
 				(font
@@ -7548,13 +7601,12 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x03"
-			(at 117.475 53.975 0)
+		(property "Value" "Terminal_01x03"
+			(at 107.95 53.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "WAGO-2604-1103:26041103"
