@@ -21,6 +21,7 @@ Later I experimented a lot with different LEDs, reflectors, lenses, PWM generato
  * Module C is a testing module for a novel approach with 1 to 3 high-power LEDs per channel, and needs to be driven by a PWM-capable constand-current driver that does not yet exist. Compatibility with Main Module v1 is still unclear. It was mostly tested with low currents (60mA per LED) and worked very vell, but high-current testing is still needed.
  * Module D is a failed attempt. Do not use.
  * Module E is a heavily modified version of Module D, which (hopefully) works better.
-     * Module E adaptor, which lets you connect an ESP32-C6-DevKit-C1 to the Module E easily
+     * Module E adaptor, which lets you connect an ESP32-C6-DevKit-C1 to the Module E V1.0 easily
+     * Module E was moved to [ABL](../abl/LED_Module_E/) when it was bumped to Version 2.0 and is no longer compatible with the Adaptor.
 
 It's still unclear how the future connector between a main module and LED module(s) will look like...

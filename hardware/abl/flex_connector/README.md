@@ -5,7 +5,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 [besteLampe!](https://lenaschimmel.de/besteLampe!) © 2024 by [Lena Schimmel](mailto:mail@lenaschimmel.de) is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
 -->
 ## ABL Flex Connector
-This passive flex connector PCB connects the [controller module](../controller/) to the [LED module](../../ledmodule/LED_Module_E/).
+This passive flex connector PCB connects the [controller module](../controller/) to the [LED module](../LED_Module_E/).
 
 It carries:
  - Ground

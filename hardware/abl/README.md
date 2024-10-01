@@ -12,15 +12,13 @@ It consists of these parts:
  - Power Module
    - [Power PCB](./power/)
  - Lamp Module 
-   - [LED PCB](../ledmodule/LED_Module_E/)
+   - [LED PCB](./LED_Module_E/)
    - [Controller PCB](./controller/)
  - Connectors between the main PCBs
    - [Rigid connector](./rigid_connector/)
    - [Flex connector](./flex_connector/)
  - Enclosure
    - Not yet online
-
-_(The names, labels and paths of those modules are currently inconsistent and will be renamed soon.)_
 
 ![Simplified diagram of modules and components](./ABL%20Components.png)
 

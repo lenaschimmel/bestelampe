@@ -10,6 +10,11 @@ This was a quick and easy design, nothing fancy. The simple 2-layer board makes 
 
 It also adds two I2C ports as Grove connectors, one with 5V and the other one with 3.3V supply voltage. **Be careful with 5V though: This board has no level shifter and the ESP32 can't take 5V. Only use this port if you know what you are doing.**
 
+### Outdated
+**This adaptor was made for LED Module E version 1.0, which has been replaced by version 2.0 and moved to [/hardware/abl/LED_Module_E](../../abl/LED_Module_E/).**
+
+There is no updated version of this adator for LED Module E version 2.0. Instead, the (more complex)[ABL Controller Module](../../abl/controller/) fulfills that purpose now.
+
 ### Connector J4
 The four pads of `J4` are hooked up to VLED on the adaptor board, but there are nor corresponding pins on the LED Module E. You might wonder: Why?
 
