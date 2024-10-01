@@ -178,10 +178,8 @@
       ],
       "track_widths": [
         0.0,
-        0.2,
-        0.3,
-        0.4,
         0.5,
+        1.0,
         1.5
       ],
       "tuning_pattern_settings": {
@@ -214,10 +212,6 @@
         {
           "diameter": 0.0,
           "drill": 0.0
-        },
-        {
-          "diameter": 0.6,
-          "drill": 0.25
         }
       ],
       "zones_allow_external_fillets": false
@@ -452,7 +446,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Controller.kicad_pro",
+    "filename": "flex_connector.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -490,7 +484,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "Controller.step",
+      "step": "",
       "svg": "",
       "vrml": ""
     },
@@ -547,65 +541,11 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Height",
-          "name": "Height",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer_Name",
-          "name": "Manufacturer_Name",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer_Part_Number",
-          "name": "Manufacturer_Part_Number",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mouser Part Number",
-          "name": "Mouser Part Number",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mouser Price/Stock",
-          "name": "Mouser Price/Stock",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "LCSC Part #",
-          "name": "LCSC Part #",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Purpose",
-          "name": "Purpose",
-          "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "",
+      "name": "Grouped By Value",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -650,7 +590,7 @@
   },
   "sheets": [
     [
-      "19e0c2ec-2e53-449d-b0ad-9539b125a162",
+      "95da7ced-3def-4c9a-ba1a-5954d71da0c5",
       "Root"
     ]
   ],

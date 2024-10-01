@@ -13,16 +13,29 @@ It consists of these parts:
    - [Power PCB](./power/)
  - Lamp Module 
    - [LED PCB](../ledmodule/LED_Module_E/)
-   - [Controller PCB](./Controller/)
+   - [Controller PCB](./controller/)
  - Connectors between the main PCBs
-   - [Rigid connector](./Conductor/)
-   - [Flex connector](./Flex/)
+   - [Rigid connector](./rigid_connector/)
+   - [Flex connector](./flex_connector/)
  - Enclosure
    - Not yet online
 
 _(The names, labels and paths of those modules are currently inconsistent and will be renamed soon.)_
 
 ![Simplified diagram of modules and components](./ABL%20Components.png)
+
+## Voltages
+The complete system has three or four different voltages / power rails:
+ - **230V AC** Input voltage (power modules can be daisy-chained)
+ - **5V** Output by the power module and fed through to all other modules. When the controller module is connected via USB-C, it can also source 5V from there and feed it to other components. **Connecting both voltage sources at the same time is currently not recommended!**
+ - **3.3V** Supply voltage for several components. The feather module generates this from its 5V input and shares it with most other components. The power module has its own 5V-to-3.3V conversion (which is a bit strange, but probably ok and not worth changing).
+ - **VLED** The voltage to drive the LEDs. This is the most significant part of the systems power consumption.
+
+Ideally, the LEDs would be driven with 4V, but since I did not find any power supplies with that voltage, they are currently driven with 5V. For historic reasons, the net `VLED` might still be called `4V` in some places.
+
+Event though the nets `VLED` and `5V` currently carry the same voltage from the same source, they are separate nets in theory. If we manage to find a good 4V power supply, we could create a new power module, and the other modules and connectors should just work with that. The series resistors for the LEDs should probably be replaces as well.
+
+The README for most modules will also have complementing information about available voltages.
 
 ## I2C addresses
 All modules share a common I2C bus. In the above diagram, the I2C components are highlighted by violet text.

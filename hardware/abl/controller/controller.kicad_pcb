@@ -410,7 +410,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/eff01f96-25df-411f-9f5e-6dba57e0a181")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 -0.5225)
@@ -694,7 +694,7 @@
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/a183c4c7-1ca5-4af2-9467-09d1e66fe1e9")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -4.68 -0.5)
@@ -1284,7 +1284,7 @@
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/a2f04f30-f27b-481b-a398-51a26e3ae192")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -4.68 -0.5)
@@ -1865,7 +1865,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/ba861c47-62d2-4620-aa96-0691cdc5c592")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -2059,7 +2059,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/69e00e50-9d61-45f8-8ac3-dc62e85f2163")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 0.36)
@@ -2902,7 +2902,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/bf63f156-5f9f-419f-860f-74966b737342")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -3189,7 +3189,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/7b46f81a-1892-436f-b344-c3327728a081")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 -0.5225)
@@ -3465,7 +3465,7 @@
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/04fc0acb-8e7e-4427-be31-e8e30b631aa6")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 5.83 -5.21)
@@ -4043,7 +4043,7 @@
 		(property ki_fp_filters "SOIC*3.9x4.9mm*P1.27mm*")
 		(path "/2f14c9af-feb5-4069-99c9-4cbe19f5bfe3")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0 2.56)
@@ -4473,7 +4473,7 @@
 		)
 		(path "/e818c55b-4223-4b0b-8db9-7f85f5b0875b")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -13.2 -1.9)
@@ -4985,7 +4985,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/067a76da-2021-448d-bfd6-bf5b402600f4")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -5172,7 +5172,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/469cfdf2-3e15-4472-9157-91de0d0fef30")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -5382,7 +5382,7 @@
 		(property ki_fp_filters "SOT?23*")
 		(path "/bb91be6f-8e56-4b5e-80a5-221ef1f36390")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0 1.56)
@@ -5681,7 +5681,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/5f092b1c-1bd7-4587-8501-10851fba1757")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -5848,7 +5848,7 @@
 		(property ki_fp_filters "CONN_PRT-14417_SPK")
 		(path "/e9c543e5-92c8-4171-aee7-65f81da29274")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_circle
 			(center -4.9022 -2.1015)
@@ -7162,7 +7162,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/9eaea4cf-b82b-4396-89f0-79ba639467fd")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 0.36)
@@ -7510,7 +7510,7 @@
 		)
 		(path "/e5671c3b-2067-46dc-badf-f732d36a7d27")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_circle
 			(center -1.275 -1.2)
@@ -7901,7 +7901,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/8fb73cc1-15bc-428c-8eba-e0a707056b6d")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.177064 -1.71)
@@ -8158,7 +8158,7 @@
 		(property ki_fp_filters "Adafruit*Feather*")
 		(path "/76067faf-7900-411a-a5ff-0d1b7c3784f0")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start 19.05 44.56)
@@ -8993,7 +8993,7 @@
 		(property ki_fp_filters "SolderJumper*Bridged*")
 		(path "/616c6e22-a627-49ef-b711-7eb70f1dd7fb")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(zone_connect 1)
 		(attr exclude_from_pos_files exclude_from_bom)
 		(net_tie_pad_groups "1, 2")
@@ -9441,7 +9441,7 @@
 		)
 		(path "/4fa7b53d-fa00-441c-a033-e7e40f5fc497")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -3 -0.3)
@@ -9845,7 +9845,7 @@
 		)
 		(path "/ba55ffd3-331b-4e6a-b4a2-bba5b45d9a4e")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -3.675 -2.525)
@@ -10203,7 +10203,7 @@
 		(property ki_fp_filters "SOT?23*")
 		(path "/f009403f-71ad-4317-ac09-2b329bb889c4")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0 -1.56)
@@ -10528,7 +10528,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/f68b2079-4c3e-4c83-814e-80f764fd4515")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -10887,7 +10887,7 @@
 		)
 		(path "/d420ea38-1d0a-4de5-91eb-8bf333cb02eb")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_circle
 			(center -1.275 -1.2)
@@ -11275,7 +11275,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/3b5d501a-0e17-442c-8518-4b023eb4e90d")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -11473,7 +11473,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/79104b7b-2c3d-475d-84b5-fca8cf126ffe")
 		(sheetname "Root")
-		(sheetfile "Controller.kicad_sch")
+		(sheetfile "controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)

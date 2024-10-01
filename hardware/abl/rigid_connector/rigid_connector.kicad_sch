@@ -4,6 +4,14 @@
 	(generator_version "8.0")
 	(uuid "3c83d749-446b-4fb6-8002-ac5e76d0fd14")
 	(paper "A4")
+	(title_block
+		(title "besteLampe! ABL Rigid Connector")
+		(date "2024-10-01")
+		(rev "1.0")
+		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
+		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
+		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
+	)
 	(lib_symbols
 		(symbol "009159008603906:009159008603906"
 			(exclude_from_sim no)
@@ -354,13 +362,13 @@
 		(uuid "3734a195-2115-4d70-9643-01c2382d70a3")
 	)
 	(junction
-		(at 73.66 55.88)
+		(at 45.72 56.515)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "373d2964-34de-431d-b7a1-0b5739fa3f02")
 	)
 	(junction
-		(at 93.98 55.88)
+		(at 66.04 56.515)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "49984fa2-ce15-4b39-a72a-41a1eac8f993")
@@ -403,7 +411,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 53.34) (xy 73.66 55.88)
+			(xy 45.72 53.975) (xy 45.72 56.515)
 		)
 		(stroke
 			(width 0)
@@ -413,7 +421,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 58.42) (xy 97.79 58.42)
+			(xy 66.04 59.055) (xy 69.85 59.055)
 		)
 		(stroke
 			(width 0)
@@ -423,7 +431,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 55.88) (xy 73.66 58.42)
+			(xy 45.72 56.515) (xy 45.72 59.055)
 		)
 		(stroke
 			(width 0)
@@ -433,7 +441,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 55.88) (xy 97.79 55.88)
+			(xy 66.04 56.515) (xy 69.85 56.515)
 		)
 		(stroke
 			(width 0)
@@ -443,7 +451,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 60.96) (xy 93.98 60.96)
+			(xy 69.85 61.595) (xy 66.04 61.595)
 		)
 		(stroke
 			(width 0)
@@ -473,7 +481,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 55.88) (xy 73.66 55.88)
+			(xy 41.91 56.515) (xy 45.72 56.515)
 		)
 		(stroke
 			(width 0)
@@ -493,7 +501,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 53.34) (xy 93.98 55.88)
+			(xy 66.04 53.975) (xy 66.04 56.515)
 		)
 		(stroke
 			(width 0)
@@ -513,7 +521,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 60.96) (xy 73.66 60.96)
+			(xy 41.91 61.595) (xy 45.72 61.595)
 		)
 		(stroke
 			(width 0)
@@ -554,7 +562,7 @@
 		(uuid "17d30c84-fc22-4868-9eb7-6065f4efc919")
 	)
 	(label "SDA"
-		(at 97.79 60.96 0)
+		(at 69.85 61.595 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -565,7 +573,7 @@
 		(uuid "515cba8f-c6ca-4b7e-a482-9f3b3b34c225")
 	)
 	(label "5V"
-		(at 97.79 58.42 0)
+		(at 69.85 59.055 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -587,7 +595,7 @@
 		(uuid "9f4f18b8-5021-4f28-979e-c51e8eb68f98")
 	)
 	(label "SCL"
-		(at 69.85 60.96 180)
+		(at 41.91 61.595 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -598,7 +606,7 @@
 		(uuid "aa8dd94e-9cf7-4f5c-9db3-a5fe1d813005")
 	)
 	(label "VLED"
-		(at 97.79 55.88 0)
+		(at 69.85 56.515 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -631,7 +639,7 @@
 		(uuid "d25b75ee-704d-4031-83a8-2dd6294edc10")
 	)
 	(label "GND"
-		(at 69.85 55.88 180)
+		(at 41.91 56.515 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -643,7 +651,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 113.03 34.29 0)
+		(at 49.53 82.55 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -652,7 +660,7 @@
 		(fields_autoplaced yes)
 		(uuid "3142a4c1-3eb0-4e7a-9702-942693bfcb92")
 		(property "Reference" "H2"
-			(at 115.57 33.0199 0)
+			(at 52.07 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -661,7 +669,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 115.57 35.5599 0)
+			(at 52.07 83.8199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -670,7 +678,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
-			(at 113.03 34.29 0)
+			(at 49.53 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -679,7 +687,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 34.29 0)
+			(at 49.53 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -688,7 +696,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 113.03 34.29 0)
+			(at 49.53 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -697,7 +705,7 @@
 			)
 		)
 		(instances
-			(project "Conductor"
+			(project "rigid_connector"
 				(path "/3c83d749-446b-4fb6-8002-ac5e76d0fd14"
 					(reference "H2")
 					(unit 1)
@@ -707,7 +715,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 113.03 27.94 0)
+		(at 49.53 76.2 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -716,7 +724,7 @@
 		(fields_autoplaced yes)
 		(uuid "41f22821-0dd9-44fb-ab93-a3ac58b2e2ab")
 		(property "Reference" "H1"
-			(at 115.57 26.6699 0)
+			(at 52.07 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -725,7 +733,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 115.57 29.2099 0)
+			(at 52.07 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -734,7 +742,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
-			(at 113.03 27.94 0)
+			(at 49.53 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -743,7 +751,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 27.94 0)
+			(at 49.53 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -752,7 +760,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 113.03 27.94 0)
+			(at 49.53 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -761,7 +769,7 @@
 			)
 		)
 		(instances
-			(project "Conductor"
+			(project "rigid_connector"
 				(path "/3c83d749-446b-4fb6-8002-ac5e76d0fd14"
 					(reference "H1")
 					(unit 1)
@@ -898,7 +906,7 @@
 			(uuid "46fd4051-6aed-4899-90df-03ebd206b5f9")
 		)
 		(instances
-			(project "Conductor"
+			(project "rigid_connector"
 				(path "/3c83d749-446b-4fb6-8002-ac5e76d0fd14"
 					(reference "J2")
 					(unit 1)
@@ -908,7 +916,7 @@
 	)
 	(symbol
 		(lib_id "009159008603906:009159008603906")
-		(at 93.98 53.34 0)
+		(at 66.04 53.975 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -917,7 +925,7 @@
 		(dnp no)
 		(uuid "c7f1dfe9-14d2-4a87-afa9-c11c8c46efc9")
 		(property "Reference" "J1"
-			(at 83.82 45.72 0)
+			(at 55.88 46.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -925,7 +933,7 @@
 			)
 		)
 		(property "Value" "009159008603906"
-			(at 83.82 48.26 0)
+			(at 55.88 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -933,7 +941,7 @@
 			)
 		)
 		(property "Footprint" "009159008603906:9159 Connector"
-			(at 77.47 148.26 0)
+			(at 49.53 148.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -943,7 +951,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/9159-600.pdf"
-			(at 77.47 248.26 0)
+			(at 49.53 248.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -953,7 +961,7 @@
 			)
 		)
 		(property "Description" "Standard Card Edge Connectors Dual Row Inverted Card Edge 2x4pos w/ Kapton"
-			(at 93.98 53.34 0)
+			(at 66.04 53.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -962,7 +970,7 @@
 			)
 		)
 		(property "Height" "5.25"
-			(at 77.47 448.26 0)
+			(at 49.53 448.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -972,7 +980,7 @@
 			)
 		)
 		(property "Mouser Part Number" "581-009159008603906"
-			(at 77.47 548.26 0)
+			(at 49.53 548.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -982,7 +990,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/KYOCERA-AVX/009159008603906?qs=ST9lo4GX8V2gKYUgxLGO0Q%3D%3D"
-			(at 77.47 648.26 0)
+			(at 49.53 648.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -992,7 +1000,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Kyocera AVX"
-			(at 77.47 748.26 0)
+			(at 49.53 748.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1002,7 +1010,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "009159008603906"
-			(at 77.47 848.26 0)
+			(at 49.53 848.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1036,7 +1044,7 @@
 			(uuid "f17ac428-455b-4990-b897-b8f661ae67fd")
 		)
 		(instances
-			(project "Conductor"
+			(project "rigid_connector"
 				(path "/3c83d749-446b-4fb6-8002-ac5e76d0fd14"
 					(reference "J1")
 					(unit 1)
