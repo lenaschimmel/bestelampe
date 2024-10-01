@@ -4912,6 +4912,10 @@
 		(uuid "2f013b21-72e3-4c3a-9bca-82e709a092a1")
 	)
 	(no_connect
+		(at 28.575 140.335)
+		(uuid "3d2c6290-d65c-49db-88f8-2f615b3a229f")
+	)
+	(no_connect
 		(at 215.265 133.985)
 		(uuid "42063cf4-576a-4324-972c-c9b44eecdc58")
 	)
@@ -5827,6 +5831,16 @@
 	)
 	(wire
 		(pts
+			(xy 23.495 153.035) (xy 28.575 153.035)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f7e927a-5dd0-4dec-8217-f78985bac376")
+	)
+	(wire
+		(pts
 			(xy 236.855 121.92) (xy 224.155 121.92)
 		)
 		(stroke
@@ -6134,16 +6148,6 @@
 			(type default)
 		)
 		(uuid "a530df81-ac38-4058-8e54-5590dc8269ba")
-	)
-	(wire
-		(pts
-			(xy 23.495 140.335) (xy 28.575 140.335)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a749010a-8c10-48fa-9b96-08bb08b8165b")
 	)
 	(wire
 		(pts
@@ -7538,7 +7542,7 @@
 		(uuid "993ac385-6da7-4c97-a65c-bc55e1e2c90f")
 	)
 	(label "TX_R"
-		(at 23.495 142.875 180)
+		(at 23.495 145.415 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7593,7 +7597,7 @@
 		(uuid "a5afdad5-63dc-4602-be65-8f52e7fa932a")
 	)
 	(label "RX_R"
-		(at 23.495 140.335 180)
+		(at 23.495 142.875 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7692,7 +7696,7 @@
 		(uuid "cac8886b-605e-4fbf-8ae7-504b5e8200b7")
 	)
 	(label "ALERT"
-		(at 23.495 145.415 180)
+		(at 23.495 150.495 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7714,7 +7718,7 @@
 		(uuid "d33c6487-223b-4e86-9679-67f7ab871104")
 	)
 	(label "GP_INT"
-		(at 23.495 150.495 180)
+		(at 23.495 153.035 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
