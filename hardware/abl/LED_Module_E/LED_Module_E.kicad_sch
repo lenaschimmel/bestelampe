@@ -3790,12 +3790,6 @@
 		(uuid "359ca834-070e-4c29-b538-19b1e491d4a6")
 	)
 	(junction
-		(at 218.44 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "37320160-8ce4-43a7-954a-4fe330caaec8")
-	)
-	(junction
 		(at 119.38 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3920,12 +3914,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7ce3f8d8-9095-422e-8d71-a9ba519f1fa6")
-	)
-	(junction
-		(at 221.615 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "824c8feb-01ea-40c8-bdd0-abef8c6635f0")
 	)
 	(junction
 		(at 189.865 111.76)
@@ -4263,16 +4251,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 25.4) (xy 221.615 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0701d17a-3995-4515-a956-960bc91d4d7f")
-	)
-	(wire
-		(pts
 			(xy 36.83 116.84) (xy 39.37 116.84)
 		)
 		(stroke
@@ -4523,16 +4501,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 32.385) (xy 224.79 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c46f484-9f58-4f99-9126-7b0cc62ee43b")
-	)
-	(wire
-		(pts
 			(xy 62.23 27.94) (xy 63.5 27.94)
 		)
 		(stroke
@@ -4640,16 +4608,6 @@
 			(type default)
 		)
 		(uuid "271a92df-595b-4ec5-a6b8-9fa56181f791")
-	)
-	(wire
-		(pts
-			(xy 221.615 25.4) (xy 218.44 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29719c18-bb1b-4aa4-8fb5-8bcd28a4b3ed")
 	)
 	(wire
 		(pts
@@ -5353,7 +5311,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 25.4) (xy 218.44 27.305)
+			(xy 218.44 23.495) (xy 218.44 27.305)
 		)
 		(stroke
 			(width 0)
@@ -5400,16 +5358,6 @@
 			(type default)
 		)
 		(uuid "6e14bcd9-b405-4fbd-b380-0a8e5be468cd")
-	)
-	(wire
-		(pts
-			(xy 224.79 27.305) (xy 224.79 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f8af480-b841-4a13-af03-3f9b4a288375")
 	)
 	(wire
 		(pts
@@ -6043,16 +5991,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 23.495) (xy 218.44 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a72e6ddc-8137-46c4-9e17-ce0b7ab63969")
-	)
-	(wire
-		(pts
 			(xy 138.43 119.38) (xy 138.43 130.81)
 		)
 		(stroke
@@ -6603,16 +6541,6 @@
 	)
 	(wire
 		(pts
-			(xy 221.615 27.305) (xy 221.615 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cfa2d8f1-139a-4b4b-9c02-496f41ebf962")
-	)
-	(wire
-		(pts
 			(xy 176.53 109.22) (xy 182.245 109.22)
 		)
 		(stroke
@@ -6630,16 +6558,6 @@
 			(type default)
 		)
 		(uuid "d23768d7-c33d-4268-93d4-b620bfbd23b4")
-	)
-	(wire
-		(pts
-			(xy 221.615 32.385) (xy 221.615 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d39739b3-2496-4093-92f8-a201bf205e6d")
 	)
 	(wire
 		(pts
@@ -7136,17 +7054,6 @@
 		)
 		(uuid "0a9ca3ba-0694-4f48-bd1f-a9e1b7eef5ae")
 	)
-	(label "SDA"
-		(at 224.79 35.56 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0b4c3078-00d2-4b7e-98d9-54d9fd7c2889")
-	)
 	(label "i5"
 		(at 226.06 132.08 0)
 		(fields_autoplaced yes)
@@ -7357,7 +7264,7 @@
 		(uuid "a65e9556-7e00-4237-8d6c-f811ccea7625")
 	)
 	(label "i1"
-		(at 176.53 109.22 270)
+		(at 182.245 109.22 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7444,17 +7351,6 @@
 		)
 		(uuid "e96ad2bb-b164-46e0-afc6-a7c7b3b5dd4d")
 	)
-	(label "SCL"
-		(at 221.615 35.56 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f05745f0-c282-4d59-ab33-f917c6f2d30f")
-	)
 	(label "i7"
 		(at 182.2274 124.46 270)
 		(fields_autoplaced yes)
@@ -7483,7 +7379,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 67.31 119.38 90)
 			(effects
 				(font
@@ -7527,7 +7423,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 67.31 116.84 0)
 			(effects
 				(font
@@ -7537,6 +7433,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 67.31 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 67.31 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 67.31 116.84 0)
 			(effects
 				(font
@@ -7780,6 +7694,15 @@
 					(size 2.54 2.54)
 					(bold yes)
 				)
+			)
+		)
+		(property "Note" ""
+			(at 200.66 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8040,6 +7963,15 @@
 				)
 			)
 		)
+		(property "Note" ""
+			(at 243.84 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "120804dd-3858-49d7-98dc-c2d32dce3434")
 		)
@@ -8131,6 +8063,15 @@
 			)
 		)
 		(property "Purpose" ""
+			(at 154.94 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 154.94 167.005 0)
 			(effects
 				(font
@@ -8231,7 +8172,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 76.2 119.38 90)
 			(effects
 				(font
@@ -8275,7 +8216,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 76.2 116.84 0)
 			(effects
 				(font
@@ -8285,6 +8226,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 76.2 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 76.2 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 76.2 116.84 0)
 			(effects
 				(font
@@ -8382,6 +8341,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 101.6 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d13fc9cc-9ab3-49bf-a4cb-7659ac3d3b4b")
 		)
@@ -8469,6 +8437,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 149.225 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
@@ -8495,7 +8472,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 76.2 144.78 90)
 			(effects
 				(font
@@ -8539,7 +8516,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 76.2 142.24 0)
 			(effects
 				(font
@@ -8549,6 +8526,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 76.2 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 76.2 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 76.2 142.24 0)
 			(effects
 				(font
@@ -8723,6 +8718,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 181.61 139.065 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 181.61 139.065 0)
 			(effects
 				(font
@@ -8964,7 +8968,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 135.89 134.6199 0)
 			(effects
 				(font
@@ -9010,7 +9014,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 133.35 133.35 0)
 			(effects
 				(font
@@ -9019,7 +9023,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 133.35 133.35 0)
 			(effects
 				(font
@@ -9029,6 +9033,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 133.35 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 133.35 133.35 0)
 			(effects
 				(font
@@ -9139,6 +9152,15 @@
 			)
 		)
 		(property "Purpose" "Mosfet"
+			(at 95.25 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 95.25 71.12 0)
 			(effects
 				(font
@@ -9269,6 +9291,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 95.25 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "de70699b-9c61-437e-b6e6-34c5d4914a0a")
 		)
@@ -9316,7 +9347,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 138.43 134.6199 0)
 			(effects
 				(font
@@ -9362,7 +9393,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 135.89 133.35 0)
 			(effects
 				(font
@@ -9371,7 +9402,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 135.89 133.35 0)
 			(effects
 				(font
@@ -9381,6 +9412,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 135.89 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 135.89 133.35 0)
 			(effects
 				(font
@@ -9492,6 +9532,15 @@
 			)
 		)
 		(property "Purpose" "LED"
+			(at 39.37 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 39.37 127 0)
 			(effects
 				(font
@@ -9614,6 +9663,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 39.37 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b493bcad-f7ec-4812-87d7-7624b2457c74")
 		)
@@ -9649,7 +9707,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 76.2 93.98 90)
 			(effects
 				(font
@@ -9693,7 +9751,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 76.2 91.44 0)
 			(effects
 				(font
@@ -9703,6 +9761,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 76.2 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 76.2 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 76.2 91.44 0)
 			(effects
 				(font
@@ -9743,7 +9819,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 67.31 68.58 90)
 			(effects
 				(font
@@ -9787,7 +9863,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 67.31 66.04 0)
 			(effects
 				(font
@@ -9797,6 +9873,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 67.31 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 67.31 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 67.31 66.04 0)
 			(effects
 				(font
@@ -9815,114 +9909,6 @@
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
 					(reference "R34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 224.79 29.845 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2620c2ca-9d15-4803-a9c6-270d63845ca3")
-		(property "Reference" "R30"
-			(at 227.33 28.5749 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "2740R"
-			(at 227.33 31.1149 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 224.79 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 224.79 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 224.79 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "In Stock" "0"
-			(at 224.79 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
-			(at 224.79 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C13167"
-			(at 224.79 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purpose" "Pullup"
-			(at 224.79 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2353ed67-6d0c-4017-a4c1-438863b473f7")
-		)
-		(pin "1"
-			(uuid "b3c19b31-21c4-447e-b6b8-23b5de3323ae")
-		)
-		(instances
-			(project "LED_Module_E"
-				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -9949,7 +9935,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 186.0549 124.46 0)
 			(effects
 				(font
@@ -9995,7 +9981,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 184.785 121.92 0)
 			(effects
 				(font
@@ -10004,7 +9990,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 184.785 121.92 0)
 			(effects
 				(font
@@ -10014,6 +10000,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 184.785 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 184.785 121.92 0)
 			(effects
 				(font
@@ -10054,7 +10049,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 76.2 132.08 90)
 			(effects
 				(font
@@ -10098,7 +10093,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 76.2 129.54 0)
 			(effects
 				(font
@@ -10108,6 +10103,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 76.2 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 76.2 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 76.2 129.54 0)
 			(effects
 				(font
@@ -10227,6 +10240,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 39.37 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ab822ed4-2160-4d44-aa1e-8e6fef4a4a37")
 		)
@@ -10319,6 +10341,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 101.6 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "508ea3ca-ec97-4bb7-86f7-da9807a54a51")
 		)
@@ -10351,7 +10382,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 148.59 134.6199 0)
 			(effects
 				(font
@@ -10397,7 +10428,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 146.05 133.35 0)
 			(effects
 				(font
@@ -10406,7 +10437,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 146.05 133.35 0)
 			(effects
 				(font
@@ -10416,6 +10447,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 146.05 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 146.05 133.35 0)
 			(effects
 				(font
@@ -10645,6 +10685,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 101.6 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "22359b9d-e94a-4dbe-bf96-106967e0cc76")
 		)
@@ -10678,7 +10727,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 186.0549 119.38 0)
 			(effects
 				(font
@@ -10724,7 +10773,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 184.785 116.84 0)
 			(effects
 				(font
@@ -10733,7 +10782,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 184.785 116.84 0)
 			(effects
 				(font
@@ -10743,6 +10792,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 184.785 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 184.785 116.84 0)
 			(effects
 				(font
@@ -10840,6 +10898,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 101.6 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3bd16693-3ec9-4218-bfb0-da1b1ad6ceab")
 		)
@@ -10869,7 +10936,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 67.31 106.68 90)
 			(effects
 				(font
@@ -10913,7 +10980,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 67.31 104.14 0)
 			(effects
 				(font
@@ -10923,6 +10990,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 67.31 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 67.31 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 67.31 104.14 0)
 			(effects
 				(font
@@ -11039,6 +11124,15 @@
 					(size 2.54 2.54)
 					(bold yes)
 				)
+			)
+		)
+		(property "Note" ""
+			(at 39.37 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11192,114 +11286,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 221.615 29.845 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "55b1ea83-ca4f-425a-bad4-c4b34533770b")
-		(property "Reference" "R29"
-			(at 224.155 28.5749 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "2740R"
-			(at 224.155 31.1149 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 221.615 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 221.615 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 221.615 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "In Stock" "0"
-			(at 221.615 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
-			(at 221.615 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C13167"
-			(at 221.615 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purpose" "Pullup"
-			(at 221.615 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c1022723-bd2c-4b69-9927-84cfc1afd45b")
-		)
-		(pin "1"
-			(uuid "11646dc6-815c-4b37-83bd-755cced03516")
-		)
-		(instances
-			(project "LED_Module_E"
-				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 177.8 149.86 90)
 		(unit 1)
@@ -11364,6 +11350,15 @@
 			)
 		)
 		(property "Purpose" "Direct alert"
+			(at 177.8 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 177.8 149.86 0)
 			(effects
 				(font
@@ -11454,6 +11449,15 @@
 			)
 		)
 		(property "Purpose" ""
+			(at 137.16 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 137.16 167.005 0)
 			(effects
 				(font
@@ -11564,6 +11568,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 218.44 29.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ae44e8d6-0957-415a-ae5e-9ebd50997ec0")
 		)
@@ -11665,7 +11678,7 @@
 				)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "100nF"
 			(at 193.6813 44.45 90)
 			(effects
 				(font
@@ -11709,7 +11722,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CL05B103KB5NNNC"
+		(property "Manufacturer_Part_Number" ""
 			(at 193.675 48.895 0)
 			(effects
 				(font
@@ -11718,7 +11731,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C15195"
+		(property "LCSC Part #" ""
 			(at 193.675 48.895 0)
 			(effects
 				(font
@@ -11728,6 +11741,15 @@
 			)
 		)
 		(property "Purpose" "Decoupling capacitor"
+			(at 193.675 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 193.675 48.895 0)
 			(effects
 				(font
@@ -11768,7 +11790,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 76.2 81.28 90)
 			(effects
 				(font
@@ -11812,7 +11834,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 76.2 78.74 0)
 			(effects
 				(font
@@ -11822,6 +11844,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 76.2 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 76.2 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 76.2 78.74 0)
 			(effects
 				(font
@@ -11862,7 +11902,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 76.2 106.68 90)
 			(effects
 				(font
@@ -11906,7 +11946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 76.2 104.14 0)
 			(effects
 				(font
@@ -11916,6 +11956,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 76.2 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 76.2 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 76.2 104.14 0)
 			(effects
 				(font
@@ -12022,6 +12080,15 @@
 			)
 		)
 		(property "Purpose" "Bulk capacitor"
+			(at 148.59 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 148.59 37.465 0)
 			(effects
 				(font
@@ -12251,6 +12318,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 101.6 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f17b70ab-8be5-441c-b6df-516e52a3c812")
 		)
@@ -12284,7 +12360,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 186.0549 127 0)
 			(effects
 				(font
@@ -12330,7 +12406,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 184.785 124.46 0)
 			(effects
 				(font
@@ -12339,7 +12415,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 184.785 124.46 0)
 			(effects
 				(font
@@ -12349,6 +12425,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 184.785 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 184.785 124.46 0)
 			(effects
 				(font
@@ -12446,6 +12531,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 101.6 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2d4eeee7-8537-40a2-a1f7-3c33968956a0")
 		)
@@ -12525,6 +12619,15 @@
 			)
 		)
 		(property "Purpose" ""
+			(at 143.51 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 143.51 167.005 0)
 			(effects
 				(font
@@ -12636,6 +12739,15 @@
 				)
 			)
 		)
+		(property "Note" ""
+			(at 246.38 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "9"
 			(uuid "6868baa6-ed46-493c-9814-5aba242a15a0")
 		)
@@ -12728,7 +12840,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 67.31 93.98 90)
 			(effects
 				(font
@@ -12772,7 +12884,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 67.31 91.44 0)
 			(effects
 				(font
@@ -12782,6 +12894,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 67.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 67.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 67.31 91.44 0)
 			(effects
 				(font
@@ -12823,7 +12953,7 @@
 				)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "100nF"
 			(at 240.0363 42.545 90)
 			(effects
 				(font
@@ -12867,7 +12997,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603B103K500NT"
+		(property "Manufacturer_Part_Number" ""
 			(at 240.03 46.99 0)
 			(effects
 				(font
@@ -12876,7 +13006,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C57112"
+		(property "LCSC Part #" ""
 			(at 240.03 46.99 0)
 			(effects
 				(font
@@ -12886,6 +13016,15 @@
 			)
 		)
 		(property "Purpose" "Decoupling capacitor"
+			(at 240.03 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 240.03 46.99 0)
 			(effects
 				(font
@@ -12997,7 +13136,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 186.0549 116.84 0)
 			(effects
 				(font
@@ -13043,7 +13182,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 184.785 114.3 0)
 			(effects
 				(font
@@ -13052,7 +13191,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 184.785 114.3 0)
 			(effects
 				(font
@@ -13062,6 +13201,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 184.785 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 184.785 114.3 0)
 			(effects
 				(font
@@ -13105,7 +13253,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 130.81 134.6199 0)
 			(effects
 				(font
@@ -13151,7 +13299,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 128.27 133.35 0)
 			(effects
 				(font
@@ -13160,7 +13308,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 128.27 133.35 0)
 			(effects
 				(font
@@ -13170,6 +13318,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 128.27 133.35 0)
 			(effects
 				(font
@@ -13288,6 +13445,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 95.25 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "9f726cfa-1270-4e41-8cff-61ffbecf5d76")
 		)
@@ -13390,6 +13556,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 160.655 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
@@ -13482,7 +13657,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 67.31 81.28 90)
 			(effects
 				(font
@@ -13526,7 +13701,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 67.31 78.74 0)
 			(effects
 				(font
@@ -13536,6 +13711,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 67.31 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 67.31 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 67.31 78.74 0)
 			(effects
 				(font
@@ -13719,6 +13912,15 @@
 				)
 			)
 		)
+		(property "Note" ""
+			(at 95.25 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "9a69660e-01bd-4252-b031-4cf0b8f584f5")
 		)
@@ -13829,7 +14031,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 67.31 144.78 90)
 			(effects
 				(font
@@ -13873,7 +14075,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 67.31 142.24 0)
 			(effects
 				(font
@@ -13883,6 +14085,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 67.31 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 67.31 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 67.31 142.24 0)
 			(effects
 				(font
@@ -13926,7 +14146,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 143.51 134.6199 0)
 			(effects
 				(font
@@ -13972,7 +14192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 140.97 133.35 0)
 			(effects
 				(font
@@ -13981,7 +14201,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 140.97 133.35 0)
 			(effects
 				(font
@@ -13991,6 +14211,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 140.97 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 140.97 133.35 0)
 			(effects
 				(font
@@ -14035,7 +14264,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 186.0549 114.3 0)
 			(effects
 				(font
@@ -14081,7 +14310,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 184.785 111.76 0)
 			(effects
 				(font
@@ -14090,7 +14319,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 184.785 111.76 0)
 			(effects
 				(font
@@ -14100,6 +14329,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 184.785 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 184.785 111.76 0)
 			(effects
 				(font
@@ -14279,6 +14517,15 @@
 				)
 			)
 		)
+		(property "Note" ""
+			(at 142.24 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "be50f3b2-acb3-41b9-89fe-a34781e84acc")
 		)
@@ -14381,6 +14628,15 @@
 			)
 		)
 		(property "Purpose" "Mosfet"
+			(at 95.25 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 95.25 45.72 0)
 			(effects
 				(font
@@ -14691,6 +14947,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 166.37 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
@@ -14717,7 +14982,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 67.31 30.48 90)
 			(effects
 				(font
@@ -14761,7 +15026,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 67.31 27.94 0)
 			(effects
 				(font
@@ -14777,6 +15042,24 @@
 					(size 2.54 2.54)
 					(bold yes)
 				)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 67.31 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
+			(at 67.31 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14814,7 +15097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 133.35 134.6199 0)
 			(effects
 				(font
@@ -14860,7 +15143,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 130.81 133.35 0)
 			(effects
 				(font
@@ -14869,7 +15152,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 130.81 133.35 0)
 			(effects
 				(font
@@ -14879,6 +15162,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 130.81 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 130.81 133.35 0)
 			(effects
 				(font
@@ -14922,7 +15214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 140.97 134.6199 0)
 			(effects
 				(font
@@ -14968,7 +15260,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 138.43 133.35 0)
 			(effects
 				(font
@@ -14977,7 +15269,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 138.43 133.35 0)
 			(effects
 				(font
@@ -14987,6 +15279,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 138.43 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 138.43 133.35 0)
 			(effects
 				(font
@@ -15097,6 +15398,15 @@
 			)
 		)
 		(property "Purpose" "Mosfet"
+			(at 95.25 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 95.25 96.52 0)
 			(effects
 				(font
@@ -15293,6 +15603,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 95.25 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "fa2435fb-c300-4d89-99bd-8ddfbbe5d2f6")
 		)
@@ -15416,6 +15735,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 39.37 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8f5fbcc6-7040-4c9f-aba9-926b97c32861")
 		)
@@ -15529,6 +15857,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 95.25 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d5f09fa9-955c-496e-bec9-08712496754b")
 		)
@@ -15573,7 +15910,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 67.31 43.18 90)
 			(effects
 				(font
@@ -15617,7 +15954,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 67.31 40.64 0)
 			(effects
 				(font
@@ -15627,6 +15964,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 67.31 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 67.31 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 67.31 40.64 0)
 			(effects
 				(font
@@ -15746,6 +16101,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 39.37 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "740c195a-80d0-4202-b696-1ab7fed72a2d")
 		)
@@ -15785,7 +16149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 186.0549 111.76 0)
 			(effects
 				(font
@@ -15831,7 +16195,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 184.785 109.22 0)
 			(effects
 				(font
@@ -15840,7 +16204,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 184.785 109.22 0)
 			(effects
 				(font
@@ -15850,6 +16214,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 184.785 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 184.785 109.22 0)
 			(effects
 				(font
@@ -15959,7 +16332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 146.05 134.6199 0)
 			(effects
 				(font
@@ -16005,7 +16378,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 143.51 133.35 0)
 			(effects
 				(font
@@ -16014,7 +16387,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 143.51 133.35 0)
 			(effects
 				(font
@@ -16024,6 +16397,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 143.51 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 143.51 133.35 0)
 			(effects
 				(font
@@ -16121,6 +16503,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 101.6 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3d6b7aae-35b9-48b4-8a8c-2fd9ee7e1fdf")
 		)
@@ -16199,6 +16590,15 @@
 			)
 		)
 		(property "Purpose" ""
+			(at 111.125 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 111.125 170.18 0)
 			(effects
 				(font
@@ -16359,6 +16759,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 122.555 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cd095ddf-1bed-4630-8396-83567fb3dde7")
 		)
@@ -16459,6 +16868,15 @@
 			)
 		)
 		(property "Purpose" "LED"
+			(at 39.37 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 39.37 50.8 0)
 			(effects
 				(font
@@ -16580,6 +16998,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 95.25 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d1f07bcb-05ad-4ad6-aa10-0da6936db425")
 		)
@@ -16628,7 +17055,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 186.0549 121.92 0)
 			(effects
 				(font
@@ -16674,7 +17101,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 184.785 119.38 0)
 			(effects
 				(font
@@ -16683,7 +17110,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 184.785 119.38 0)
 			(effects
 				(font
@@ -16693,6 +17120,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 184.785 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 184.785 119.38 0)
 			(effects
 				(font
@@ -16733,7 +17169,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 76.2 30.48 90)
 			(effects
 				(font
@@ -16777,7 +17213,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 76.2 27.94 0)
 			(effects
 				(font
@@ -16787,6 +17223,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 76.2 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 76.2 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 76.2 27.94 0)
 			(effects
 				(font
@@ -16876,6 +17330,15 @@
 			)
 		)
 		(property "Purpose" ""
+			(at 101.6 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 101.6 58.42 0)
 			(effects
 				(font
@@ -16979,7 +17442,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 67.31 55.88 90)
 			(effects
 				(font
@@ -17023,7 +17486,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 67.31 53.34 0)
 			(effects
 				(font
@@ -17033,6 +17496,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 67.31 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 67.31 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 67.31 53.34 0)
 			(effects
 				(font
@@ -17074,7 +17555,7 @@
 				)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "100nF"
 			(at 168.2813 94.615 90)
 			(effects
 				(font
@@ -17118,7 +17599,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603B103K500NT"
+		(property "Manufacturer_Part_Number" ""
 			(at 168.275 99.06 0)
 			(effects
 				(font
@@ -17127,7 +17608,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C57112"
+		(property "LCSC Part #" ""
 			(at 168.275 99.06 0)
 			(effects
 				(font
@@ -17137,6 +17618,15 @@
 			)
 		)
 		(property "Purpose" "Decoupling capacitor"
+			(at 168.275 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 168.275 99.06 0)
 			(effects
 				(font
@@ -17177,7 +17667,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 76.2 68.58 90)
 			(effects
 				(font
@@ -17221,7 +17711,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 76.2 66.04 0)
 			(effects
 				(font
@@ -17231,6 +17721,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 76.2 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 76.2 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 76.2 66.04 0)
 			(effects
 				(font
@@ -17350,6 +17858,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 39.37 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d9131d92-9c83-4c7c-9e8d-d4659efab93d")
 		)
@@ -17450,6 +17967,15 @@
 					(size 2.54 2.54)
 					(bold yes)
 				)
+			)
+		)
+		(property "Note" ""
+			(at 256.54 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "8"
@@ -17581,6 +18107,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 39.37 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8775bc18-55f7-4e04-a6b9-7459bf89295e")
 		)
@@ -17665,6 +18200,15 @@
 			)
 		)
 		(property "Purpose" ""
+			(at 105.41 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 105.41 170.18 0)
 			(effects
 				(font
@@ -17759,6 +18303,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 116.84 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a7ee32ef-4345-4f1f-ad82-fc2017f5905c")
 		)
@@ -17845,6 +18398,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 128.27 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "96c5c8f8-a85f-41e7-a6ce-d8c5dea49e3e")
 		)
@@ -17874,7 +18436,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 76.2 55.88 90)
 			(effects
 				(font
@@ -17918,7 +18480,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 76.2 53.34 0)
 			(effects
 				(font
@@ -17928,6 +18490,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 76.2 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 76.2 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 76.2 53.34 0)
 			(effects
 				(font
@@ -18040,6 +18620,15 @@
 					(size 2.54 2.54)
 					(bold yes)
 				)
+			)
+		)
+		(property "Note" ""
+			(at 163.83 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "19"
@@ -18317,6 +18906,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 100.33 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "98691e30-f810-4327-b76c-a8ef4661a768")
 		)
@@ -18346,7 +18944,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 76.2 43.18 90)
 			(effects
 				(font
@@ -18390,7 +18988,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 76.2 40.64 0)
 			(effects
 				(font
@@ -18400,6 +18998,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 76.2 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 76.2 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 76.2 40.64 0)
 			(effects
 				(font
@@ -18440,7 +19056,7 @@
 				)
 			)
 		)
-		(property "Value" "220mR"
+		(property "Value" "200mR"
 			(at 67.31 132.08 90)
 			(effects
 				(font
@@ -18484,7 +19100,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "RCWE1020R200FKEA"
 			(at 67.31 129.54 0)
 			(effects
 				(font
@@ -18494,6 +19110,24 @@
 			)
 		)
 		(property "Purpose" "Series resistor"
+			(at 67.31 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C4000899"
+			(at 67.31 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "I calculated 220mR but 200mR is much cheaper"
 			(at 67.31 129.54 0)
 			(effects
 				(font
@@ -18538,7 +19172,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2740R"
+		(property "Value" "4700R"
 			(at 186.0549 129.54 0)
 			(effects
 				(font
@@ -18584,7 +19218,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603WAF2701T5E"
+		(property "Manufacturer_Part_Number" ""
 			(at 184.785 127 0)
 			(effects
 				(font
@@ -18593,7 +19227,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C13167"
+		(property "LCSC Part #" ""
 			(at 184.785 127 0)
 			(effects
 				(font
@@ -18603,6 +19237,15 @@
 			)
 		)
 		(property "Purpose" "Pullup"
+			(at 184.785 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 184.785 127 0)
 			(effects
 				(font
@@ -18714,6 +19357,15 @@
 			)
 		)
 		(property "Purpose" "LED"
+			(at 39.37 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 39.37 76.2 0)
 			(effects
 				(font
@@ -18835,6 +19487,15 @@
 				(hide yes)
 			)
 		)
+		(property "Note" ""
+			(at 95.25 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "d505a955-5b73-426e-b652-7a3231e4f03a")
 		)
@@ -18927,6 +19588,15 @@
 			)
 		)
 		(property "Purpose" ""
+			(at 149.86 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 149.86 182.88 0)
 			(effects
 				(font

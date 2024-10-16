@@ -589,6 +589,12 @@
           "label": "Purpose",
           "name": "Purpose",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Note",
+          "name": "Note",
+          "show": false
         }
       ],
       "filter_string": "",
