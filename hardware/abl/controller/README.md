@@ -54,7 +54,7 @@ The power of the presence sensors can be switched for these reasons:
 ### Other power and voltage considerations
 The controller board does not directly deal with `VLED`, since it only outputs the PWM signals on 3.3V logic level.
 
-But during testing / debugging, the controller module can be powered over USB-C. Then it will provide 5V and 3.3V to the other modules. VLED is also connected directly to 5V, unless you cut the solder jumper JP1. (As stated in several places, connecting both USB-C and the power module at the same time is not recommended, since both 5V sources will be directly connected. There should be some diodes to prevent damage.)
+But during testing / debugging, the controller module can be powered over USB-C. Then it will provide 5V and 3.3V to the other modules. VLED is also connected directly to 5V, unless you cut the solder jumper JP1.
 
 When powered via USB-C, there is at most 15W available in total, compared to 20W or 30W from the power module. When the power module is disconnected, it cannot measure the current, and even if it was connected, the current from USB / VBUS does not flow through shunt resistor of the INA219 on the power module. For this reason, it is possible to place a second INA219 and shunt resistor directly onto the controller. For normal operation, this is not needed.
 
