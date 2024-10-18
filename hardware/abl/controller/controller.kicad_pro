@@ -452,7 +452,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "controller.kicad_pro",
+    "filename": "Controller.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -528,7 +528,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
