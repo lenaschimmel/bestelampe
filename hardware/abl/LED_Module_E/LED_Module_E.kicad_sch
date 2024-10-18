@@ -7394,7 +7394,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0022faa8-56ae-4623-abb7-85a532675409")
-		(property "Reference" "R38"
+		(property "Reference" "R18"
 			(at 67.31 121.92 90)
 			(effects
 				(font
@@ -7491,7 +7491,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R38")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -8487,7 +8487,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0eb3ad19-c5d1-4d8b-b4dd-d7b500aa2123")
-		(property "Reference" "R11"
+		(property "Reference" "R10"
 			(at 76.2 147.32 90)
 			(effects
 				(font
@@ -8584,7 +8584,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R11")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -8666,7 +8666,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "134d5490-658c-4623-8cde-996e064f5f15")
-		(property "Reference" "R19"
+		(property "Reference" "R41"
 			(at 180.3399 136.525 0)
 			(effects
 				(font
@@ -8767,7 +8767,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R19")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -8981,7 +8981,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "16482cd3-6c6d-4347-b6a7-f1723d23775c")
-		(property "Reference" "R22"
+		(property "Reference" "R33"
 			(at 135.89 132.0799 0)
 			(effects
 				(font
@@ -9082,7 +9082,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R22")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -9360,7 +9360,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a3e254a-ac39-45e6-ae9b-e83a63b2d2ec")
-		(property "Reference" "R23"
+		(property "Reference" "R34"
 			(at 138.43 132.0799 0)
 			(effects
 				(font
@@ -9461,7 +9461,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R23")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -9834,7 +9834,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "24cbbfa2-b030-4dd0-8040-4e7951e8fb4f")
-		(property "Reference" "R34"
+		(property "Reference" "R14"
 			(at 67.31 71.12 90)
 			(effects
 				(font
@@ -9931,7 +9931,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R34")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -9948,7 +9948,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "267a72ae-444b-4669-9732-b369912544a0")
-		(property "Reference" "R16"
+		(property "Reference" "R26"
 			(at 183.5149 124.46 0)
 			(effects
 				(font
@@ -10049,7 +10049,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R16")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -10064,7 +10064,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "27e62066-2354-484a-8920-6ef960314050")
-		(property "Reference" "R12"
+		(property "Reference" "R9"
 			(at 76.2 134.62 90)
 			(effects
 				(font
@@ -10161,7 +10161,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R12")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -10395,7 +10395,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a31c189-0932-48ef-aced-c0984e13afee")
-		(property "Reference" "R27"
+		(property "Reference" "R38"
 			(at 148.59 132.0799 0)
 			(effects
 				(font
@@ -10496,7 +10496,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R27")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -10740,7 +10740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32f8e71d-d288-407f-a4a3-7ee9c3ec924f")
-		(property "Reference" "R14"
+		(property "Reference" "R24"
 			(at 183.5149 119.38 0)
 			(effects
 				(font
@@ -10841,7 +10841,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R14")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -10951,7 +10951,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4565257b-eb09-4275-87b3-4009fefdbd32")
-		(property "Reference" "R37"
+		(property "Reference" "R17"
 			(at 67.31 109.22 90)
 			(effects
 				(font
@@ -11048,7 +11048,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R37")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -11508,7 +11508,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b3c03f0-3c9d-43a6-84c9-8d14e79d26b7")
-		(property "Reference" "R28"
+		(property "Reference" "R40"
 			(at 220.98 28.5749 0)
 			(effects
 				(font
@@ -11609,7 +11609,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R28")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -12498,7 +12498,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6ff48819-75e6-4cf0-b4ac-183cbaec486b")
-		(property "Reference" "R17"
+		(property "Reference" "R27"
 			(at 183.5149 127 0)
 			(effects
 				(font
@@ -12599,7 +12599,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R17")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -12980,7 +12980,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "779055c1-3cb2-4554-b4b5-ba1efafeae7f")
-		(property "Reference" "R36"
+		(property "Reference" "R16"
 			(at 67.31 96.52 90)
 			(effects
 				(font
@@ -13077,7 +13077,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R36")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -13274,7 +13274,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f04843d-c2a3-4eec-af8f-4bc65b09deaf")
-		(property "Reference" "R13"
+		(property "Reference" "R23"
 			(at 183.5149 116.84 0)
 			(effects
 				(font
@@ -13375,7 +13375,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R13")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -13391,7 +13391,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f52ffd3-4c48-4be4-b43c-496da0259179")
-		(property "Reference" "R20"
+		(property "Reference" "R31"
 			(at 130.81 132.0799 0)
 			(effects
 				(font
@@ -13492,7 +13492,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R20")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -13797,7 +13797,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "828fae90-49ee-46ce-aea5-45acb9aa02cc")
-		(property "Reference" "R35"
+		(property "Reference" "R15"
 			(at 67.31 83.82 90)
 			(effects
 				(font
@@ -13894,7 +13894,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R35")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -14171,7 +14171,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8e117170-b924-4fe9-9fcb-f52802d2723e")
-		(property "Reference" "R40"
+		(property "Reference" "R20"
 			(at 67.31 147.32 90)
 			(effects
 				(font
@@ -14268,7 +14268,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R40")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -14284,7 +14284,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ef1d46a-9c04-4127-9041-5bbd3f861fe3")
-		(property "Reference" "R25"
+		(property "Reference" "R36"
 			(at 143.51 132.0799 0)
 			(effects
 				(font
@@ -14385,7 +14385,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R25")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -14402,7 +14402,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "905681db-e4fd-4d19-a5d3-04754b1e2179")
-		(property "Reference" "R10"
+		(property "Reference" "R22"
 			(at 183.5149 114.3 0)
 			(effects
 				(font
@@ -14503,7 +14503,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R10")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -15122,7 +15122,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a19f97c6-c5a4-4129-a9f7-1230d8f27392")
-		(property "Reference" "R31"
+		(property "Reference" "R11"
 			(at 67.31 33.02 90)
 			(effects
 				(font
@@ -15219,7 +15219,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R31")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -15235,7 +15235,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a227914c-f105-4f17-baca-d96ea4ab156b")
-		(property "Reference" "R21"
+		(property "Reference" "R32"
 			(at 133.35 132.0799 0)
 			(effects
 				(font
@@ -15336,7 +15336,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R21")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -15352,7 +15352,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3a02476-3a00-4f02-8ce6-b75f8d5c1a2a")
-		(property "Reference" "R24"
+		(property "Reference" "R35"
 			(at 140.97 132.0799 0)
 			(effects
 				(font
@@ -15453,7 +15453,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R24")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -16050,7 +16050,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bd82d625-6c09-4dba-a736-15dd9da12419")
-		(property "Reference" "R32"
+		(property "Reference" "R12"
 			(at 67.31 45.72 90)
 			(effects
 				(font
@@ -16147,7 +16147,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R32")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -16287,7 +16287,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bffdde04-2250-41af-bbad-f5c9ad846389")
-		(property "Reference" "R9"
+		(property "Reference" "R21"
 			(at 183.5149 111.76 0)
 			(effects
 				(font
@@ -16388,7 +16388,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R9")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -16470,7 +16470,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0400ed1-4ff7-4ff0-a687-de73028538db")
-		(property "Reference" "R26"
+		(property "Reference" "R37"
 			(at 146.05 132.0799 0)
 			(effects
 				(font
@@ -16571,7 +16571,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R26")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -17193,7 +17193,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca15d2c5-d195-4290-a371-6de304313362")
-		(property "Reference" "R15"
+		(property "Reference" "R25"
 			(at 183.5149 121.92 0)
 			(effects
 				(font
@@ -17294,7 +17294,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R15")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -17582,7 +17582,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d51c0035-f5e8-47d7-8ebf-83c7c54a2e93")
-		(property "Reference" "R33"
+		(property "Reference" "R13"
 			(at 67.31 58.42 90)
 			(effects
 				(font
@@ -17679,7 +17679,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R33")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -19027,7 +19027,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f97d3d19-8a1b-483a-8d44-8e5238d6ceb8")
-		(property "Reference" "R39"
+		(property "Reference" "R19"
 			(at 67.31 134.62 90)
 			(effects
 				(font
@@ -19124,7 +19124,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R39")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -19141,7 +19141,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa8d3c22-51b9-4559-8c7c-89bebf24a9cc")
-		(property "Reference" "R18"
+		(property "Reference" "R28"
 			(at 183.5149 129.54 0)
 			(effects
 				(font
@@ -19242,7 +19242,7 @@
 		(instances
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
-					(reference "R18")
+					(reference "R28")
 					(unit 1)
 				)
 			)
