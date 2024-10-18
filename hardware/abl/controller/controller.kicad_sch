@@ -4995,6 +4995,12 @@
 		(uuid "5bf6a255-026e-49d3-a4e0-a0c01d38e472")
 	)
 	(junction
+		(at 71.12 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67d4953a-5e60-4171-b0af-4b5340daf977")
+	)
+	(junction
 		(at 80.01 62.865)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5492,6 +5498,16 @@
 	)
 	(wire
 		(pts
+			(xy 65.405 167.64) (xy 71.12 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39c70272-b5e6-4ea2-9f73-ddb95f2d2d3f")
+	)
+	(wire
+		(pts
 			(xy 208.915 141.605) (xy 208.915 139.7)
 		)
 		(stroke
@@ -5882,6 +5898,16 @@
 	)
 	(wire
 		(pts
+			(xy 65.405 170.18) (xy 65.405 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e4f9204-8795-47ae-b865-0fc3fc2a526c")
+	)
+	(wire
+		(pts
 			(xy 206.375 99.695) (xy 206.375 109.22)
 		)
 		(stroke
@@ -6019,6 +6045,16 @@
 			(type default)
 		)
 		(uuid "7ee64f45-f7bb-475e-aec6-906d16f2e928")
+	)
+	(wire
+		(pts
+			(xy 71.12 177.8) (xy 71.12 180.975)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f0cf180-bd40-404b-8839-cf4bff41d1b8")
 	)
 	(wire
 		(pts
@@ -6232,6 +6268,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 167.64) (xy 71.12 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "937c9498-5e1c-4cca-ac85-f67525034be3")
+	)
+	(wire
+		(pts
 			(xy 196.215 52.705) (xy 196.215 50.8)
 		)
 		(stroke
@@ -6309,6 +6355,16 @@
 			(type default)
 		)
 		(uuid "9f6b4a36-6c02-47b2-a5f3-9a97a52ba6f2")
+	)
+	(wire
+		(pts
+			(xy 71.12 167.005) (xy 71.12 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a04047e2-d364-4d2c-b56b-c7610c7b8127")
 	)
 	(wire
 		(pts
@@ -6962,6 +7018,16 @@
 	)
 	(wire
 		(pts
+			(xy 65.405 177.8) (xy 65.405 180.975)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4fc81d5-57fc-47a9-ab01-8a5ca037d9ed")
+	)
+	(wire
+		(pts
 			(xy 232.41 50.8) (xy 232.41 52.705)
 		)
 		(stroke
@@ -7136,6 +7202,17 @@
 			(justify left bottom)
 		)
 		(uuid "0fa60861-4433-4c65-9efa-c64b8bc77f0c")
+	)
+	(label "SDA"
+		(at 65.405 180.975 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1289511b-9f91-43ad-9adf-c0e35e6f40d1")
 	)
 	(label "FX_5_2"
 		(at 180.975 127 180)
@@ -7621,6 +7698,17 @@
 		)
 		(uuid "846f197a-fffa-49bc-95bf-116cc47ef15e")
 	)
+	(label "SCL"
+		(at 71.12 180.975 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "84766b1e-e8a0-4613-bd2e-b685cb645c2c")
+	)
 	(label "FX_3_1"
 		(at 121.92 112.395 270)
 		(fields_autoplaced yes)
@@ -8049,6 +8137,73 @@
 			(justify left bottom)
 		)
 		(uuid "fb2c2c65-058d-45c7-b92f-298ceadd6685")
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 71.12 167.005 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00b22340-93a6-4d52-b573-359e70fb0be8")
+		(property "Reference" "#PWR043"
+			(at 71.12 170.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 73.025 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 71.12 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "68c178bd-5ef3-45b0-9396-226c99a21411")
+		)
+		(instances
+			(project "Controller"
+				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -9085,6 +9240,94 @@
 			(project "Controller"
 				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 71.12 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "349c18fb-41f1-4d26-b95e-a291cfd46289")
+		(property "Reference" "R4"
+			(at 73.025 172.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4700R"
+			(at 73.025 175.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 69.342 173.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 71.12 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 71.12 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C25900"
+			(at 71.12 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purpose" "Pull-Up"
+			(at 71.12 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "90c78fc6-62c9-4f3e-a491-af78aba19dad")
+		)
+		(pin "1"
+			(uuid "e95f67a1-e673-4c66-a7f7-ebd699483af2")
+		)
+		(instances
+			(project "Controller"
+				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -12734,6 +12977,93 @@
 			(project "Controller"
 				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 65.405 173.99 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c73f69bf-c79d-4949-9e92-7e5c6e1c52f4")
+		(property "Reference" "R5"
+			(at 60.325 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4700R"
+			(at 56.515 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 67.183 173.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 65.405 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 65.405 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C25900"
+			(at 65.405 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purpose" "Pull-Up"
+			(at 65.405 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "95ed7205-25dc-4521-b391-8267ee1a5e54")
+		)
+		(pin "1"
+			(uuid "4bbde6bc-14dd-4486-99d8-508da0cbf793")
+		)
+		(instances
+			(project "Controller"
+				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
+					(reference "R5")
 					(unit 1)
 				)
 			)
