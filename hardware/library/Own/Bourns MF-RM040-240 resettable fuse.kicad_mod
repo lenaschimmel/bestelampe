@@ -1,0 +1,140 @@
+(footprint "Bourns MF-RM040-240 resettable fuse"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "badac8a5-4d50-40db-9ba7-60a9bed773b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "MF-RM040-240"
+		(at 0 3.15 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "dce79301-2120-431c-a025-6fe696ac3d01")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at -2.55 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3fcb087b-6a23-4295-ac30-5e0811a420a1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at -2.55 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0ef52dec-3463-4077-8b05-bd573a2c42eb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at -2.55 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f4f3411f-228c-4a57-a3aa-d25866b258a8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2.55 -1.9)
+		(end -2.55 -1)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "cf9fda44-4403-4d04-abab-7145b26fec0f")
+	)
+	(fp_line
+		(start 2.55 1.9)
+		(end 2.55 1)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "14800ef7-9f32-4d7b-91bf-c042667772b9")
+	)
+	(fp_rect
+		(start -5.75 -1.9)
+		(end 5.75 1.9)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "620d1fe8-1315-4a12-abc7-d77ff8c801e5")
+	)
+	(fp_rect
+		(start -6.05 -2.25)
+		(end 6.1 2.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "eeaf8bf1-1746-4b0e-a422-e1cb4ffa1b63")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 4.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0374580e-278f-482f-8482-fcdac63a3b3d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -2.55 0)
+		(size 1.75 1.75)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "71ffa361-aa06-4c2e-89dd-8e9ace992bfd")
+	)
+	(pad "2" thru_hole circle
+		(at 2.55 0)
+		(size 1.75 1.75)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a08e4c72-0000-4a43-b537-33f088cae506")
+	)
+)
