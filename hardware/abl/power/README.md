@@ -11,8 +11,14 @@ This module contains:
 - temperature sensor
 - power sensor (voltage and current)
 - status LED
+- resettable fuse / polyfuse / overheating protection
+- inrush current limiter
 
-The power module does not monitor its own sensors. The controller module should do this, and drive the LEDs in a way that does not exceed the current and temperature limits of the PS. The power module has its own 3.3V buck converter. It does neither supply 3.3V to the other modules, nor does it receive 3.3V from them.
+The power module does not monitor its own sensors. The controller module should do this, and drive the LEDs in a way that does not exceed the current and temperature limits of the PS. The polyfuse also acts as a overheating protection, disconnecting the 230V AC at about 100°C. It may take several minutes to fully reset the fuse, so this should still be prevented by derating in software.
+
+Many power modules can be daisy-chained using the two sets of 230V terminals. The fuse and inrush current limiter only apply to the local power supply, not the whole chain.
+
+The power module has its own 3.3V buck converter. It does neither supply 3.3V to the other modules, nor does it receive 3.3V from them.
 
 You can solder in either a 20W or 30W PS. You must bridge two pads of the solder jumper to indicate which PS is present. This affects the I2C address of the power sensor, which allows us to communicate this bit of information to the controller without an extra wire. For the specific I2C addresses of the sensors, see the README in the [parent directory](../README.md).
 

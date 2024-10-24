@@ -17,6 +17,15 @@ The besteLampe! is open hardware and tries to follow the [Best Practices for Ope
 All licenses are available in this directory.
 
 ## Standard header for hardware design files
+### KiCAD
+```
+(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
+(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
+(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
+(comment 4 "Design for JLCPCB 1-2 Layer Service")
+```
+
+### Others
 ```
 SPDX-FileCopyrightText: 2024 Lena Schimmel <mail@lenaschimmel.de>
 SPDX-License-Identifier: CERN-OHL-S-2.0+

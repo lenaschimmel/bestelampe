@@ -6324,6 +6324,15 @@
 				(hide yes)
 			)
 		)
+		(property "Purpose" "Fuse"
+			(at 135.255 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "341e2c14-cf7f-44c7-83cc-37affcdb7807")
 		)
@@ -6395,7 +6404,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C308920"
+		(property "LCSC Part" "C7203"
 			(at 43.815 131.445 0)
 			(effects
 				(font
@@ -6404,7 +6413,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TPSB336M016R0350"
+		(property "Manufacturer_Part_Number" "TAJB336K016RNJ"
 			(at 43.815 131.445 0)
 			(effects
 				(font
@@ -7467,7 +7476,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C308920"
+		(property "LCSC Part" "C7203"
 			(at 70.485 131.445 0)
 			(effects
 				(font
@@ -7476,7 +7485,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TPSB336M016R0350"
+		(property "Manufacturer_Part_Number" "TAJB336K016RNJ"
 			(at 70.485 131.445 0)
 			(effects
 				(font
@@ -7554,6 +7563,15 @@
 			)
 		)
 		(property "Description" "Temperature dependent resistor, negative temperature coefficient"
+			(at 148.59 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purpose" "Inrush current limiter"
 			(at 148.59 44.45 0)
 			(effects
 				(font
@@ -8272,7 +8290,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" ""
+		(property "Purpose" "230V connector"
 			(at 94.615 64.135 0)
 			(effects
 				(font
@@ -8572,7 +8590,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" ""
+		(property "Purpose" "230V connector"
 			(at 120.015 44.45 0)
 			(effects
 				(font
@@ -8870,7 +8888,7 @@
 				)
 			)
 		)
-		(property "Footprint" "009159008603906"
+		(property "Footprint" "Own footprints:Dual Row Inverted Thru Board Card Edge Connector 02x04 Kyocera AVX 009159008603906"
 			(at 160.02 86.055 0)
 			(effects
 				(font
@@ -9717,7 +9735,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O3.81mm_Z10.0mm"
+		(property "Footprint" "Own footprints:XINGLIGHT XL-3210SURC"
 			(at 83.185 120.015 0)
 			(effects
 				(font
@@ -9744,7 +9762,25 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" ""
+		(property "Purpose" "Power LED"
+			(at 83.185 120.015 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C965874"
+			(at 83.185 120.015 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "XL-3210SURC"
 			(at 83.185 120.015 0)
 			(effects
 				(font

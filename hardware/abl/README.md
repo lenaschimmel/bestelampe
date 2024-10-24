@@ -29,7 +29,7 @@ Additional ressouces:
 ## Voltages
 The complete system has three or four different voltages / power rails:
  - **230V AC** Input voltage (power modules can be daisy-chained)
- - **5V** Output by the power module and fed through to all other modules. When the controller module is connected via USB-C, it can also source 5V from there and feed it to other components. **Connecting both voltage sources at the same time is currently not recommended!**
+ - **5V** Output by the power module and fed through to all other modules. When the controller module is connected via USB-C, it can also source 5V from there and feed it to other components.
  - **3.3V** Supply voltage for several components. The feather module generates this from its 5V input and shares it with most other components. The power module has its own 5V-to-3.3V conversion (which is a bit strange, but probably ok and not worth changing).
  - **VLED** The voltage to drive the LEDs. This is the most significant part of the systems power consumption.
 
@@ -60,3 +60,8 @@ The INA219 power sensor on the power board serves an additional purpose: the add
     - 69 = 1000101: INA219
  - Feather
     - 54 = 0110110:	Battery monitor (Adafruit ESP-C6)
+
+## Rendering
+Artistic rendering showing the inside and outside of the ABL at the same time:
+
+![Image as described above](../../assets/enclosure_semi.jpg)
