@@ -20,6 +20,10 @@ It consists of these parts:
  - Enclosure
    - Not yet online
 
+Additional ressouces:
+ - Tools
+   - [LED heatplate](./LED_heatplate/)
+
 ![Simplified diagram of modules and components](./ABL%20Components.png)
 
 ## Voltages
