@@ -17,3 +17,7 @@ The power module does not monitor its own sensors. The controller module should 
 You can solder in either a 20W or 30W PS. You must bridge two pads of the solder jumper to indicate which PS is present. This affects the I2C address of the power sensor, which allows us to communicate this bit of information to the controller without an extra wire. For the specific I2C addresses of the sensors, see the README in the [parent directory](../README.md).
 
 Ground and PE are separate, but could be connected by placing the resistor R5. I've extrapolated from [this toot/thread about USB grounding](https://mastodon.social/@tubetime/113036756672478830) that it might be a good idea.
+
+### Rendering
+![KiCad rendering of the PCB, as of 2024-10-24](../../../assets/rendering_abl_power_front.jpg)
+![KiCad rendering of the PCB, as of 2024-10-24](../../../assets/rendering_abl_power_back.jpg)

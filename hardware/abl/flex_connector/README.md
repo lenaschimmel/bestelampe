@@ -22,3 +22,7 @@ With this kind of connector, it seems unavoidable that the pin numbers on each e
 Its length / shape must be re-adjusted to the encloure, because the position of the controller module has changed recently.
 
 In normal operation, VLED is not needed on the controller boards, so the trace is not used. When powerd (exclusively) over USB-C, the LED module gets VLED from the controller module. The trace is 3mm wide, which (depending on copper thickness) may or may not be enough to conduct the full 15W that USB-C may provide.
+
+
+### Rendering
+![KiCad rendering of the PCB, as of 2024-10-24](../../../assets/rendering_abl_flex.jpg)

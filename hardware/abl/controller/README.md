@@ -63,3 +63,6 @@ This sensor is intended to monitor the overall light output of the LED module. T
 
 ### Additional connectors
 The AUX connector (J5) and STEMMA QT / Qwiic connector (J4) can be used for debugging and/or future extensions. Both provice 3.3V supply voltage and I2C at 3.3V. The AUX connector also has VLED, 5V and four GPIOs (two at 3.3V and two at 5V).
+
+### Rendering
+![KiCad rendering of the PCB, as of 2024-10-24](../../../assets/rendering_abl_controller.jpg)

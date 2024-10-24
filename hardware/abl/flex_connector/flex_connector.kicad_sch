@@ -1777,7 +1777,7 @@
 		(uuid "ef1f6186-db45-49bd-9839-4ebda8ead8b0")
 	)
 	(label "i2"
-		(at 58.42 95.25 0)
+		(at 58.42 97.79 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1810,7 +1810,7 @@
 		(uuid "2f5ca8b1-134d-45ed-bf43-ba5a7856cf83")
 	)
 	(label "i3"
-		(at 58.42 97.79 0)
+		(at 58.42 95.25 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1832,7 +1832,7 @@
 		(uuid "58fd3c91-7836-4c50-ac7f-d507130f8bc3")
 	)
 	(label "i4"
-		(at 58.42 102.87 0)
+		(at 58.42 90.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1865,7 +1865,7 @@
 		(uuid "880e3a79-58f6-47d0-8f7a-32732627d764")
 	)
 	(label "i1"
-		(at 58.42 90.17 0)
+		(at 58.42 102.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2234,7 +2234,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "bfc2a402-8252-41cd-91bd-8c5d61258ad7")
 		(property "Reference" "J1"
 			(at 50.165 49.53 0)

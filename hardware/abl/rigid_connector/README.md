@@ -10,3 +10,6 @@ This passive connector PCB connects the [power module](../power/) to the [LED mo
 It has separate traces for 5V (0.6mm width) and VLED (5.5mm width), and also carries I2C.
 
 Unless it is inserted from a wrong angle, gound connects first, then 5V and VLED, and last I2C (SDA and SCL).
+
+### Rendering
+![KiCad rendering of the PCB, as of 2024-10-24](../../../assets/rendering_abl_rigid.jpg)
