@@ -6,13 +6,115 @@
 	(paper "A4")
 	(title_block
 		(title "besteLampe! ABL Controller Module")
-		(date "2024-10-01")
-		(rev "1.0")
+		(date "2024-10-28")
+		(rev "1.1")
 		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
 		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
 		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_02x05_Odd_Even"
 			(pin_names
 				(offset 1.016) hide)
@@ -5323,6 +5425,16 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 112.395) (xy 264.16 117.475)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00d3a450-c6f0-4ab0-a3b8-d4b7974d63df")
+	)
+	(wire
+		(pts
 			(xy 138.43 157.48) (xy 143.51 157.48)
 		)
 		(stroke
@@ -5683,6 +5795,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 118.745) (xy 250.19 113.792)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ddd8fd8-7fdd-4033-a9fd-de214be273ed")
+	)
+	(wire
+		(pts
 			(xy 123.825 77.47) (xy 123.825 86.995)
 		)
 		(stroke
@@ -5920,6 +6042,16 @@
 			(type default)
 		)
 		(uuid "47f25333-48dc-4951-b47b-ec66593bd9ae")
+	)
+	(wire
+		(pts
+			(xy 269.24 112.395) (xy 269.24 117.475)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48e87159-2fd9-48fa-8fb0-a1b39acc1460")
 	)
 	(wire
 		(pts
@@ -6713,6 +6845,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 113.792) (xy 254 113.792)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acd53160-869e-4f57-9cbe-e7cd8dc613d8")
+	)
+	(wire
+		(pts
 			(xy 269.875 42.545) (xy 267.97 42.545)
 		)
 		(stroke
@@ -6993,6 +7135,16 @@
 	)
 	(wire
 		(pts
+			(xy 274.32 112.395) (xy 274.32 117.475)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d85667e9-62c0-4591-aec7-2c130826ff70")
+	)
+	(wire
+		(pts
 			(xy 118.11 170.18) (xy 118.11 175.895)
 		)
 		(stroke
@@ -7063,6 +7215,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 112.395) (xy 259.08 117.475)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dffc8dfa-3528-446a-8082-50320c2822eb")
+	)
+	(wire
+		(pts
 			(xy 26.67 62.865) (xy 38.1 62.865)
 		)
 		(stroke
@@ -7110,6 +7272,16 @@
 			(type default)
 		)
 		(uuid "e50c0c21-2a6b-4423-bb01-3f7c2287094f")
+	)
+	(wire
+		(pts
+			(xy 254 113.792) (xy 254 117.475)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e55fd190-83ea-4e82-93b5-0bc8494c7fce")
 	)
 	(wire
 		(pts
@@ -7899,7 +8071,7 @@
 		(uuid "736a04c7-49ff-4655-9a79-9e6e8a22dca8")
 	)
 	(label "SDA"
-		(at 250.825 86.36 180)
+		(at 250.825 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8097,7 +8269,7 @@
 		(uuid "a0c63e42-e423-4327-82e3-aa72ca712233")
 	)
 	(label "SCL"
-		(at 250.825 83.82 180)
+		(at 250.825 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8841,7 +9013,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 250.825 91.44 270)
+		(at 250.825 83.82 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8850,7 +9023,7 @@
 		(fields_autoplaced yes)
 		(uuid "0dff9999-f47e-4db3-bba8-d0ac3c0c40fb")
 		(property "Reference" "#PWR022"
-			(at 244.475 91.44 0)
+			(at 244.475 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8859,7 +9032,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 247.015 91.4399 90)
+			(at 247.015 83.8201 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8868,7 +9041,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 250.825 91.44 0)
+			(at 250.825 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8877,7 +9050,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.825 91.44 0)
+			(at 250.825 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8886,7 +9059,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 250.825 91.44 0)
+			(at 250.825 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8901,6 +9074,73 @@
 			(project "Controller"
 				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 259.08 117.475 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11cd59ed-1f83-4485-a684-f6c0ede98d55")
+		(property "Reference" "TP2"
+			(at 257.81 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 261.62 122.0469 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 254 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 259.08 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38e08acf-b709-4212-834e-67e8cc2d4d39")
+		)
+		(instances
+			(project "Controller"
+				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -8975,6 +9215,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 254 117.475 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "13a3432b-e2c8-4e17-b445-75b33da6799f")
+		(property "Reference" "TP1"
+			(at 252.73 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 256.54 122.0469 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 248.92 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 248.92 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 254 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eb2ae399-de69-4c27-aa2a-c27211ce7019")
+		)
+		(instances
+			(project "Controller"
+				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 118.745 124.46 0)
 		(unit 1)
@@ -9035,6 +9342,72 @@
 			(project "Controller"
 				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
 					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 264.16 112.395 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f0f2603-8d65-49a6-abbf-65913442dc3d")
+		(property "Reference" "#PWR047"
+			(at 264.16 116.205 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 262.89 107.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 264.16 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 264.16 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 264.16 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e71fc0a-b492-4c38-aaef-82fb85c7598b")
+		)
+		(instances
+			(project "Controller"
+				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -9110,7 +9483,8 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 250.825 88.9 90)
+		(at 250.825 86.36 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9119,7 +9493,7 @@
 		(fields_autoplaced yes)
 		(uuid "2972f321-dc1c-4ca2-813e-b6903bf25c0c")
 		(property "Reference" "#PWR021"
-			(at 254.635 88.9 0)
+			(at 254.635 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9128,7 +9502,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 247.015 88.8999 90)
+			(at 247.015 86.3601 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9137,7 +9511,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 250.825 88.9 0)
+			(at 250.825 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9146,7 +9520,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.825 88.9 0)
+			(at 250.825 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9155,7 +9529,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 250.825 88.9 0)
+			(at 250.825 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11053,6 +11427,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 274.32 117.475 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6b7081d7-8821-480e-b127-273a974a51ee")
+		(property "Reference" "TP5"
+			(at 273.05 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 276.86 122.0469 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 269.24 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 269.24 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 274.32 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8de35470-9c43-4ca9-bed9-48bb6126902a")
+		)
+		(instances
+			(project "Controller"
+				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Graphic:Logo_Open_Hardware_Small")
 		(at 166.37 189.23 0)
 		(unit 1)
@@ -12877,6 +13318,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 250.19 118.745 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba3ab7ac-7b2f-4e95-ba3a-6811fa01a163")
+		(property "Reference" "#PWR045"
+			(at 250.19 125.095 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 248.285 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 250.19 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cd073630-08d6-4bd9-bcdf-e461186578be")
+		)
+		(instances
+			(project "Controller"
+				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 264.795 140.97 0)
 		(unit 1)
@@ -13038,6 +13545,73 @@
 			(project "Controller"
 				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 264.16 117.475 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "be2a27b2-42e4-4f8c-8deb-98bf772b33e3")
+		(property "Reference" "TP3"
+			(at 262.89 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 266.7 122.0469 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 259.08 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 264.16 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36e0b184-ce15-40da-bc71-2a00a579cfdc")
+		)
+		(instances
+			(project "Controller"
+				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -13330,6 +13904,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+4V")
+		(at 274.32 112.395 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c2558821-7299-4bed-83ba-530eea91e2ce")
+		(property "Reference" "#PWR049"
+			(at 274.32 116.205 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+4V"
+			(at 274.32 107.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 274.32 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+4V\""
+			(at 274.32 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5cfaf792-36c8-4a0f-9e0d-0408b3c38f02")
+		)
+		(instances
+			(project "Controller"
+				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 65.405 173.99 180)
 		(unit 1)
@@ -13476,6 +14115,73 @@
 			(project "Controller"
 				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 269.24 117.475 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc84627f-483d-4383-8af7-04467431b0f0")
+		(property "Reference" "TP4"
+			(at 267.97 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 271.78 122.0469 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 264.16 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 269.24 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17e4e3f7-1dd2-4d8d-9e6a-d70e43c61b9b")
+		)
+		(instances
+			(project "Controller"
+				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -13796,6 +14502,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VBUS")
+		(at 269.24 112.395 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da00a25b-0883-4a37-b8e9-0f08ac369668")
+		(property "Reference" "#PWR048"
+			(at 269.24 116.205 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 269.24 107.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 269.24 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 269.24 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 269.24 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "082f122f-9934-437a-852a-1939efa80aca")
+		)
+		(instances
+			(project "Controller"
+				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 118.11 175.895 0)
 		(mirror y)
@@ -14035,6 +14807,73 @@
 			(project "Controller"
 				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
 					(reference "IC4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 259.08 112.395 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e7853d74-41f0-43f2-b21e-090da3bfc7d9")
+		(property "Reference" "#PWR046"
+			(at 259.08 116.205 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 255.905 107.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 259.08 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e9ed915-4f6e-4616-a719-e6a84885b9d1")
+		)
+		(instances
+			(project "Controller"
+				(path "/19e0c2ec-2e53-449d-b0ad-9539b125a162"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
