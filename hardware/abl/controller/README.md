@@ -20,6 +20,8 @@ The feather spec is strict enough that every kind of Feather *should* be safe to
 
 ![Table of pinouts and problems for three ESP32-C6 implementations](./Feather%20Pinput%20Comparision.jpg)
 
+**WARNING:** The above table displays the pinout for controller v1.0 but 13 and 16 changed in v1.1 - there will be an updated table later.
+
 Obviously, the software must use specific pin assignments for each of the three feathers, and since it's not possible to detect the kind of feather at runtime, the software must be purpose-build for a specific feather.
 
 ### GPIOs
@@ -41,6 +43,8 @@ For this reason, both connectors each carry:
  - UART (RX + TX) at 5V
  - 2x GPIO at 3.3V
  - 2x GPIO at 5V
+
+**WARNING:** I have switched the GPIO extenders to `FXL6408` because of better availablity, but it only supports voltages up to 4.0V. One of the two chips is currently running on 5V which is not safe.
 
 The left and right presence connector are independant: each has its own UART, its own GPIO pins, and the supply power for each one can be switched independantly. So you could connect two completely different sensors.
 

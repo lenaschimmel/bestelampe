@@ -56,7 +56,7 @@ The INA219 power sensor on the power board serves an additional purpose: the add
  - Controller Module
     - 16 = 0010000: VEML6040
     - 67 = 1000011: FLX6408 (3.3V)
-    - 68 = 1000100: FLX6408 (5V)
+    - 68 = 1000100: FLX6408 (5V) - see warning in [controller/README.md](cont)
     - 69 = 1000101: INA219
  - Feather
     - 54 = 0110110:	Battery monitor (Adafruit ESP-C6)

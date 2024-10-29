@@ -5430,6 +5430,12 @@
 		(uuid "300e3ee4-6fcd-4161-9451-3b086b4ca815")
 	)
 	(junction
+		(at 106.045 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3e50b8cd-440d-4d8e-9b73-a3aed28ec346")
+	)
+	(junction
 		(at 87.63 162.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5548,6 +5554,10 @@
 	(no_connect
 		(at 158.115 107.315)
 		(uuid "e11a4dfd-c6b5-4fe8-9c82-7f9ff0693d74")
+	)
+	(no_connect
+		(at 28.575 153.035)
+		(uuid "f955ef40-bf39-4a03-927e-43a5ec0cde6e")
 	)
 	(wire
 		(pts
@@ -5928,6 +5938,16 @@
 			(type default)
 		)
 		(uuid "2ddd8fd8-7fdd-4033-a9fd-de214be273ed")
+	)
+	(wire
+		(pts
+			(xy 106.045 33.02) (xy 106.045 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eab88e0-f35e-453e-9bd4-ffa02df02892")
 	)
 	(wire
 		(pts
@@ -6341,6 +6361,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.045 33.02) (xy 119.38 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fefba0b-42bb-4393-856b-05c7590d7e11")
+	)
+	(wire
+		(pts
 			(xy 224.79 50.8) (xy 224.79 52.705)
 		)
 		(stroke
@@ -6601,16 +6631,6 @@
 	)
 	(wire
 		(pts
-			(xy 23.495 153.035) (xy 28.575 153.035)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f7e927a-5dd0-4dec-8217-f78985bac376")
-	)
-	(wire
-		(pts
 			(xy 236.855 121.92) (xy 224.155 121.92)
 		)
 		(stroke
@@ -6841,7 +6861,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 33.02) (xy 119.38 33.02)
+			(xy 102.87 33.02) (xy 106.045 33.02)
 		)
 		(stroke
 			(width 0)
@@ -7098,6 +7118,16 @@
 			(type default)
 		)
 		(uuid "bc598630-2261-4214-990b-47d9fcf321f7")
+	)
+	(wire
+		(pts
+			(xy 106.045 35.56) (xy 102.87 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c104c1ab-ee9c-4882-91b5-7a9ed35b0311")
 	)
 	(wire
 		(pts
@@ -7689,6 +7719,26 @@
 		)
 		(uuid "ff88b7e9-7b53-49f2-99f3-5fabfeb94092")
 	)
+	(text_box "This chip is not safe for 5V opertion!"
+		(exclude_from_sim no)
+		(at 186.055 86.36 0)
+		(size 39.37 3.81)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 54 79 1)
+			)
+			(justify left top)
+		)
+		(uuid "7ba525e4-8301-4043-b09a-1ce6ab5efcf3")
+	)
 	(text_box "This power sensor is optional, only needed when powering over USB while testing / debugging."
 		(exclude_from_sim no)
 		(at 85.09 135.255 0)
@@ -7752,7 +7802,7 @@
 		(uuid "063ca6e4-b3c6-4933-9bdf-97cdafafd6df")
 	)
 	(label "EN_UART"
-		(at 115.57 33.02 180)
+		(at 102.87 33.02 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8588,7 +8638,7 @@
 		(uuid "d33c6487-223b-4e86-9679-67f7ab871104")
 	)
 	(label "GP_INT"
-		(at 23.495 153.035 180)
+		(at 23.495 163.195 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8664,17 +8714,6 @@
 		)
 		(uuid "ed6e258c-2743-45f8-9574-ef367e5ff7fc")
 	)
-	(label "EN_UART"
-		(at 23.495 163.195 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ef31cb90-c37e-4989-ab82-27f9a6256bef")
-	)
 	(label "SCL"
 		(at 30.48 93.98 180)
 		(fields_autoplaced yes)
@@ -8696,6 +8735,17 @@
 			(justify right bottom)
 		)
 		(uuid "f2bd040e-645a-4914-b975-8ca3a5b421b5")
+	)
+	(label "FX_3_7"
+		(at 102.87 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f30dd03b-2067-49e5-81c5-fdb9d3526857")
 	)
 	(label "SDA"
 		(at 72.39 67.945 180)
