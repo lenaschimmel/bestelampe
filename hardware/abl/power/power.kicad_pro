@@ -625,6 +625,24 @@
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Note",
+          "name": "Note",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part #",
+          "name": "LCSC Part #",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "In Stock",
+          "name": "In Stock",
+          "show": false
         }
       ],
       "filter_string": "",
