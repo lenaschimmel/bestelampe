@@ -44,7 +44,7 @@ For this reason, both connectors each carry:
  - 2x GPIO at 3.3V
  - 2x GPIO at 5V
 
-**WARNING:** I have switched the GPIO extenders to `FXL6408` because of better availablity, but it only supports voltages up to 4.0V. One of the two chips is currently running on 5V which is not safe.
+**WARNING:** In v1.0, I have uses `FXL6408` GPIO extenders because of availablity, but it only supports voltages up to 4.0V. One of the two chips is currently running on 5V which is not safe. Starting from version 1.1 a TCA6408ARSVR is used instead.
 
 The left and right presence connector are independant: each has its own UART, its own GPIO pins, and the supply power for each one can be switched independantly. So you could connect two completely different sensors.
 

@@ -13,6 +13,7 @@ This module contains:
 - status LED
 - resettable fuse / polyfuse / overheating protection
 - inrush current limiter
+- EEPROM
 
 The power module does not monitor its own sensors. The controller module should do this, and drive the LEDs in a way that does not exceed the current and temperature limits of the PS. The polyfuse also acts as a overheating protection, disconnecting the 230V AC at about 100°C. It may take several minutes to fully reset the fuse, so this should still be prevented by derating in software.
 

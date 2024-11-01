@@ -49,14 +49,18 @@ The INA219 power sensor on the power board serves an additional purpose: the add
  - Power Module
     - 64 = 1000000: INA219 (in case of 20W power supply)
     - 65 = 1000001: INA219 (in case of 30W power supply)
+    - 82 = 1010010: 24AA025UID (Starting with v1.2, may also trigger 24AA02UID on LED Module v2.0)
     - 79 = 1001111: TMP1075
  - LED Module
     - 75 = 1001011: TMP1075
-    - 80 = 1010000: 24AA02 (May react to any address from 80 to 87)
+    - 81 = 1010001: 24AA025UID (Starting with v2.1)
+    - 87 = 1010111: 24AA02UID (Will react to any address from 80 to 87, only on v2.0)
  - Controller Module
     - 16 = 0010000: VEML6040
-    - 67 = 1000011: FLX6408 (3.3V)
-    - 68 = 1000100: FLX6408 (5V) - see warning in [controller/README.md](cont)
+    - 32 = 0100000: TCA6408a (3.3V, starting with v1.1)
+    - 33 = 0100001: TCA6408a (5V, starting with v1.1)
+    - 67 = 1000011: FLX6408 (3.3V, only in v1.0)
+    - 68 = 1000100: FLX6408 (5V, , only in v1.0 - see warning in [controller/README.md](controller/README.md))
     - 69 = 1000101: INA219
  - Feather
     - 54 = 0110110:	Battery monitor (Adafruit ESP-C6)

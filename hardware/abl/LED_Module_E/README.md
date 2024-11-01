@@ -52,5 +52,8 @@ The MCU can also set an alert threshold on the sensor, so that it will trigger i
 
 As an extra safety measure, the ALERT net can be linked directly to the ENABLE net via the solder jumper JP1. If the MCU has crashed, or for some other reason is not able to react to the rising temperature, this should turn off the LEDs without the MCUs intervention. This feature is untested, and the jumper is open by default.
 
+### EEPROM addressing issue
+Version 2.0 of the LED board contained an 24AA02UID, which will react to any address from 80 to 87. This prevents the usage of multiple EEPROMs on one bus. Newer versions of the LED Module and Power Module use individually addressable 24AA02**5**UID (note the slightly different part number). In software, you should first check if an EEPROM on address on 87 is present. If yes, it's on the LED Module and you can't detect / use an EEPROM on the Power Module. If no, there *should* be an EEPROM at 81 on the LED Module, and there *could* be another on on 82 on the Power module.
+
 ### Rendering
 ![KiCad rendering of the PCB, as of 2024-10-24](../../../assets/rendering_abl_led.jpg)
