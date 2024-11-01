@@ -375,6 +375,174 @@
 				)
 			)
 		)
+		(symbol "Connector_Generic:Conn_01x03_thru"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at -0.254 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_thru_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 1.27 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 1.27 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 1.27 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Converter_ACDC:IRM-20-5"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2982,249 +3150,6 @@
 				)
 			)
 		)
-		(symbol "WAGO-2604-1103:2604-1103"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 21.59 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "2604-1103"
-				(at 21.59 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "26041103"
-				(at 21.59 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.wago.com/2604-1103"
-				(at 21.59 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "PCB terminal block; lever; 4 mm; Pin spacing 5 mm; 3-pole; Push-in CAGE CLAMP"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "16.7"
-				(at 21.59 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Wago"
-				(at 21.59 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "2604-1103"
-				(at 21.59 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" ""
-				(at 21.59 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" ""
-				(at 21.59 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" "2604-1103"
-				(at 21.59 -894.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" "null?region=nac"
-				(at 21.59 -994.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "2604-1103_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 20.32 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1.1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 0 180)
-					(length 5.08)
-					(name "1.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "2.1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -2.54 180)
-					(length 5.08)
-					(name "2.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "3.1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -5.08 180)
-					(length 5.08)
-					(name "3.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers hide)
@@ -3706,22 +3631,16 @@
 		)
 	)
 	(junction
-		(at 121.285 55.88)
+		(at 97.155 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1809f854-9d1a-4c4d-b1a6-2a38674d7ccb")
+		(uuid "165dfdec-bd64-47bb-983b-0ba6858f1b18")
 	)
 	(junction
 		(at 140.335 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "223bed97-218a-401d-94a8-25a717a9bdba")
-	)
-	(junction
-		(at 122.555 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "263e521d-9cfc-4e2a-8dfa-819468e3cf93")
 	)
 	(junction
 		(at 55.245 137.16)
@@ -3736,16 +3655,22 @@
 		(uuid "2ca4ccf2-0486-4d59-bb8e-9cdbffe7b5ca")
 	)
 	(junction
+		(at 120.015 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "34f9252a-c99d-4163-a632-6485de45276d")
+	)
+	(junction
+		(at 120.015 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3e2499d2-c772-4133-93cb-1f294d73fcc2")
+	)
+	(junction
 		(at 83.185 113.665)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4308e31e-7182-41b3-abf0-8d3242f7428e")
-	)
-	(junction
-		(at 91.44 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "452b64cf-ebe0-4ae1-bdae-5308b7ed53ae")
 	)
 	(junction
 		(at 70.485 113.665)
@@ -3790,6 +3715,12 @@
 		(uuid "65d58bf1-8619-4445-bd7e-f1f6b750c22c")
 	)
 	(junction
+		(at 165.735 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f88579e-7ca4-4a58-b74a-9466ab89d8c8")
+	)
+	(junction
 		(at 248.92 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3806,12 +3737,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d6200b6-d71f-4d91-8d88-961544274f07")
-	)
-	(junction
-		(at 93.345 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "80e1dd58-43bf-458f-831b-6552fb24e014")
 	)
 	(junction
 		(at 43.815 113.665)
@@ -3838,22 +3763,10 @@
 		(uuid "a5f3a862-34d6-4e12-a6a8-3bb5bab42825")
 	)
 	(junction
-		(at 165.735 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b386323c-2690-4bed-bf61-11ec221a6e2e")
-	)
-	(junction
 		(at 153.67 123.825)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b498f2dd-cee5-4953-82e9-a18308d09f37")
-	)
-	(junction
-		(at 89.535 66.675)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b60d116c-da79-40b4-9841-1e1a28412b6d")
 	)
 	(junction
 		(at 238.125 114.3)
@@ -3862,16 +3775,16 @@
 		(uuid "c72b595c-39d4-4a9c-af09-ba8de073c25b")
 	)
 	(junction
-		(at 121.285 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c7bab497-6296-4fb5-97de-dd939d023ac5")
-	)
-	(junction
 		(at 87.63 113.665)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cba8b702-43ef-46c3-b3f0-19ddd9eecad6")
+	)
+	(junction
+		(at 120.015 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd60bb5a-2c6e-4d5c-ae36-5085f9fd063e")
 	)
 	(junction
 		(at 137.795 180.975)
@@ -3903,31 +3816,15 @@
 		(color 0 0 0 0)
 		(uuid "f0939bb0-5a18-496a-8d3b-4a3d2253a21b")
 	)
-	(junction
-		(at 123.825 66.675)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f1a74e88-6d17-469f-a7d1-1aab04386137")
-	)
 	(wire
 		(pts
-			(xy 121.285 49.53) (xy 165.735 49.53)
+			(xy 165.735 49.53) (xy 165.735 67.945)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0a1438b9-1cee-4bd3-9bbb-440488dd8683")
-	)
-	(wire
-		(pts
-			(xy 94.615 64.135) (xy 91.44 64.135)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0bf46c57-d1a9-4065-9479-6c01b8b21f32")
+		(uuid "00fcd86d-9433-4e4b-832b-d950c81e07a9")
 	)
 	(wire
 		(pts
@@ -3981,16 +3878,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.015 66.675) (xy 123.825 66.675)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1819e73e-cc68-448e-95b3-a65522a7997b")
-	)
-	(wire
-		(pts
 			(xy 238.125 136.525) (xy 238.125 139.7)
 		)
 		(stroke
@@ -4008,26 +3895,6 @@
 			(type default)
 		)
 		(uuid "1d9b43f8-26f2-4de5-b3c3-f4ca35dacfc4")
-	)
-	(wire
-		(pts
-			(xy 91.44 44.45) (xy 94.615 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e28ebcc-f386-4fba-85e5-70bc60ab9dc3")
-	)
-	(wire
-		(pts
-			(xy 121.285 55.88) (xy 93.345 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "219b6802-cec4-47e8-af15-de2c108fde76")
 	)
 	(wire
 		(pts
@@ -4051,26 +3918,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.015 69.215) (xy 121.285 69.215)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a1b832b-5bf5-4d00-b595-dbfa2541dc03")
-	)
-	(wire
-		(pts
-			(xy 94.615 69.215) (xy 93.345 69.215)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2efb9ad2-f1d2-4c99-84ef-b73d4274d0a0")
-	)
-	(wire
-		(pts
 			(xy 163.83 180.975) (xy 170.18 180.975)
 		)
 		(stroke
@@ -4078,16 +3925,6 @@
 			(type default)
 		)
 		(uuid "30a6d31a-8335-4b9f-b4e4-8ada218ceb2f")
-	)
-	(wire
-		(pts
-			(xy 166.37 49.53) (xy 165.735 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30ec04dd-8583-4b53-969a-885c7120bc2e")
 	)
 	(wire
 		(pts
@@ -4111,16 +3948,6 @@
 	)
 	(wire
 		(pts
-			(xy 122.555 38.1) (xy 91.44 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34f2ea27-4c70-4cdb-bc43-8c8c672227f2")
-	)
-	(wire
-		(pts
 			(xy 170.18 175.895) (xy 170.18 178.435)
 		)
 		(stroke
@@ -4128,26 +3955,6 @@
 			(type default)
 		)
 		(uuid "3bf00b0d-a2c0-477e-a729-2e6eb252f084")
-	)
-	(wire
-		(pts
-			(xy 122.555 44.45) (xy 131.445 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3cf6c940-a14a-4e03-818a-97b0af5fc302")
-	)
-	(wire
-		(pts
-			(xy 89.535 76.2) (xy 89.535 66.675)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e5763aa-7285-4a2f-87b6-62d580bcc11d")
 	)
 	(wire
 		(pts
@@ -4168,16 +3975,6 @@
 			(type default)
 		)
 		(uuid "418f54c0-8d97-4eea-bcc2-a0a0dfbf4022")
-	)
-	(wire
-		(pts
-			(xy 121.285 55.88) (xy 121.285 69.215)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41b40187-3d94-4f8f-abd4-757e592cbc74")
 	)
 	(wire
 		(pts
@@ -4311,16 +4108,6 @@
 	)
 	(wire
 		(pts
-			(xy 89.535 66.675) (xy 94.615 66.675)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5348a621-77da-4fa8-989c-f39b7db03169")
-	)
-	(wire
-		(pts
 			(xy 43.815 137.16) (xy 55.245 137.16)
 		)
 		(stroke
@@ -4331,17 +4118,7 @@
 	)
 	(wire
 		(pts
-			(xy 122.555 64.135) (xy 122.555 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55063845-0162-4b06-97e4-c6bbb405f2be")
-	)
-	(wire
-		(pts
-			(xy 165.735 49.53) (xy 165.735 67.945)
+			(xy 165.735 41.91) (xy 165.735 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4411,16 +4188,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.825 46.99) (xy 123.825 66.675)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63c2263e-9745-4e94-a58d-edf4c6a7c08b")
-	)
-	(wire
-		(pts
 			(xy 55.245 139.7) (xy 55.245 137.16)
 		)
 		(stroke
@@ -4448,16 +4215,6 @@
 			(type default)
 		)
 		(uuid "7192518c-db8c-4954-a321-37deedef2b12")
-	)
-	(wire
-		(pts
-			(xy 120.015 64.135) (xy 122.555 64.135)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72bdba34-590e-42ab-a71c-671f05a0e259")
 	)
 	(wire
 		(pts
@@ -4661,6 +4418,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.015 49.53) (xy 165.735 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94f2d0f1-35f6-486a-81e2-cb5f86648647")
+	)
+	(wire
+		(pts
 			(xy 137.795 175.895) (xy 137.795 178.435)
 		)
 		(stroke
@@ -4681,16 +4448,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.345 69.215) (xy 93.345 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b3dac7d-272c-4773-b44d-32dcf2451ebf")
-	)
-	(wire
-		(pts
 			(xy 150.495 123.825) (xy 153.67 123.825)
 		)
 		(stroke
@@ -4708,16 +4465,6 @@
 			(type default)
 		)
 		(uuid "a15de8ae-77ed-47b8-8a79-f52bfc9c545c")
-	)
-	(wire
-		(pts
-			(xy 93.345 49.53) (xy 93.345 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2999146-3949-4593-b8e3-1aaaea83b98a")
 	)
 	(wire
 		(pts
@@ -4861,6 +4608,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.155 46.99) (xy 120.015 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc028aa2-9b87-410f-922a-d93c023be1d4")
+	)
+	(wire
+		(pts
 			(xy 117.475 115.57) (xy 123.825 115.57)
 		)
 		(stroke
@@ -4971,7 +4728,7 @@
 	)
 	(wire
 		(pts
-			(xy 89.535 46.99) (xy 94.615 46.99)
+			(xy 90.17 46.99) (xy 97.155 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4991,16 +4748,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.345 49.53) (xy 94.615 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ccba1b62-01ff-493d-8385-aee6b000f0e1")
-	)
-	(wire
-		(pts
 			(xy 120.015 46.99) (xy 123.825 46.99)
 		)
 		(stroke
@@ -5011,27 +4758,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.735 41.91) (xy 165.735 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cef0fc75-c0c2-491b-9f85-3061cc6b937b")
-	)
-	(wire
-		(pts
-			(xy 120.015 49.53) (xy 121.285 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0c68f34-946d-4fe3-aedd-d2cd430c0d09")
-	)
-	(wire
-		(pts
-			(xy 120.015 44.45) (xy 122.555 44.45)
+			(xy 120.015 44.45) (xy 131.445 44.45)
 		)
 		(stroke
 			(width 0)
@@ -5071,17 +4798,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 38.1) (xy 91.44 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7ed3dfb-ffce-44bb-a7a8-edab2f89aa07")
-	)
-	(wire
-		(pts
-			(xy 89.535 66.675) (xy 89.535 46.99)
+			(xy 90.17 46.99) (xy 90.17 50.8)
 		)
 		(stroke
 			(width 0)
@@ -5141,16 +4858,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.285 49.53) (xy 121.285 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e11dfbc6-c131-4acc-b979-8bf1d0bda80a")
-	)
-	(wire
-		(pts
 			(xy 248.285 123.825) (xy 254 123.825)
 		)
 		(stroke
@@ -5191,6 +4898,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.155 44.45) (xy 120.015 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eab69ac8-b79b-46a3-8e98-383f988a847e")
+	)
+	(wire
+		(pts
 			(xy 223.52 114.3) (xy 223.52 113.665)
 		)
 		(stroke
@@ -5201,13 +4918,13 @@
 	)
 	(wire
 		(pts
-			(xy 123.825 66.675) (xy 123.825 76.2)
+			(xy 97.155 49.53) (xy 120.015 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ed638aca-c14f-4e3d-9e6d-e689f0ae5983")
+		(uuid "ef1ca75c-5e75-4eb1-a3c8-2ab4b9ab4195")
 	)
 	(wire
 		(pts
@@ -5228,16 +4945,6 @@
 			(type default)
 		)
 		(uuid "efa2b4d9-b30a-42ae-8813-9cf264728d1b")
-	)
-	(wire
-		(pts
-			(xy 91.44 64.135) (xy 91.44 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2a1d60f-6914-44e6-b2f2-507bbd0b2a4c")
 	)
 	(wire
 		(pts
@@ -5298,16 +5005,6 @@
 			(type default)
 		)
 		(uuid "f9f3819e-d24b-45f3-b8cb-310a1dfc2181")
-	)
-	(wire
-		(pts
-			(xy 122.555 44.45) (xy 122.555 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc15111e-d475-4c26-aa23-37e0cedfc8f1")
 	)
 	(wire
 		(pts
@@ -5671,7 +5368,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 258.445 61.468 90)
 			(effects
 				(font
@@ -7355,72 +7052,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth_Protective")
-		(at 123.825 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "76606010-be96-4cad-b732-37c951a176ce")
-		(property "Reference" "#PWR04"
-			(at 123.825 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth_Protective"
-			(at 123.825 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.825 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 123.825 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth_Protective\""
-			(at 123.825 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ca4ebe89-6189-4aa4-abfb-de0c77a69396")
-		)
-		(instances
-			(project "power"
-				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized_Small")
 		(at 70.485 131.445 0)
 		(mirror y)
@@ -8167,8 +7798,8 @@
 		)
 	)
 	(symbol
-		(lib_id "WAGO-2604-1103:2604-1103")
-		(at 94.615 64.135 0)
+		(lib_id "Connector_Generic:Conn_01x03_thru")
+		(at 102.235 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8176,7 +7807,7 @@
 		(dnp no)
 		(uuid "a42ec55e-bd95-4e97-8606-a0b9108aa506")
 		(property "Reference" "J1"
-			(at 107.315 59.69 0)
+			(at 102.235 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8184,7 +7815,7 @@
 			)
 		)
 		(property "Value" "Terminal_01x03"
-			(at 106.68 73.66 0)
+			(at 102.235 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8192,27 +7823,25 @@
 			)
 		)
 		(property "Footprint" "Own footprints:WAGO-2604-1103"
-			(at 116.205 159.055 0)
+			(at 102.235 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.wago.com/2604-1103"
-			(at 116.205 259.055 0)
+		(property "Datasheet" "~"
+			(at 102.235 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "PCB terminal block; lever; 4 mm; Pin spacing 5 mm; 3-pole; Push-in CAGE CLAMP"
-			(at 94.615 64.135 0)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 101.981 40.132 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8221,7 +7850,7 @@
 			)
 		)
 		(property "Height" "16.7"
-			(at 116.205 459.055 0)
+			(at 123.825 441.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8231,7 +7860,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Wago"
-			(at 116.205 559.055 0)
+			(at 123.825 541.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8241,7 +7870,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "2604-1103"
-			(at 116.205 659.055 0)
+			(at 123.825 641.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8251,7 +7880,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 116.205 759.055 0)
+			(at 123.825 741.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8261,7 +7890,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 116.205 859.055 0)
+			(at 123.825 841.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8271,7 +7900,7 @@
 			)
 		)
 		(property "Arrow Part Number" "2604-1103"
-			(at 116.205 959.055 0)
+			(at 123.825 941.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8281,7 +7910,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" "null?region=nac"
-			(at 116.205 1059.055 0)
+			(at 123.825 1041.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8291,7 +7920,7 @@
 			)
 		)
 		(property "Purpose" "230V connector"
-			(at 94.615 64.135 0)
+			(at 102.235 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8307,15 +7936,6 @@
 		)
 		(pin "3"
 			(uuid "d5dcb73b-4fe0-4367-9d4f-b2e56e88184a")
-		)
-		(pin "4"
-			(uuid "010e2946-7b91-4b0b-a578-66e78123242e")
-		)
-		(pin "6"
-			(uuid "49c7c45f-4f01-487d-8b94-ec2b4053b93b")
-		)
-		(pin "5"
-			(uuid "e149baf3-fb27-47fb-8115-932044bf69fb")
 		)
 		(instances
 			(project "power"
@@ -8465,8 +8085,8 @@
 		)
 	)
 	(symbol
-		(lib_id "WAGO-2604-1103:2604-1103")
-		(at 120.015 44.45 0)
+		(lib_id "Connector_Generic:Conn_01x03_thru")
+		(at 114.935 46.99 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8475,7 +8095,7 @@
 		(dnp no)
 		(uuid "ab6bb111-f723-440e-9e27-5a5198ab4209")
 		(property "Reference" "J2"
-			(at 108.585 40.005 0)
+			(at 116.205 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8484,7 +8104,7 @@
 			)
 		)
 		(property "Value" "Terminal_01x03"
-			(at 107.95 53.975 0)
+			(at 114.935 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8492,27 +8112,25 @@
 			)
 		)
 		(property "Footprint" "Own footprints:WAGO-2604-1103"
-			(at 98.425 139.37 0)
+			(at 114.935 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.wago.com/2604-1103"
-			(at 98.425 239.37 0)
+		(property "Datasheet" "~"
+			(at 114.935 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "PCB terminal block; lever; 4 mm; Pin spacing 5 mm; 3-pole; Push-in CAGE CLAMP"
-			(at 120.015 44.45 0)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 115.189 40.132 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8521,7 +8139,7 @@
 			)
 		)
 		(property "Height" "16.7"
-			(at 98.425 439.37 0)
+			(at 93.345 441.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8531,7 +8149,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Wago"
-			(at 98.425 539.37 0)
+			(at 93.345 541.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8541,7 +8159,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "2604-1103"
-			(at 98.425 639.37 0)
+			(at 93.345 641.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8551,7 +8169,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 98.425 739.37 0)
+			(at 93.345 741.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8561,7 +8179,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 98.425 839.37 0)
+			(at 93.345 841.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8571,7 +8189,7 @@
 			)
 		)
 		(property "Arrow Part Number" "2604-1103"
-			(at 98.425 939.37 0)
+			(at 93.345 941.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8581,7 +8199,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" "null?region=nac"
-			(at 98.425 1039.37 0)
+			(at 93.345 1041.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8591,7 +8209,7 @@
 			)
 		)
 		(property "Purpose" "230V connector"
-			(at 120.015 44.45 0)
+			(at 114.935 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8607,15 +8225,6 @@
 		)
 		(pin "3"
 			(uuid "fa2d863d-5b78-498b-8625-33c9c32eabba")
-		)
-		(pin "6"
-			(uuid "191fdff1-7b1e-4e01-aa5a-db72a73622e9")
-		)
-		(pin "5"
-			(uuid "e65ff143-6c28-4e3b-b1d3-e1c6b1acedb8")
-		)
-		(pin "4"
-			(uuid "4044ce26-15e9-45e1-ad82-499c9f824600")
 		)
 		(instances
 			(project "power"
@@ -9806,7 +9415,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth_Protective")
-		(at 89.535 76.2 0)
+		(at 90.17 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9815,7 +9424,7 @@
 		(fields_autoplaced yes)
 		(uuid "e8ad2782-cae3-4b37-bae5-c19b2566a87d")
 		(property "Reference" "#PWR01"
-			(at 89.535 86.36 0)
+			(at 90.17 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9824,7 +9433,7 @@
 			)
 		)
 		(property "Value" "Earth_Protective"
-			(at 89.535 85.09 0)
+			(at 90.17 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9832,7 +9441,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 89.535 78.74 0)
+			(at 90.17 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9841,7 +9450,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 89.535 78.74 0)
+			(at 90.17 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9850,7 +9459,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth_Protective\""
-			(at 89.535 76.2 0)
+			(at 90.17 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
