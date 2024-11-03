@@ -50,6 +50,8 @@ The left and right presence connector are independant: each has its own UART, it
 
 For a single presence connector, the UART pins are redundant: the 5V UART is just a logic-shifted version of the 3.3V UART. But the two 3.3V GPIOs are separate form the two 5V GPIO pins, e.g. four independant signals.
 
+**Caveat:** The ESP32-C6 has three UARTs, but only one of them (UART1) can be used freely. UART0 is somehow used for the debugging console, but it seems that it can be used for sensors as well, if the console only needs TX and the sensor only needs RX. There is an even better workaround: use the RMT peripherals to emulate up to two UARTs.
+
 The power of the presence sensors can be switched for these reasons:
  - Each presence sensor contains its own MCU, and if it should hang/crash, we can reset it by power-cycling.
  - An advanced presence sensor can consume up to 1W continously, so we want to switch them off during the daylight to save energy.
