@@ -15031,7 +15031,7 @@
 	)
 	(symbol
 		(lib_id "SFW20S-2STE1LF:SFW20S-2STE1LF")
-		(at 50.8 37.465 270)
+		(at 50.8 75.565 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15039,7 +15039,7 @@
 		(dnp yes)
 		(uuid "e818c55b-4223-4b0b-8db9-7f85f5b0875b")
 		(property "Reference" "J1"
-			(at 59.055 26.67 90)
+			(at 42.545 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15048,7 +15048,7 @@
 			)
 		)
 		(property "Value" "SFW20S-2STE1LF"
-			(at 40.005 26.67 90)
+			(at 61.595 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15056,8 +15056,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SFW20S2STE1LF"
-			(at -39.04 71.755 0)
+		(property "Footprint" "Own footprints:SFW20S2STE1LF_Own"
+			(at 140.64 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15067,7 +15067,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/10172832.pdf"
-			(at -139.04 71.755 0)
+			(at 240.64 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15077,7 +15077,7 @@
 			)
 		)
 		(property "Description" "1.00mm Flex Connector, SFW Straight series, 20 Position, Top Entry Surface Mount, ZIF"
-			(at 50.8 37.465 0)
+			(at 50.8 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15086,7 +15086,7 @@
 			)
 		)
 		(property "Height" "5.5"
-			(at -339.04 71.755 0)
+			(at 440.64 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15096,7 +15096,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at -439.04 71.755 0)
+			(at 540.64 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15106,7 +15106,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at -539.04 71.755 0)
+			(at 640.64 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15116,7 +15116,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Amphenol Communications Solutions"
-			(at -639.04 71.755 0)
+			(at 740.64 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15126,7 +15126,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "SFW20S-2STE1LF"
-			(at -739.04 71.755 0)
+			(at 840.64 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15136,7 +15136,7 @@
 			)
 		)
 		(property "LCSC Part #" "C5407823"
-			(at 50.8 37.465 0)
+			(at 50.8 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15145,7 +15145,7 @@
 			)
 		)
 		(property "Purpose" "Flex cable connector"
-			(at 50.8 22.225 90)
+			(at 50.8 90.805 90)
 			(effects
 				(font
 					(size 2.54 2.54)
