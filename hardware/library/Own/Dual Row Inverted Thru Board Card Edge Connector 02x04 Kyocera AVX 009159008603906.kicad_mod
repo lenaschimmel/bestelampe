@@ -1,0 +1,320 @@
+(footprint "Dual Row Inverted Thru Board Card Edge Connector 02x04 Kyocera AVX 009159008603906"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "009159008603906-2")
+	(tags "Connector")
+	(property "Reference" "J**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "d73467bd-2eb7-49dc-bb79-facf9a9cf199")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "009159008603906"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2d7ac679-bf22-4f6d-9fe4-d0d7a37e80a5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3c0ddb0e-8dde-473b-a157-2a4c23ff47a5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3c93824a-61a4-4529-99d5-3eca13414e98")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0f19b53d-2e28-4c05-b2b4-2631320dacbf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -5.5 -4)
+		(end -5.5 4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1a691a75-c09e-409a-8cd6-fd661260e36b")
+	)
+	(fp_line
+		(start -5.5 4)
+		(end -3.4 4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5566bc24-e8eb-431c-83ed-eb2c4c2f2d76")
+	)
+	(fp_line
+		(start -4.4 -4)
+		(end -5.5 -4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b8542046-dac5-408d-9ccf-85caa8208ae5")
+	)
+	(fp_line
+		(start -3.5 -5.8)
+		(end -3.5 -5.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aa6e3dea-a7e5-4c78-b33a-5e0702dd52e2")
+	)
+	(fp_line
+		(start -3.5 -5.7)
+		(end -3.5 -5.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "da6f55b9-4b93-4334-ad3d-25e665573450")
+	)
+	(fp_line
+		(start 4.4 4)
+		(end 5.5 4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "42ec98ee-b262-403e-b17a-83a0c6a4b2b8")
+	)
+	(fp_line
+		(start 5.5 -4)
+		(end 3.4 -4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "497dd8ac-7f51-4496-9069-c0dad2e02f57")
+	)
+	(fp_line
+		(start 5.5 4)
+		(end 5.5 -4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "04643d68-c3df-4643-bcfe-815223057adf")
+	)
+	(fp_arc
+		(start -3.5 -5.8)
+		(mid -3.45 -5.75)
+		(end -3.5 -5.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "57a57eda-9786-43ec-841a-2463699ee7f9")
+	)
+	(fp_arc
+		(start -3.5 -5.7)
+		(mid -3.55 -5.75)
+		(end -3.5 -5.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fc473cd0-3a6b-4a55-a5d4-49e9805e42f6")
+	)
+	(fp_line
+		(start -6.5 -6.3)
+		(end 6.5 -6.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7d73db60-f844-463c-ba25-97c8fc3fd969")
+	)
+	(fp_line
+		(start -6.5 6.3)
+		(end -6.5 -6.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "121e2495-6eac-40ff-82ec-134c2cbb262b")
+	)
+	(fp_line
+		(start 6.5 -6.3)
+		(end 6.5 6.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e4196d2c-4324-4a89-8f6a-a811afb590dc")
+	)
+	(fp_line
+		(start 6.5 6.3)
+		(end -6.5 6.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d6f52e80-ccff-4629-846f-ecb01cff97f6")
+	)
+	(fp_line
+		(start -5.5 -4)
+		(end 5.5 -4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fb9ba11e-d592-4976-8266-63badf95f6f7")
+	)
+	(fp_line
+		(start -5.5 4)
+		(end -5.5 -4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "802935e7-3959-4d99-ba73-5904cbee8047")
+	)
+	(fp_line
+		(start 5.5 -4)
+		(end 5.5 4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f25eb0b8-222d-4a5c-8094-17e03c575e4a")
+	)
+	(fp_line
+		(start 5.5 4)
+		(end -5.5 4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d462dc9a-1552-4a80-b610-6b4c062f7fd9")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "793d03e0-180f-4a08-a664-8ba1b5450de2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -3.5 -4.7)
+		(size 1 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "562faf91-f1f0-4cd2-bdea-dda2df65af39")
+	)
+	(pad "2" smd rect
+		(at -2.5 4.7)
+		(size 1 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "4674fecd-78a3-49d8-a64f-61737e089aec")
+	)
+	(pad "3" smd rect
+		(at -1.5 -4.7)
+		(size 1 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "0f22aa5a-7e12-4948-b56e-5ecb73bcda7d")
+	)
+	(pad "4" smd rect
+		(at -0.5 4.7)
+		(size 1 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "a6d7fc64-5ecc-489e-8755-568f2a96ed53")
+	)
+	(pad "5" smd rect
+		(at 0.5 -4.7)
+		(size 1 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "676be160-7905-42f6-aeb6-049eb4c3b7b7")
+	)
+	(pad "6" smd rect
+		(at 1.5 4.7)
+		(size 1 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "d9819e9e-b485-41ce-8ce8-7110bf3be3d3")
+	)
+	(pad "7" smd rect
+		(at 2.5 -4.7)
+		(size 1 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "59b15eb4-ebb4-41cc-83db-10624c3ee5c8")
+	)
+	(pad "8" smd rect
+		(at 3.5 4.7)
+		(size 1 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b53eccf6-5c93-46a8-ae9f-d816959a62d5")
+	)
+	(model "/Users/lena/bestelampe_repo/hardware/library/009159008603906/009159008603906.stp"
+		(offset
+			(xyz 0 0 -4.45)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 180 0 0)
+		)
+	)
+)

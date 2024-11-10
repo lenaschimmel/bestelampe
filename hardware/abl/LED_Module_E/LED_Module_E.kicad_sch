@@ -12870,7 +12870,7 @@
 	)
 	(symbol
 		(lib_id "SFW20S-2STE1LF:SFW20S-2STE1LF")
-		(at 246.38 154.94 90)
+		(at 246.38 116.84 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12878,7 +12878,7 @@
 		(dnp no)
 		(uuid "743355a6-d157-4888-815c-078ca6b62faa")
 		(property "Reference" "J1"
-			(at 248.5741 117.475 90)
+			(at 244.1859 154.305 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12887,7 +12887,7 @@
 			)
 		)
 		(property "Value" "SFW20S-2STE1LF"
-			(at 248.5741 120.015 90)
+			(at 244.1859 151.765 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12895,8 +12895,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SFW20S2STE1LF"
-			(at 336.22 120.65 0)
+		(property "Footprint" "Own footprints:SFW20S2STE1LF_Own"
+			(at 156.54 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12906,7 +12906,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/10172832.pdf"
-			(at 436.22 120.65 0)
+			(at 56.54 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12916,7 +12916,7 @@
 			)
 		)
 		(property "Description" "1.00mm Flex Connector, SFW Straight series, 20 Position, Top Entry Surface Mount, ZIF"
-			(at 246.38 154.94 0)
+			(at 246.38 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12925,7 +12925,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Amphenol Communications Solutions"
-			(at 936.22 120.65 0)
+			(at -443.46 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12935,7 +12935,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "SFW20S-2STE1LF"
-			(at 1036.22 120.65 0)
+			(at -543.46 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12945,7 +12945,7 @@
 			)
 		)
 		(property "LCSC Part #" "C5407823"
-			(at 246.38 154.94 0)
+			(at 246.38 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12954,7 +12954,7 @@
 			)
 		)
 		(property "Purpose" "Flex connector"
-			(at 246.38 113.03 90)
+			(at 246.38 158.75 90)
 			(effects
 				(font
 					(size 2.54 2.54)
@@ -12963,7 +12963,7 @@
 			)
 		)
 		(property "Note" ""
-			(at 246.38 154.94 0)
+			(at 246.38 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)

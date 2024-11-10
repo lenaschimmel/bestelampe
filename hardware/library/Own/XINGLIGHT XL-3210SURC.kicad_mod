@@ -1,0 +1,175 @@
+(footprint "XINGLIGHT XL-3210SURC"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 4.2 -0.7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "e9b10547-e54c-449f-b41a-8333bcc57e1e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "XINGLIGHT XL-3210SURC"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "59a0729d-b9f1-4d55-9671-801b2c1309fe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fe0c503f-1088-408a-80f7-b5a5cbce3324")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "901d1ce6-eb2d-4035-bc12-cf46b1607156")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Side view SMD LED"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "89d3aa80-dd05-40dd-a93e-f04dbc34ddc1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.9 -1.4)
+		(end -1.3 -1.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6e08eb3a-0f2e-4623-bbb6-95cefdced752")
+	)
+	(fp_line
+		(start -0.9 -0.5)
+		(end -0.6 -0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6c6785ad-d209-4a55-9c3c-a7b2bcefbe55")
+	)
+	(fp_line
+		(start 0.6 -0.5)
+		(end 0.9 -0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "f05dcdd7-6b25-42ed-97e2-2bc1563cdd77")
+	)
+	(fp_line
+		(start 1.3 -1.4)
+		(end 1.9 -1.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "2a3777a5-0a21-4286-9fbb-d0d7d3bf0136")
+	)
+	(fp_line
+		(start 1.6 -1.1)
+		(end 1.6 -1.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "17c72eff-baf7-4e92-a992-7a453f234d33")
+	)
+	(fp_arc
+		(start -1.1 -1)
+		(mid 0 -2.1)
+		(end 1.1 -1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "2ab0b884-a056-42ae-82d2-d61c3e371890")
+	)
+	(fp_rect
+		(start -2.1 -2.7)
+		(end 2.1 0.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "71b8b235-3668-4118-9675-01d947b7b9f7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "d39c98eb-6d3f-4713-8481-d2aa43733df4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.55 -0.47)
+		(size 0.9 0.93)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "61866e04-a1ce-476b-b4ea-1acb5a6b7d67")
+	)
+	(pad "2" smd rect
+		(at 1.55 -0.47)
+		(size 0.9 0.93)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "cd288346-a66b-4898-b6dd-b989dba549c6")
+	)
+	(pad "3" smd rect
+		(at 0 -0.25)
+		(size 0.9 0.49)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "882f88be-c73a-496f-8378-1158ecc66723")
+	)
+)
