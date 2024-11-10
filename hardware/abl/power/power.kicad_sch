@@ -6,9 +6,9 @@
 	(paper "A4")
 	(title_block
 		(title "besteLampe! ABL Power Module")
-		(date "2024-11-01")
-		(rev "1.1")
-		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
+		(date "2024-11-10")
+		(rev "1.2")
+		(comment 1 "See https://beste-lampe.de for the source and more information")
 		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
 		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
 		(comment 4 "Design for JLCPCB 1-2 Layer Service")
@@ -5828,7 +5828,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2kR"
+		(property "Value" "470R"
 			(at 76.835 63.4999 0)
 			(effects
 				(font
@@ -5837,7 +5837,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 72.517 62.23 90)
 			(effects
 				(font
@@ -5864,7 +5864,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C25879"
+		(property "LCSC Part" "C23179"
 			(at 74.295 62.23 0)
 			(effects
 				(font
@@ -5873,7 +5873,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0402WGF2201TCE"
+		(property "Manufacturer_Part_Number" "0603WAF4700T5E"
 			(at 74.295 62.23 0)
 			(effects
 				(font
@@ -7848,7 +7848,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm"
 			(at 259.08 131.445 0)
 			(effects
 				(font
