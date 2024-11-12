@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "besteLampe! ABL Power Module")
-		(date "2024-11-10")
+		(date "2024-11-12")
 		(rev "1.2")
 		(comment 1 "See https://beste-lampe.de for the source and more information")
 		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
@@ -1934,251 +1934,6 @@
 				)
 			)
 		)
-		(symbol "Jumper:SolderJumper_3_Open"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at -2.54 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SolderJumper_3_Open"
-				(at 0 2.794 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Solder Jumper, 3-pole, open"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Solder Jumper SPDT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SolderJumper*Open*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SolderJumper_3_Open_0_1"
-				(arc
-					(start -1.016 1.016)
-					(mid -2.0276 0)
-					(end -1.016 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.016 1.016)
-					(mid -2.0276 0)
-					(end -1.016 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -0.508 1.016)
-					(end 0.508 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -2.032 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 1.016) (xy -1.016 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 1.016) (xy 1.016 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 2.032 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.016 -1.016)
-					(mid 2.0276 0)
-					(end 1.016 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.016 -1.016)
-					(mid 2.0276 0)
-					(end 1.016 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "SolderJumper_3_Open_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Meanwell IRM-30:IRM-30-5"
 			(pin_names
 				(offset 0.254)
@@ -2752,7 +2507,7 @@
 				)
 			)
 		)
-		(symbol "Regulator_Linear:AMS1117-3.3"
+		(symbol "Regulator_Linear:AMS1117-3.3-Thermal-pad"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2818,10 +2573,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "AMS1117-3.3_0_1"
+			(symbol "AMS1117-3.3-Thermal-pad_0_1"
 				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2831,7 +2586,7 @@
 					)
 				)
 			)
-			(symbol "AMS1117-3.3_1_1"
+			(symbol "AMS1117-3.3-Thermal-pad_1_1"
 				(pin power_in line
 					(at 0 -7.62 90)
 					(length 2.54)
@@ -2879,6 +2634,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 -3.175 180)
+					(length 2.54)
+					(name "Thermal"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3819,6 +3592,12 @@
 		)
 	)
 	(junction
+		(at 56.515 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03ec8662-2ddd-4028-8176-31ef0f1af6b4")
+	)
+	(junction
 		(at 137.16 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3853,6 +3632,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "34f9252a-c99d-4163-a632-6485de45276d")
+	)
+	(junction
+		(at 20.32 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39fece10-848c-42a7-bcba-462096ad1d61")
 	)
 	(junction
 		(at 160.02 46.99)
@@ -3925,6 +3710,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "79a77c9e-8441-4711-bd27-8c2070e81b80")
+	)
+	(junction
+		(at 20.32 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7cd1aed3-16b3-406b-9132-bb7ecea9179a")
 	)
 	(junction
 		(at 61.595 67.945)
@@ -4124,6 +3915,16 @@
 	)
 	(wire
 		(pts
+			(xy 20.32 167.64) (xy 20.32 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2998d76b-ebdb-4f8a-b9d4-da1a6943b69b")
+	)
+	(wire
+		(pts
 			(xy 164.465 186.055) (xy 170.815 186.055)
 		)
 		(stroke
@@ -4154,6 +3955,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 167.64) (xy 20.32 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36137a94-d16e-4e13-891a-0c5fde930b82")
+	)
+	(wire
+		(pts
 			(xy 170.815 180.975) (xy 170.815 183.515)
 		)
 		(stroke
@@ -4181,16 +3992,6 @@
 			(type default)
 		)
 		(uuid "418f54c0-8d97-4eea-bcc2-a0a0dfbf4022")
-	)
-	(wire
-		(pts
-			(xy 259.08 136.525) (xy 259.08 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4408f142-c330-4542-b75b-6808aefa269d")
 	)
 	(wire
 		(pts
@@ -4304,16 +4105,6 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 124.46) (xy 259.08 126.365)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f33b529-7c37-44fc-b58d-1caffaa31429")
-	)
-	(wire
-		(pts
 			(xy 127 126.365) (xy 130.175 126.365)
 		)
 		(stroke
@@ -4411,6 +4202,16 @@
 			(type default)
 		)
 		(uuid "5c2f0a68-f394-4cdb-bad6-80da4f4fd059")
+	)
+	(wire
+		(pts
+			(xy 20.32 182.88) (xy 20.32 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "603f364f-552c-4cd8-a28c-d4c24e391494")
 	)
 	(wire
 		(pts
@@ -4654,6 +4455,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.285 131.445) (xy 259.08 131.445)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ddb6872-6b9e-4e8f-b5ed-5f5398a6d9b9")
+	)
+	(wire
+		(pts
 			(xy 56.515 167.005) (xy 56.515 163.83)
 		)
 		(stroke
@@ -4671,6 +4482,16 @@
 			(type default)
 		)
 		(uuid "92e751d2-f8aa-4c8b-9874-99fc119e3efe")
+	)
+	(wire
+		(pts
+			(xy 56.515 44.45) (xy 61.595 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93733d7f-e3d5-4441-9793-e3dca5cc0ff9")
 	)
 	(wire
 		(pts
@@ -4814,13 +4635,23 @@
 	)
 	(wire
 		(pts
-			(xy 248.285 131.445) (xy 255.27 131.445)
+			(xy 20.32 186.69) (xy 20.32 182.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a7dd2ffc-a08f-4943-8b42-e8e4d0fd6c23")
+		(uuid "a7a61364-fa50-4573-9285-d0f65b1f98cf")
+	)
+	(wire
+		(pts
+			(xy 259.08 131.445) (xy 259.08 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7a7da99-20fc-4be3-9cd8-fd810bdcf41d")
 	)
 	(wire
 		(pts
@@ -4924,6 +4755,16 @@
 	)
 	(wire
 		(pts
+			(xy 56.515 47.625) (xy 56.515 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd18f336-8213-4ba8-8ffb-f4934700ba4b")
+	)
+	(wire
+		(pts
 			(xy 117.475 115.57) (xy 123.825 115.57)
 		)
 		(stroke
@@ -4994,6 +4835,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.975 47.625) (xy 56.515 47.625)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6134f49-966e-4159-b371-e65edfa1bec7")
+	)
+	(wire
+		(pts
 			(xy 238.125 107.315) (xy 238.125 114.3)
 		)
 		(stroke
@@ -5004,7 +4855,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.975 44.45) (xy 61.595 44.45)
+			(xy 53.975 44.45) (xy 56.515 44.45)
 		)
 		(stroke
 			(width 0)
@@ -5091,6 +4942,16 @@
 			(type default)
 		)
 		(uuid "d241792b-c163-4889-b58c-4fb7ad37af7a")
+	)
+	(wire
+		(pts
+			(xy 20.32 182.88) (xy 25.4 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d49b9aa2-fac0-46cd-b8c4-757ba8045dc4")
 	)
 	(wire
 		(pts
@@ -5231,6 +5092,16 @@
 			(type default)
 		)
 		(uuid "e597cb15-d6f9-4c60-92be-e3eae19de440")
+	)
+	(wire
+		(pts
+			(xy 20.32 172.72) (xy 24.13 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e77c7de2-750d-4bff-87b1-98213bdbb596")
 	)
 	(wire
 		(pts
@@ -5401,25 +5272,6 @@
 			(type default)
 		)
 		(uuid "fef47b5b-cc2c-416c-9e70-ee459da262be")
-	)
-	(text_box "Choice of I2C address indicates installed power supply wattage"
-		(exclude_from_sim no)
-		(at 257.81 106.045 0)
-		(size 19.05 12.065)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "8e367284-e05e-48a2-b864-fca9f8686661")
 	)
 	(text_box "If a future version of this module had a separate VLED != 5V, they would connect like this:"
 		(exclude_from_sim no)
@@ -5908,7 +5760,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 22.86 175.895 0)
+		(at 27.94 177.8 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5917,7 +5769,7 @@
 		(fields_autoplaced yes)
 		(uuid "17961c8d-1351-4faa-b85d-b2129b9c4348")
 		(property "Reference" "H3"
-			(at 26.035 174.6249 0)
+			(at 31.115 176.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5926,7 +5778,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 26.035 177.1649 0)
+			(at 31.115 179.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5935,7 +5787,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
-			(at 22.86 175.895 0)
+			(at 27.94 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5944,7 +5796,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 22.86 175.895 0)
+			(at 27.94 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5953,7 +5805,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 22.86 175.895 0)
+			(at 27.94 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5962,7 +5814,7 @@
 			)
 		)
 		(property "Purpose" ""
-			(at 22.86 175.895 0)
+			(at 27.94 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5974,71 +5826,6 @@
 			(project "power"
 				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
 					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 259.08 138.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1b74551f-02c9-4700-a6aa-2a424a8d127e")
-		(property "Reference" "#PWR019"
-			(at 259.08 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 259.08 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 259.08 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 259.08 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 259.08 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e1d75d5c-dd49-4e68-bc01-b1d5b5dc55dc")
-		)
-		(instances
-			(project "power"
-				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
-					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -7253,8 +7040,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 22.86 180.975 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 27.94 182.88 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -7263,7 +7050,7 @@
 		(fields_autoplaced yes)
 		(uuid "62857690-b743-4da9-919a-9a070750849e")
 		(property "Reference" "H4"
-			(at 26.035 179.7049 0)
+			(at 31.75 181.6099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7272,7 +7059,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 26.035 182.2449 0)
+			(at 31.75 184.1499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7280,8 +7067,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
-			(at 22.86 180.975 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopOnly"
+			(at 27.94 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7290,7 +7077,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 22.86 180.975 0)
+			(at 27.94 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7298,8 +7085,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 22.86 180.975 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 27.94 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7308,13 +7095,16 @@
 			)
 		)
 		(property "Purpose" ""
-			(at 22.86 180.975 0)
+			(at 27.94 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "6beba0bd-1c35-4075-b10e-9f63eb5b02aa")
 		)
 		(instances
 			(project "power"
@@ -7823,86 +7613,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 259.08 131.445 270)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "829b10ee-ee2f-4450-beb6-3771df08685c")
-		(property "Reference" "JP1"
-			(at 262.89 131.445 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SolderJumper_3_Bridged12"
-			(at 265.43 120.015 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm"
-			(at 259.08 131.445 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 259.08 131.445 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 3-pole, open"
-			(at 259.08 131.445 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purpose" ""
-			(at 259.08 131.445 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "1f8f37b1-699b-44ed-b367-a8fd78ce1d90")
-		)
-		(pin "2"
-			(uuid "8f4ec1c2-b36b-4507-88a5-b5ee92c631ab")
-		)
-		(pin "1"
-			(uuid "8b848480-ff80-40fa-a19c-c23936524ac8")
-		)
-		(instances
-			(project "power"
-				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
-					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Memory_EEPROM:24AA02XEXX")
 		(at 58.42 123.19 0)
 		(unit 1)
@@ -7920,7 +7630,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "24AA025UIDT-I/OT"
+		(property "Value" "24AA025E48T-I/OT"
 			(at 60.6141 116.205 0)
 			(effects
 				(font
@@ -7938,7 +7648,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2202011000_Microchip-Tech-24AA025UIDT-I-OT_C2061498.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810121540_Microchip-Tech-24AA025E48T-I-OT_C129895.pdf"
 			(at 58.42 110.49 0)
 			(effects
 				(font
@@ -7965,7 +7675,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "24AA025UIDT-I/OT"
+		(property "Manufacturer_Part_Number" "24AA025E48T-I/OT"
 			(at 58.42 123.19 0)
 			(effects
 				(font
@@ -7974,7 +7684,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C2061498"
+		(property "LCSC Part #" "C129895"
 			(at 58.42 123.19 0)
 			(effects
 				(font
@@ -7993,6 +7703,15 @@
 			)
 		)
 		(property "Note" ""
+			(at 58.42 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C2061498"
 			(at 58.42 123.19 0)
 			(effects
 				(font
@@ -8538,8 +8257,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 22.86 165.735 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 26.67 167.64 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -8548,7 +8267,7 @@
 		(fields_autoplaced yes)
 		(uuid "a8286a26-9201-4cee-b6e7-fc3afd9d5711")
 		(property "Reference" "H1"
-			(at 26.035 164.4649 0)
+			(at 30.48 166.3699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8557,7 +8276,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 26.035 167.0049 0)
+			(at 30.48 168.9099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8565,8 +8284,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
-			(at 22.86 165.735 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopOnly"
+			(at 26.67 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8575,7 +8294,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 22.86 165.735 0)
+			(at 26.67 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8583,8 +8302,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 22.86 165.735 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 26.67 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8593,13 +8312,16 @@
 			)
 		)
 		(property "Purpose" ""
-			(at 22.86 165.735 0)
+			(at 26.67 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "8cbdb240-297f-4cb0-a1f1-c9346290a4ad")
 		)
 		(instances
 			(project "power"
@@ -8670,6 +8392,72 @@
 			(project "power"
 				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth_Protective")
+		(at 20.32 186.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a990867f-5876-4675-a8d6-d3df17656c7d")
+		(property "Reference" "#PWR019"
+			(at 20.32 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth_Protective"
+			(at 20.32 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 20.32 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 20.32 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth_Protective\""
+			(at 20.32 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be691182-6d32-4a93-9fec-0f0a89c8a806")
+		)
+		(instances
+			(project "power"
+				(path "/158daa50-c9fc-49fb-a041-1822899d5deb"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -9583,7 +9371,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:AMS1117-3.3")
+		(lib_id "Regulator_Linear:AMS1117-3.3-Thermal-pad")
 		(at 46.355 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9607,7 +9395,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
 			(at 46.355 39.37 0)
 			(effects
 				(font
@@ -9616,7 +9404,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211090930_TWGMC-AMS1117-3-3_C5250992.pdf"
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
 			(at 48.895 50.8 0)
 			(effects
 				(font
@@ -9669,6 +9457,9 @@
 		)
 		(pin "3"
 			(uuid "c6713e59-7705-4b41-87f5-10304bda8caa")
+		)
+		(pin "4"
+			(uuid "ffe0b7c0-e04b-4c72-b700-759c0f6fe53e")
 		)
 		(instances
 			(project "power"
@@ -10316,8 +10107,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 22.86 170.815 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 26.67 172.72 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -10326,7 +10117,7 @@
 		(fields_autoplaced yes)
 		(uuid "f362f727-8049-451c-a65a-5ba46dc1f5a3")
 		(property "Reference" "H2"
-			(at 26.035 169.5449 0)
+			(at 30.48 171.4499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10335,7 +10126,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 26.035 172.0849 0)
+			(at 30.48 173.9899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10343,8 +10134,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
-			(at 22.86 170.815 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopOnly"
+			(at 26.67 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10353,7 +10144,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 22.86 170.815 0)
+			(at 26.67 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10361,8 +10152,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 22.86 170.815 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 26.67 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10371,13 +10162,16 @@
 			)
 		)
 		(property "Purpose" ""
-			(at 22.86 170.815 0)
+			(at 26.67 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "d5186b3b-4250-4ee9-a37a-7e4629bcd13f")
 		)
 		(instances
 			(project "power"
@@ -10414,7 +10208,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Own footprints:Converter_ACDC_MeanWell_IRM-20+30-xx_THT_combined"
+		(property "Footprint" "Own footprints:Converter_ACDC_MeanWell_IRM-30-xx_THT"
 			(at 211.455 44.45 0)
 			(effects
 				(font
