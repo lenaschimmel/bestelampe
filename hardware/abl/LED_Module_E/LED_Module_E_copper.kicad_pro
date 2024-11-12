@@ -15,7 +15,7 @@
         "copper_text_upright": false,
         "courtyard_line_width": 0.05,
         "dimension_precision": 4,
-        "dimension_units": 3,
+        "dimension_units": 2,
         "dimensions": {
           "arrow_length": 1270000,
           "extension_offset": 500000,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.25
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -117,7 +117,7 @@
         "max_error": 0.005,
         "min_clearance": 0.2,
         "min_connection": 0.127,
-        "min_copper_edge_clearance": 0.2,
+        "min_copper_edge_clearance": 0.4,
         "min_hole_clearance": 0.2,
         "min_hole_to_hole": 0.2,
         "min_microvia_diameter": 0.25,
@@ -452,7 +452,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "LED_Module_E.kicad_pro",
+    "filename": "LED_Module_E_copper.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -486,11 +486,11 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "../../../../../../Applications/KiCad/",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "LED_Module_E_cutout.step",
+      "step": "LED_Module_E_copper.step",
       "svg": "",
       "vrml": ""
     },
