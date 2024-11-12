@@ -7062,7 +7062,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "24AA025UIDT-I/OT"
+		(property "Value" "24AA025E48T-I/OT"
 			(at 190.1541 38.735 0)
 			(effects
 				(font
@@ -7080,7 +7080,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21709J.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810121540_Microchip-Tech-24AA025E48T-I-OT_C129895.pdf"
 			(at 187.96 33.02 0)
 			(effects
 				(font
@@ -7107,7 +7107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "24AA025UIDT-I/OT"
+		(property "Manufacturer_Part_Number" "24AA025E48T-I/OT"
 			(at 187.96 45.72 0)
 			(effects
 				(font
@@ -7116,7 +7116,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C2061498"
+		(property "LCSC Part #" "C129895"
 			(at 187.96 45.72 0)
 			(effects
 				(font

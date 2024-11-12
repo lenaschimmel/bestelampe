@@ -167,6 +167,67 @@
 				(type "copper")
 				(thickness 0.035)
 			)
+			(layer "dielectric 5"
+				(type "prepreg")
+				(thickness 0.1)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "In1.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 6"
+				(type "core")
+				(thickness 1.24)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "In2.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 7"
+				(type "prepreg")
+				(thickness 0.1)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(color "White")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+				(color "Black")
+			)
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+				(color "Black")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(color "Black")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
 			(layer "dielectric 1"
 				(type "prepreg")
 				(thickness 0.1)
@@ -180,7 +241,7 @@
 			)
 			(layer "dielectric 2"
 				(type "core")
-				(thickness 1.24)
+				(thickness 0.64)
 				(material "FR4")
 				(epsilon_r 4.5)
 				(loss_tangent 0.02)
@@ -190,6 +251,145 @@
 				(thickness 0.035)
 			)
 			(layer "dielectric 3"
+				(type "prepreg")
+				(thickness 0.1)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(color "Black")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+				(color "Black")
+			)
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+				(color "Black")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(color "Black")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 4"
+				(type "core")
+				(thickness 1.51)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(color "Black")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+				(color "Black")
+			)
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+				(color "Black")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(color "Black")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 5"
+				(type "core")
+				(thickness 1.51)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(color "Black")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+				(color "Black")
+			)
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+				(color "Black")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(color "White")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 6"
+				(type "prepreg")
+				(thickness 0.1)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "In1.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 7"
+				(type "core")
+				(thickness 1.24)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "In2.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 8"
 				(type "prepreg")
 				(thickness 0.1)
 				(material "FR4")
@@ -439,74 +639,21 @@
 			(uuid "8d12de90-8ce1-444b-bb28-874e8affbfc7")
 		)
 	)
-	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean_bigger_solder"
 		(layer "F.Cu")
 		(uuid "16ca13ee-514d-472b-95e7-b8afe092b98d")
 		(at 143.75 80.55)
 		(descr "XEGAVT-H0-0000-000-000000K2001-1")
 		(tags "LED")
 		(property "Reference" "D3"
-			(at 0.004 0.16 0)
+			(at 0 1.75 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "edaca2aa-cda6-4983-8f9e-84f4d61caa01")
+			(uuid "c1075949-abb3-45f8-b77f-4cfe93197ad6")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-			(render_cache "D3" 0
-				(polygon
-					(pts
-						(xy 143.415242 80.298189) (xy 143.464723 80.303174) (xy 143.516711 80.31261) (xy 143.536624 80.317533)
-						(xy 143.58356 80.333451) (xy 143.630065 80.357408) (xy 143.671202 80.388119) (xy 143.706821 80.425905)
-						(xy 143.733993 80.466969) (xy 143.756204 80.514424) (xy 143.758152 80.519521) (xy 143.773147 80.568852)
-						(xy 143.782355 80.618021) (xy 143.787687 80.672197) (xy 143.789171 80.723709) (xy 143.78664 80.774466)
-						(xy 143.777891 80.827465) (xy 143.762893 80.876886) (xy 143.757175 80.891015) (xy 143.73484 80.935379)
-						(xy 143.704872 80.979111) (xy 143.669248 81.017533) (xy 143.628428 81.050303) (xy 143.582876 81.077416)
-						(xy 143.537357 81.097156) (xy 143.48889 81.111839) (xy 143.438133 81.121084) (xy 143.385087 81.124891)
-						(xy 143.374202 81.125) (xy 142.989032 81.125) (xy 142.989032 81.03121) (xy 143.122877 81.03121)
-						(xy 143.122877 80.390317) (xy 143.235473 80.390317) (xy 143.235473 81.03121) (xy 143.348801 81.03121)
-						(xy 143.405837 81.028471) (xy 143.457325 81.020254) (xy 143.510384 81.003743) (xy 143.555893 80.979775)
-						(xy 143.588892 80.953297) (xy 143.620393 80.915608) (xy 143.644157 80.870931) (xy 143.660183 80.819264)
-						(xy 143.667763 80.769416) (xy 143.669736 80.723953) (xy 143.668469 80.675028) (xy 143.664015 80.625644)
-						(xy 143.654215 80.573419) (xy 143.649464 80.556646) (xy 143.62993 80.508455) (xy 143.60204 80.466834)
-						(xy 143.590357 80.454553) (xy 143.549925 80.424954) (xy 143.501443 80.405766) (xy 143.49437 80.403995)
-						(xy 143.44527 80.395139) (xy 143.394866 80.390972) (xy 143.363212 80.390317) (xy 143.235473 80.390317)
-						(xy 143.122877 80.390317) (xy 142.989032 80.390317) (xy 142.989032 80.296528) (xy 143.363212 80.296528)
-					)
-				)
-				(polygon
-					(pts
-						(xy 143.983344 80.968684) (xy 144.000197 80.980896) (xy 144.043578 81.006835) (xy 144.045382 81.007763)
-						(xy 144.091339 81.026979) (xy 144.115968 81.034874) (xy 144.165419 81.044551) (xy 144.208048 81.046842)
-						(xy 144.258034 81.042795) (xy 144.287671 81.035362) (xy 144.332871 81.013197) (xy 144.345068 81.003611)
-						(xy 144.375812 80.964707) (xy 144.37975 80.956472) (xy 144.391188 80.908462) (xy 144.391474 80.899075)
-						(xy 144.385796 80.850036) (xy 144.380483 80.834351) (xy 144.353435 80.793478) (xy 144.351174 80.791364)
-						(xy 144.309897 80.766451) (xy 144.262758 80.754239) (xy 144.216108 80.750331) (xy 144.175563 80.749842)
-						(xy 144.111083 80.749842) (xy 144.111083 80.656053) (xy 144.206582 80.656053) (xy 144.257217 80.652268)
-						(xy 144.27497 80.648726) (xy 144.321479 80.628984) (xy 144.326994 80.625034) (xy 144.358521 80.58555)
-						(xy 144.359967 80.582292) (xy 144.370897 80.533688) (xy 144.371446 80.517568) (xy 144.364293 80.468205)
-						(xy 144.354838 80.44747) (xy 144.32228 80.41036) (xy 144.313072 80.403995) (xy 144.266556 80.383921)
-						(xy 144.25714 80.381769) (xy 144.207185 80.375052) (xy 144.198278 80.374685) (xy 144.148685 80.378941)
-						(xy 144.122318 80.386165) (xy 144.076827 80.406505) (xy 144.066387 80.412787) (xy 144.031216 80.440143)
-						(xy 144.018271 80.453576) (xy 143.935228 80.377372) (xy 143.942311 80.370045) (xy 143.964049 80.351971)
-						(xy 143.999953 80.329012) (xy 144.045771 80.30804) (xy 144.051244 80.306053) (xy 144.099833 80.291994)
-						(xy 144.117922 80.288224) (xy 144.167763 80.281927) (xy 144.200965 80.280896) (xy 144.251184 80.283678)
-						(xy 144.3013 80.292894) (xy 144.318201 80.297749) (xy 144.364845 80.316715) (xy 144.407381 80.343925)
-						(xy 144.409792 80.345865) (xy 144.4459 80.382476) (xy 144.469632 80.420847) (xy 144.485569 80.467192)
-						(xy 144.490881 80.5183) (xy 144.48432 80.568431) (xy 144.47818 80.585711) (xy 144.452704 80.628501)
-						(xy 144.445452 80.637002) (xy 144.407651 80.669674) (xy 144.401732 80.673394) (xy 144.357282 80.694403)
-						(xy 144.354349 80.695376) (xy 144.400859 80.711921) (xy 144.409548 80.716625) (xy 144.449923 80.747162)
-						(xy 144.460106 80.757903) (xy 144.488216 80.799464) (xy 144.496743 80.818475) (xy 144.509235 80.868213)
-						(xy 144.510909 80.897121) (xy 144.505576 80.947963) (xy 144.494056 80.986758) (xy 144.470635 81.030712)
-						(xy 144.440811 81.064916) (xy 144.398801 81.095751) (xy 144.352826 81.117223) (xy 144.345556 81.11987)
-						(xy 144.298158 81.132521) (xy 144.248675 81.138989) (xy 144.203895 81.140631) (xy 144.15233 81.13857)
-						(xy 144.102048 81.131687) (xy 144.077378 81.125976) (xy 144.030355 81.111486) (xy 143.986275 81.093248)
-						(xy 143.94346 81.069726) (xy 143.911293 81.046109)
-					)
+					(size 0.8 0.8)
+					(thickness 0.2)
 				)
 			)
 		)
@@ -514,7 +661,7 @@
 			(at 0.125 -3.25 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "216b15c4-5afd-476f-bbc0-e49e037c83b4")
+			(uuid "7751426e-8b31-4c20-a48c-4b3148212c6a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -527,7 +674,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bb1a8b50-3dda-4ae1-9322-bbe69c97c272")
+			(uuid "944c42d9-360e-4c5b-8dbb-efb0325ebb35")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -539,7 +686,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f86f49f3-a4e8-45b2-a820-ab5b356c59c5")
+			(uuid "f18356bc-54e8-4dc5-bba8-32f6743334e2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -551,7 +698,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6a583a6d-572f-4d8b-8d50-8049b96a1caf")
+			(uuid "416b20f6-915f-449e-a9a9-acd8b98fab33")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -624,8 +771,6 @@
 			)
 		)
 		(path "/c7edd247-6390-4d49-b72f-b9286fa9b4a8")
-		(sheetname "Root")
-		(sheetfile "LED_Module_E.kicad_sch")
 		(attr smd)
 		(fp_rect
 			(start -0.85 -1.075)
@@ -636,7 +781,7 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "60977f00-ce49-4e3c-b50c-cfb0dba0939a")
+			(uuid "759f18e4-1e71-4dd3-ad8f-7e325c658bad")
 		)
 		(fp_line
 			(start -0.8 -1.025)
@@ -646,7 +791,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "374b2cb2-766f-4b93-b39c-f18647b9340f")
+			(uuid "5affef79-ef08-4792-a523-1857446a2335")
 		)
 		(fp_line
 			(start -0.8 1.025)
@@ -656,7 +801,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "63ebb5fc-f681-4d65-a067-770514756aac")
+			(uuid "4b508d94-0a89-41e7-9e6a-ff56dc92d75b")
 		)
 		(fp_line
 			(start 0.8 -1.025)
@@ -666,7 +811,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "5f35c7e4-4148-442c-81c6-08c3c6144004")
+			(uuid "7ad887ef-3e1a-4159-8ba7-7133ab0e399a")
 		)
 		(fp_line
 			(start 0.8 1.025)
@@ -676,34 +821,20 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "ea6a1bbc-20af-4350-ab86-c59cde23a412")
+			(uuid "e9710a85-2ac4-46f3-9532-00bf97f701d2")
 		)
 		(fp_text user "K"
 			(at 0.7 -0.125 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "0079c260-5042-45dc-bf99-affc5efb439d")
+			(uuid "ae0e47c3-747c-4a8d-bc38-8ec46351a2c4")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.1)
 				)
 				(justify left bottom)
-			)
-			(render_cache "K" 0
-				(polygon
-					(pts
-						(xy 144.981716 80.16121) (xy 145.083321 80.16121) (xy 144.902093 79.879842) (xy 144.761165 79.879842)
-						(xy 144.76263 80.16121) (xy 144.85129 80.16121) (xy 144.85129 80.255) (xy 144.517411 80.255) (xy 144.517411 80.16121)
-						(xy 144.64979 80.16121) (xy 144.64979 79.520317) (xy 144.517411 79.520317) (xy 144.517411 79.426528)
-						(xy 144.85129 79.426528) (xy 144.85129 79.520317) (xy 144.761165 79.520317) (xy 144.761165 79.786053)
-						(xy 144.884752 79.786053) (xy 145.079169 79.520317) (xy 144.981716 79.520317) (xy 144.981716 79.426528)
-						(xy 145.327808 79.426528) (xy 145.327808 79.520317) (xy 145.200069 79.520317) (xy 144.98709 79.809256)
-						(xy 145.219364 80.16121) (xy 145.360293 80.16121) (xy 145.360293 80.255) (xy 144.981716 80.255)
-					)
-				)
 			)
 		)
 		(pad "1" smd rect
@@ -713,9 +844,9 @@
 			(net 9 "Net-(D3-K)")
 			(pinfunction "K")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "e7536758-2238-43f4-83d9-7e5aa7148caa")
+			(uuid "5920cf76-d1c3-4ec7-8b6e-89aa354e476c")
 		)
 		(pad "2" smd rect
 			(at -0.43 -0.76 90)
@@ -724,9 +855,9 @@
 			(net 2 "+4V")
 			(pinfunction "A")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "34da408a-5c5f-4c67-8ec8-2ee2e4e36b84")
+			(uuid "b4698c2a-cb00-45f0-ad45-5a54d831f839")
 		)
 		(pad "3" smd rect
 			(at 0 0.29 180)
@@ -736,7 +867,7 @@
 			(pintype "passive")
 			(solder_paste_margin -0.05)
 			(clearance 0.15)
-			(uuid "7e14f37f-9319-416d-b435-02f3e4497352")
+			(uuid "156edc0e-da08-40e7-a3a0-7591c5d5a550")
 		)
 		(model "XEGAVT-H0-0000-000-000000K2001.stp"
 			(offset
@@ -761,56 +892,21 @@
 			)
 		)
 	)
-	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean_bigger_solder"
 		(layer "F.Cu")
 		(uuid "20ab3468-e8c6-4848-900a-a5d8ff4b5e68")
 		(at 141.25 80.55)
 		(descr "XEGAVT-H0-0000-000-000000K2001-1")
 		(tags "LED")
 		(property "Reference" "D4"
-			(at 0.004 0.16 0)
+			(at 0 1.75 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "95435949-c5e9-4d8a-a61b-4480c44315a8")
+			(uuid "feb5779d-de44-4f22-9b41-e4117a6eb3ae")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-			(render_cache "D4" 0
-				(polygon
-					(pts
-						(xy 140.907426 80.298189) (xy 140.956907 80.303174) (xy 141.008895 80.31261) (xy 141.028808 80.317533)
-						(xy 141.075744 80.333451) (xy 141.122249 80.357408) (xy 141.163386 80.388119) (xy 141.199005 80.425905)
-						(xy 141.226177 80.466969) (xy 141.248388 80.514424) (xy 141.250336 80.519521) (xy 141.265331 80.568852)
-						(xy 141.274539 80.618021) (xy 141.279871 80.672197) (xy 141.281355 80.723709) (xy 141.278824 80.774466)
-						(xy 141.270075 80.827465) (xy 141.255077 80.876886) (xy 141.249359 80.891015) (xy 141.227024 80.935379)
-						(xy 141.197056 80.979111) (xy 141.161432 81.017533) (xy 141.120612 81.050303) (xy 141.07506 81.077416)
-						(xy 141.029541 81.097156) (xy 140.981074 81.111839) (xy 140.930317 81.121084) (xy 140.877271 81.124891)
-						(xy 140.866386 81.125) (xy 140.481216 81.125) (xy 140.481216 81.03121) (xy 140.615061 81.03121)
-						(xy 140.615061 80.390317) (xy 140.727657 80.390317) (xy 140.727657 81.03121) (xy 140.840985 81.03121)
-						(xy 140.898021 81.028471) (xy 140.949509 81.020254) (xy 141.002568 81.003743) (xy 141.048077 80.979775)
-						(xy 141.081076 80.953297) (xy 141.112577 80.915608) (xy 141.136341 80.870931) (xy 141.152367 80.819264)
-						(xy 141.159947 80.769416) (xy 141.16192 80.723953) (xy 141.160653 80.675028) (xy 141.156199 80.625644)
-						(xy 141.146399 80.573419) (xy 141.141648 80.556646) (xy 141.122114 80.508455) (xy 141.094224 80.466834)
-						(xy 141.082541 80.454553) (xy 141.042109 80.424954) (xy 140.993627 80.405766) (xy 140.986554 80.403995)
-						(xy 140.937454 80.395139) (xy 140.88705 80.390972) (xy 140.855396 80.390317) (xy 140.727657 80.390317)
-						(xy 140.615061 80.390317) (xy 140.481216 80.390317) (xy 140.481216 80.296528) (xy 140.855396 80.296528)
-					)
-				)
-				(polygon
-					(pts
-						(xy 141.908326 80.890526) (xy 141.908326 81.03121) (xy 142.036065 81.03121) (xy 142.036065 81.125)
-						(xy 141.649429 81.125) (xy 141.649429 81.03121) (xy 141.796952 81.03121) (xy 141.796952 80.890526)
-						(xy 141.390532 80.890526) (xy 141.389066 80.839235) (xy 141.656268 80.249633) (xy 141.748836 80.301901)
-						(xy 141.726481 80.348341) (xy 141.698792 80.405852) (xy 141.673523 80.458326) (xy 141.650672 80.505763)
-						(xy 141.625512 80.557974) (xy 141.604133 80.602315) (xy 141.580553 80.651168) (xy 141.557646 80.698633)
-						(xy 141.535337 80.74503) (xy 141.523156 80.770603) (xy 141.511188 80.796737) (xy 141.796952 80.796737)
-						(xy 141.796952 80.42158) (xy 141.909792 80.42158) (xy 141.908326 80.796737) (xy 142.041683 80.795516)
-						(xy 142.041683 80.890526)
-					)
+					(size 0.8 0.8)
+					(thickness 0.2)
 				)
 			)
 		)
@@ -818,7 +914,7 @@
 			(at 0.125 -3.25 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "ba38dc12-bc3c-4239-b7ca-d1dea12291eb")
+			(uuid "79b60a00-4cdf-42ba-869a-a7559723f96d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -831,7 +927,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a5626d65-e284-4820-8be0-f169f1859c9c")
+			(uuid "18784206-de05-4c15-bade-f3292cead36a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -843,7 +939,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cb226f3f-798d-47ca-88fa-0ec827a2fc77")
+			(uuid "fc7d0726-eb24-493c-9074-520e2b060a86")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -855,7 +951,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b4e250f0-1774-4a0c-a56e-13aa4b491aa0")
+			(uuid "cd783162-0b94-4aac-883f-797f389dd1b9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -928,8 +1024,6 @@
 			)
 		)
 		(path "/bfa65da7-5a99-4f0d-bfd7-3f501560d81b")
-		(sheetname "Root")
-		(sheetfile "LED_Module_E.kicad_sch")
 		(attr smd)
 		(fp_rect
 			(start -0.85 -1.075)
@@ -940,7 +1034,7 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "b012e570-d171-4dda-aeb4-d72ab08d3ff2")
+			(uuid "0b02a274-4861-4451-9a18-1fddacd5b00e")
 		)
 		(fp_line
 			(start -0.8 -1.025)
@@ -950,7 +1044,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "e03df3c3-6c04-403c-8a38-5bd2e32c18e7")
+			(uuid "5ef468aa-bb17-4277-bc9e-ecfaa538abd6")
 		)
 		(fp_line
 			(start -0.8 1.025)
@@ -960,7 +1054,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "e67af8eb-eb15-42b5-a16f-2837fb10d5b8")
+			(uuid "cc9b761e-b17a-451e-b93b-910b90977042")
 		)
 		(fp_line
 			(start 0.8 -1.025)
@@ -970,7 +1064,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "437917c3-6500-4f5f-bb7e-162e8c8ce9c3")
+			(uuid "fda1e018-38a1-4a53-9cb2-e90ab4e5c176")
 		)
 		(fp_line
 			(start 0.8 1.025)
@@ -980,34 +1074,20 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "f1a47795-e17a-49ee-8235-e64e09ca11dd")
+			(uuid "358b23d9-3c9d-4905-b9dc-8efb01ad0474")
 		)
 		(fp_text user "K"
 			(at 0.7 -0.125 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "84659474-83c2-4d9e-a409-a15436966abc")
+			(uuid "f3922885-188a-4a4b-bc3c-76e7427d903a")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.1)
 				)
 				(justify left bottom)
-			)
-			(render_cache "K" 0
-				(polygon
-					(pts
-						(xy 142.481716 80.16121) (xy 142.583321 80.16121) (xy 142.402093 79.879842) (xy 142.261165 79.879842)
-						(xy 142.26263 80.16121) (xy 142.35129 80.16121) (xy 142.35129 80.255) (xy 142.017411 80.255) (xy 142.017411 80.16121)
-						(xy 142.14979 80.16121) (xy 142.14979 79.520317) (xy 142.017411 79.520317) (xy 142.017411 79.426528)
-						(xy 142.35129 79.426528) (xy 142.35129 79.520317) (xy 142.261165 79.520317) (xy 142.261165 79.786053)
-						(xy 142.384752 79.786053) (xy 142.579169 79.520317) (xy 142.481716 79.520317) (xy 142.481716 79.426528)
-						(xy 142.827808 79.426528) (xy 142.827808 79.520317) (xy 142.700069 79.520317) (xy 142.48709 79.809256)
-						(xy 142.719364 80.16121) (xy 142.860293 80.16121) (xy 142.860293 80.255) (xy 142.481716 80.255)
-					)
-				)
 			)
 		)
 		(pad "1" smd rect
@@ -1017,9 +1097,9 @@
 			(net 10 "Net-(D4-K)")
 			(pinfunction "K")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "43e8f3e7-7f66-4ca4-bd7d-2e932a9d97c8")
+			(uuid "2b5d83a4-5f4c-4634-92f6-c61389ad4eba")
 		)
 		(pad "2" smd rect
 			(at -0.43 -0.76 90)
@@ -1028,9 +1108,9 @@
 			(net 2 "+4V")
 			(pinfunction "A")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "45e9ac4e-6726-4d87-a52e-4768deee3863")
+			(uuid "8780b682-2a50-41c6-9a64-816f931a5963")
 		)
 		(pad "3" smd rect
 			(at 0 0.29 180)
@@ -1040,7 +1120,7 @@
 			(pintype "passive")
 			(solder_paste_margin -0.05)
 			(clearance 0.15)
-			(uuid "7e45f1f5-dd1c-4d08-b915-60477c483384")
+			(uuid "44977056-2f81-49df-9053-f0d44cad6e7b")
 		)
 		(model "XEGAVT-H0-0000-000-000000K2001.stp"
 			(offset
@@ -1566,59 +1646,21 @@
 			(uuid "a0b1523d-32e8-400f-9484-4958f1165c3c")
 		)
 	)
-	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean_bigger_solder"
 		(layer "F.Cu")
 		(uuid "35ed1150-ba1f-40b6-a60b-c7a44d46f302")
 		(at 133.75 80.55)
 		(descr "XEGAVT-H0-0000-000-000000K2001-1")
 		(tags "LED")
 		(property "Reference" "D7"
-			(at 0.004 0.16 0)
+			(at 0 1.75 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "e51209b9-0d35-4263-b7bb-d9f04be54be2")
+			(uuid "14949976-8a2c-4449-bc21-a4e62329d39d")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-			(render_cache "D7" 0
-				(polygon
-					(pts
-						(xy 133.457252 80.298189) (xy 133.506733 80.303174) (xy 133.558721 80.31261) (xy 133.578634 80.317533)
-						(xy 133.62557 80.333451) (xy 133.672075 80.357408) (xy 133.713212 80.388119) (xy 133.748831 80.425905)
-						(xy 133.776003 80.466969) (xy 133.798214 80.514424) (xy 133.800162 80.519521) (xy 133.815157 80.568852)
-						(xy 133.824365 80.618021) (xy 133.829697 80.672197) (xy 133.831181 80.723709) (xy 133.82865 80.774466)
-						(xy 133.819901 80.827465) (xy 133.804903 80.876886) (xy 133.799185 80.891015) (xy 133.77685 80.935379)
-						(xy 133.746882 80.979111) (xy 133.711258 81.017533) (xy 133.670438 81.050303) (xy 133.624886 81.077416)
-						(xy 133.579367 81.097156) (xy 133.5309 81.111839) (xy 133.480143 81.121084) (xy 133.427097 81.124891)
-						(xy 133.416212 81.125) (xy 133.031042 81.125) (xy 133.031042 81.03121) (xy 133.164887 81.03121)
-						(xy 133.164887 80.390317) (xy 133.277483 80.390317) (xy 133.277483 81.03121) (xy 133.390811 81.03121)
-						(xy 133.447847 81.028471) (xy 133.499335 81.020254) (xy 133.552394 81.003743) (xy 133.597903 80.979775)
-						(xy 133.630902 80.953297) (xy 133.662403 80.915608) (xy 133.686167 80.870931) (xy 133.702193 80.819264)
-						(xy 133.709773 80.769416) (xy 133.711746 80.723953) (xy 133.710479 80.675028) (xy 133.706025 80.625644)
-						(xy 133.696225 80.573419) (xy 133.691474 80.556646) (xy 133.67194 80.508455) (xy 133.64405 80.466834)
-						(xy 133.632367 80.454553) (xy 133.591935 80.424954) (xy 133.543453 80.405766) (xy 133.53638 80.403995)
-						(xy 133.48728 80.395139) (xy 133.436876 80.390972) (xy 133.405222 80.390317) (xy 133.277483 80.390317)
-						(xy 133.164887 80.390317) (xy 133.031042 80.390317) (xy 133.031042 80.296528) (xy 133.405222 80.296528)
-					)
-				)
-				(polygon
-					(pts
-						(xy 133.932053 80.462369) (xy 133.963072 80.296528) (xy 134.535822 80.296528) (xy 134.535822 80.355146)
-						(xy 134.503022 80.399084) (xy 134.472583 80.443489) (xy 134.444505 80.488362) (xy 134.418787 80.533703)
-						(xy 134.405152 80.559822) (xy 134.382994 80.605369) (xy 134.362683 80.650543) (xy 134.341732 80.701711)
-						(xy 134.323192 80.752392) (xy 134.318934 80.764986) (xy 134.303394 80.814674) (xy 134.289991 80.863354)
-						(xy 134.278726 80.911028) (xy 134.269597 80.957693) (xy 134.261418 81.008254) (xy 134.254415 81.061214)
-						(xy 134.249607 81.110788) (xy 134.248592 81.125) (xy 134.116701 81.125) (xy 134.123871 81.074624)
-						(xy 134.133474 81.022723) (xy 134.144196 80.974706) (xy 134.148208 80.958426) (xy 134.161655 80.908915)
-						(xy 134.177266 80.858477) (xy 134.19504 80.807112) (xy 134.20585 80.778175) (xy 134.224748 80.731265)
-						(xy 134.245539 80.683836) (xy 134.268223 80.635888) (xy 134.2928 80.587421) (xy 134.319484 80.538466)
-						(xy 134.344535 80.495454) (xy 134.371175 80.452279) (xy 134.399405 80.408941) (xy 134.411991 80.390317)
-						(xy 134.048801 80.390317) (xy 134.029506 80.484106)
-					)
+					(size 0.8 0.8)
+					(thickness 0.2)
 				)
 			)
 		)
@@ -1626,7 +1668,7 @@
 			(at 0.125 -3.25 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "d1bf7c46-0e30-4440-ab78-1b50e5dad948")
+			(uuid "122804e6-50a2-45c0-b454-c3e97ddf3cd9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1639,7 +1681,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3ed6402f-d8b1-4da3-bcbf-1af2ede00657")
+			(uuid "7ba5c186-aa28-42dd-a0a9-0a2b36bb23d6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1651,7 +1693,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "30cff253-b065-47a7-87e1-c2da72c854ea")
+			(uuid "6513e585-552e-44dd-bba5-012f3caf4792")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1663,7 +1705,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "84804563-1808-4cac-a9aa-7010335fc650")
+			(uuid "0894bd41-7509-48e1-a4ef-d3284e997543")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1736,8 +1778,6 @@
 			)
 		)
 		(path "/298e810e-5f57-4249-a4c8-5570652f0ffc")
-		(sheetname "Root")
-		(sheetfile "LED_Module_E.kicad_sch")
 		(attr smd)
 		(fp_rect
 			(start -0.85 -1.075)
@@ -1748,7 +1788,7 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "0428aa78-9a58-4164-b978-86dc727e04c4")
+			(uuid "e2f7480f-77b2-4022-98be-6d79d4cde308")
 		)
 		(fp_line
 			(start -0.8 -1.025)
@@ -1758,7 +1798,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "14367757-1dbc-48eb-86d8-6077e95802c9")
+			(uuid "67831292-6677-4e8c-968f-8db9ef7008c5")
 		)
 		(fp_line
 			(start -0.8 1.025)
@@ -1768,7 +1808,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "3c5f5bce-c2e0-402d-8f76-e93f98427665")
+			(uuid "57d94446-bc8f-448e-bb56-0eccc044af6b")
 		)
 		(fp_line
 			(start 0.8 -1.025)
@@ -1778,7 +1818,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "cb4bcdd6-8ad2-4f9b-9762-543fe850a9d0")
+			(uuid "fb70fcf2-28f8-4511-a2c2-48d830a3835a")
 		)
 		(fp_line
 			(start 0.8 1.025)
@@ -1788,34 +1828,20 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "dcff845f-d860-4ff2-9868-b84f247cbf16")
+			(uuid "cf6130ef-d46f-4ddf-9842-fe658c34f965")
 		)
 		(fp_text user "K"
 			(at 0.7 -0.125 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "ac02082f-3965-4d86-aa41-b24464709288")
+			(uuid "c6148aba-9999-4728-bc80-6074081bf19b")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.1)
 				)
 				(justify left bottom)
-			)
-			(render_cache "K" 0
-				(polygon
-					(pts
-						(xy 134.981716 80.16121) (xy 135.083321 80.16121) (xy 134.902093 79.879842) (xy 134.761165 79.879842)
-						(xy 134.76263 80.16121) (xy 134.85129 80.16121) (xy 134.85129 80.255) (xy 134.517411 80.255) (xy 134.517411 80.16121)
-						(xy 134.64979 80.16121) (xy 134.64979 79.520317) (xy 134.517411 79.520317) (xy 134.517411 79.426528)
-						(xy 134.85129 79.426528) (xy 134.85129 79.520317) (xy 134.761165 79.520317) (xy 134.761165 79.786053)
-						(xy 134.884752 79.786053) (xy 135.079169 79.520317) (xy 134.981716 79.520317) (xy 134.981716 79.426528)
-						(xy 135.327808 79.426528) (xy 135.327808 79.520317) (xy 135.200069 79.520317) (xy 134.98709 79.809256)
-						(xy 135.219364 80.16121) (xy 135.360293 80.16121) (xy 135.360293 80.255) (xy 134.981716 80.255)
-					)
-				)
 			)
 		)
 		(pad "1" smd rect
@@ -1825,9 +1851,9 @@
 			(net 13 "Net-(D7-K)")
 			(pinfunction "K")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "af9cd518-e394-473d-a643-4f60f4f1c6d6")
+			(uuid "c91c1702-b752-4bbc-942f-fc8e1575a4a0")
 		)
 		(pad "2" smd rect
 			(at -0.43 -0.76 90)
@@ -1836,9 +1862,9 @@
 			(net 2 "+4V")
 			(pinfunction "A")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "0edf32be-3783-4256-a9e2-478fe7694382")
+			(uuid "0dcc3579-06a3-44c1-881a-cbd1e5839edd")
 		)
 		(pad "3" smd rect
 			(at 0 0.29 180)
@@ -1848,7 +1874,7 @@
 			(pintype "passive")
 			(solder_paste_margin -0.05)
 			(clearance 0.15)
-			(uuid "3c500a3d-1e71-4dba-b2a6-5a489b9e7c29")
+			(uuid "1ffcf75d-b8ca-467b-9584-d02d9a4ed1fe")
 		)
 		(model "XEGAVT-H0-0000-000-000000K2001.stp"
 			(offset
@@ -1873,51 +1899,21 @@
 			)
 		)
 	)
-	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean_bigger_solder"
 		(layer "F.Cu")
 		(uuid "39484fd4-9661-4ea0-9ef6-89213bd1b838")
 		(at 148.75 80.55)
 		(descr "XEGAVT-H0-0000-000-000000K2001-1")
 		(tags "LED")
 		(property "Reference" "D1"
-			(at 0.004 0.16 0)
+			(at 0 1.75 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "da96ecef-0eda-46c0-a12a-711a4e6e7862")
+			(uuid "34105667-0e41-4438-8369-9babe72a9031")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-			(render_cache "D1" 0
-				(polygon
-					(pts
-						(xy 148.446505 80.298189) (xy 148.495986 80.303174) (xy 148.547974 80.31261) (xy 148.567887 80.317533)
-						(xy 148.614823 80.333451) (xy 148.661328 80.357408) (xy 148.702465 80.388119) (xy 148.738084 80.425905)
-						(xy 148.765256 80.466969) (xy 148.787467 80.514424) (xy 148.789415 80.519521) (xy 148.80441 80.568852)
-						(xy 148.813618 80.618021) (xy 148.81895 80.672197) (xy 148.820434 80.723709) (xy 148.817903 80.774466)
-						(xy 148.809154 80.827465) (xy 148.794156 80.876886) (xy 148.788438 80.891015) (xy 148.766103 80.935379)
-						(xy 148.736135 80.979111) (xy 148.700511 81.017533) (xy 148.659691 81.050303) (xy 148.614139 81.077416)
-						(xy 148.56862 81.097156) (xy 148.520153 81.111839) (xy 148.469396 81.121084) (xy 148.41635 81.124891)
-						(xy 148.405465 81.125) (xy 148.020295 81.125) (xy 148.020295 81.03121) (xy 148.15414 81.03121)
-						(xy 148.15414 80.390317) (xy 148.266736 80.390317) (xy 148.266736 81.03121) (xy 148.380064 81.03121)
-						(xy 148.4371 81.028471) (xy 148.488588 81.020254) (xy 148.541647 81.003743) (xy 148.587156 80.979775)
-						(xy 148.620155 80.953297) (xy 148.651656 80.915608) (xy 148.67542 80.870931) (xy 148.691446 80.819264)
-						(xy 148.699026 80.769416) (xy 148.700999 80.723953) (xy 148.699732 80.675028) (xy 148.695278 80.625644)
-						(xy 148.685478 80.573419) (xy 148.680727 80.556646) (xy 148.661193 80.508455) (xy 148.633303 80.466834)
-						(xy 148.62162 80.454553) (xy 148.581188 80.424954) (xy 148.532706 80.405766) (xy 148.525633 80.403995)
-						(xy 148.476533 80.395139) (xy 148.426129 80.390972) (xy 148.394475 80.390317) (xy 148.266736 80.390317)
-						(xy 148.15414 80.390317) (xy 148.020295 80.390317) (xy 148.020295 80.296528) (xy 148.394475 80.296528)
-					)
-				)
-				(polygon
-					(pts
-						(xy 148.948662 80.548586) (xy 149.252255 80.296528) (xy 149.322353 80.296528) (xy 149.319666 81.03121)
-						(xy 149.539485 81.03121) (xy 149.539485 81.125) (xy 148.97675 81.125) (xy 148.97675 81.03121)
-						(xy 149.21049 81.03121) (xy 149.211711 80.459682) (xy 149.010455 80.62479)
-					)
+					(size 0.8 0.8)
+					(thickness 0.2)
 				)
 			)
 		)
@@ -1925,7 +1921,7 @@
 			(at 0.125 -3.25 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "1e926886-ecd0-476b-930d-d2c07c2a5ca8")
+			(uuid "ec03aa77-dbfb-473b-bdd6-42c5fa9f8bb7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1938,7 +1934,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0fc74d02-c1c9-45f4-8d8a-04a437a45215")
+			(uuid "94e7cf55-1264-46f0-8c1c-d43c29904052")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1950,7 +1946,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1c7f4b5c-e998-435e-b982-6bdc82573b46")
+			(uuid "0aa62b13-d15d-4561-a93b-6ac6fa923283")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1962,7 +1958,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "64fc8ad0-06b9-42d8-9490-3f496dd3fe81")
+			(uuid "1fdff176-ad98-4c81-8e9a-38ecd3b1f318")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2035,8 +2031,6 @@
 			)
 		)
 		(path "/4b856cec-34fe-4a1b-bdec-9679a7d0dabd")
-		(sheetname "Root")
-		(sheetfile "LED_Module_E.kicad_sch")
 		(attr smd)
 		(fp_rect
 			(start -0.85 -1.075)
@@ -2047,7 +2041,7 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "5c80181d-e2ed-4c1e-8d74-cb7f097f933e")
+			(uuid "f9851aad-82e9-49c3-b96e-f94bf6dca35f")
 		)
 		(fp_line
 			(start -0.8 -1.025)
@@ -2057,7 +2051,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "d2fb85bc-e426-4fa8-9fbd-0318689a5a27")
+			(uuid "7640fa88-c01a-4573-a28d-a6961103a075")
 		)
 		(fp_line
 			(start -0.8 1.025)
@@ -2067,7 +2061,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "1697fff5-b71d-406a-8041-1139d7c5e6e8")
+			(uuid "61569de5-c1b6-48a3-ae31-30e0e698c5f7")
 		)
 		(fp_line
 			(start 0.8 -1.025)
@@ -2077,7 +2071,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "220e6942-c9e7-4555-addf-b0cfb5b03687")
+			(uuid "6a3b8028-e40a-4fcd-9f54-4dc10043d0dc")
 		)
 		(fp_line
 			(start 0.8 1.025)
@@ -2087,34 +2081,20 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "bd4ef70c-fc29-402e-84c3-355f70eba72a")
+			(uuid "adf00c89-beec-42e1-91e0-b7b0bac0241e")
 		)
 		(fp_text user "K"
 			(at 0.7 -0.125 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "bd31f6d7-b009-4cfa-a3a8-cfa8ff9e0400")
+			(uuid "abdbb1cf-c85c-4b9e-9750-6f354d55000a")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.1)
 				)
 				(justify left bottom)
-			)
-			(render_cache "K" 0
-				(polygon
-					(pts
-						(xy 149.981716 80.16121) (xy 150.083321 80.16121) (xy 149.902093 79.879842) (xy 149.761165 79.879842)
-						(xy 149.76263 80.16121) (xy 149.85129 80.16121) (xy 149.85129 80.255) (xy 149.517411 80.255) (xy 149.517411 80.16121)
-						(xy 149.64979 80.16121) (xy 149.64979 79.520317) (xy 149.517411 79.520317) (xy 149.517411 79.426528)
-						(xy 149.85129 79.426528) (xy 149.85129 79.520317) (xy 149.761165 79.520317) (xy 149.761165 79.786053)
-						(xy 149.884752 79.786053) (xy 150.079169 79.520317) (xy 149.981716 79.520317) (xy 149.981716 79.426528)
-						(xy 150.327808 79.426528) (xy 150.327808 79.520317) (xy 150.200069 79.520317) (xy 149.98709 79.809256)
-						(xy 150.219364 80.16121) (xy 150.360293 80.16121) (xy 150.360293 80.255) (xy 149.981716 80.255)
-					)
-				)
 			)
 		)
 		(pad "1" smd rect
@@ -2124,9 +2104,9 @@
 			(net 7 "Net-(D1-K)")
 			(pinfunction "K")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "03b2b9e3-6bc6-4e4a-ae7a-443b9789bd64")
+			(uuid "a44bd296-49fb-4b34-a8a4-6dfde4eb246a")
 		)
 		(pad "2" smd rect
 			(at -0.43 -0.76 90)
@@ -2135,9 +2115,9 @@
 			(net 2 "+4V")
 			(pinfunction "A")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "ec17274a-cb51-479a-b42b-543cf2d1d667")
+			(uuid "4387224f-f2c6-419e-98ac-feefcc3f977b")
 		)
 		(pad "3" smd rect
 			(at 0 0.29 180)
@@ -2147,7 +2127,7 @@
 			(pintype "passive")
 			(solder_paste_margin -0.05)
 			(clearance 0.15)
-			(uuid "7e9ab875-56cc-4cc4-af04-5e78141128f8")
+			(uuid "24d2f212-ef4f-42d6-b428-e51b89452aab")
 		)
 		(model "XEGAVT-H0-0000-000-000000K2001.stp"
 			(offset
@@ -2652,58 +2632,21 @@
 			(uuid "836bad80-6325-421b-ba74-557d4032db2c")
 		)
 	)
-	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean_bigger_solder"
 		(layer "F.Cu")
 		(uuid "60e0e062-e023-4078-bab7-a9a20609beaf")
 		(at 126.25 80.55)
 		(descr "XEGAVT-H0-0000-000-000000K2001-1")
 		(tags "LED")
 		(property "Reference" "D11"
-			(at 0.004 0.16 0)
+			(at 0 1.75 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "1a7a4cb1-4891-4570-af1f-3a55397c8294")
+			(uuid "cd38cfd5-bcd9-431f-8304-c661fc4f3d60")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-			(render_cache "D11" 0
-				(polygon
-					(pts
-						(xy 125.6158 80.298189) (xy 125.665281 80.303174) (xy 125.717269 80.31261) (xy 125.737182 80.317533)
-						(xy 125.784118 80.333451) (xy 125.830623 80.357408) (xy 125.87176 80.388119) (xy 125.907379 80.425905)
-						(xy 125.934551 80.466969) (xy 125.956762 80.514424) (xy 125.95871 80.519521) (xy 125.973705 80.568852)
-						(xy 125.982913 80.618021) (xy 125.988245 80.672197) (xy 125.989729 80.723709) (xy 125.987198 80.774466)
-						(xy 125.978449 80.827465) (xy 125.963451 80.876886) (xy 125.957733 80.891015) (xy 125.935398 80.935379)
-						(xy 125.90543 80.979111) (xy 125.869806 81.017533) (xy 125.828986 81.050303) (xy 125.783434 81.077416)
-						(xy 125.737915 81.097156) (xy 125.689448 81.111839) (xy 125.638691 81.121084) (xy 125.585645 81.124891)
-						(xy 125.57476 81.125) (xy 125.18959 81.125) (xy 125.18959 81.03121) (xy 125.323435 81.03121) (xy 125.323435 80.390317)
-						(xy 125.436031 80.390317) (xy 125.436031 81.03121) (xy 125.549359 81.03121) (xy 125.606395 81.028471)
-						(xy 125.657883 81.020254) (xy 125.710942 81.003743) (xy 125.756451 80.979775) (xy 125.78945 80.953297)
-						(xy 125.820951 80.915608) (xy 125.844715 80.870931) (xy 125.860741 80.819264) (xy 125.868321 80.769416)
-						(xy 125.870294 80.723953) (xy 125.869027 80.675028) (xy 125.864573 80.625644) (xy 125.854773 80.573419)
-						(xy 125.850022 80.556646) (xy 125.830488 80.508455) (xy 125.802598 80.466834) (xy 125.790915 80.454553)
-						(xy 125.750483 80.424954) (xy 125.702001 80.405766) (xy 125.694928 80.403995) (xy 125.645828 80.395139)
-						(xy 125.595424 80.390972) (xy 125.56377 80.390317) (xy 125.436031 80.390317) (xy 125.323435 80.390317)
-						(xy 125.18959 80.390317) (xy 125.18959 80.296528) (xy 125.56377 80.296528)
-					)
-				)
-				(polygon
-					(pts
-						(xy 126.117957 80.548586) (xy 126.42155 80.296528) (xy 126.491648 80.296528) (xy 126.488961 81.03121)
-						(xy 126.70878 81.03121) (xy 126.70878 81.125) (xy 126.146045 81.125) (xy 126.146045 81.03121)
-						(xy 126.379785 81.03121) (xy 126.381006 80.459682) (xy 126.17975 80.62479)
-					)
-				)
-				(polygon
-					(pts
-						(xy 126.779366 80.548586) (xy 127.08296 80.296528) (xy 127.153058 80.296528) (xy 127.150371 81.03121)
-						(xy 127.37019 81.03121) (xy 127.37019 81.125) (xy 126.807454 81.125) (xy 126.807454 81.03121)
-						(xy 127.041195 81.03121) (xy 127.042416 80.459682) (xy 126.84116 80.62479)
-					)
+					(size 0.8 0.8)
+					(thickness 0.2)
 				)
 			)
 		)
@@ -2711,7 +2654,7 @@
 			(at 0.125 -3.25 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "2dec1329-d079-4160-9645-c8ceed57d53a")
+			(uuid "91405380-c108-4e33-b79f-a147c2c8b876")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2724,7 +2667,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a40fc806-4edc-4361-99a9-35bd7b143b49")
+			(uuid "64f91858-651c-4a05-b469-58f8cece7ae3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2736,7 +2679,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b1c01521-084e-496e-8010-c30147dd1f53")
+			(uuid "9126be0c-fb5e-495a-b211-b063df8a3333")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2748,7 +2691,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "61ddc622-2500-4ef3-bf88-22704ef00a7a")
+			(uuid "7e9b4e1a-4913-4645-8122-90d08340bdd4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2821,8 +2764,6 @@
 			)
 		)
 		(path "/dc2be20d-3081-44c3-a707-2f22d2c7dbc0")
-		(sheetname "Root")
-		(sheetfile "LED_Module_E.kicad_sch")
 		(attr smd)
 		(fp_rect
 			(start -0.85 -1.075)
@@ -2833,7 +2774,7 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "5637de94-9b7d-4055-8b41-5d04ac72576a")
+			(uuid "5ae48cd6-38ff-4572-8321-b901be691c8a")
 		)
 		(fp_line
 			(start -0.8 -1.025)
@@ -2843,7 +2784,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "2d2650cc-18e0-4b13-a7ec-85f421489e8d")
+			(uuid "351bff46-dda0-4f4f-891b-f8eebcaddd1d")
 		)
 		(fp_line
 			(start -0.8 1.025)
@@ -2853,7 +2794,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "b7524175-1a96-4486-82b6-570c741bef88")
+			(uuid "b11df114-79df-4c88-bffe-f7c219303d47")
 		)
 		(fp_line
 			(start 0.8 -1.025)
@@ -2863,7 +2804,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "f5ef769d-eb10-4751-b8b2-c1d5ade8c39b")
+			(uuid "5d5ef40e-d857-4baa-836c-50a4bdd59ebb")
 		)
 		(fp_line
 			(start 0.8 1.025)
@@ -2873,34 +2814,20 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "2892a83f-115d-4dbe-a888-e18465c13d43")
+			(uuid "3f941e4b-1be4-4bda-af3b-ef2150941d80")
 		)
 		(fp_text user "K"
 			(at 0.7 -0.125 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "dba90ddb-cbe6-44b2-a8b3-23be462e0273")
+			(uuid "6bb27e97-8336-4ea2-80e6-99b233efbff3")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.1)
 				)
 				(justify left bottom)
-			)
-			(render_cache "K" 0
-				(polygon
-					(pts
-						(xy 127.481716 80.16121) (xy 127.583321 80.16121) (xy 127.402093 79.879842) (xy 127.261165 79.879842)
-						(xy 127.26263 80.16121) (xy 127.35129 80.16121) (xy 127.35129 80.255) (xy 127.017411 80.255) (xy 127.017411 80.16121)
-						(xy 127.14979 80.16121) (xy 127.14979 79.520317) (xy 127.017411 79.520317) (xy 127.017411 79.426528)
-						(xy 127.35129 79.426528) (xy 127.35129 79.520317) (xy 127.261165 79.520317) (xy 127.261165 79.786053)
-						(xy 127.384752 79.786053) (xy 127.579169 79.520317) (xy 127.481716 79.520317) (xy 127.481716 79.426528)
-						(xy 127.827808 79.426528) (xy 127.827808 79.520317) (xy 127.700069 79.520317) (xy 127.48709 79.809256)
-						(xy 127.719364 80.16121) (xy 127.860293 80.16121) (xy 127.860293 80.255) (xy 127.481716 80.255)
-					)
-				)
 			)
 		)
 		(pad "1" smd rect
@@ -2910,9 +2837,9 @@
 			(net 15 "Net-(D11-K)")
 			(pinfunction "K")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "b50d2807-38ee-4842-92f7-3a069edb6790")
+			(uuid "f2ae38c0-a34e-4e7d-9800-a42a8158e42d")
 		)
 		(pad "2" smd rect
 			(at -0.43 -0.76 90)
@@ -2921,9 +2848,9 @@
 			(net 2 "+4V")
 			(pinfunction "A")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "294a6713-9633-462c-a0f2-60245dfe96dd")
+			(uuid "2b979bdc-280c-4795-8176-5505a131b7ce")
 		)
 		(pad "3" smd rect
 			(at 0 0.29 180)
@@ -2933,7 +2860,7 @@
 			(pintype "passive")
 			(solder_paste_margin -0.05)
 			(clearance 0.15)
-			(uuid "da72934d-4f35-4e3c-8fac-5be427e0fb8b")
+			(uuid "2cb30fc4-aaa7-428a-b87f-75a9f6382868")
 		)
 		(model "XEGAVT-H0-0000-000-000000K2001.stp"
 			(offset
@@ -3598,82 +3525,24 @@
 			)
 			(fill solid)
 			(layer "F.Mask")
-			(net 22)
 			(uuid "9b2e9cf3-b165-42b5-9b7b-7497e545334f")
 		)
 	)
-	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean_bigger_solder"
 		(layer "F.Cu")
 		(uuid "694236e2-6e67-4f40-9dc4-3bf9dcae8ade")
 		(at 136.25 80.55)
 		(descr "XEGAVT-H0-0000-000-000000K2001-1")
 		(tags "LED")
 		(property "Reference" "D6"
-			(at 0.004 0.16 0)
+			(at 0 1.75 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "2ef4e637-55ea-4f84-bff3-91a48b529d43")
+			(uuid "f0328b16-b895-4e68-9b87-325525424d04")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-			(render_cache "D6" 0
-				(polygon
-					(pts
-						(xy 135.892772 80.298189) (xy 135.942253 80.303174) (xy 135.994241 80.31261) (xy 136.014154 80.317533)
-						(xy 136.06109 80.333451) (xy 136.107595 80.357408) (xy 136.148732 80.388119) (xy 136.184351 80.425905)
-						(xy 136.211523 80.466969) (xy 136.233734 80.514424) (xy 136.235682 80.519521) (xy 136.250677 80.568852)
-						(xy 136.259885 80.618021) (xy 136.265217 80.672197) (xy 136.266701 80.723709) (xy 136.26417 80.774466)
-						(xy 136.255421 80.827465) (xy 136.240423 80.876886) (xy 136.234705 80.891015) (xy 136.21237 80.935379)
-						(xy 136.182402 80.979111) (xy 136.146778 81.017533) (xy 136.105958 81.050303) (xy 136.060406 81.077416)
-						(xy 136.014887 81.097156) (xy 135.96642 81.111839) (xy 135.915663 81.121084) (xy 135.862617 81.124891)
-						(xy 135.851732 81.125) (xy 135.466562 81.125) (xy 135.466562 81.03121) (xy 135.600407 81.03121)
-						(xy 135.600407 80.390317) (xy 135.713003 80.390317) (xy 135.713003 81.03121) (xy 135.826331 81.03121)
-						(xy 135.883367 81.028471) (xy 135.934855 81.020254) (xy 135.987914 81.003743) (xy 136.033423 80.979775)
-						(xy 136.066422 80.953297) (xy 136.097923 80.915608) (xy 136.121687 80.870931) (xy 136.137713 80.819264)
-						(xy 136.145293 80.769416) (xy 136.147266 80.723953) (xy 136.145999 80.675028) (xy 136.141545 80.625644)
-						(xy 136.131745 80.573419) (xy 136.126994 80.556646) (xy 136.10746 80.508455) (xy 136.07957 80.466834)
-						(xy 136.067887 80.454553) (xy 136.027455 80.424954) (xy 135.978973 80.405766) (xy 135.9719 80.403995)
-						(xy 135.9228 80.395139) (xy 135.872396 80.390972) (xy 135.840742 80.390317) (xy 135.713003 80.390317)
-						(xy 135.600407 80.390317) (xy 135.466562 80.390317) (xy 135.466562 80.296528) (xy 135.840742 80.296528)
-					)
-				)
-				(polygon
-					(pts
-						(xy 136.841435 80.284065) (xy 136.877552 80.29091) (xy 136.924856 80.304364) (xy 136.94594 80.311915)
-						(xy 136.991112 80.333568) (xy 137.007001 80.342934) (xy 136.955466 80.42158) (xy 136.939346 80.414986)
-						(xy 136.900267 80.398866) (xy 136.853515 80.38369) (xy 136.848243 80.382257) (xy 136.798337 80.374752)
-						(xy 136.793289 80.374685) (xy 136.741966 80.37909) (xy 136.707071 80.388607) (xy 136.662126 80.410977)
-						(xy 136.641858 80.426221) (xy 136.607729 80.462711) (xy 136.594963 80.481664) (xy 136.572452 80.527064)
-						(xy 136.564433 80.549075) (xy 136.551786 80.596825) (xy 136.547092 80.622592) (xy 136.541607 80.671328)
-						(xy 136.540497 80.696353) (xy 136.574791 80.660374) (xy 136.576157 80.659228) (xy 136.61812 80.63086)
-						(xy 136.626959 80.626256) (xy 136.673854 80.607434) (xy 136.690951 80.602564) (xy 136.741053 80.59441)
-						(xy 136.765201 80.593527) (xy 136.814703 80.596264) (xy 136.862917 80.604475) (xy 136.869248 80.605983)
-						(xy 136.916998 80.623203) (xy 136.95913 80.649947) (xy 136.994789 80.686584) (xy 137.021121 80.73069)
-						(xy 137.022633 80.733967) (xy 137.038288 80.781427) (xy 137.045656 80.833393) (xy 137.046813 80.867323)
-						(xy 137.042199 80.916932) (xy 137.041195 80.922522) (xy 137.027143 80.971266) (xy 137.022388 80.982606)
-						(xy 136.997293 81.026844) (xy 136.986729 81.041224) (xy 136.952403 81.075996) (xy 136.930309 81.092027)
-						(xy 136.885516 81.115234) (xy 136.849709 81.127442) (xy 136.799273 81.137334) (xy 136.74893 81.14058)
-						(xy 136.741265 81.140631) (xy 136.692178 81.137864) (xy 136.64292 81.128429) (xy 136.598627 81.112299)
-						(xy 136.5559 81.087157) (xy 136.518943 81.054596) (xy 136.497511 81.028768) (xy 136.470285 80.984083)
-						(xy 136.450277 80.937027) (xy 136.437427 80.89419) (xy 136.426994 80.842255) (xy 136.420908 80.791802)
-						(xy 136.420817 80.790143) (xy 136.543428 80.790143) (xy 136.54858 80.839282) (xy 136.558289 80.889749)
-						(xy 136.569318 80.92472) (xy 136.591544 80.969356) (xy 136.618167 81.002145) (xy 136.658734 81.029729)
-						(xy 136.681914 81.038049) (xy 136.731896 81.046146) (xy 136.751523 81.046842) (xy 136.801863 81.041073)
-						(xy 136.831146 81.030478) (xy 136.872066 81.00359) (xy 136.887078 80.988468) (xy 136.914326 80.946198)
-						(xy 136.920539 80.930582) (xy 136.931004 80.881036) (xy 136.93153 80.867323) (xy 136.927523 80.817874)
-						(xy 136.912136 80.768231) (xy 136.890497 80.734944) (xy 136.850141 80.704107) (xy 136.800081 80.689595)
-						(xy 136.765201 80.687316) (xy 136.715803 80.690262) (xy 136.691439 80.694155) (xy 136.642713 80.707894)
-						(xy 136.627936 80.714183) (xy 136.585779 80.739882) (xy 136.577378 80.746912) (xy 136.545843 80.785654)
-						(xy 136.543428 80.790143) (xy 136.420817 80.790143) (xy 136.417952 80.737833) (xy 136.417643 80.712718)
-						(xy 136.41971 80.663284) (xy 136.426856 80.610352) (xy 136.439107 80.559519) (xy 136.443777 80.544678)
-						(xy 136.462305 80.49748) (xy 136.485222 80.454194) (xy 136.5155 80.411097) (xy 136.518515 80.407414)
-						(xy 136.554437 80.370029) (xy 136.595033 80.338474) (xy 136.635996 80.314846) (xy 136.68534 80.295517)
-						(xy 136.733655 80.284908) (xy 136.78526 80.280929) (xy 136.790602 80.280896)
-					)
+					(size 0.8 0.8)
+					(thickness 0.2)
 				)
 			)
 		)
@@ -3681,7 +3550,7 @@
 			(at 0.125 -3.25 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "30676417-7129-49d2-bfb5-6412172e3267")
+			(uuid "6d7e4ef0-07f5-4343-888d-4ff3640477d0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3694,7 +3563,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "42d400dc-2704-42dd-ad77-1b7a66f871f8")
+			(uuid "6ca8cb7c-eac2-4a3f-a0b8-d9e4d0dbadf5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3706,7 +3575,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e89ef5f6-4e4f-43f9-8e5b-215067c30cac")
+			(uuid "240aeed1-105e-45a9-a442-8633343d2d5f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3718,7 +3587,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "32417e59-76c6-4712-add4-0efb2ab18e45")
+			(uuid "067fc84b-6fa0-49c4-8f89-de460e2e26da")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3791,8 +3660,6 @@
 			)
 		)
 		(path "/201a658c-2995-4463-9926-16051dad4197")
-		(sheetname "Root")
-		(sheetfile "LED_Module_E.kicad_sch")
 		(attr smd)
 		(fp_rect
 			(start -0.85 -1.075)
@@ -3803,7 +3670,7 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "eb5f51fb-761b-4182-b20f-3bdb6c2e75c5")
+			(uuid "606814b1-4440-4e6e-a588-724e11406099")
 		)
 		(fp_line
 			(start -0.8 -1.025)
@@ -3813,7 +3680,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "1481dea4-e3f9-40c0-8eed-c50becae91c6")
+			(uuid "2e9f90f7-2e89-4418-8d59-abbc90f5cae6")
 		)
 		(fp_line
 			(start -0.8 1.025)
@@ -3823,7 +3690,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "efb1438f-49d7-4e9e-aa59-88df74ae0879")
+			(uuid "ece4389b-530a-4141-80e2-a4a4edefad37")
 		)
 		(fp_line
 			(start 0.8 -1.025)
@@ -3833,7 +3700,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "a75ab3aa-0d89-4ee9-9b7a-470661040d33")
+			(uuid "9a0ff1dc-6b95-4178-b1a2-1ed2ec016562")
 		)
 		(fp_line
 			(start 0.8 1.025)
@@ -3843,34 +3710,20 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "cbb4383d-d58f-4f5a-9190-bd61fb364e26")
+			(uuid "03dd93dc-8fc5-4e34-ac33-e4d0d3644d13")
 		)
 		(fp_text user "K"
 			(at 0.7 -0.125 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "ed4e4314-3595-4df0-8848-10f738306ad5")
+			(uuid "cc752bad-6e6b-46dc-9ad4-afe003114097")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.1)
 				)
 				(justify left bottom)
-			)
-			(render_cache "K" 0
-				(polygon
-					(pts
-						(xy 137.481716 80.16121) (xy 137.583321 80.16121) (xy 137.402093 79.879842) (xy 137.261165 79.879842)
-						(xy 137.26263 80.16121) (xy 137.35129 80.16121) (xy 137.35129 80.255) (xy 137.017411 80.255) (xy 137.017411 80.16121)
-						(xy 137.14979 80.16121) (xy 137.14979 79.520317) (xy 137.017411 79.520317) (xy 137.017411 79.426528)
-						(xy 137.35129 79.426528) (xy 137.35129 79.520317) (xy 137.261165 79.520317) (xy 137.261165 79.786053)
-						(xy 137.384752 79.786053) (xy 137.579169 79.520317) (xy 137.481716 79.520317) (xy 137.481716 79.426528)
-						(xy 137.827808 79.426528) (xy 137.827808 79.520317) (xy 137.700069 79.520317) (xy 137.48709 79.809256)
-						(xy 137.719364 80.16121) (xy 137.860293 80.16121) (xy 137.860293 80.255) (xy 137.481716 80.255)
-					)
-				)
 			)
 		)
 		(pad "1" smd rect
@@ -3880,9 +3733,9 @@
 			(net 12 "Net-(D6-K)")
 			(pinfunction "K")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "ddb0fdb3-8eef-413c-8207-1250550a3e04")
+			(uuid "778fd1d2-8dc4-4653-827c-dc0cb2828d53")
 		)
 		(pad "2" smd rect
 			(at -0.43 -0.76 90)
@@ -3891,9 +3744,9 @@
 			(net 2 "+4V")
 			(pinfunction "A")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "3fb3f7b0-a8bb-461c-bf48-4e77f1d22b10")
+			(uuid "b33230f2-f225-4183-b49c-44d4eb42125e")
 		)
 		(pad "3" smd rect
 			(at 0 0.29 180)
@@ -3903,7 +3756,7 @@
 			(pintype "passive")
 			(solder_paste_margin -0.05)
 			(clearance 0.15)
-			(uuid "b9b6454f-8deb-4fb0-9570-0f5afd2a127a")
+			(uuid "f74ccaa4-1567-4ead-9eb0-721897a7881a")
 		)
 		(model "XEGAVT-H0-0000-000-000000K2001.stp"
 			(offset
@@ -4903,66 +4756,21 @@
 			)
 		)
 	)
-	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean_bigger_solder"
 		(layer "F.Cu")
 		(uuid "9cd136f0-8be5-4e81-a22d-576dfde285a5")
 		(at 138.75 80.55)
 		(descr "XEGAVT-H0-0000-000-000000K2001-1")
 		(tags "LED")
 		(property "Reference" "D5"
-			(at 0.004 0.16 0)
+			(at 0 1.75 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "9c56a040-3f20-4e0d-a389-04f0032c0f61")
+			(uuid "59262b8d-1090-492f-9c1b-0ef27311b585")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-			(render_cache "D5" 0
-				(polygon
-					(pts
-						(xy 138.426477 80.298189) (xy 138.475958 80.303174) (xy 138.527946 80.31261) (xy 138.547859 80.317533)
-						(xy 138.594795 80.333451) (xy 138.6413 80.357408) (xy 138.682437 80.388119) (xy 138.718056 80.425905)
-						(xy 138.745228 80.466969) (xy 138.767439 80.514424) (xy 138.769387 80.519521) (xy 138.784382 80.568852)
-						(xy 138.79359 80.618021) (xy 138.798922 80.672197) (xy 138.800406 80.723709) (xy 138.797875 80.774466)
-						(xy 138.789126 80.827465) (xy 138.774128 80.876886) (xy 138.76841 80.891015) (xy 138.746075 80.935379)
-						(xy 138.716107 80.979111) (xy 138.680483 81.017533) (xy 138.639663 81.050303) (xy 138.594111 81.077416)
-						(xy 138.548592 81.097156) (xy 138.500125 81.111839) (xy 138.449368 81.121084) (xy 138.396322 81.124891)
-						(xy 138.385437 81.125) (xy 138.000267 81.125) (xy 138.000267 81.03121) (xy 138.134112 81.03121)
-						(xy 138.134112 80.390317) (xy 138.246708 80.390317) (xy 138.246708 81.03121) (xy 138.360036 81.03121)
-						(xy 138.417072 81.028471) (xy 138.46856 81.020254) (xy 138.521619 81.003743) (xy 138.567128 80.979775)
-						(xy 138.600127 80.953297) (xy 138.631628 80.915608) (xy 138.655392 80.870931) (xy 138.671418 80.819264)
-						(xy 138.678998 80.769416) (xy 138.680971 80.723953) (xy 138.679704 80.675028) (xy 138.67525 80.625644)
-						(xy 138.66545 80.573419) (xy 138.660699 80.556646) (xy 138.641165 80.508455) (xy 138.613275 80.466834)
-						(xy 138.601592 80.454553) (xy 138.56116 80.424954) (xy 138.512678 80.405766) (xy 138.505605 80.403995)
-						(xy 138.456505 80.395139) (xy 138.406101 80.390972) (xy 138.374447 80.390317) (xy 138.246708 80.390317)
-						(xy 138.134112 80.390317) (xy 138.000267 80.390317) (xy 138.000267 80.296528) (xy 138.374447 80.296528)
-					)
-				)
-				(polygon
-					(pts
-						(xy 139.465724 80.296528) (xy 139.465724 80.390317) (xy 139.092765 80.390317) (xy 139.092765 80.619173)
-						(xy 139.135811 80.595589) (xy 139.150162 80.590108) (xy 139.199665 80.579339) (xy 139.229541 80.577896)
-						(xy 139.278939 80.580826) (xy 139.322597 80.589619) (xy 139.369958 80.607212) (xy 139.394893 80.620882)
-						(xy 139.433934 80.65075) (xy 139.448627 80.666311) (xy 139.476928 80.706703) (xy 139.484286 80.721022)
-						(xy 139.501418 80.766799) (xy 139.504558 80.779884) (xy 139.51105 80.829973) (xy 139.511153 80.836793)
-						(xy 139.507968 80.886426) (xy 139.497416 80.937263) (xy 139.491858 80.954762) (xy 139.471401 81.00061)
-						(xy 139.443372 81.041129) (xy 139.433972 81.051727) (xy 139.396345 81.084525) (xy 139.351426 81.110685)
-						(xy 139.337252 81.116939) (xy 139.287234 81.132279) (xy 139.23541 81.139497) (xy 139.202674 81.140631)
-						(xy 139.151363 81.138153) (xy 139.102508 81.13) (xy 139.093498 81.127686) (xy 139.044751 81.112625)
-						(xy 139.013142 81.099842) (xy 138.968644 81.075475) (xy 138.945242 81.058565) (xy 139.013142 80.984316)
-						(xy 139.027308 80.99433) (xy 139.06541 81.015579) (xy 139.112752 81.033265) (xy 139.125738 81.037072)
-						(xy 139.174243 81.045468) (xy 139.206826 81.046842) (xy 139.25705 81.041416) (xy 139.275947 81.036339)
-						(xy 139.32001 81.013699) (xy 139.335054 81.000924) (xy 139.365468 80.959963) (xy 139.376086 80.936688)
-						(xy 139.388283 80.889012) (xy 139.391718 80.838014) (xy 139.386724 80.788481) (xy 139.377552 80.760345)
-						(xy 139.350432 80.718038) (xy 139.340916 80.70881) (xy 139.29789 80.683185) (xy 139.288892 80.680233)
-						(xy 139.238975 80.671893) (xy 139.229541 80.671685) (xy 139.180408 80.674621) (xy 139.147964 80.680966)
-						(xy 139.101775 80.696875) (xy 139.091299 80.701971) (xy 139.05735 80.723953) (xy 139.043916 80.736409)
-						(xy 139.043916 80.73763) (xy 138.979436 80.7071) (xy 138.979436 80.296528)
-					)
+					(size 0.8 0.8)
+					(thickness 0.2)
 				)
 			)
 		)
@@ -4970,7 +4778,7 @@
 			(at 0.125 -3.25 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "b22c76ba-ca40-43af-92b6-839c3ec74d2c")
+			(uuid "33675e19-bd81-4c9e-8855-8b16249c522b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4983,7 +4791,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "84c5af0d-020a-4c47-b32e-d8076c30f284")
+			(uuid "684beced-f585-4492-9309-bf5807ad9bc8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4995,7 +4803,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "804a4404-7d48-4180-9e93-19f606fb4053")
+			(uuid "3b5748cb-5a06-4cf8-aa09-96c33ee309bb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5007,7 +4815,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b220842c-cb64-4ce8-bd5d-6e8d744223a3")
+			(uuid "dcb40178-0f4e-4a28-b118-dde008c58820")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5080,8 +4888,6 @@
 			)
 		)
 		(path "/fc3e6cc1-027b-4d38-81d7-cb467670b271")
-		(sheetname "Root")
-		(sheetfile "LED_Module_E.kicad_sch")
 		(attr smd)
 		(fp_rect
 			(start -0.85 -1.075)
@@ -5092,7 +4898,7 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "942609b1-2da0-45d0-bfdd-f3758d8babb3")
+			(uuid "05c08bc6-7626-44b5-9959-721a07b17568")
 		)
 		(fp_line
 			(start -0.8 -1.025)
@@ -5102,7 +4908,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "e30c9a2f-7bf8-4b36-8f1e-334b02d298f4")
+			(uuid "1a3a7220-db94-4e69-94c3-190c4be44b39")
 		)
 		(fp_line
 			(start -0.8 1.025)
@@ -5112,7 +4918,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "991840d3-a168-4e37-a976-a7fa47b4ed6c")
+			(uuid "430ac979-dde1-4668-95c6-59000fbac19d")
 		)
 		(fp_line
 			(start 0.8 -1.025)
@@ -5122,7 +4928,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "a1d44a7a-f599-46ca-96a7-b06545459006")
+			(uuid "f3ff1c6e-2327-4032-9d29-fe162bcb4e3d")
 		)
 		(fp_line
 			(start 0.8 1.025)
@@ -5132,34 +4938,20 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "9e657216-db68-4ccf-a121-61efb840f69b")
+			(uuid "598e7c39-3a27-452d-98a4-31337a167240")
 		)
 		(fp_text user "K"
 			(at 0.7 -0.125 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "a3a9d2dd-2561-4e05-868f-e21e4a159a88")
+			(uuid "eb914cf6-cdf4-45d3-928c-a202d4399857")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.1)
 				)
 				(justify left bottom)
-			)
-			(render_cache "K" 0
-				(polygon
-					(pts
-						(xy 139.981716 80.16121) (xy 140.083321 80.16121) (xy 139.902093 79.879842) (xy 139.761165 79.879842)
-						(xy 139.76263 80.16121) (xy 139.85129 80.16121) (xy 139.85129 80.255) (xy 139.517411 80.255) (xy 139.517411 80.16121)
-						(xy 139.64979 80.16121) (xy 139.64979 79.520317) (xy 139.517411 79.520317) (xy 139.517411 79.426528)
-						(xy 139.85129 79.426528) (xy 139.85129 79.520317) (xy 139.761165 79.520317) (xy 139.761165 79.786053)
-						(xy 139.884752 79.786053) (xy 140.079169 79.520317) (xy 139.981716 79.520317) (xy 139.981716 79.426528)
-						(xy 140.327808 79.426528) (xy 140.327808 79.520317) (xy 140.200069 79.520317) (xy 139.98709 79.809256)
-						(xy 140.219364 80.16121) (xy 140.360293 80.16121) (xy 140.360293 80.255) (xy 139.981716 80.255)
-					)
-				)
 			)
 		)
 		(pad "1" smd rect
@@ -5169,9 +4961,9 @@
 			(net 11 "Net-(D5-K)")
 			(pinfunction "K")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "7279627b-3c50-412d-a195-4c9c629169e0")
+			(uuid "762e9a59-a091-48df-a811-0f3dcbb7435b")
 		)
 		(pad "2" smd rect
 			(at -0.43 -0.76 90)
@@ -5180,9 +4972,9 @@
 			(net 2 "+4V")
 			(pinfunction "A")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "0e3c7828-136a-45da-9180-494562738688")
+			(uuid "c6413b0d-f65e-46db-a95b-fb24456878b9")
 		)
 		(pad "3" smd rect
 			(at 0 0.29 180)
@@ -5192,7 +4984,7 @@
 			(pintype "passive")
 			(solder_paste_margin -0.05)
 			(clearance 0.15)
-			(uuid "ba9ef1fc-62db-4c24-95d7-85a689f6d55c")
+			(uuid "b4d09e15-f09f-4797-aaf5-48edf0603254")
 		)
 		(model "XEGAVT-H0-0000-000-000000K2001.stp"
 			(offset
@@ -6031,67 +5823,21 @@
 			(uuid "5ef7f8f2-5336-4ab0-a772-798276a3ce53")
 		)
 	)
-	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean_bigger_solder"
 		(layer "F.Cu")
 		(uuid "a8ebbd16-169f-4037-8396-6c853c85567e")
 		(at 146.25 80.55)
 		(descr "XEGAVT-H0-0000-000-000000K2001-1")
 		(tags "LED")
 		(property "Reference" "D2"
-			(at 0.004 0.16 0)
+			(at 0 1.75 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "b8f8f8b5-95b0-44e6-96b8-2d25e5d87c4b")
+			(uuid "e60a56e1-2c05-4706-99a4-1941b48b6d2e")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-			(render_cache "D2" 0
-				(polygon
-					(pts
-						(xy 145.904984 80.298189) (xy 145.954465 80.303174) (xy 146.006453 80.31261) (xy 146.026366 80.317533)
-						(xy 146.073302 80.333451) (xy 146.119807 80.357408) (xy 146.160944 80.388119) (xy 146.196563 80.425905)
-						(xy 146.223735 80.466969) (xy 146.245946 80.514424) (xy 146.247894 80.519521) (xy 146.262889 80.568852)
-						(xy 146.272097 80.618021) (xy 146.277429 80.672197) (xy 146.278913 80.723709) (xy 146.276382 80.774466)
-						(xy 146.267633 80.827465) (xy 146.252635 80.876886) (xy 146.246917 80.891015) (xy 146.224582 80.935379)
-						(xy 146.194614 80.979111) (xy 146.15899 81.017533) (xy 146.11817 81.050303) (xy 146.072618 81.077416)
-						(xy 146.027099 81.097156) (xy 145.978632 81.111839) (xy 145.927875 81.121084) (xy 145.874829 81.124891)
-						(xy 145.863944 81.125) (xy 145.478774 81.125) (xy 145.478774 81.03121) (xy 145.612619 81.03121)
-						(xy 145.612619 80.390317) (xy 145.725215 80.390317) (xy 145.725215 81.03121) (xy 145.838543 81.03121)
-						(xy 145.895579 81.028471) (xy 145.947067 81.020254) (xy 146.000126 81.003743) (xy 146.045635 80.979775)
-						(xy 146.078634 80.953297) (xy 146.110135 80.915608) (xy 146.133899 80.870931) (xy 146.149925 80.819264)
-						(xy 146.157505 80.769416) (xy 146.159478 80.723953) (xy 146.158211 80.675028) (xy 146.153757 80.625644)
-						(xy 146.143957 80.573419) (xy 146.139206 80.556646) (xy 146.119672 80.508455) (xy 146.091782 80.466834)
-						(xy 146.080099 80.454553) (xy 146.039667 80.424954) (xy 145.991185 80.405766) (xy 145.984112 80.403995)
-						(xy 145.935012 80.395139) (xy 145.884608 80.390972) (xy 145.852954 80.390317) (xy 145.725215 80.390317)
-						(xy 145.612619 80.390317) (xy 145.478774 80.390317) (xy 145.478774 80.296528) (xy 145.852954 80.296528)
-					)
-				)
-				(polygon
-					(pts
-						(xy 146.905152 81.03121) (xy 146.977936 80.906158) (xy 147.058292 80.949145) (xy 146.954 81.125)
-						(xy 146.433275 81.125) (xy 146.409827 81.063695) (xy 146.424403 81.016085) (xy 146.446339 80.970389)
-						(xy 146.447929 80.967707) (xy 146.475834 80.92698) (xy 146.507769 80.890282) (xy 146.545426 80.854896)
-						(xy 146.581286 80.826535) (xy 146.623188 80.796343) (xy 146.659932 80.770847) (xy 146.700695 80.74263)
-						(xy 146.735403 80.717847) (xy 146.773914 80.687476) (xy 146.800127 80.662892) (xy 146.832154 80.622961)
-						(xy 146.845068 80.600366) (xy 146.860245 80.552441) (xy 146.862653 80.524651) (xy 146.855441 80.476165)
-						(xy 146.854349 80.472871) (xy 146.829799 80.430262) (xy 146.824796 80.424755) (xy 146.784689 80.395328)
-						(xy 146.770574 80.388852) (xy 146.722622 80.376678) (xy 146.688264 80.374685) (xy 146.63745 80.380505)
-						(xy 146.610351 80.389584) (xy 146.566496 80.412389) (xy 146.552221 80.422069) (xy 146.515152 80.454337)
-						(xy 146.50264 80.468475) (xy 146.422284 80.389829) (xy 146.429122 80.381524) (xy 146.450372 80.361496)
-						(xy 146.486764 80.335362) (xy 146.531029 80.312201) (xy 146.538299 80.309228) (xy 146.586888 80.293475)
-						(xy 146.604977 80.2892) (xy 146.654341 80.282064) (xy 146.686799 80.280896) (xy 146.736281 80.283507)
-						(xy 146.78539 80.292226) (xy 146.809897 80.299459) (xy 146.857539 80.319798) (xy 146.900312 80.348474)
-						(xy 146.902709 80.350505) (xy 146.936415 80.386226) (xy 146.961328 80.42793) (xy 146.976898 80.474581)
-						(xy 146.982088 80.525139) (xy 146.976833 80.575028) (xy 146.96548 80.610624) (xy 146.942259 80.65476)
-						(xy 146.922005 80.682676) (xy 146.888723 80.718534) (xy 146.85899 80.744713) (xy 146.820412 80.774853)
-						(xy 146.785229 80.800645) (xy 146.744745 80.829053) (xy 146.709025 80.85389) (xy 146.66786 80.883909)
-						(xy 146.638194 80.908112) (xy 146.602547 80.941951) (xy 146.58153 80.965997) (xy 146.555083 81.009729)
-						(xy 146.547336 81.03121)
-					)
+					(size 0.8 0.8)
+					(thickness 0.2)
 				)
 			)
 		)
@@ -6099,7 +5845,7 @@
 			(at 0.125 -3.25 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "b2ccfb22-6f85-4fd4-a6d8-a82421c212a7")
+			(uuid "ba44ee25-cd30-43fa-9612-b2c32ed890a7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6112,7 +5858,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "27b7b9f4-171a-4714-8aa7-5c510df65b39")
+			(uuid "766a81cc-53a7-46be-82d6-5359c1612153")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6124,7 +5870,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0e340078-f49c-4134-9425-e01b72f98086")
+			(uuid "99937ce9-36bb-40dd-a4ce-59abcfe31dcb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6136,7 +5882,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8694bacf-2ac7-47f7-824a-701f2a0263d1")
+			(uuid "629ddd61-c102-43f4-8420-8c2034f3757a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6209,8 +5955,6 @@
 			)
 		)
 		(path "/acbdd494-acb2-4607-bdb7-1ea117faef34")
-		(sheetname "Root")
-		(sheetfile "LED_Module_E.kicad_sch")
 		(attr smd)
 		(fp_rect
 			(start -0.85 -1.075)
@@ -6221,7 +5965,7 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "f2905176-4faa-4f52-9f0a-a7d84dcb5dd9")
+			(uuid "176a0cd9-4aed-4e37-b0a1-db1832d25695")
 		)
 		(fp_line
 			(start -0.8 -1.025)
@@ -6231,7 +5975,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "b808fa5e-b890-4fb0-beec-3f8415549190")
+			(uuid "eeaf3a6f-f56c-413d-8d03-59cc3175bbca")
 		)
 		(fp_line
 			(start -0.8 1.025)
@@ -6241,7 +5985,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "26690d83-7b6c-4fd0-a6e0-6b87574d7f54")
+			(uuid "5dbaaa94-7ebb-4dc4-a08f-35cf39834f9a")
 		)
 		(fp_line
 			(start 0.8 -1.025)
@@ -6251,7 +5995,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "0ea4b3f1-02b8-448f-9bb7-5161890893cb")
+			(uuid "c2ecc0e0-741d-4bb9-bcf9-092156586e35")
 		)
 		(fp_line
 			(start 0.8 1.025)
@@ -6261,34 +6005,20 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "548f1625-bc64-463a-9a9e-2e722cf8f6d9")
+			(uuid "8f458840-a17d-4526-b336-4ddf40d88bfc")
 		)
 		(fp_text user "K"
 			(at 0.7 -0.125 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "fdf4cb44-f385-4807-9311-e3271aeeb2e9")
+			(uuid "f40644ce-a07e-4175-9de4-1221f1ec225e")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.1)
 				)
 				(justify left bottom)
-			)
-			(render_cache "K" 0
-				(polygon
-					(pts
-						(xy 147.481716 80.16121) (xy 147.583321 80.16121) (xy 147.402093 79.879842) (xy 147.261165 79.879842)
-						(xy 147.26263 80.16121) (xy 147.35129 80.16121) (xy 147.35129 80.255) (xy 147.017411 80.255) (xy 147.017411 80.16121)
-						(xy 147.14979 80.16121) (xy 147.14979 79.520317) (xy 147.017411 79.520317) (xy 147.017411 79.426528)
-						(xy 147.35129 79.426528) (xy 147.35129 79.520317) (xy 147.261165 79.520317) (xy 147.261165 79.786053)
-						(xy 147.384752 79.786053) (xy 147.579169 79.520317) (xy 147.481716 79.520317) (xy 147.481716 79.426528)
-						(xy 147.827808 79.426528) (xy 147.827808 79.520317) (xy 147.700069 79.520317) (xy 147.48709 79.809256)
-						(xy 147.719364 80.16121) (xy 147.860293 80.16121) (xy 147.860293 80.255) (xy 147.481716 80.255)
-					)
-				)
 			)
 		)
 		(pad "1" smd rect
@@ -6298,9 +6028,9 @@
 			(net 8 "Net-(D2-K)")
 			(pinfunction "K")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "737a559f-d005-4849-9f0b-601542fc6762")
+			(uuid "529da85a-3354-4955-8d37-87b75097fc79")
 		)
 		(pad "2" smd rect
 			(at -0.43 -0.76 90)
@@ -6309,9 +6039,9 @@
 			(net 2 "+4V")
 			(pinfunction "A")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "44fff137-57e5-48c5-badd-5997af07c686")
+			(uuid "1c0bb9e1-981d-4508-b186-9ba3553b54ca")
 		)
 		(pad "3" smd rect
 			(at 0 0.29 180)
@@ -6321,7 +6051,7 @@
 			(pintype "passive")
 			(solder_paste_margin -0.05)
 			(clearance 0.15)
-			(uuid "7a136da4-6526-4a26-8bec-f808156ab559")
+			(uuid "bb1bc9d7-e092-48a1-94c9-4973407a5512")
 		)
 		(model "XEGAVT-H0-0000-000-000000K2001.stp"
 			(offset
@@ -6346,74 +6076,21 @@
 			)
 		)
 	)
-	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean_bigger_solder"
 		(layer "F.Cu")
 		(uuid "acb2f916-4ead-4788-b0e0-ed15c22a114b")
 		(at 128.75 80.55)
 		(descr "XEGAVT-H0-0000-000-000000K2001-1")
 		(tags "LED")
 		(property "Reference" "D12"
-			(at 0.004 0.16 0)
+			(at 0 1.75 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "c220353e-9a53-46a6-91b9-4c1afef6f4a6")
+			(uuid "9cac18f1-da5c-45c8-956c-289b26de8f36")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-			(render_cache "D12" 0
-				(polygon
-					(pts
-						(xy 128.074279 80.298189) (xy 128.12376 80.303174) (xy 128.175748 80.31261) (xy 128.195661 80.317533)
-						(xy 128.242597 80.333451) (xy 128.289102 80.357408) (xy 128.330239 80.388119) (xy 128.365858 80.425905)
-						(xy 128.39303 80.466969) (xy 128.415241 80.514424) (xy 128.417189 80.519521) (xy 128.432184 80.568852)
-						(xy 128.441392 80.618021) (xy 128.446724 80.672197) (xy 128.448208 80.723709) (xy 128.445677 80.774466)
-						(xy 128.436928 80.827465) (xy 128.42193 80.876886) (xy 128.416212 80.891015) (xy 128.393877 80.935379)
-						(xy 128.363909 80.979111) (xy 128.328285 81.017533) (xy 128.287465 81.050303) (xy 128.241913 81.077416)
-						(xy 128.196394 81.097156) (xy 128.147927 81.111839) (xy 128.09717 81.121084) (xy 128.044124 81.124891)
-						(xy 128.033239 81.125) (xy 127.648069 81.125) (xy 127.648069 81.03121) (xy 127.781914 81.03121)
-						(xy 127.781914 80.390317) (xy 127.89451 80.390317) (xy 127.89451 81.03121) (xy 128.007838 81.03121)
-						(xy 128.064874 81.028471) (xy 128.116362 81.020254) (xy 128.169421 81.003743) (xy 128.21493 80.979775)
-						(xy 128.247929 80.953297) (xy 128.27943 80.915608) (xy 128.303194 80.870931) (xy 128.31922 80.819264)
-						(xy 128.3268 80.769416) (xy 128.328773 80.723953) (xy 128.327506 80.675028) (xy 128.323052 80.625644)
-						(xy 128.313252 80.573419) (xy 128.308501 80.556646) (xy 128.288967 80.508455) (xy 128.261077 80.466834)
-						(xy 128.249394 80.454553) (xy 128.208962 80.424954) (xy 128.16048 80.405766) (xy 128.153407 80.403995)
-						(xy 128.104307 80.395139) (xy 128.053903 80.390972) (xy 128.022249 80.390317) (xy 127.89451 80.390317)
-						(xy 127.781914 80.390317) (xy 127.648069 80.390317) (xy 127.648069 80.296528) (xy 128.022249 80.296528)
-					)
-				)
-				(polygon
-					(pts
-						(xy 128.576436 80.548586) (xy 128.880029 80.296528) (xy 128.950127 80.296528) (xy 128.94744 81.03121)
-						(xy 129.167259 81.03121) (xy 129.167259 81.125) (xy 128.604524 81.125) (xy 128.604524 81.03121)
-						(xy 128.838264 81.03121) (xy 128.839485 80.459682) (xy 128.638229 80.62479)
-					)
-				)
-				(polygon
-					(pts
-						(xy 129.735856 81.03121) (xy 129.808641 80.906158) (xy 129.888997 80.949145) (xy 129.784705 81.125)
-						(xy 129.263979 81.125) (xy 129.240532 81.063695) (xy 129.255108 81.016085) (xy 129.277044 80.970389)
-						(xy 129.278634 80.967707) (xy 129.306539 80.92698) (xy 129.338473 80.890282) (xy 129.37613 80.854896)
-						(xy 129.41199 80.826535) (xy 129.453893 80.796343) (xy 129.490637 80.770847) (xy 129.5314 80.74263)
-						(xy 129.566108 80.717847) (xy 129.604619 80.687476) (xy 129.630832 80.662892) (xy 129.662859 80.622961)
-						(xy 129.675773 80.600366) (xy 129.69095 80.552441) (xy 129.693358 80.524651) (xy 129.686145 80.476165)
-						(xy 129.685054 80.472871) (xy 129.660504 80.430262) (xy 129.6555 80.424755) (xy 129.615394 80.395328)
-						(xy 129.601279 80.388852) (xy 129.553327 80.376678) (xy 129.518969 80.374685) (xy 129.468155 80.380505)
-						(xy 129.441055 80.389584) (xy 129.397201 80.412389) (xy 129.382925 80.422069) (xy 129.345857 80.454337)
-						(xy 129.333344 80.468475) (xy 129.252988 80.389829) (xy 129.259827 80.381524) (xy 129.281076 80.361496)
-						(xy 129.317468 80.335362) (xy 129.361734 80.312201) (xy 129.369004 80.309228) (xy 129.417593 80.293475)
-						(xy 129.435682 80.2892) (xy 129.485046 80.282064) (xy 129.517503 80.280896) (xy 129.566985 80.283507)
-						(xy 129.616095 80.292226) (xy 129.640602 80.299459) (xy 129.688243 80.319798) (xy 129.731016 80.348474)
-						(xy 129.733414 80.350505) (xy 129.767119 80.386226) (xy 129.792032 80.42793) (xy 129.807603 80.474581)
-						(xy 129.812793 80.525139) (xy 129.807538 80.575028) (xy 129.796184 80.610624) (xy 129.772963 80.65476)
-						(xy 129.752709 80.682676) (xy 129.719427 80.718534) (xy 129.689694 80.744713) (xy 129.651117 80.774853)
-						(xy 129.615933 80.800645) (xy 129.57545 80.829053) (xy 129.539729 80.85389) (xy 129.498565 80.883909)
-						(xy 129.468899 80.908112) (xy 129.433251 80.941951) (xy 129.412235 80.965997) (xy 129.385788 81.009729)
-						(xy 129.378041 81.03121)
-					)
+					(size 0.8 0.8)
+					(thickness 0.2)
 				)
 			)
 		)
@@ -6421,7 +6098,7 @@
 			(at 0.125 -3.25 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "a6ff1392-e338-404b-b2e2-0409492b440c")
+			(uuid "931630df-3ee2-465a-a7f5-d6b41e41958f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6434,7 +6111,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a2fe5297-edfb-45e6-96eb-05422a247b4f")
+			(uuid "7d1839e6-8ea2-4f31-af9a-7054def5260c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6446,7 +6123,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4e62468f-cdf7-49f1-a9b1-c75b146ee24b")
+			(uuid "ab53b336-6e51-46d9-a2d5-b994014d8fbf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6458,7 +6135,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "697104b3-3fde-477b-aaaa-e86638a7713d")
+			(uuid "65b854e9-5134-431d-bcde-c3f723286c71")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6531,8 +6208,6 @@
 			)
 		)
 		(path "/1a3ed6d7-2229-4e04-96f7-5dd7a341506c")
-		(sheetname "Root")
-		(sheetfile "LED_Module_E.kicad_sch")
 		(attr smd)
 		(fp_rect
 			(start -0.85 -1.075)
@@ -6543,7 +6218,7 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "984bdfe7-151d-498f-b1a9-d39c5c09405b")
+			(uuid "ae4a85e7-dfab-47ba-800c-a01a250ea6b6")
 		)
 		(fp_line
 			(start -0.8 -1.025)
@@ -6553,7 +6228,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "1915916b-0043-4237-8401-3d1d4dada0a5")
+			(uuid "6e16bcc9-9606-4028-8704-cbd57b289318")
 		)
 		(fp_line
 			(start -0.8 1.025)
@@ -6563,7 +6238,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "5a31c74b-540a-4a08-a380-759534a884aa")
+			(uuid "b7cb9660-f920-4a03-ac89-2c00fcf4fab6")
 		)
 		(fp_line
 			(start 0.8 -1.025)
@@ -6573,7 +6248,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "e52c1bc3-d6c8-4dc9-90f0-6e0da8ed0936")
+			(uuid "52cde1fa-cd85-40f5-b985-b61b901d191a")
 		)
 		(fp_line
 			(start 0.8 1.025)
@@ -6583,34 +6258,20 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "d8366de5-48ac-43bf-bf96-a84bfb1c638a")
+			(uuid "ff91a96d-ba25-4697-a2c5-d0733dca23cb")
 		)
 		(fp_text user "K"
 			(at 0.7 -0.125 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "927bb5d8-8497-4848-a3c4-8175fef12c38")
+			(uuid "e6ddd435-d2cc-4c6d-9ff4-4b128a9c044f")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.1)
 				)
 				(justify left bottom)
-			)
-			(render_cache "K" 0
-				(polygon
-					(pts
-						(xy 129.981716 80.16121) (xy 130.083321 80.16121) (xy 129.902093 79.879842) (xy 129.761165 79.879842)
-						(xy 129.76263 80.16121) (xy 129.85129 80.16121) (xy 129.85129 80.255) (xy 129.517411 80.255) (xy 129.517411 80.16121)
-						(xy 129.64979 80.16121) (xy 129.64979 79.520317) (xy 129.517411 79.520317) (xy 129.517411 79.426528)
-						(xy 129.85129 79.426528) (xy 129.85129 79.520317) (xy 129.761165 79.520317) (xy 129.761165 79.786053)
-						(xy 129.884752 79.786053) (xy 130.079169 79.520317) (xy 129.981716 79.520317) (xy 129.981716 79.426528)
-						(xy 130.327808 79.426528) (xy 130.327808 79.520317) (xy 130.200069 79.520317) (xy 129.98709 79.809256)
-						(xy 130.219364 80.16121) (xy 130.360293 80.16121) (xy 130.360293 80.255) (xy 129.981716 80.255)
-					)
-				)
 			)
 		)
 		(pad "1" smd rect
@@ -6620,9 +6281,9 @@
 			(net 16 "Net-(D12-K)")
 			(pinfunction "K")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "3df66b57-4cf0-4694-b86d-018898f37e15")
+			(uuid "3a8cd615-8c25-40b5-a06f-4ff9eafaa0b2")
 		)
 		(pad "2" smd rect
 			(at -0.43 -0.76 90)
@@ -6631,9 +6292,9 @@
 			(net 2 "+4V")
 			(pinfunction "A")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "76bd3f15-e96f-45cf-ae3f-41da19df9e75")
+			(uuid "4dc185d2-96e1-4024-8d10-f708db364bba")
 		)
 		(pad "3" smd rect
 			(at 0 0.29 180)
@@ -6643,7 +6304,7 @@
 			(pintype "passive")
 			(solder_paste_margin -0.05)
 			(clearance 0.15)
-			(uuid "718a5a02-a99b-45cd-8ba1-fe412e6d4492")
+			(uuid "80436186-5e9c-4e95-b6eb-a711e61a6b2c")
 		)
 		(model "XEGAVT-H0-0000-000-000000K2001.stp"
 			(offset
@@ -8608,84 +8269,21 @@
 			(uuid "d167a10d-ef28-4a72-9436-98d6bd9f6d65")
 		)
 	)
-	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+	(footprint "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean_bigger_solder"
 		(layer "F.Cu")
 		(uuid "d9f96472-6eb4-43d8-b420-eebaec329c39")
 		(at 131.25 80.55)
 		(descr "XEGAVT-H0-0000-000-000000K2001-1")
 		(tags "LED")
 		(property "Reference" "D8"
-			(at 0.004 0.16 0)
+			(at 0 1.75 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "d1cf0670-ca2c-40b6-ab05-7a851ce34394")
+			(uuid "d1e295a9-b154-4f2e-90cc-2e749a8102e1")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-			(render_cache "D8" 0
-				(polygon
-					(pts
-						(xy 130.905472 80.298189) (xy 130.954953 80.303174) (xy 131.006941 80.31261) (xy 131.026854 80.317533)
-						(xy 131.07379 80.333451) (xy 131.120295 80.357408) (xy 131.161432 80.388119) (xy 131.197051 80.425905)
-						(xy 131.224223 80.466969) (xy 131.246434 80.514424) (xy 131.248382 80.519521) (xy 131.263377 80.568852)
-						(xy 131.272585 80.618021) (xy 131.277917 80.672197) (xy 131.279401 80.723709) (xy 131.27687 80.774466)
-						(xy 131.268121 80.827465) (xy 131.253123 80.876886) (xy 131.247405 80.891015) (xy 131.22507 80.935379)
-						(xy 131.195102 80.979111) (xy 131.159478 81.017533) (xy 131.118658 81.050303) (xy 131.073106 81.077416)
-						(xy 131.027587 81.097156) (xy 130.97912 81.111839) (xy 130.928363 81.121084) (xy 130.875317 81.124891)
-						(xy 130.864432 81.125) (xy 130.479262 81.125) (xy 130.479262 81.03121) (xy 130.613107 81.03121)
-						(xy 130.613107 80.390317) (xy 130.725703 80.390317) (xy 130.725703 81.03121) (xy 130.839031 81.03121)
-						(xy 130.896067 81.028471) (xy 130.947555 81.020254) (xy 131.000614 81.003743) (xy 131.046123 80.979775)
-						(xy 131.079122 80.953297) (xy 131.110623 80.915608) (xy 131.134387 80.870931) (xy 131.150413 80.819264)
-						(xy 131.157993 80.769416) (xy 131.159966 80.723953) (xy 131.158699 80.675028) (xy 131.154245 80.625644)
-						(xy 131.144445 80.573419) (xy 131.139694 80.556646) (xy 131.12016 80.508455) (xy 131.09227 80.466834)
-						(xy 131.080587 80.454553) (xy 131.040155 80.424954) (xy 130.991673 80.405766) (xy 130.9846 80.403995)
-						(xy 130.9355 80.395139) (xy 130.885096 80.390972) (xy 130.853442 80.390317) (xy 130.725703 80.390317)
-						(xy 130.613107 80.390317) (xy 130.479262 80.390317) (xy 130.479262 80.296528) (xy 130.853442 80.296528)
-					)
-				)
-				(polygon
-					(pts
-						(xy 131.774194 80.283841) (xy 131.824 80.293534) (xy 131.833588 80.296284) (xy 131.881093 80.315334)
-						(xy 131.922004 80.341713) (xy 131.957747 80.37744) (xy 131.981844 80.415718) (xy 131.99833 80.462979)
-						(xy 132.003804 80.513276) (xy 132.003825 80.516835) (xy 131.997218 80.566358) (xy 131.994544 80.575453)
-						(xy 131.973496 80.619707) (xy 131.966945 80.629187) (xy 131.932254 80.665478) (xy 131.922737 80.672662)
-						(xy 131.877514 80.69547) (xy 131.863141 80.699773) (xy 131.910677 80.714702) (xy 131.925179 80.722732)
-						(xy 131.963647 80.754056) (xy 131.974516 80.766695) (xy 132.000803 80.809606) (xy 132.007245 80.825558)
-						(xy 132.018041 80.874498) (xy 132.018968 80.894678) (xy 132.01434 80.945876) (xy 131.99911 80.993883)
-						(xy 131.994788 81.002634) (xy 131.9667 81.044644) (xy 131.930308 81.079326) (xy 131.88665 81.106376)
-						(xy 131.840064 81.124526) (xy 131.836763 81.125488) (xy 131.786231 81.136357) (xy 131.73713 81.140498)
-						(xy 131.726366 81.140631) (xy 131.676818 81.137733) (xy 131.625702 81.128194) (xy 131.615723 81.125488)
-						(xy 131.568948 81.107803) (xy 131.524969 81.081249) (xy 131.522423 81.079326) (xy 131.485969 81.044644)
-						(xy 131.457698 81.002634) (xy 131.440518 80.956044) (xy 131.433973 80.906169) (xy 131.433794 80.896388)
-						(xy 131.554663 80.896388) (xy 131.563047 80.946347) (xy 131.567363 80.95696) (xy 131.595925 80.998318)
-						(xy 131.602779 81.004832) (xy 131.645494 81.031412) (xy 131.657001 81.035851) (xy 131.705573 81.045972)
-						(xy 131.726366 81.046842) (xy 131.775418 81.041647) (xy 131.79573 81.035851) (xy 131.839594 81.013162)
-						(xy 131.849952 81.004832) (xy 131.881154 80.965406) (xy 131.885368 80.95696) (xy 131.897622 80.90849)
-						(xy 131.898068 80.896388) (xy 131.890418 80.847412) (xy 131.887322 80.838991) (xy 131.860527 80.797397)
-						(xy 131.855326 80.792341) (xy 131.81354 80.765836) (xy 131.801837 80.761322) (xy 131.752312 80.750964)
-						(xy 131.726366 80.749842) (xy 131.67662 80.754327) (xy 131.650894 80.761322) (xy 131.607079 80.784094)
-						(xy 131.597161 80.792341) (xy 131.568016 80.832385) (xy 131.565165 80.838991) (xy 131.554919 80.886873)
-						(xy 131.554663 80.896388) (xy 131.433794 80.896388) (xy 131.433763 80.894678) (xy 131.439819 80.844257)
-						(xy 131.445486 80.825558) (xy 131.468155 80.780174) (xy 131.477971 80.766695) (xy 131.513874 80.732074)
-						(xy 131.527796 80.722732) (xy 131.573775 80.703223) (xy 131.590322 80.699773) (xy 131.544023 80.681226)
-						(xy 131.530483 80.672662) (xy 131.49341 80.638306) (xy 131.486275 80.629187) (xy 131.462709 80.586123)
-						(xy 131.45892 80.575453) (xy 131.449865 80.526058) (xy 131.449638 80.516835) (xy 131.449778 80.515369)
-						(xy 131.569073 80.515369) (xy 131.577114 80.565058) (xy 131.579576 80.571545) (xy 131.606476 80.61237)
-						(xy 131.610106 80.615997) (xy 131.652448 80.642792) (xy 131.659687 80.645551) (xy 131.708276 80.655397)
-						(xy 131.726366 80.656053) (xy 131.776244 80.650628) (xy 131.793288 80.645551) (xy 131.836314 80.621742)
-						(xy 131.842869 80.615997) (xy 131.871589 80.576252) (xy 131.873644 80.571545) (xy 131.884223 80.522926)
-						(xy 131.884391 80.515369) (xy 131.876163 80.466215) (xy 131.873644 80.459682) (xy 131.846585 80.418775)
-						(xy 131.842869 80.41523) (xy 131.800474 80.388489) (xy 131.793288 80.385676) (xy 131.744745 80.375372)
-						(xy 131.726366 80.374685) (xy 131.67691 80.380363) (xy 131.659687 80.385676) (xy 131.616597 80.409549)
-						(xy 131.610106 80.41523) (xy 131.580954 80.456474) (xy 131.579576 80.459682) (xy 131.569237 80.507981)
-						(xy 131.569073 80.515369) (xy 131.449778 80.515369) (xy 131.454468 80.466152) (xy 131.470268 80.418479)
-						(xy 131.47162 80.415718) (xy 131.499319 80.372814) (xy 131.530971 80.341713) (xy 131.57426 80.313929)
-						(xy 131.61841 80.296284) (xy 131.666868 80.285239) (xy 131.717901 80.280956) (xy 131.7249 80.280896)
-					)
+					(size 0.8 0.8)
+					(thickness 0.2)
 				)
 			)
 		)
@@ -8693,7 +8291,7 @@
 			(at 0.125 -3.25 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "b32518a2-005f-4c27-839f-bb970d84bba6")
+			(uuid "b951b2ac-3ccc-4286-8e5f-36b338fd88d4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8706,7 +8304,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9b9a28f2-8920-442f-a064-e1f43bdfd67e")
+			(uuid "74d9e24a-c48f-4006-a3d0-2c704bc2b8cb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8718,7 +8316,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dce990ee-86b2-401d-9105-a93a988c5be0")
+			(uuid "189fdc51-fe14-4f25-959e-47233b0003bd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8730,7 +8328,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9cb7c3b9-7e9b-486f-a10e-0113713a204c")
+			(uuid "7a4a3f93-eb20-4f18-b813-bd02dbc5417a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8803,8 +8401,6 @@
 			)
 		)
 		(path "/d972441d-6c88-4570-9e8c-fcf2ceac0f98")
-		(sheetname "Root")
-		(sheetfile "LED_Module_E.kicad_sch")
 		(attr smd)
 		(fp_rect
 			(start -0.85 -1.075)
@@ -8815,7 +8411,7 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "715abdfd-a2c9-42e5-b2c9-86e857fb348b")
+			(uuid "08d03234-88c9-4920-8dbe-68f69ae85bf9")
 		)
 		(fp_line
 			(start -0.8 -1.025)
@@ -8825,7 +8421,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "52ac652c-95a8-4ad1-bb1d-4e033fab8b73")
+			(uuid "f521509f-c545-47d5-bb58-f3561937bdec")
 		)
 		(fp_line
 			(start -0.8 1.025)
@@ -8835,7 +8431,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "86de2378-82c5-453d-96a7-a9f1cd061488")
+			(uuid "7a186095-3b1b-4b18-b8ab-b32975cea732")
 		)
 		(fp_line
 			(start 0.8 -1.025)
@@ -8845,7 +8441,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "3e9a5800-6e44-430b-b1ac-d25605705ba0")
+			(uuid "953c8c80-374c-49f1-93c6-de7548ccfd92")
 		)
 		(fp_line
 			(start 0.8 1.025)
@@ -8855,34 +8451,20 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "fb1262e8-ec0b-4828-9d27-090465951b7e")
+			(uuid "a8532324-2446-439c-9e97-7ee7c713c25b")
 		)
 		(fp_text user "K"
 			(at 0.7 -0.125 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "826f7a59-9132-4f58-82ab-9dbfc03a0b12")
+			(uuid "e3e6ba92-a286-4d42-a583-53e5fd187e90")
 			(effects
 				(font
-					(face "Podkova")
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.1)
 				)
 				(justify left bottom)
-			)
-			(render_cache "K" 0
-				(polygon
-					(pts
-						(xy 132.481716 80.16121) (xy 132.583321 80.16121) (xy 132.402093 79.879842) (xy 132.261165 79.879842)
-						(xy 132.26263 80.16121) (xy 132.35129 80.16121) (xy 132.35129 80.255) (xy 132.017411 80.255) (xy 132.017411 80.16121)
-						(xy 132.14979 80.16121) (xy 132.14979 79.520317) (xy 132.017411 79.520317) (xy 132.017411 79.426528)
-						(xy 132.35129 79.426528) (xy 132.35129 79.520317) (xy 132.261165 79.520317) (xy 132.261165 79.786053)
-						(xy 132.384752 79.786053) (xy 132.579169 79.520317) (xy 132.481716 79.520317) (xy 132.481716 79.426528)
-						(xy 132.827808 79.426528) (xy 132.827808 79.520317) (xy 132.700069 79.520317) (xy 132.48709 79.809256)
-						(xy 132.719364 80.16121) (xy 132.860293 80.16121) (xy 132.860293 80.255) (xy 132.481716 80.255)
-					)
-				)
 			)
 		)
 		(pad "1" smd rect
@@ -8892,9 +8474,9 @@
 			(net 14 "Net-(D8-K)")
 			(pinfunction "K")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "d6fcf9ce-b4d0-44cc-b292-2ed1549e72b2")
+			(uuid "73503366-3ae3-4d17-a9e3-4b4a368b0e00")
 		)
 		(pad "2" smd rect
 			(at -0.43 -0.76 90)
@@ -8903,9 +8485,9 @@
 			(net 2 "+4V")
 			(pinfunction "A")
 			(pintype "passive")
-			(solder_paste_margin -0.05)
+			(solder_paste_margin 0.08)
 			(clearance 0.15)
-			(uuid "2b9874b8-5e92-4e27-8ead-0b9e8c3a33e4")
+			(uuid "881a7202-0765-4e8d-96ad-1f5a1bf2905d")
 		)
 		(pad "3" smd rect
 			(at 0 0.29 180)
@@ -8915,7 +8497,7 @@
 			(pintype "passive")
 			(solder_paste_margin -0.05)
 			(clearance 0.15)
-			(uuid "aed68fd4-26ae-47ba-ae17-5f63a1474a2b")
+			(uuid "7eeeae12-95d1-4afb-a5e5-4d12328cd543")
 		)
 		(model "XEGAVT-H0-0000-000-000000K2001.stp"
 			(offset
