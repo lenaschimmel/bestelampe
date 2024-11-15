@@ -419,7 +419,7 @@
 				)
 			)
 		)
-		(property "Value" "680uF"
+		(property "Value" "1000uF"
 			(at 0 6.2 0)
 			(layer "F.Fab")
 			(uuid "8e4e89f0-6e41-41b7-b210-a1950c25b971")
@@ -1647,7 +1647,7 @@
 		(path "/6271dab5-5ef5-406f-a527-aa7083461953")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 0.7)
 			(end -0.7 -0.7)
@@ -2172,7 +2172,7 @@
 		(path "/80daadf4-ba2f-45dd-a46b-23c69b13ddc7")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -3320,7 +3320,7 @@
 		(path "/e318407d-e08c-4ccc-876e-98ac40464cf2")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -3810,7 +3810,7 @@
 		(path "/0b0cae02-eac1-47d3-998b-c34fb49c576c")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -3924,7 +3924,7 @@
 		(path "/79d875fd-fe02-424d-9a3f-bb7b299d7f7e")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 -0.7)
 			(end 0.7 -0.7)
@@ -4137,7 +4137,7 @@
 		(path "/f6910920-4016-4f39-88d2-40c154c53834")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -6648,7 +6648,7 @@
 		(path "/403c2d5d-64f1-4fd6-bba0-668a8124c3d6")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 0.7)
 			(end -0.7 -0.7)
@@ -6861,7 +6861,7 @@
 		(path "/c5ac64bc-f415-4dcb-b7a8-df1f208e52a5")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -7677,7 +7677,7 @@
 		(path "/377928b9-dd4c-4abc-aca1-ef44a9de6c17")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 -0.7)
 			(end 0.7 -0.7)
@@ -7890,7 +7890,7 @@
 		(path "/6ed41f9c-fdfe-4eb6-8492-3189f8d22fb8")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -8004,7 +8004,7 @@
 		(path "/2766f9a3-e1b3-4176-8370-0dbd81133846")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 -0.7)
 			(end 0.7 -0.7)
@@ -9275,7 +9275,7 @@
 		(path "/c2b75005-ab4b-4af5-b157-5e7b7dddbc6e")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -9771,7 +9771,7 @@
 		(path "/579f891d-7d2b-468d-b878-dc6c894c096a")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 0.7)
 			(end -0.7 -0.7)
@@ -10365,7 +10365,7 @@
 		(path "/cd01bee3-b151-42c6-96db-2bf2e72b2562")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -11203,7 +11203,7 @@
 		(path "/734b2771-4f0b-4e9d-95d9-e1763e35adec")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -11675,7 +11675,7 @@
 		(path "/133b57cb-19d0-4df9-bf56-1fa0be33be95")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 0.7)
 			(end -0.7 -0.7)
@@ -11849,7 +11849,7 @@
 		(path "/493690a1-d897-433d-93b8-5fbb9da1851c")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 -0.7)
 			(end 0.7 -0.7)
@@ -12718,7 +12718,7 @@
 		(path "/3c097f3d-cb78-4bde-b720-200d99cec73d")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 0.7)
 			(end -0.7 -0.7)
@@ -12892,7 +12892,7 @@
 				)
 			)
 		)
-		(property "Value" "24AA025UIDT-I/OT"
+		(property "Value" "24AA025E48T-I/OT"
 			(at 0 2.4 0)
 			(layer "F.Fab")
 			(uuid "da33291d-db76-40aa-8a69-7ae27302eae9")
@@ -12915,7 +12915,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21709J.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810121540_Microchip-Tech-24AA025E48T-I-OT_C129895.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12952,7 +12952,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "24AA025UIDT-I/OT"
+		(property "Manufacturer_Part_Number" "24AA025E48T-I/OT"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12965,7 +12965,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C2061498"
+		(property "LCSC Part #" "C129895"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13735,6 +13735,32 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C460530"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7aba449c-ffaf-491b-be6a-597c31a0f2f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "74LVC1G32SE"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bef6e68a-a4f1-4f9e-8293-e04dd0ca3dcc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOT* SG-*")
 		(path "/3a3f9e3d-9c2f-4265-b06e-e71c35d8fc7d")
 		(sheetname "Root")
@@ -13863,7 +13889,7 @@
 			(uuid "a8b35741-84e2-43bb-8d54-387dae925ae2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "c5d8d4ee-4ae2-45a6-b6b0-28ba881d9502")
 			(effects
@@ -14001,7 +14027,7 @@
 		(path "/af87fb84-df14-474e-ae2d-ff21650c7047")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 -0.7)
 			(end 0.7 -0.7)
@@ -14533,7 +14559,7 @@
 		(path "/fe819dd4-7fb2-4ff4-a47b-fe4a844a84b1")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_poly
 			(pts
 				(xy 1.79946 1.45803) (xy 1.842711 1.471245) (xy 1.870558 1.487941) (xy 1.879629 1.501145) (xy 1.877132 1.516797)
@@ -15440,7 +15466,7 @@
 		(path "/a084a99a-2912-413e-b38a-637eab3ee087")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -15590,7 +15616,7 @@
 		(path "/c0dbcf4d-e25a-4761-8ff3-52216eaf1c1b")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -15704,7 +15730,7 @@
 		(path "/6cdd721f-afcb-4966-903b-61f357ace02b")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 -0.7)
 			(end 0.7 -0.7)
@@ -15878,7 +15904,7 @@
 		(path "/40197d0d-94ba-413f-8db4-e0ba77ce8fe9")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 -0.7)
 			(end 0.7 -0.7)
@@ -16384,7 +16410,7 @@
 				)
 			)
 		)
-		(property "Value" "680uF"
+		(property "Value" "1000uF"
 			(at 0 6.2 0)
 			(layer "F.Fab")
 			(uuid "405d4031-36f7-44be-8093-e0fd48e71a34")
@@ -16444,7 +16470,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RVT1A681M0810 680UF 10V"
+		(property "Manufacturer_Part_Number" "VKME1301C102MV"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16457,7 +16483,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C2760485"
+		(property "LCSC Part #" "C487313"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16981,7 +17007,7 @@
 		(path "/570e2bc6-65eb-44b1-b042-eae9fefbcf72")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -17485,7 +17511,7 @@
 		(path "/732252d2-1f0a-47bf-a19b-a378b19ab777")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -18701,7 +18727,7 @@
 		(path "/09b06fc3-e3ad-4f02-8005-474a453246c7")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -19160,7 +19186,7 @@
 		(path "/29e38eee-b98f-4356-9b2f-eb88cf3cca62")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -19313,7 +19339,7 @@
 		(path "/e2019527-c925-4361-9820-a390624d9430")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -20489,7 +20515,7 @@
 		(path "/afe2d17d-4d39-4fb5-ae58-fa9f13498ce9")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 0.7)
 			(end -0.7 -0.7)
@@ -22190,7 +22216,7 @@
 		(path "/2f9c6d3a-356f-4b04-89c6-a149496d63d7")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -24503,7 +24529,7 @@
 		(path "/42e77d20-c1aa-4b9a-8001-f63171ee281f")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -25226,7 +25252,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C1"
-			(at -1.5 -0.05 360)
+			(at -1.5 -0.05 0)
 			(layer "F.SilkS")
 			(uuid "eb356544-eae0-43ab-8584-5b8153bc0826")
 			(effects
@@ -25272,7 +25298,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 0 1.16 360)
+			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "62a4494e-d1f3-4b7c-8f33-df1dd584d725")
 			(effects
@@ -25489,7 +25515,7 @@
 			(uuid "7c19c1a2-b8b4-4b7a-9218-d85870c3f17f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "2d8d0581-7e62-4266-9712-f507d4b010af")
 			(effects
@@ -25915,7 +25941,7 @@
 		(path "/287b8905-af98-4dec-a8a2-23427277b3c4")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 0.7)
 			(end -0.7 -0.7)
@@ -27709,7 +27735,7 @@
 		(path "/cc5a4058-894f-4b67-9122-039d0651e7d5")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 -0.7)
 			(end 0.7 -0.7)
@@ -27922,7 +27948,7 @@
 		(path "/0ddf051c-2b18-4e43-b128-2ba98c3ea68d")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -28033,7 +28059,7 @@
 		(path "/f04e1585-a4e3-4dbf-b321-81de266462d3")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 -0.7)
 			(end 0.7 -0.7)
@@ -28246,7 +28272,7 @@
 		(path "/dfdcc417-fd75-4431-a826-8f7444420a1d")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -28674,7 +28700,7 @@
 		(path "/b77a3687-b52d-4aa8-b2e1-d3cf0e07eb6e")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 0.7)
 			(end -0.7 -0.7)
@@ -28848,7 +28874,7 @@
 		(path "/fb1aa242-4790-4645-ac51-99348fa48666")
 		(sheetname "Root")
 		(sheetfile "LED_Module_E.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.7 0.7)
 			(end -0.7 -0.7)
@@ -45186,8 +45212,9 @@
 				(xy 166.137627 75.797501) (xy 166.137629 75.797501) (xy 166.137632 75.797502) (xy 166.207343 75.802211)
 				(xy 166.252879 75.801218) (xy 166.347897 75.771053) (xy 166.409087 75.737326) (xy 166.467131 75.693515)
 				(xy 172.594388 69.517629) (xy 172.628221 69.47539) (xy 172.656376 69.43139) (xy 172.66964 69.408044)
-				(xy 172.696014 69.311904) (xy 172.700998 69.242212) (xy 172.700185 69.196675) (xy 172.684731 69.147323)
-				(xy 172.683484 69.077466) (xy 172.715611 69.022364) (xy 174.91232 66.837218) (xy 174.973731 66.803896)
+				(xy 172.696014 69.311904) (xy 172.700998 69.242212) (xy 172.700926 69.238204) (xy 172.700185 69.196678)
+				(xy 172.700184 69.196672) (xy 172.694647 69.178988) (xy 172.684731 69.147323) (xy 172.683484 69.077466)
+				(xy 172.715611 69.022364) (xy 174.91232 66.837218) (xy 174.973731 66.803896)
 			)
 		)
 	)
@@ -46158,17 +46185,17 @@
 				(xy 141.100816 73.043596) (xy 141.1005 73.03475) (xy 141.1005 70.437001) (xy 141.120185 70.369962)
 				(xy 141.172989 70.324207) (xy 141.242147 70.314263) (xy 141.305703 70.343288) (xy 141.312166 70.349306)
 				(xy 143.059335 72.096474) (xy 143.091681 72.115149) (xy 143.143821 72.145253) (xy 143.19407 72.158716)
-				(xy 143.23805 72.1705) (xy 143.335605 72.1705) (xy 143.616078 72.1705) (xy 143.683116 72.190184)
-				(xy 143.71303 72.209408) (xy 143.774488 72.227454) (xy 143.835946 72.2455) (xy 143.835947 72.2455)
-				(xy 143.964054 72.2455) (xy 143.983242 72.239865) (xy 144.08697 72.209408) (xy 144.19474 72.140149)
-				(xy 144.278632 72.043332) (xy 144.33185 71.926802) (xy 144.350081 71.8) (xy 144.33185 71.673198)
-				(xy 144.278632 71.556668) (xy 144.19474 71.459851) (xy 144.08697 71.390592) (xy 144.001829 71.365592)
-				(xy 143.964054 71.3545) (xy 143.964053 71.3545) (xy 143.835947 71.3545) (xy 143.835945 71.3545)
-				(xy 143.713031 71.390591) (xy 143.683116 71.409816) (xy 143.616078 71.4295) (xy 143.491655 71.4295)
-				(xy 143.424616 71.409815) (xy 143.403974 71.393181) (xy 142.515639 70.504845) (xy 142.482154 70.443522)
-				(xy 142.487138 70.37383) (xy 142.52901 70.317897) (xy 142.579129 70.295547) (xy 142.611665 70.289075)
-				(xy 142.611665 70.289074) (xy 142.61167 70.289074) (xy 142.677134 70.264657) (xy 142.718216 70.245002)
-				(xy 142.792381 70.178385) (xy 142.792385 70.178378) (xy 142.796265 70.174137) (xy 142.856031 70.137946)
+				(xy 143.23805 72.1705) (xy 143.616078 72.1705) (xy 143.683116 72.190184) (xy 143.71303 72.209408)
+				(xy 143.774488 72.227454) (xy 143.835946 72.2455) (xy 143.835947 72.2455) (xy 143.964054 72.2455)
+				(xy 143.983242 72.239865) (xy 144.08697 72.209408) (xy 144.19474 72.140149) (xy 144.278632 72.043332)
+				(xy 144.33185 71.926802) (xy 144.350081 71.8) (xy 144.33185 71.673198) (xy 144.278632 71.556668)
+				(xy 144.19474 71.459851) (xy 144.08697 71.390592) (xy 144.001829 71.365592) (xy 143.964054 71.3545)
+				(xy 143.964053 71.3545) (xy 143.835947 71.3545) (xy 143.835945 71.3545) (xy 143.713031 71.390591)
+				(xy 143.683116 71.409816) (xy 143.616078 71.4295) (xy 143.491655 71.4295) (xy 143.424616 71.409815)
+				(xy 143.403974 71.393181) (xy 142.515639 70.504845) (xy 142.482154 70.443522) (xy 142.487138 70.37383)
+				(xy 142.52901 70.317897) (xy 142.579129 70.295547) (xy 142.611665 70.289075) (xy 142.611665 70.289074)
+				(xy 142.61167 70.289074) (xy 142.677134 70.264657) (xy 142.718216 70.245002) (xy 142.792381 70.178385)
+				(xy 142.792385 70.178378) (xy 142.796265 70.174137) (xy 142.856031 70.137946)
 			)
 		)
 		(filled_polygon
