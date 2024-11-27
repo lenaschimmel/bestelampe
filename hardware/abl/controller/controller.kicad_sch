@@ -11422,7 +11422,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "349c18fb-41f1-4d26-b95e-a291cfd46289")
 		(property "Reference" "R4"
@@ -14385,7 +14385,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "a183c4c7-1ca5-4af2-9467-09d1e66fe1e9")
 		(property "Reference" "J3"
 			(at 235.585 53.34 0)
@@ -14421,7 +14421,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" ""
 			(at 227.33 52.07 0)
 			(effects
 				(font
@@ -14430,7 +14430,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C7501276"
+		(property "LCSC Part #" ""
 			(at 227.33 52.07 0)
 			(effects
 				(font
@@ -14495,7 +14495,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "a2f04f30-f27b-481b-a398-51a26e3ae192")
 		(property "Reference" "J2"
 			(at 200.025 53.34 0)
@@ -14531,7 +14531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" ""
 			(at 191.135 52.07 0)
 			(effects
 				(font
@@ -14540,7 +14540,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C7501276"
+		(property "LCSC Part #" ""
 			(at 191.135 52.07 0)
 			(effects
 				(font
@@ -15483,7 +15483,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "c73f69bf-c79d-4949-9e92-7e5c6e1c52f4")
 		(property "Reference" "R5"
 			(at 98.425 175.26 0)
@@ -15901,7 +15901,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "e818c55b-4223-4b0b-8db9-7f85f5b0875b")
 		(property "Reference" "J1"
 			(at 42.545 86.36 90)

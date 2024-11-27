@@ -2585,7 +2585,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm"
+		(property "Footprint" "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
 			(at 202.565 67.31 0)
 			(effects
 				(font
@@ -2657,6 +2657,15 @@
 				(hide yes)
 			)
 		)
+		(property "Color" ""
+			(at 200.66 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "727951d0-55a0-463d-89a5-faf55fc12c12")
 		)
@@ -2700,7 +2709,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "05091105-a350-4634-a8e7-9bde9fddfa04")
 		(property "Reference" "K15"
@@ -2719,7 +2728,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 114.681 127.762 0)
 			(effects
 				(font
@@ -2738,6 +2747,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 114.681 127.762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 114.681 127.762 0)
 			(effects
 				(font
@@ -2765,7 +2783,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "07b20549-506e-4fb3-99c2-b1ca9176673e")
 		(property "Reference" "K13"
@@ -2784,7 +2802,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 106.045 77.47 0)
 			(effects
 				(font
@@ -2803,6 +2821,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 106.045 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 106.045 77.47 0)
 			(effects
 				(font
@@ -2830,7 +2857,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "09b06fc3-e3ad-4f02-8005-474a453246c7")
 		(property "Reference" "H5"
@@ -2899,6 +2926,15 @@
 			)
 		)
 		(property "Note" ""
+			(at 137.16 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 137.16 167.005 0)
 			(effects
 				(font
@@ -3133,7 +3169,7 @@
 				)
 			)
 		)
-		(property "Value" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Value" "XEGAAM-H2-0000-000-000000Q5001"
 			(at 50.8 122.555 0)
 			(effects
 				(font
@@ -3182,7 +3218,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Manufacturer_Part_Number" "XEGAAM-H2-0000-000-000000Q5001"
 			(at 58.42 142.24 0)
 			(effects
 				(font
@@ -3211,6 +3247,15 @@
 			)
 		)
 		(property "Note" ""
+			(at 39.37 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" "Amber"
 			(at 39.37 127 0)
 			(effects
 				(font
@@ -3256,7 +3301,7 @@
 				)
 			)
 		)
-		(property "Value" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Value" "XEGAPL-H0-0000-000-000000V3001"
 			(at 50.8 84.455 0)
 			(effects
 				(font
@@ -3305,7 +3350,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Manufacturer_Part_Number" "XEGAPL-H0-0000-000-000000V3001"
 			(at 58.42 104.14 0)
 			(effects
 				(font
@@ -3342,6 +3387,24 @@
 				(hide yes)
 			)
 		)
+		(property "Color" "Poly Lime"
+			(at 39.37 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C7545082"
+			(at 39.37 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b493bcad-f7ec-4812-87d7-7624b2457c74")
 		)
@@ -3367,7 +3430,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "2107592b-9699-4f90-93ec-f39d11d8288a")
 		(property "Reference" "K18"
@@ -3386,7 +3449,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 114.935 92.964 0)
 			(effects
 				(font
@@ -3405,6 +3468,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 114.935 92.964 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 114.935 92.964 0)
 			(effects
 				(font
@@ -3433,7 +3505,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "2251b790-f994-4d42-bfa2-6cd5a01eeac0")
 		(property "Reference" "K9"
@@ -3452,7 +3524,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 76.2 129.54 0)
 			(effects
 				(font
@@ -3471,6 +3543,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 76.2 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 76.2 129.54 0)
 			(effects
 				(font
@@ -3510,7 +3591,7 @@
 				)
 			)
 		)
-		(property "Value" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Value" "XEGAWT-H2-0000-000-00000UT330G"
 			(at 50.8 97.155 0)
 			(effects
 				(font
@@ -3559,7 +3640,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Manufacturer_Part_Number" "XEGAWT-H2-0000-000-00000UT330G"
 			(at 58.42 116.84 0)
 			(effects
 				(font
@@ -3588,6 +3669,24 @@
 			)
 		)
 		(property "Note" ""
+			(at 39.37 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" "White 3300K"
+			(at 39.37 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17192303"
 			(at 39.37 101.6 0)
 			(effects
 				(font
@@ -3687,7 +3786,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "3c03f693-6b7f-4b7a-93e3-184fafdc3133")
 		(property "Reference" "K12"
@@ -3706,7 +3805,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 106.045 68.326 0)
 			(effects
 				(font
@@ -3725,6 +3824,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 106.045 68.326 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 106.045 68.326 0)
 			(effects
 				(font
@@ -3752,7 +3860,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "3c3d8f06-a77c-47c1-beeb-c8f087a44588")
 		(property "Reference" "K14"
@@ -3771,7 +3879,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 114.681 111.252 0)
 			(effects
 				(font
@@ -3790,6 +3898,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 114.681 111.252 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 114.681 111.252 0)
 			(effects
 				(font
@@ -3817,7 +3934,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "3e7c1c41-5402-455f-9332-9b841593b5ac")
 		(property "Reference" "K17"
@@ -3836,7 +3953,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 114.681 146.812 0)
 			(effects
 				(font
@@ -3855,6 +3972,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 114.681 146.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 114.681 146.812 0)
 			(effects
 				(font
@@ -3893,7 +4019,7 @@
 				)
 			)
 		)
-		(property "Value" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Value" "XEGAWT-H2-0000-000-00000UT122G"
 			(at 50.8 20.955 0)
 			(effects
 				(font
@@ -3942,7 +4068,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Manufacturer_Part_Number" "XEGAWT-H2-0000-000-00000UT122G"
 			(at 58.42 40.64 0)
 			(effects
 				(font
@@ -3971,6 +4097,24 @@
 			)
 		)
 		(property "Note" ""
+			(at 39.37 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" "White 2200K"
+			(at 39.37 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C9900154351"
 			(at 39.37 25.4 0)
 			(effects
 				(font
@@ -4137,7 +4281,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "5cd1b59a-5d64-494e-927f-544833bdc4db")
 		(property "Reference" "K10"
@@ -4156,7 +4300,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 76.2 142.24 0)
 			(effects
 				(font
@@ -4175,6 +4319,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 76.2 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 76.2 142.24 0)
 			(effects
 				(font
@@ -4203,7 +4356,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "5d1d051b-e516-40f0-b0fc-fe35c0a9a311")
 		(property "Reference" "K8"
@@ -4222,7 +4375,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 76.2 116.84 0)
 			(effects
 				(font
@@ -4241,6 +4394,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 76.2 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 76.2 116.84 0)
 			(effects
 				(font
@@ -4269,7 +4431,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "6146e6d0-0729-406b-b73a-85d6b4df383d")
 		(property "Reference" "K4"
@@ -4288,7 +4450,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 76.2 66.04 0)
 			(effects
 				(font
@@ -4307,6 +4469,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 76.2 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 76.2 66.04 0)
 			(effects
 				(font
@@ -4334,7 +4505,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "66037ed4-6fd8-46e3-a0ca-b0a3c1a936c4")
 		(property "Reference" "K16"
@@ -4353,7 +4524,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 114.681 137.287 0)
 			(effects
 				(font
@@ -4372,6 +4543,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 114.681 137.287 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 114.681 137.287 0)
 			(effects
 				(font
@@ -4490,6 +4670,15 @@
 				(hide yes)
 			)
 		)
+		(property "Color" ""
+			(at 193.675 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f318202c-81ef-4da1-be00-d4fdad8832ca")
 		)
@@ -4513,7 +4702,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "78284eb5-8630-4aa3-bb6c-b5a3bd5db681")
 		(property "Reference" "K7"
@@ -4532,7 +4721,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 76.2 104.14 0)
 			(effects
 				(font
@@ -4551,6 +4740,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 76.2 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 76.2 104.14 0)
 			(effects
 				(font
@@ -4712,7 +4910,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "8a5d6b5c-fda6-4296-bc67-12879210faea")
 		(property "Reference" "K2"
@@ -4731,7 +4929,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 76.2 40.64 0)
 			(effects
 				(font
@@ -4750,6 +4948,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 76.2 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 76.2 40.64 0)
 			(effects
 				(font
@@ -4909,7 +5116,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a084a99a-2912-413e-b38a-637eab3ee087")
 		(property "Reference" "H6"
@@ -4986,6 +5193,15 @@
 				(hide yes)
 			)
 		)
+		(property "Color" ""
+			(at 144.145 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "LED_Module_E_copper"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
@@ -5014,7 +5230,7 @@
 				)
 			)
 		)
-		(property "Value" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Value" "XEGAAM-H2-0000-000-000000R4001"
 			(at 50.8 33.655 0)
 			(effects
 				(font
@@ -5063,7 +5279,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Manufacturer_Part_Number" "XEGAAM-H2-0000-000-000000R4001"
 			(at 58.42 53.34 0)
 			(effects
 				(font
@@ -5100,6 +5316,15 @@
 				(hide yes)
 			)
 		)
+		(property "Color" "Amber"
+			(at 39.37 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8f5fbcc6-7040-4c9f-aba9-926b97c32861")
 		)
@@ -5126,7 +5351,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b2fb2475-6e8a-4379-aae0-ae9624d452f7")
 		(property "Reference" "K5"
@@ -5145,7 +5370,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 76.2 78.74 0)
 			(effects
 				(font
@@ -5164,6 +5389,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 76.2 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 76.2 78.74 0)
 			(effects
 				(font
@@ -5191,7 +5425,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "be8cbe73-b31e-464e-bb9e-1d920c0a11b1")
 		(property "Reference" "K11"
@@ -5210,7 +5444,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 106.045 58.42 0)
 			(effects
 				(font
@@ -5229,6 +5463,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 106.045 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 106.045 58.42 0)
 			(effects
 				(font
@@ -5268,7 +5511,7 @@
 				)
 			)
 		)
-		(property "Value" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Value" "XEGAWT-H2-0000-000-00000UT650G"
 			(at 50.8 59.055 0)
 			(effects
 				(font
@@ -5317,7 +5560,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Manufacturer_Part_Number" "XEGAWT-H2-0000-000-00000UT650G"
 			(at 58.42 78.74 0)
 			(effects
 				(font
@@ -5354,6 +5597,15 @@
 				(hide yes)
 			)
 		)
+		(property "Color" "White 6500K"
+			(at 39.37 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "740c195a-80d0-4202-b696-1ab7fed72a2d")
 		)
@@ -5379,7 +5631,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c2b75005-ab4b-4af5-b157-5e7b7dddbc6e")
 		(property "Reference" "TP3"
 			(at 109.855 164.465 0)
@@ -5455,6 +5707,15 @@
 				(hide yes)
 			)
 		)
+		(property "Color" ""
+			(at 111.125 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a657892c-c37a-4a05-a0bf-14e07fc7a4fa")
 		)
@@ -5474,7 +5735,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c5ac64bc-f415-4dcb-b7a8-df1f208e52a5")
 		(property "Reference" "TP5"
 			(at 121.285 164.465 0)
@@ -5550,6 +5811,15 @@
 				(hide yes)
 			)
 		)
+		(property "Color" ""
+			(at 122.555 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cd095ddf-1bed-4630-8396-83567fb3dde7")
 		)
@@ -5570,7 +5840,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c68a9c86-72c2-4c36-a4a6-5502ab1ed5ba")
 		(property "Reference" "K6"
@@ -5589,7 +5859,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 76.2 91.44 0)
 			(effects
 				(font
@@ -5608,6 +5878,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 76.2 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 76.2 91.44 0)
 			(effects
 				(font
@@ -5647,7 +5926,7 @@
 				)
 			)
 		)
-		(property "Value" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Value" "XEGAPB-H0-0000-000-000000Q5001"
 			(at 50.8 46.355 0)
 			(effects
 				(font
@@ -5696,7 +5975,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Manufacturer_Part_Number" "XEGAPB-H0-0000-000-000000Q5001"
 			(at 58.42 66.04 0)
 			(effects
 				(font
@@ -5725,6 +6004,24 @@
 			)
 		)
 		(property "Note" ""
+			(at 39.37 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" "Poly Blue"
+			(at 39.37 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17674483"
 			(at 39.37 50.8 0)
 			(effects
 				(font
@@ -5770,7 +6067,7 @@
 				)
 			)
 		)
-		(property "Value" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Value" "XEGAPO-H0-0000-000-000000S3001"
 			(at 50.8 109.855 0)
 			(effects
 				(font
@@ -5819,7 +6116,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Manufacturer_Part_Number" "XEGAPO-H0-0000-000-000000S3001"
 			(at 58.42 129.54 0)
 			(effects
 				(font
@@ -5848,6 +6145,24 @@
 			)
 		)
 		(property "Note" ""
+			(at 39.37 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" "Poly Red-Orange"
+			(at 39.37 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17313665"
 			(at 39.37 114.3 0)
 			(effects
 				(font
@@ -5893,7 +6208,7 @@
 				)
 			)
 		)
-		(property "Value" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Value" "XEGAWT-H2-0000-000-00000UT227H "
 			(at 50.8 135.255 0)
 			(effects
 				(font
@@ -5942,7 +6257,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Manufacturer_Part_Number" "XEGAWT-H2-0000-000-00000UT227H "
 			(at 58.42 154.94 0)
 			(effects
 				(font
@@ -5979,6 +6294,15 @@
 				(hide yes)
 			)
 		)
+		(property "Color" "White 2700K"
+			(at 39.37 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8775bc18-55f7-4e04-a6b9-7459bf89295e")
 		)
@@ -6004,7 +6328,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "dfdcc417-fd75-4431-a826-8f7444420a1d")
 		(property "Reference" "TP2"
 			(at 104.14 164.465 0)
@@ -6080,6 +6404,15 @@
 				(hide yes)
 			)
 		)
+		(property "Color" ""
+			(at 105.41 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e5715935-be86-4ba7-8f11-8055cddbc680")
 		)
@@ -6099,7 +6432,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e2019527-c925-4361-9820-a390624d9430")
 		(property "Reference" "TP4"
 			(at 115.57 164.465 0)
@@ -6175,6 +6508,15 @@
 				(hide yes)
 			)
 		)
+		(property "Color" ""
+			(at 116.84 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a7ee32ef-4345-4f1f-ad82-fc2017f5905c")
 		)
@@ -6194,7 +6536,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e318407d-e08c-4ccc-876e-98ac40464cf2")
 		(property "Reference" "TP6"
 			(at 127 164.465 0)
@@ -6262,6 +6604,15 @@
 			)
 		)
 		(property "Note" ""
+			(at 128.27 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 128.27 170.18 0)
 			(effects
 				(font
@@ -6356,7 +6707,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e6284e6c-4597-4d16-90bf-1b6158996397")
 		(property "Reference" "K3"
@@ -6375,7 +6726,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 76.2 53.34 0)
 			(effects
 				(font
@@ -6394,6 +6745,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 76.2 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 76.2 53.34 0)
 			(effects
 				(font
@@ -6487,7 +6847,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "f6910920-4016-4f39-88d2-40c154c53834")
 		(property "Reference" "TP1"
 			(at 99.06 164.465 0)
@@ -6563,6 +6923,15 @@
 				(hide yes)
 			)
 		)
+		(property "Color" ""
+			(at 100.33 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "98691e30-f810-4327-b76c-a8ef4661a768")
 		)
@@ -6583,7 +6952,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "f6f15c71-a73b-4bd8-a90c-e11a4c4a8f69")
 		(property "Reference" "K1"
@@ -6602,7 +6971,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 76.2 27.94 0)
 			(effects
 				(font
@@ -6621,6 +6990,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 76.2 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 76.2 27.94 0)
 			(effects
 				(font
@@ -6660,7 +7038,7 @@
 				)
 			)
 		)
-		(property "Value" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Value" "XEGAPA-H0-0000-000-000000T3001"
 			(at 50.8 71.755 0)
 			(effects
 				(font
@@ -6709,7 +7087,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "XEGAVT-H0-0000-000-000000K2001"
+		(property "Manufacturer_Part_Number" "XEGAPA-H0-0000-000-000000T3001"
 			(at 58.42 91.44 0)
 			(effects
 				(font
@@ -6746,6 +7124,15 @@
 				(hide yes)
 			)
 		)
+		(property "Color" "Poly Amber"
+			(at 39.37 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6a59491f-c653-4313-87d4-17f9bad8c67f")
 		)
@@ -6771,7 +7158,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "fe819dd4-7fb2-4ff4-a47b-fe4a844a84b1")
 		(property "Reference" "LOGO1"
@@ -6838,6 +7225,15 @@
 			)
 		)
 		(property "Note" ""
+			(at 140.97 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 140.97 176.53 0)
 			(effects
 				(font

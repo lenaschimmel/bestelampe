@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "besteLampe! ABL Rigid Connector")
-		(date "2024-10-01")
-		(rev "1.0")
+		(date "2024-11-26")
+		(rev "1.1")
 		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
 		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
 		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
@@ -374,6 +374,18 @@
 		(uuid "49984fa2-ce15-4b39-a72a-41a1eac8f993")
 	)
 	(junction
+		(at 66.04 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d9c9e45-e5fd-4812-9fab-2a1f4890e9c4")
+	)
+	(junction
+		(at 66.04 59.055)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb96f7d7-f632-459c-bcea-b691fbab0a55")
+	)
+	(junction
 		(at 45.72 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -408,6 +420,16 @@
 			(type default)
 		)
 		(uuid "14915428-158f-490e-ab48-01ac9c1e1e6c")
+	)
+	(wire
+		(pts
+			(xy 66.04 35.56) (xy 66.04 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17a9d830-06f8-4ada-af74-751d79741406")
 	)
 	(wire
 		(pts
@@ -498,6 +520,16 @@
 			(type default)
 		)
 		(uuid "9068292b-bea1-4464-90ea-15458f01787f")
+	)
+	(wire
+		(pts
+			(xy 66.04 56.515) (xy 66.04 59.055)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9caf3fd7-724e-408b-9ea1-d1e05c07204e")
 	)
 	(wire
 		(pts

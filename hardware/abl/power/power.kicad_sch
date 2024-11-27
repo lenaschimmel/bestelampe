@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "besteLampe! ABL Power Module")
-		(date "2024-11-12")
-		(rev "1.2")
+		(date "2024-11-26")
+		(rev "1.2.1")
 		(comment 1 "See https://beste-lampe.de for the source and more information")
 		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
 		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
@@ -5765,7 +5765,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "17961c8d-1351-4faa-b85d-b2129b9c4348")
 		(property "Reference" "H3"
@@ -6226,7 +6226,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "2e964d33-9682-47ae-aa10-ca4465426108")
 		(property "Reference" "F1"
@@ -6763,7 +6763,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "4fed47b9-70cf-426f-a0fb-a079a6e73f02")
 		(property "Reference" "TP2"
 			(at 86.36 36.0679 0)
@@ -6839,7 +6839,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "502bc1e2-32ff-4bb8-a5e5-95a434335177")
 		(property "Reference" "H5"
 			(at 53.975 156.2099 0)
@@ -7046,7 +7046,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "62857690-b743-4da9-919a-9a070750849e")
 		(property "Reference" "H4"
@@ -7122,7 +7122,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "71ad18ad-1580-4b3f-9975-ef2f383a9b2f")
 		(property "Reference" "TP1"
@@ -7411,7 +7411,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "7d629a37-89b4-4b22-b1c3-1eb9fa7be1b7")
 		(property "Reference" "TH1"
@@ -8114,7 +8114,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a42ec55e-bd95-4e97-8606-a0b9108aa506")
 		(property "Reference" "J1"
 			(at 142.24 40.64 0)
@@ -8263,7 +8263,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a8286a26-9201-4cee-b6e7-fc3afd9d5711")
 		(property "Reference" "H1"
@@ -8537,7 +8537,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "ab6bb111-f723-440e-9e27-5a5198ab4209")
 		(property "Reference" "J2"
 			(at 156.21 40.64 0)
@@ -9030,6 +9030,15 @@
 				)
 			)
 		)
+		(property "LCSC Part" "C22394454"
+			(at 144.145 186.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "15caea30-5bca-4b29-822d-9b544bfd1d10")
 		)
@@ -9234,7 +9243,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c19e5072-c004-40fb-bee4-2b2dc32225f7")
 		(property "Reference" "TP3"
@@ -9945,7 +9954,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 54.6163 103.505 90)
 			(effects
 				(font
@@ -10017,6 +10026,15 @@
 			)
 		)
 		(property "Note" ""
+			(at 54.61 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C1525"
 			(at 54.61 107.95 0)
 			(effects
 				(font
@@ -10113,7 +10131,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "f362f727-8049-451c-a65a-5ba46dc1f5a3")
 		(property "Reference" "H2"
@@ -10190,7 +10208,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "ff65f0ef-5587-4065-9fd5-c348d7afe181")
 		(property "Reference" "PS2"
 			(at 232.41 33.02 0)

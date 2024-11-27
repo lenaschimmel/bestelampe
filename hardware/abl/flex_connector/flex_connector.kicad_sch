@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "besteLampe! ABL Flex Connector")
-		(date "2024-10-01")
-		(rev "1.0")
+		(date "2024-11-26")
+		(rev "1.1")
 		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
 		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
 		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
@@ -1375,6 +1375,18 @@
 		(uuid "18bc06c1-bc95-409e-b77e-32985d59bd93")
 	)
 	(junction
+		(at 73.66 46.355)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a8586df-b226-486d-bd9e-9477d0dd9a29")
+	)
+	(junction
+		(at 78.74 46.355)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "348611bc-fbdf-4afa-ba8b-29fd859f9db8")
+	)
+	(junction
 		(at 67.945 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1418,13 +1430,23 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 51.435) (xy 78.74 72.39)
+			(xy 78.74 43.18) (xy 78.74 46.355)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "027bd662-c501-4679-9180-1e27fe345c25")
+	)
+	(wire
+		(pts
+			(xy 78.74 46.355) (xy 78.74 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09110d1e-e795-4518-a907-1332d0ac2b53")
 	)
 	(wire
 		(pts
@@ -1498,7 +1520,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 51.435) (xy 73.66 92.71)
+			(xy 73.66 43.18) (xy 73.66 46.355)
 		)
 		(stroke
 			(width 0)
@@ -1608,6 +1630,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 46.355) (xy 73.66 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a6d4d0b-ce4c-41a7-b298-ce038ab5e223")
+	)
+	(wire
+		(pts
 			(xy 67.945 69.85) (xy 81.915 69.85)
 		)
 		(stroke
@@ -1625,6 +1657,16 @@
 			(type default)
 		)
 		(uuid "9e5d3cd4-4b5d-4247-b3f7-c1912219ce68")
+	)
+	(wire
+		(pts
+			(xy 73.66 46.355) (xy 78.74 46.355)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a475de55-d084-408c-8916-89529b89a5cd")
 	)
 	(wire
 		(pts
@@ -1776,6 +1818,16 @@
 		)
 		(uuid "ef1f6186-db45-49bd-9839-4ebda8ead8b0")
 	)
+	(text "Pin numbering of this schematics / symbols\ncontradicts that of the rigid PCBs, but \nthe result should be all right."
+		(exclude_from_sim no)
+		(at 68.58 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "caff53ef-1b10-4419-bd0a-d4a843bdd9c4")
+	)
 	(label "i2"
 		(at 58.42 97.79 0)
 		(fields_autoplaced yes)
@@ -1910,7 +1962,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 78.74 51.435 0)
+		(at 78.74 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1918,7 +1970,7 @@
 		(dnp no)
 		(uuid "229f24c5-eae7-43a1-a47d-8fca9a7ab457")
 		(property "Reference" "#PWR09"
-			(at 78.74 55.245 0)
+			(at 78.74 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1927,7 +1979,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 78.74 46.99 0)
+			(at 78.74 38.735 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1935,7 +1987,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 51.435 0)
+			(at 78.74 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1944,7 +1996,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 51.435 0)
+			(at 78.74 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1953,7 +2005,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 78.74 51.435 0)
+			(at 78.74 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2162,7 +2214,7 @@
 	)
 	(symbol
 		(lib_id "power:+4V")
-		(at 73.66 51.435 0)
+		(at 73.66 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2171,7 +2223,7 @@
 		(fields_autoplaced yes)
 		(uuid "b0b1bea0-b8e2-4220-8c88-5fa9d2cc1fa4")
 		(property "Reference" "#PWR010"
-			(at 73.66 55.245 0)
+			(at 73.66 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2180,7 +2232,7 @@
 			)
 		)
 		(property "Value" "+4V"
-			(at 73.66 46.99 0)
+			(at 73.66 38.735 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2188,7 +2240,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 51.435 0)
+			(at 73.66 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2197,7 +2249,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 51.435 0)
+			(at 73.66 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2206,7 +2258,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+4V\""
-			(at 73.66 51.435 0)
+			(at 73.66 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
