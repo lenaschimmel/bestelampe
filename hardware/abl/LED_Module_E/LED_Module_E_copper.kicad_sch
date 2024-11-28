@@ -5,9 +5,9 @@
 	(uuid "271a71a9-d0cc-4466-ad75-113fb931f3c8")
 	(paper "A4")
 	(title_block
-		(title "besteLampe! LED Module F")
-		(date "2024-11-12")
-		(rev "1.0")
+		(title "besteLampe! LED Module G")
+		(date "2024-11-28")
+		(rev "1.1")
 		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
 		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
 		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
@@ -3264,6 +3264,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C17491029"
+			(at 39.37 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "047af9ff-b55e-4fe0-aa74-8c3530ab96eb")
 		)
@@ -5325,6 +5334,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C20921043"
+			(at 39.37 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8f5fbcc6-7040-4c9f-aba9-926b97c32861")
 		)
@@ -5598,6 +5616,15 @@
 			)
 		)
 		(property "Color" "White 6500K"
+			(at 39.37 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17684059"
 			(at 39.37 63.5 0)
 			(effects
 				(font
@@ -6208,7 +6235,7 @@
 				)
 			)
 		)
-		(property "Value" "XEGAWT-H2-0000-000-00000UT227H "
+		(property "Value" "XEGAWT-H2-0000-000-00000UT227H"
 			(at 50.8 135.255 0)
 			(effects
 				(font
@@ -6295,6 +6322,15 @@
 			)
 		)
 		(property "Color" "White 2700K"
+			(at 39.37 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17584961"
 			(at 39.37 139.7 0)
 			(effects
 				(font
@@ -7125,6 +7161,15 @@
 			)
 		)
 		(property "Color" "Poly Amber"
+			(at 39.37 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C5438899"
 			(at 39.37 76.2 0)
 			(effects
 				(font
