@@ -2,16 +2,16 @@
 ### Adaptation
 This PCB design is based on the [Adafruit ESP32-C6 Feather - STEMMA QT PCB](https://github.com/adafruit/Adafruit-ESP32-C6-Feather-PCB).
 
-It is currently only a port of the EagleCAD schematic and board layout to KiCad.
+At the beginning, it was only a port of the EagleCAD schematic and board layout to KiCad.
 
-In future versions, it will deviate further from the original design, with these primary development goals:
- - Better signal integrity and EMI, by using:
-   - Proper ground planes, using 4 instead of 2 layers
-   - More ground pins
- - Reduced production cost by removing some components
-   - LiPo battery charger / monitor and connector
-   - NeoPixel
- - Changes to the power pins to better support different directions of power distribution (from USB to Wing, or from the Wing)
+With time, it will deviate further from the original design, with these primary development goals:
+ - [x] Better signal integrity and EMI, by using:
+   - [x] Proper ground planes, using 4 instead of 2 layers
+   - [x] More ground pins
+ - [ ] Reduced production cost by removing some components
+   - [ ] LiPo battery charger / monitor and connector
+   - [ ] NeoPixel
+ - [ ] Changes to the power pins to better support different directions of power distribution (from USB to Wing, or from the Wing)
 
 <img src="assets/5933.jpg?raw=true" width="500px">
 
