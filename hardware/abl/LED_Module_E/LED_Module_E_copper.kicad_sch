@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "besteLampe! LED Module G")
-		(date "2024-11-28")
+		(date "2024-12-01")
 		(rev "1.1")
 		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
 		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
@@ -2576,7 +2576,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TMP1075DGK"
+		(property "Value" "TMP1075DSGR"
 			(at 202.8541 53.34 0)
 			(effects
 				(font
@@ -2621,7 +2621,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TMP1075DGKR"
+		(property "Manufacturer_Part_Number" "TMP1075DSGR"
 			(at 200.66 60.96 0)
 			(effects
 				(font
@@ -2630,7 +2630,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C2864807"
+		(property "LCSC Part #" "C2870250"
 			(at 200.66 60.96 0)
 			(effects
 				(font
@@ -3178,7 +3178,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_PCBA"
 			(at 58.42 124.46 0)
 			(effects
 				(font
@@ -3319,7 +3319,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_PCBA"
 			(at 58.42 86.36 0)
 			(effects
 				(font
@@ -3609,7 +3609,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_PCBA"
 			(at 58.42 99.06 0)
 			(effects
 				(font
@@ -4037,7 +4037,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_PCBA"
 			(at 58.42 22.86 0)
 			(effects
 				(font
@@ -5248,7 +5248,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_PCBA"
 			(at 58.42 35.56 0)
 			(effects
 				(font
@@ -5538,7 +5538,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_PCBA"
 			(at 58.42 60.96 0)
 			(effects
 				(font
@@ -5962,7 +5962,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_PCBA"
 			(at 58.42 48.26 0)
 			(effects
 				(font
@@ -6103,7 +6103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_PCBA"
 			(at 58.42 111.76 0)
 			(effects
 				(font
@@ -6244,7 +6244,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_PCBA"
 			(at 58.42 137.16 0)
 			(effects
 				(font
@@ -7083,7 +7083,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_clean"
+		(property "Footprint" "Cree XLAMP XE-G LED XEGAVT-H0:XEGAVTH_PCBA"
 			(at 58.42 73.66 0)
 			(effects
 				(font

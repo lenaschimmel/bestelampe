@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "besteLampe! LED Module E")
-		(date "2024-11-26")
+		(date "2024-12-01")
 		(rev "3.0")
 		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
 		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
@@ -8050,7 +8050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 213.36 144.145 0)
 			(effects
 				(font
@@ -8281,7 +8281,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 133.35 133.35 0)
 			(effects
 				(font
@@ -8290,7 +8290,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 133.35 133.35 0)
 			(effects
 				(font
@@ -8299,7 +8299,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 133.35 133.35 0)
 			(effects
 				(font
@@ -8400,7 +8400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-BE3"
 			(at 95.25 71.12 0)
 			(effects
 				(font
@@ -8409,7 +8409,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C145273"
+		(property "LCSC Part #" "C6295864"
 			(at 95.25 71.12 0)
 			(effects
 				(font
@@ -8418,7 +8418,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Mosfet"
+		(property "Purpose" "MOSFET transistor"
 			(at 95.25 71.12 0)
 			(effects
 				(font
@@ -8531,7 +8531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-BE3"
 			(at 95.25 134.62 0)
 			(effects
 				(font
@@ -8540,7 +8540,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C145273"
+		(property "LCSC Part #" "C6295864"
 			(at 95.25 134.62 0)
 			(effects
 				(font
@@ -8549,7 +8549,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Mosfet"
+		(property "Purpose" "MOSFET transistor"
 			(at 95.25 134.62 0)
 			(effects
 				(font
@@ -8660,7 +8660,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 135.89 133.35 0)
 			(effects
 				(font
@@ -8669,7 +8669,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 135.89 133.35 0)
 			(effects
 				(font
@@ -8678,7 +8678,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 135.89 133.35 0)
 			(effects
 				(font
@@ -9002,7 +9002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 184.785 121.92 0)
 			(effects
 				(font
@@ -9011,7 +9011,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 184.785 121.92 0)
 			(effects
 				(font
@@ -9020,7 +9020,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 184.785 121.92 0)
 			(effects
 				(font
@@ -9456,7 +9456,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 146.05 133.35 0)
 			(effects
 				(font
@@ -9465,7 +9465,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 146.05 133.35 0)
 			(effects
 				(font
@@ -9474,7 +9474,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 146.05 133.35 0)
 			(effects
 				(font
@@ -9801,7 +9801,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 184.785 116.84 0)
 			(effects
 				(font
@@ -9810,7 +9810,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 184.785 116.84 0)
 			(effects
 				(font
@@ -9819,7 +9819,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 184.785 116.84 0)
 			(effects
 				(font
@@ -9990,6 +9990,15 @@
 				(hide yes)
 			)
 		)
+		(property "Purpose" "Logic OR gate"
+			(at 189.23 146.685 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "912ec88b-57ca-43b9-b719-52abf696dd97")
 		)
@@ -10021,7 +10030,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "3a8db4b9-ba0f-4d9b-a2f9-0e6e684e4e6b")
 		(property "Reference" "H7"
 			(at 49.53 179.07 0)
@@ -10922,7 +10931,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 213.36 149.225 0)
 			(effects
 				(font
@@ -11021,6 +11030,15 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "SN74AHCT245PWR"
+			(at 163.83 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purpose" "Bus transceivers / line driver"
 			(at 163.83 121.92 0)
 			(effects
 				(font
@@ -11643,7 +11661,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6987767c-93a2-4c46-84c4-0579bcce844d")
 		(property "Reference" "H8"
 			(at 55.245 179.07 0)
@@ -11996,7 +12014,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 184.785 124.46 0)
 			(effects
 				(font
@@ -12005,7 +12023,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 184.785 124.46 0)
 			(effects
 				(font
@@ -12014,7 +12032,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 184.785 124.46 0)
 			(effects
 				(font
@@ -12386,7 +12404,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Flex connector"
+		(property "Purpose" "Flex cable connector"
 			(at 246.38 93.98 90)
 			(effects
 				(font
@@ -12653,7 +12671,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "CL05B104KO5NNNC"
 			(at 184.15 30.48 0)
 			(effects
 				(font
@@ -12836,7 +12854,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 184.785 114.3 0)
 			(effects
 				(font
@@ -12845,7 +12863,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 184.785 114.3 0)
 			(effects
 				(font
@@ -12854,7 +12872,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 184.785 114.3 0)
 			(effects
 				(font
@@ -12953,7 +12971,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 128.27 133.35 0)
 			(effects
 				(font
@@ -12962,7 +12980,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 128.27 133.35 0)
 			(effects
 				(font
@@ -12971,7 +12989,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 128.27 133.35 0)
 			(effects
 				(font
@@ -13072,7 +13090,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-BE3"
 			(at 95.25 83.82 0)
 			(effects
 				(font
@@ -13081,7 +13099,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C145273"
+		(property "LCSC Part #" "C6295864"
 			(at 95.25 83.82 0)
 			(effects
 				(font
@@ -13090,7 +13108,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Mosfet"
+		(property "Purpose" "MOSFET transistor"
 			(at 95.25 83.82 0)
 			(effects
 				(font
@@ -13473,7 +13491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-BE3"
 			(at 95.25 33.02 0)
 			(effects
 				(font
@@ -13482,7 +13500,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C145273"
+		(property "LCSC Part #" "C6295864"
 			(at 95.25 33.02 0)
 			(effects
 				(font
@@ -13491,7 +13509,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Mosfet"
+		(property "Purpose" "MOSFET transistor"
 			(at 97.155 17.78 0)
 			(effects
 				(font
@@ -13780,7 +13798,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 140.97 133.35 0)
 			(effects
 				(font
@@ -13789,7 +13807,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 140.97 133.35 0)
 			(effects
 				(font
@@ -13798,7 +13816,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 140.97 133.35 0)
 			(effects
 				(font
@@ -13898,7 +13916,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 184.785 111.76 0)
 			(effects
 				(font
@@ -13907,7 +13925,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 184.785 111.76 0)
 			(effects
 				(font
@@ -13916,7 +13934,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 184.785 111.76 0)
 			(effects
 				(font
@@ -14131,7 +14149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-BE3"
 			(at 95.25 45.72 0)
 			(effects
 				(font
@@ -14140,7 +14158,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C145273"
+		(property "LCSC Part #" "C6295864"
 			(at 95.25 45.72 0)
 			(effects
 				(font
@@ -14149,7 +14167,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Mosfet"
+		(property "Purpose" "MOSFET transistor"
 			(at 95.25 45.72 0)
 			(effects
 				(font
@@ -14599,7 +14617,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 130.81 133.35 0)
 			(effects
 				(font
@@ -14608,7 +14626,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 130.81 133.35 0)
 			(effects
 				(font
@@ -14617,7 +14635,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 130.81 133.35 0)
 			(effects
 				(font
@@ -14716,7 +14734,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 138.43 133.35 0)
 			(effects
 				(font
@@ -14725,7 +14743,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 138.43 133.35 0)
 			(effects
 				(font
@@ -14734,7 +14752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 138.43 133.35 0)
 			(effects
 				(font
@@ -14835,7 +14853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-BE3"
 			(at 95.25 96.52 0)
 			(effects
 				(font
@@ -14844,7 +14862,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C145273"
+		(property "LCSC Part #" "C6295864"
 			(at 95.25 96.52 0)
 			(effects
 				(font
@@ -14853,7 +14871,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Mosfet"
+		(property "Purpose" "MOSFET transistor"
 			(at 95.25 96.52 0)
 			(effects
 				(font
@@ -15032,7 +15050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-BE3"
 			(at 95.25 58.42 0)
 			(effects
 				(font
@@ -15041,7 +15059,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C145273"
+		(property "LCSC Part #" "C6295864"
 			(at 95.25 58.42 0)
 			(effects
 				(font
@@ -15050,7 +15068,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Mosfet"
+		(property "Purpose" "MOSFET transistor"
 			(at 95.25 58.42 0)
 			(effects
 				(font
@@ -15359,7 +15377,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-BE3"
 			(at 95.25 109.22 0)
 			(effects
 				(font
@@ -15368,7 +15386,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C145273"
+		(property "LCSC Part #" "C6295864"
 			(at 95.25 109.22 0)
 			(effects
 				(font
@@ -15377,7 +15395,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Mosfet"
+		(property "Purpose" "MOSFET transistor"
 			(at 95.25 109.22 0)
 			(effects
 				(font
@@ -15666,7 +15684,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 184.785 109.22 0)
 			(effects
 				(font
@@ -15675,7 +15693,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 184.785 109.22 0)
 			(effects
 				(font
@@ -15684,7 +15702,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 184.785 109.22 0)
 			(effects
 				(font
@@ -15849,7 +15867,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 143.51 133.35 0)
 			(effects
 				(font
@@ -15858,7 +15876,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 143.51 133.35 0)
 			(effects
 				(font
@@ -15867,7 +15885,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 143.51 133.35 0)
 			(effects
 				(font
@@ -16290,7 +16308,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-BE3"
 			(at 95.25 147.32 0)
 			(effects
 				(font
@@ -16299,7 +16317,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C145273"
+		(property "LCSC Part #" "C6295864"
 			(at 95.25 147.32 0)
 			(effects
 				(font
@@ -16308,7 +16326,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Mosfet"
+		(property "Purpose" "MOSFET transistor"
 			(at 95.25 147.32 0)
 			(effects
 				(font
@@ -16420,7 +16438,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 184.785 119.38 0)
 			(effects
 				(font
@@ -16429,7 +16447,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 184.785 119.38 0)
 			(effects
 				(font
@@ -16438,7 +16456,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 184.785 119.38 0)
 			(effects
 				(font
@@ -16983,7 +17001,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "CL05B104KO5NNNC"
 			(at 168.275 99.06 0)
 			(effects
 				(font
@@ -17221,7 +17239,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Rigid connector"
+		(property "Purpose" "Rigid board connector"
 			(at 248.285 19.05 0)
 			(effects
 				(font
@@ -17231,6 +17249,15 @@
 			)
 		)
 		(property "Note" ""
+			(at 257.81 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C22394454"
 			(at 257.81 29.21 0)
 			(effects
 				(font
@@ -17400,7 +17427,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "CL05B104KO5NNNC"
 			(at 185.42 135.255 0)
 			(effects
 				(font
@@ -18080,7 +18107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" ""
+		(property "Manufacturer_Part_Number" "0402WGF4701TCE"
 			(at 184.785 127 0)
 			(effects
 				(font
@@ -18089,7 +18116,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25900"
 			(at 184.785 127 0)
 			(effects
 				(font
@@ -18098,7 +18125,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Pullup"
+		(property "Purpose" "Pullup resistor"
 			(at 184.785 127 0)
 			(effects
 				(font
@@ -18264,7 +18291,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SI3456DDV-T1-GE3"
+		(property "Manufacturer_Part_Number" "SI3456DDV-T1-BE3"
 			(at 95.25 121.92 0)
 			(effects
 				(font
@@ -18273,7 +18300,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C145273"
+		(property "LCSC Part #" "C6295864"
 			(at 95.25 121.92 0)
 			(effects
 				(font
@@ -18282,7 +18309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Mosfet"
+		(property "Purpose" "MOSFET transistor"
 			(at 95.25 121.92 0)
 			(effects
 				(font

@@ -5,15 +5,20 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 [besteLampe!](https://lenaschimmel.de/besteLampe!) © 2024 by [Lena Schimmel](mailto:mail@lenaschimmel.de) is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
 -->
 
-## LED Module E
-This LED module features 10 small, high-powered Cree XLamp Element LEDs places close to one another along an edge, and some of the electronics needed to power them.
+## LED Module E + G
+The former LED Module E has been split into two separate PCBs:
+ - Module E (classic 4--layer PCB with driver logic, MOSFETs and series resistor)
+ - Module G (1-layer copper-core PCB with actual LEDs and temperature sensor)
 
-### Important parts
- - CD74HCT244 as an 8-channel driver for the MOSFETs
- - optional pull-down resistors for the inputs and/or outputs of the CD74HCT244
- - 10 MOSFETs, type Si3456DDV
+In conjuction, they feature 10 small, high-powered Cree XLamp Element LEDs places close to one another along an edge, and some of the electronics needed to power them.
+
+The split into separate PCBs is very recent, and the files have not yet been completely reorganized. Module G is still in this directory, and its files are still named "LED_Module_E_copper". They will move into their own directory soon.
+
+### Important parts on Module E
+ - SN74AHCT245PWR as an 8-channel driver for the MOSFETs
+ - pull-down resistors for the inputs and/or outputs of the SN74AHCT245PWR
+ - 10 MOSFETs, type SI3456DDV-T1-BE3
  - large series resistors
- - temperature sensor TMP1075 DSG/WSON
  - small EPROM for identification
 
 ### Relation to previous LED modules
