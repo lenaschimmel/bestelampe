@@ -14,12 +14,16 @@ In conjuction, they feature 10 small, high-powered Cree XLamp Element LEDs place
 
 The split into separate PCBs is very recent, and the files have not yet been completely reorganized. Module G is still in this directory, and its files are still named "LED_Module_E_copper". They will move into their own directory soon.
 
-### Important parts on Module E
- - SN74AHCT245PWR as an 8-channel driver for the MOSFETs
- - pull-down resistors for the inputs and/or outputs of the SN74AHCT245PWR
- - 10 MOSFETs, type SI3456DDV-T1-BE3
- - large series resistors
- - small EPROM for identification
+### Parts on Module E
+| **Part**                      | **Price (Euro)** | **Comment**                                    | **Count in simple lamp** | **Count in extended lamp** |
+|-------------------------------|------------------|------------------------------------------------|--------------------------|----------------------------|
+| Main Module v1.1              | 10.80            | incl. SMD and through-hole components          | 1                        | 1                          |
+| Power supply                  | 14.00            | 15W, input 220-240V AC, output 24V DC          | 1                        | 1                          |
+| Presence sensor               | 3.00             |                                                | 1                        | 1                          |
+| Extension module              | 13.00            | very rough estimate                            | 0                        | 1                          |
+| LED module                    | 5.70             | Assuming RGBCCT and Amber LEDs, 20 pieces each | 1                        | 4                          |
+| **Sum: Simple besteLampe!**   | **33.50**        | Enclosure not included                         |                          |                            |
+| **Sum: Extended besteLampe!** | **63.60**        | Enclosure not included                         |                          |                            |
 
 ### Relation to previous LED modules
 Version 1 of this module was partly based on the failed [LED Module D](../../ledmodule/LED_Module_D/), but with a lot of changes:
