@@ -29,6 +29,11 @@ The split into separate PCBs is very recent, and the files have not yet been com
 |   U3                                                                      |   24AA025E48T-I/OT  |   https://www.lcsc.com/datasheet/lcsc_datasheet_1810121540_Microchip-Tech-24AA025E48T-I-OT_C129895.pdf  |   Package_TO_SOT_SMD:SOT-23-6            |   1    |        |   24AA025E48T-I/OT          |   C129895      |   EEPROM                          |
 |   U4                                                                      |   74LVC1G32         |   http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf                                                        |   Package_TO_SOT_SMD:SOT-353_SC-70-5     |   1    |        |   74LVC1G32SE               |   C460530      |   Logic OR gate                   |
 
+### Parts on Module G
+This module only contains the 10 LEDs and a temperature sensor:
+ - 10x CREE XLamp Element G in 8 different colors ([Datasheet](https://www.mouser.de/pdfDocs/XLamp-XE-G.pdf))
+ - 1x TMP1075 Temperature sensor ([Datasheet](https://www.ti.com/lit/ds/symlink/tmp1075.pdf))
+
 ### Relation to previous LED modules
 Version 1 of this module was partly based on the failed [LED Module D](../../ledmodule/LED_Module_D/), but with a lot of changes:
 
