@@ -28,6 +28,24 @@ One thing to watch for is that, like the C3, the C6 does not have native USB. It
 
 Another thing to be aware of, is  the ESP32-C6 does not have as many GPIO as the ESP32-S2 or ESP32-S3, so A2 is the same GPIO pin as IO6 and A3 is the same pin as IO5. However, this gives it the most compatibility with our existing FeatherWings.
 
+### included components (BOM)
+|   Part Name             |   Designator         |   Count  |
+|-------------------------|----------------------|----------|
+|   KH-2.54FH-1X16P-H8.5  |   JP1                |   1      |
+|   CL21A106KAYNNNE       |   C1,C2,C6,C7,C8,C9  |   7      |
+|   0603WAF5101T5E        |   R1,R10,R5,R8       |   5      |
+|   SK34WA                |   D4                 |   1      |
+|   IN-S63AT5UW           |   D3                 |   1      |
+|   KH-2.54FH-1X10P-H8.5  |   J1,J2              |   2      |
+|   KH-2.54FH-1X12P-H8.5  |   JP3                |   1      |
+|   KMR211NGLFS           |   SW1,SW2            |   2      |
+|   AP2112K-3.3TRG1       |   U2                 |   1      |
+|   CL10A105KB8NNNC       |   C10,C4             |   3      |
+|   ESP32-C6-MINI-1-N4    |   U1                 |   1      |
+|   0603WAF1003T5E        |   R12,R6,R7          |   4      |
+|   USB-TYPE-C-019        |   X3                 |   1      |
+|   DMG3415U              |   Q3                 |   1      |
+
 ### License
 Adafruit invests time and resources providing this open source design, please support Adafruit and open-source hardware by purchasing products from [Adafruit](https://www.adafruit.com)!
 
