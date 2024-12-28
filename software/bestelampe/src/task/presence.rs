@@ -19,6 +19,7 @@ use std::time::Duration;
 use std::sync::{Arc, RwLock};
 
 use enumset::EnumSet;
+use esp_idf_hal::rmt::{RmtChannel, CHANNEL2};
 use esp_idf_hal::{
     prelude::*,
     delay::TickType,
@@ -27,7 +28,95 @@ use esp_idf_hal::{
     uart::{UART1, config::*},
 };
 
-use mr24hpc1::{mr_parser, Frame, HumanPresence};
+use mr24hpc1::{mr_parser, Frame, HumanPresence, Motion};
+
+use esp_idf_hal::{
+    delay::FreeRtos,
+    rmt::{
+        FixedLengthSignal, PinState, Pulse, PulseTicks, Receive, RmtReceiveConfig,
+        RmtTransmitConfig, RxRmtDriver, TxRmtDriver,
+    },
+};
+
+
+
+#[named]
+pub fn test_presence_sensor_rmt(
+    pin_rx: AnyIOPin,
+    pin_tx: AnyIOPin,
+    rmt_channel: CHANNEL2, 
+    light_brightness_target: Arc<RwLock<f32>>,
+) ->  Result<()>  {
+        // Oszi-Messung vom Präsenzsensor:
+        // Bitlänge 8,7µs
+        // Burst-Länge 860µs
+        // Also ca. 100 Roh-Bits = 10 Byte.
+
+        let config = RmtReceiveConfig::new()
+            .idle_threshold(700u16) // A full byte of 0s is just 311 ticks
+            .clock_divider(20) // should be 250ns
+            .filter_ticks_thresh(8) // equals 2µs < 1/4 of a bit
+        ;
+         
+        let mut rx = RxRmtDriver::new(
+            rmt_channel,
+            pin_rx,
+            &config,
+            250,
+        )?;
+
+        rx.start()?;
+
+        let mut pulses = [(Pulse::zero(), Pulse::zero()); 250];
+        let _ = std::thread::Builder::new()
+            .stack_size(10000)
+            .spawn(move || loop {
+
+                // See sdkconfig.defaults to determine the tick time value ( default is one tick = 10 milliseconds)
+                // Set ticks_to_wait to 0 for non-blocking
+                let receive = rx.receive(&mut pulses, 10000).unwrap();
+
+                if let Receive::Read(length) = receive {
+                    let pulses = &pulses[..length];
+
+                    for (pulse0, pulse1) in pulses {
+                        println!("0={pulse0:?}, 1={pulse1:?}");
+                    }
+                }
+
+                // Example output from Presence Sensor:
+                // 0=Pulse { ticks: PulseTicks(34), pin_state: Low }, 1=Pulse { ticks: PulseTicks(70), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(69), pin_state: Low }, 1=Pulse { ticks: PulseTicks(35), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(34), pin_state: Low }, 1=Pulse { ticks: PulseTicks(35), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(35), pin_state: Low }, 1=Pulse { ticks: PulseTicks(34), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(35), pin_state: Low }, 1=Pulse { ticks: PulseTicks(34), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(70), pin_state: Low }, 1=Pulse { ticks: PulseTicks(69), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(35), pin_state: Low }, 1=Pulse { ticks: PulseTicks(34), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(35), pin_state: Low }, 1=Pulse { ticks: PulseTicks(35), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(277), pin_state: Low }, 1=Pulse { ticks: PulseTicks(69), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(35), pin_state: Low }, 1=Pulse { ticks: PulseTicks(69), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(208), pin_state: Low }, 1=Pulse { ticks: PulseTicks(34), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(312), pin_state: Low }, 1=Pulse { ticks: PulseTicks(35), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(34), pin_state: Low }, 1=Pulse { ticks: PulseTicks(35), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(242), pin_state: Low }, 1=Pulse { ticks: PulseTicks(35), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(35), pin_state: Low }, 1=Pulse { ticks: PulseTicks(34), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(243), pin_state: Low }, 1=Pulse { ticks: PulseTicks(34), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(35), pin_state: Low }, 1=Pulse { ticks: PulseTicks(35), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(104), pin_state: Low }, 1=Pulse { ticks: PulseTicks(69), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(69), pin_state: Low }, 1=Pulse { ticks: PulseTicks(35), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(104), pin_state: Low }, 1=Pulse { ticks: PulseTicks(34), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(35), pin_state: Low }, 1=Pulse { ticks: PulseTicks(35), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(34), pin_state: Low }, 1=Pulse { ticks: PulseTicks(35), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(34), pin_state: Low }, 1=Pulse { ticks: PulseTicks(35), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(35), pin_state: Low }, 1=Pulse { ticks: PulseTicks(69), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(139), pin_state: Low }, 1=Pulse { ticks: PulseTicks(34), pin_state: High }
+                // 0=Pulse { ticks: PulseTicks(35), pin_state: Low }, 1=Pulse { ticks: PulseTicks(0), pin_state: High }
+
+                FreeRtos::delay_ms(5);
+            });
+
+    Ok(())
+}
 
 #[named]
 pub fn test_presence_sensor(
@@ -80,16 +169,16 @@ pub fn test_presence_sensor(
                     info!(target: function_name!(), "Parsed presence data: {:?}", frame);
                     match frame {
                         Frame::HumanPresenceReport(HumanPresence::BodyMovementParameter(movement)) => {
-                            println!("Movement: {:?}", movement);
+                            info!(target: function_name!(), "Movement: {:?}", movement);
                            // *light_brightness_target.write().unwrap() = movement as f32;
                         },
                         Frame::HumanPresenceReport(HumanPresence::MotionInformation(motion)) => {
-                            println!("Motion: {:?}", motion);
-                            // *light_brightness_target.write().unwrap() = match motion {
-                            //     Motion::None => 0.0,
-                            //     Motion::Motionless => 0.5,
-                            //     Motion::Active => 1.5,
-                            // }
+                            info!(target: function_name!(), "Motion: {:?}", motion);
+                            *light_brightness_target.write().unwrap() = match motion {
+                                Motion::None => 0.2,
+                                Motion::Motionless => 0.8,
+                                Motion::Active => 2.0,
+                            }
                         },
                         _ => {
 
@@ -106,7 +195,7 @@ pub fn test_presence_sensor(
         } else {
             cycles_without_data += 1;
             if cycles_without_data > 100 && cycles_without_data % 100 == 0 {
-                warn!("Had {} cycles without any data.", cycles_without_data);
+                warn!(target: function_name!(), "Had {} cycles without any data.", cycles_without_data);
             }
         }
     }

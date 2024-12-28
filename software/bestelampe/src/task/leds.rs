@@ -18,9 +18,7 @@ use crate::prelude::*;
 use std::sync::{Arc, RwLock};
 
 use esp_idf_hal::{
-    prelude::*,
-    gpio::AnyIOPin,
-    ledc::{LedcDriver, LedcTimerDriver, LEDC, config::TimerConfig},
+    gpio::{AnyIOPin, PinDriver}, ledc::{config::TimerConfig, LedcDriver, LedcTimerDriver, LEDC}, prelude::*
 };
 
 use prisma::Lerp;
@@ -34,8 +32,10 @@ pub fn test_leds(
     pin_g:  AnyIOPin,
     pin_b:  AnyIOPin,
     pin_cw: AnyIOPin,
+    pin_nw: AnyIOPin,
     pin_ww: AnyIOPin,
     pin_a:  AnyIOPin,
+    pin_pa:  AnyIOPin,
     light_temperature_target: Arc<RwLock<f32>>,
     light_brightness_target: Arc<RwLock<f32>>,
     light_dim_speed: Arc<RwLock<f32>>,
@@ -53,10 +53,15 @@ pub fn test_leds(
     let driver_2 = LedcDriver::new(ledc.channel2, &timer_driver, pin_b ).expect("Get LEDC driver.");
     let driver_3 = LedcDriver::new(ledc.channel3, &timer_driver, pin_cw).expect("Get LEDC driver.");
     let driver_4 = LedcDriver::new(ledc.channel4, &timer_driver, pin_ww).expect("Get LEDC driver.");
-    let driver_5 = LedcDriver::new(ledc.channel5, &timer_driver, pin_a ).expect("Get LEDC driver.");
+    let driver_5 = LedcDriver::new(ledc.channel5, &timer_driver, pin_pa ).expect("Get LEDC driver.");
+
+    let mut unused_pin_1 = PinDriver::output(pin_nw).unwrap();
+    let mut unused_pin_2 = PinDriver::output(pin_a).unwrap();
+    unused_pin_1.set_low();
+    unused_pin_2.set_low();
 
     info!(target: function_name!(), "Before LED main loop...");
-    std::thread::sleep(core::time::Duration::from_millis(50));
+    std::thread::sleep(core::time::Duration::from_millis(500));
     
     let mut pwm = Pwm::new(
         driver_0,
@@ -77,7 +82,7 @@ pub fn test_leds(
 
     let mut count: i32 = 0;
     loop {
-        std::thread::sleep(core::time::Duration::from_millis(10));
+        std::thread::sleep(core::time::Duration::from_millis(5));
         count += 1;
         
         {
@@ -89,9 +94,9 @@ pub fn test_leds(
         brightness = brightness.lerp(&target_brightness, dim_speed);
         temperature = temperature.lerp(&target_temperature, dim_speed);
 
-        if count % 40 == 0 {
-            info!(target: function_name!(), "Current temp: {}, brightness: {}", temperature, brightness);
-        }
+        // if count % 1000 == 0 {
+        //     info!(target: function_name!(), "Current temp: {}, brightness: {}", temperature, brightness);
+        // }
 
         pwm.set_temperature_and_brightness(temperature, brightness)?;
     }

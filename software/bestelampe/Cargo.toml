@@ -27,6 +27,7 @@ embassy = ["esp-idf-svc/embassy-sync", "esp-idf-svc/critical-section", "esp-idf-
 log = { version = "0.4.20", features = ["max_level_debug", "release_max_level_info"] }
 esp-idf-svc = { version = "0.48.0", default-features = true }
 embedded-svc = { version = "0.26.4" }
+embedded-hal-bus = "0.1.0"
 futures = "0.3.29"
 anyhow = "1.0.76"
 esp-idf-hal = "0.43.0"
@@ -52,6 +53,17 @@ nom = "7.1.3"
 hex-literal = "0.4.1"
 mr24hpc1 = { path = "../mr24hpc1" }
 lm75 = "1.0.0"
+#ina219_rs = { git = "https://github.com/maxwen/ina219", branch = "master", version = "0.5.1"}
+ina219 = { git = "https://github.com/scttnlsn/ina219", branch = "master", version = "0.2.0"}
+ssd1306 = "0.9.0"
+embedded-graphics = "0.8.1"
+tinyqoi = "0.2.0"
+port-expander = "0.6.3"
+embedded-hal = "1.0.0"
+embedded-io-adapters = {version = "0.6.1", features = ["std"]}
+nmea-parser = "0.11.0"
+microchip-24aa02e48 = "0.2.0"
+
 
 [build-dependencies]
 embuild = "0.31.3"

@@ -21,3 +21,5 @@ pub mod presence;
 pub mod leds;
 pub mod ota;
 pub mod server;
+pub mod i2c;
+pub mod uart;

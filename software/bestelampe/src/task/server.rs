@@ -51,6 +51,9 @@ pub fn run_server(
     light_brightness_target: Arc<RwLock<f32>>,
     light_dim_speed: Arc<RwLock<f32>>,
     update_requested: Arc<RwLock<bool>>,
+    thermal: Arc<RwLock<f32>>, 
+    voltage: Arc<RwLock<f32>>, 
+    current: Arc<RwLock<f32>>,
 ) -> Result<()> {
     let server_configuration = esp_idf_svc::http::server::Configuration {
         stack_size: STACK_SIZE,
@@ -61,6 +64,16 @@ pub fn run_server(
 
     server.fn_handler::<anyhow::Error, _>("/", Method::Get, |req| {
         req.into_ok_response()?.write_all(INDEX_HTML.as_bytes()).map(|_| ())?;
+        return Ok(());
+    })?;
+
+    server.fn_handler::<anyhow::Error, _>("/values", Method::Get, |req| {
+        let mut resp = req.into_ok_response()?;
+        let t = *thermal.read().unwrap();
+        let u = *voltage.read().unwrap();
+        let i = *current.read().unwrap();
+        let p = u * i;
+        write!(resp, "Current values:\nTemperature: {} deg C, Voltage: {} V, Current: {} A, Power: {} W", t, u, i, p)?;
         return Ok(());
     })?;
 
