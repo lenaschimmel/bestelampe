@@ -6,6 +6,8 @@ export component AppWindow inherits Window {
 
     callback request-increase-value();
 
+    callback color-clicked();
+
     pure callback render_image(length, length) ->  image;
 
     preferred-height: 600px;
@@ -30,6 +32,14 @@ export component AppWindow inherits Window {
                 height: 100%;
                 image-fit: contain;
                 source: root.render_image(image-container.width, image-container.height);
+            }
+
+            area := TouchArea {
+                width: parent.width;
+                height: parent.height;
+                clicked => {
+                    root.color-clicked();
+                }
             }
         }
 

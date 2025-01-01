@@ -2,6 +2,11 @@
 #target = "riscv32imac-esp-espidf"
 target = "xtensa-esp32-espidf"
 
+# None of those work:
+#target_feather = "sparkfun"
+#rustc-cfg = ['target_feather = "sparkfun"']
+#rustflags = "--cfg target_feather=sparkfun"
+
 [target.riscv32imac-esp-espidf]
 linker = "ldproxy"
 # runner = "espflash --monitor" # Select this runner for espflash v1.x.x

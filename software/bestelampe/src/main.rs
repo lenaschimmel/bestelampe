@@ -73,6 +73,48 @@ fn main() -> ! {
     let _light_sensor_thread = thread::spawn(|| {
         test_light_sensor(i2c, peripherals.pins.gpio6.into(), peripherals.pins.gpio7.into()).unwrap_or_default();
         error!(target: function_name!(), "Light sensor has ended :(");
+    // Pin configuration
+    
+
+
+    // I2C
+    // GPIO 20 is "Neopixel_i2c_power" on Adafruit Feather ESP32-C6 
+    #[cfg(feature = "feather-adafruit")] {
+        let pin_i2c_pwr : AnyIOPin = peripherals.pins.gpio20.into();
+        let mut out_i2c_pwr = PinDriver::output(pin_i2c_pwr).unwrap();
+        out_i2c_pwr.set_high();
+    }
+
+    let pin_cfg_scl: AnyIOPin = 
+        if cfg!(feature = "feather-adafruit") { 
+            peripherals.pins.gpio18.into() 
+        } else /*if cfg!(feature = "feather-sparkfun")*/ {
+            peripherals.pins.gpio7.into()
+        };
+
+    let pin_cfg_sda: AnyIOPin = 
+        if cfg!(feature = "feather-adafruit") { 
+            peripherals.pins.gpio19.into() 
+        } else /*if cfg!(feature = "feather-sparkfun")*/ {
+            peripherals.pins.gpio6.into()
+        };
+
+    let thermal_for_i2c = thermal.clone();
+    let voltage_for_i2c = voltage.clone();
+    let current_for_i2c = current.clone();
+    let time_offset_for_i2c = time_offset.clone();
+    let i2c = peripherals.i2c0;
+    let _i2c_thread = thread::spawn(|| {
+        test_i2c(
+            i2c, 
+            pin_cfg_scl, 
+            pin_cfg_sda, 
+            thermal_for_i2c, 
+            voltage_for_i2c, 
+            current_for_i2c,
+            time_offset_for_i2c,
+        ).unwrap_or_default();
+        error!(target: function_name!(), "I2C thread has ended :(");
     });
 
     // Buttons
@@ -110,14 +152,38 @@ fn main() -> ! {
     let light_dim_speed_clone = light_dim_speed.clone();
     let _led_thread = thread::spawn(|| {
         let ledc = peripherals.ledc;
-        let pin_r  : AnyIOPin = peripherals.pins.gpio10.into();
-        let pin_g  : AnyIOPin = peripherals.pins.gpio11.into();
-        let pin_b  : AnyIOPin = peripherals.pins.gpio18.into();
-        let pin_cw : AnyIOPin = peripherals.pins.gpio19.into();
-        let pin_ww : AnyIOPin = peripherals.pins.gpio20.into();
-        let pin_a  : AnyIOPin = peripherals.pins.gpio21.into();
-    
-        test_leds(ledc, pin_r, pin_g, pin_b, pin_cw, pin_ww, pin_a, light_temperature_target_clone, light_brightness_target_clone, light_dim_speed_clone).expect("LEDs should just work.");
+
+        if cfg!(feature = "feather-adafruit") { 
+            test_leds(
+                ledc,
+                peripherals.pins.gpio22.into(),
+                peripherals.pins.gpio2.into(),
+                peripherals.pins.gpio6.into(),
+                peripherals.pins.gpio5.into(),
+                peripherals.pins.gpio21.into(),
+                peripherals.pins.gpio1.into(),
+                peripherals.pins.gpio4.into(),
+                peripherals.pins.gpio3.into(),
+                light_temperature_target_clone,
+                light_brightness_target_clone,
+                light_dim_speed_clone
+            ).expect("LEDs should just work.");
+        } else /*if cfg!(feature = "feather-sparkfun")*/ {
+            test_leds(
+                ledc,
+                peripherals.pins.gpio20.into(),
+                peripherals.pins.gpio5.into(),
+                peripherals.pins.gpio2.into(),
+                peripherals.pins.gpio3.into(),
+                peripherals.pins.gpio19.into(),
+                peripherals.pins.gpio0.into(),
+                peripherals.pins.gpio1.into(),
+                peripherals.pins.gpio4.into(),
+                light_temperature_target_clone,
+                light_brightness_target_clone,
+                light_dim_speed_clone
+            ).expect("LEDs should just work.");
+        };
     });
 
     // OTA
@@ -137,6 +203,16 @@ fn main() -> ! {
     });
 
     let tz: Tz = CONFIG.time_zone.parse().unwrap();
+
+
+    let led_en_pin : AnyIOPin = if cfg!(feature = "feather-adafruit") { 
+        peripherals.pins.gpio14.into() 
+    } else /*if cfg!(feature = "feather-sparkfun")*/ {
+        peripherals.pins.gpio22.into()
+    };
+
+    let mut led_en = PinDriver::output(led_en_pin).unwrap();
+    led_en.set_high(); // high = disabled
 
     // Keep the main thread alive
     info!(target: function_name!(), "Entering infinite loop in main thread...");

@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "besteLampe! ABL Controller Module")
-		(date "2024-11-15")
-		(rev "1.1")
+		(date "2024-12-01")
+		(rev "1.2")
 		(comment 1 "See  https://beste-lampe.de for the source and more information")
 		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
 		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
@@ -16000,7 +16000,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C5407823"
+		(property "LCSC Part #" "C3168412"
 			(at 50.8 75.565 0)
 			(effects
 				(font

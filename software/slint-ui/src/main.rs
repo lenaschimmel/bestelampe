@@ -23,6 +23,10 @@ fn main() -> Result<(), anyhow::Error> {
         return render_image(width, height, &background_image).unwrap_or(Image::default());
     });
    
+    ui.on_color_clicked(move || {
+        let ui = ui_handle.unwrap();
+        ui.set_counter(ui.get_counter() + 1);
+    });
 
     Ok(ui.run()?)
 }

@@ -93,7 +93,7 @@ impl<'p> Pwm<'p> {
 
 
 		let led_r  = Rc::new(RefCell::new(Led::new( "R", 0.630, 0.295,  25.0)));
-		let led_g  = Rc::new(RefCell::new(Led::new( "G", 0.153, 0.682,  48.0)));
+		let led_g  = Rc::new(RefCell::new(Led::new( "G", 0.153, 0.682,  98.0)));
 		let led_b  = Rc::new(RefCell::new(Led::new( "B", 0.146, 0.058,  48.0)));
 		let led_cw = Rc::new(RefCell::new(Led::new("CW", 0.317, 0.318,  40.0)));
 		let led_ww = Rc::new(RefCell::new(Led::new("WW", 0.485, 0.394,  29.0)));

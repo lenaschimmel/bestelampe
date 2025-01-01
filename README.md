@@ -54,7 +54,8 @@ These are the design goals of *besteLampe!*
 ## License
 The besteLampe! is open hardware: 
 
-- The hardware design is licensed under [CERN-OHL-S v2](https://ohwr.org/cern_ohl_s_v2.txt) or any later version.
+- The hardware design is licensed under [CERN-OHL-S v2](https://ohwr.org/cern_ohl_s_v2.txt) or any later version, with one exception:
+  - The ESP32-C6 Feather Module is licensed under 
 - The software is licensed under [GNU General Public Licence v3.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode) or later
 - The documentation is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/)
 

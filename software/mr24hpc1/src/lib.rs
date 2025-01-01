@@ -15,7 +15,6 @@
 
 use nom::IResult;
 use nom::number::complete::be_u16;
-use nom::bytes::complete::take;
 use nom::bytes::complete::tag;
 use nom::multi::length_data;
 use nom::error_position;
@@ -141,7 +140,7 @@ pub fn mr_parser(input: &[u8]) -> IResult<&[u8], Frame> {
         parse_human_presence_report,
     ))(input)?;
     
-    let (input, checksum) = nom::number::complete::u8(input)?;
+    let (input, _checksum) = nom::number::complete::u8(input)?;
     let (input, _) = tag([0x54, 0x43])(input)?;
 
     Ok((input, frame))

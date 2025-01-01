@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "besteLampe! ABL Power Module")
-		(date "2024-12-15")
-		(rev "1.2.2")
+		(date "2024-12-22")
+		(rev "1.3")
 		(comment 1 "See https://beste-lampe.de for the source and more information")
 		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
 		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")

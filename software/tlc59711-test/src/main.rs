@@ -74,10 +74,10 @@ fn main() -> anyhow::Result<()>  {
     // Bind the log crate to the ESP Logging facilities
     esp_idf_svc::log::EspLogger::initialize_default();
 
-    //test_spi()?;
+    test_spi_special_dim()?;
     //test_direct()?;
     //test_spi_multi_color()?;
-    test_spi_multi_color_serial()?;
+    //test_spi_multi_color_serial()?;
     Ok(())
 }
 
@@ -96,15 +96,15 @@ fn test_direct() -> anyhow::Result<()> {
 
     let mut driver_0 = LedcDriver::new(ledc.channel0, &timer_driver, led_pin ).expect("Get LEDC driver.");
 
-    println!("LED is LEDC now. Let's connect the light sensor...");
+    // println!("LED is LEDC now. Let's connect the light sensor...");
 
-    let scl: AnyIOPin = peripherals.pins.gpio22.into(); // Pin 1 on Ext
-    let sda: AnyIOPin = peripherals.pins.gpio23.into(); // Pin 3 (above 1) on Ext
+    // let scl: AnyIOPin = peripherals.pins.gpio22.into(); // Pin 1 on Ext
+    // let sda: AnyIOPin = peripherals.pins.gpio23.into(); // Pin 3 (above 1) on Ext
 
-    let config = I2cConfig::new().baudrate(100.kHz().into()).scl_enable_pullup(false).sda_enable_pullup(false);
-    let mut i2c = I2cDriver::new(peripherals.i2c0, sda, scl, &config)?;
+    // let config = I2cConfig::new().baudrate(100.kHz().into()).scl_enable_pullup(false).sda_enable_pullup(false);
+    // let mut i2c = I2cDriver::new(peripherals.i2c0, sda, scl, &config)?;
 
-    let mut sensor_wrapper = AutoVeml6040::new(i2c);
+    // let mut sensor_wrapper = AutoVeml6040::new(i2c)?;
   
 
     // let on_time: Arc<RwLock<u64>> = Arc::new(RwLock::new(500));
@@ -130,28 +130,28 @@ fn test_direct() -> anyhow::Result<()> {
             timer_driver.set_frequency(Hertz(frequency as u32));
             //let dc = ((2 ^ 8 - 1) * (on_t / on_t + off_t)) as u16;
             driver_0.set_duty_cycle(dc);
-            //println!("F: {} Hz, Duty cycle: {} / 255", frequency, dc);
+            println!("F: {} Hz, Duty cycle: {} / 255", frequency, dc);
 
-            thread::sleep(Duration::from_millis(10));
+            thread::sleep(Duration::from_millis(100));
         
-            let mut sum: f32 = 0.0;
-            let mut count: f32 = 0.0;
-            for i in 1..10 {
-                let result = sensor_wrapper.read_absolute_retry();
-                if let Ok(measurement) = result {
-                    sum += measurement.white;
-                    count += 1.0;
-                }
-                if i > 3 && count < 2.0 || i > 6 && count < 4.0 {
-                    break;
-                }
-            }
+            // let mut sum: f32 = 0.0;
+            // let mut count: f32 = 0.0;
+            // for i in 1..10 {
+            //     let result = sensor_wrapper.read_absolute_retry();
+            //     if let Ok(measurement) = result {
+            //         sum += measurement.white;
+            //         count += 1.0;
+            //     }
+            //     if i > 3 && count < 2.0 || i > 6 && count < 4.0 {
+            //         break;
+            //     }
+            // }
 
-            if count > 7.0 {
-                println!("{}; {}; {}", frequency, dc, sum / count);
-            } else {
-                println!("{}; {}; Error", frequency, dc);
-            }
+            // if count > 7.0 {
+            //     println!("{}; {}; {}", frequency, dc, sum / count);
+            // } else {
+            //     println!("{}; {}; Error", frequency, dc);
+            // }
             
 
             thread::sleep(Duration::from_millis(10));
@@ -193,7 +193,7 @@ fn test_direct() -> anyhow::Result<()> {
 fn auto_measurements(
     on_time: Arc<RwLock<u64>>,
     off_time: Arc<RwLock<u64>>,
-    mut sensor_wrapper: AutoVeml6040<I2cDriver, I2cError>,
+    mut sensor_wrapper: AutoVeml6040<I2cDriver>,
 ) {
     for on_t in 5..20 {
         for off_t in 5..20 {
@@ -320,55 +320,107 @@ fn test_spi_special_dim() -> anyhow::Result<()> {
     let mut err: f32 = 0.0;
     let mut offset : f32 = 0.2;
     loop {
-        let tf = (t as f32) * 0.0001;
-        // Zwichen 84% und 90% passieren spannende Dinge, also...
-        let perception = 0.87 - 0.03 * faster::cosfull(tf);
-        //let perception = 0.5 - 0.5 * faster::cosfull(tf);
-        //let corrected = faster::pow(perception, 2.2) + 0.001926;
-        let corrected = perception;
-        //let ran = rng.gen::<f32>();
-        let pwm_f = corrected * max; // + offset
-        let mut pwm_r = pwm_f.round();
-        let diff = pwm_f - pwm_r;
+        // let tf = (t as f32) * 0.00001;
+        // // Zwichen 84% und 90% passieren spannende Dinge, also...
+        // //let perception = 0.87 - 0.03 * faster::cosfull(tf);
+        // let perception = 0.1 - 0.1 * faster::cosfull(tf);
+        // let corrected = faster::pow(perception, 2.2) + 0.001926;
+        // //let corrected = perception;
+        // //let ran = rng.gen::<f32>();
+        // let pwm_f = /*max - */ corrected * max; // + offset
+        // let mut pwm_r = pwm_f.round();
+        // let diff = pwm_f - pwm_r;
 
-        if diff.abs() > offset {
-            err += diff;
-        }
+        // if diff.abs() > offset {
+        //     err += diff;
+        // }
         
-        if err > 1.0 {
-            pwm_r += 1.0;
-            err -= 1.0;
-        } else if err < -1.0 {
-            pwm_r -= 1.0;
-            err += 1.0;
-        }
-        let pwm = (pwm_r as u16).clamp(0, 65535);
-        //let pwm = 5;
+        // if err > 1.0 {
+        //     pwm_r += 1.0;
+        //     err -= 1.0;
+        // } else if err < -1.0 {
+        //     pwm_r -= 1.0;
+        //     err += 1.0;
+        // }
+        // let pwm = (pwm_r as u16).clamp(0, 65535);
+        // //let pwm = 5;
 
-        tlc.set_pwm(8, pwm);
+        // tlc.set_pwm(1, pwm);
         
+        // tlc.write()?;
+
+        // if t > tmax {
+        //     offset += 0.015;
+        //     if offset > 0.2 {
+        //         offset = 0.0;
+        //     }
+        //     t = -tmax;
+        //     println!("Offset: {}", offset);
+        // }
+        // if t % 2500 == 0 {
+        //     println!("   {:1.4} => {}", perception, pwm);
+        //     //led_1.toggle();
+        // }
+
+        // //thread::sleep(Duration::from_millis(10));
+        // // currently updates 6740 times per second
+        // // each packet has 224 bits + 10 empty cycles, so 234 data clocks.
+        // // This should update about 42.000 times per second,
+        // // about six times faster than it does.
+
+        // t += 1;
+
+        tlc.set_pwm(0, 65535);
         tlc.write()?;
+        println!("Turned off LED 0!"); // off
 
-        if t > tmax {
-            offset += 0.015;
-            if offset > 0.2 {
-                offset = 0.0;
-            }
-            t = -tmax;
-            println!("Offset: {}", offset);
+        //let vals = [0, 1000, 5_000, 10_000, 15_000, 30_000, 35_000, 45_000, 55_000, 65_000];
+        let vals = [400, 500, 600, 700, 800, 900];
+        //let vals = [0, 100, 150, 200, 210, 220, 230, 240, 250, 260, 270, 280, 290, 300, 310, 320, 330, 340, 350, 360, 370, 380, 390, 400, 410, 420, 430, 440, 450, 460, 470, 480, 490, 500, 510, 520, 530, 540, 550, 600, 650, 700, 750, 1000, 5_000, 10_000, 15_000, 30_000, 35_000, 45_000, 55_000, 65_00];
+
+        for val in vals {
+
+            // tlc.set_pwm(0, 65535);
+            // tlc.write()?;
+            // println!("Wrote high!"); // off
+            // thread::sleep(Duration::from_millis(100));
+
+            tlc.set_pwm(0, 65535 - val);
+            tlc.write()?;
+            println!("Wrote almost high ({})!", val); // maybe off?
+            thread::sleep(Duration::from_millis(1000));
         }
-        if t % 2500 == 0 {
-            println!("   {:6.1}", pwm);
-            //led_1.toggle();
-        }
 
-        //thread::sleep(Duration::from_millis(10));
-        // currently updates 6740 times per second
-        // each packet has 224 bits + 10 empty cycles, so 234 data clocks.
-        // This should update about 42.000 times per second,
-        // about six times faster than it does.
+        // tlc.set_pwm(0, 65535 - 100);
+        // tlc.write()?;
+        // println!("Wrote ALMOST high (100)!"); // off
+        // thread::sleep(Duration::from_millis(5000));
 
-        t += 1;
+        // tlc.set_pwm(0, 65535 - 130);
+        // tlc.write()?;
+        // println!("Wrote ALMOST high (130)!"); // off
+        // thread::sleep(Duration::from_millis(5000));
+
+        // tlc.set_pwm(0, 65535 - 240);
+        // tlc.write()?;
+        // println!("Wrote ALMOST high (240)!"); // off
+        // thread::sleep(Duration::from_millis(5000));
+
+        // tlc.set_pwm(0, 65535 - 260);
+        // tlc.write()?;
+        // println!("Wrote ALMOST high (260)!"); // off
+        // thread::sleep(Duration::from_millis(5000));
+
+        // tlc.set_pwm(0, 65535 - 1000);
+        // tlc.write()?;
+        // println!("Wrote ALMOST high (1000)!"); // off
+        // thread::sleep(Duration::from_millis(5000));
+
+
+        // tlc.set_pwm(0, 100);
+        // tlc.write()?;
+        // println!("Wrote AMOST low!"); // on
+        // thread::sleep(Duration::from_millis(5000));
     }
 }
 
@@ -403,28 +455,29 @@ fn test_spi_multi_color() -> anyhow::Result<()> {
 
     let mut t: i32 = 0;
     let max = ((2 << 15)-1) as f32;
-    let mut i = 4;
+    let mut i = 0;
     loop {
-        let tf = (t as f32) * 0.0001; 
-        let mut perception = 0.5 - 0.5 * faster::cosfull(tf);
-        let corrected = faster::pow(perception, 2.2);
-        let pwm_f = corrected * max;
-        let mut pwm_r = pwm_f.round();
-        let pwm = (pwm_r as u16).clamp(0, 65535);
-        tlc.set_pwm(i, pwm);
-        if t % 2500 == 0 {
+        // let tf = (t as f32) * 0.0001; 
+        // let mut perception = 0.5 - 0.5 * faster::cosfull(tf);
+        // let corrected = faster::pow(perception, 2.2);
+        // let pwm_f = corrected * max;
+        // let mut pwm_r = pwm_f.round() + 128.0;
+        // let pwm = (pwm_r as u16).clamp(0, 65535);
+        let pwm = (100 + t / 30).clamp(0, 65535) as u16;
+        tlc.set_pwm(i, 65535 - pwm);
+        if t % 100 == 0 {
             println!("   {}: {:6.1}", t, pwm);
         }
         
         tlc.write()?;
 
-        if(t > 62_831) { // 2*pi
+        if(t > 6_000) { // 62_831) { // 2*pi
             t = 0;
-            i = (i + 1) % 12;
+            //i = (i + 1) % 12;
             println!("CHANNEL: {}", i);
         }
 
-        //thread::sleep(Duration::from_millis(10));
+        thread::sleep(Duration::from_millis(10));
         // currently updates 6740 times per second
         // each packet has 224 bits + 10 empty cycles, so 234 data clocks.
         // This should update about 42.000 times per second,

@@ -748,352 +748,6 @@
 				)
 			)
 		)
-		(symbol "Adafruit Feather ESP32-C6-eagle-import:CAP_CERAMIC_0805MP"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at -2.29 1.25 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 2.3 1.25 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Adafruit Feather ESP32-C6:_0805MP"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Ceramic Capacitors\n\nFor new designs, use the packages preceded by an '_' character since they are more reliable:\n\nThe following footprints should be used on most boards:\n\n• _0402 - Standard footprint for regular board layouts\n• _0603 - Standard footprint for regular board layouts\n• _0805 - Standard footprint for regular board layouts\n• _1206 - Standard footprint for regular board layouts\n\nFor extremely tight-pitch boards where space is at a premium, the following 'micro-pitch' footprints can be used (smaller pads, no silkscreen outline, etc.):\n\n• _0402MP - Micro-pitch footprint for very dense/compact boards\n• _0603MP - Micro-pitch footprint for very dense/compact boards\n• _0805MP - Micro-pitch footprint for very dense/compact boards\n• _1206MP - Micro-pitch footprint for very dense/compact boards"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "CAP_CERAMIC_0805MP_1_0"
-				(rectangle
-					(start -1.27 0.508)
-					(end 1.27 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.27 1.524)
-					(end 1.27 2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.762) (xy 0 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 1.778)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Adafruit Feather ESP32-C6-eagle-import:CON_JST_PH_2PIN_MT_BATT"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "X"
-				(at 0 5.588 90)
-				(effects
-					(font
-						(size 1.27 1.0795)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" ""
-				(at 1.651 5.588 90)
-				(effects
-					(font
-						(size 1.27 1.0795)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Adafruit Feather ESP32-C6:JSTPH2_BATT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "CON_JST_PH_2PIN_MT_BATT_1_0"
-				(polyline
-					(pts
-						(xy -6.35 -2.54) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0.4064)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 5.08) (xy -6.35 -2.54)
-					)
-					(stroke
-						(width 0.4064)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 1.27 5.08)
-					)
-					(stroke
-						(width 0.4064)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 5.08) (xy -6.35 5.08)
-					)
-					(stroke
-						(width 0.4064)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive inverted
-					(at -2.54 2.54 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive inverted
-					(at -2.54 0 0)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "CON_JST_PH_2PIN_MT_BATT_2_0"
-				(circle
-					(center 0 3.81)
-					(radius 1.27)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin bidirectional line
-					(at 0 0 90)
-					(length 2.54)
-					(name "P$1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "NC2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(symbol "CON_JST_PH_2PIN_MT_BATT_3_0"
-				(circle
-					(center 0 3.81)
-					(radius 1.27)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin bidirectional line
-					(at 0 0 90)
-					(length 2.54)
-					(name "P$1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "NC1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Adafruit Feather ESP32-C6-eagle-import:DIODE-SCHOTTKYSOD-123"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2476,101 +2130,6 @@
 								(size 1.27 1.27)
 							)
 						)
-					)
-				)
-			)
-		)
-		(symbol "Adafruit Feather ESP32-C6-eagle-import:FIDUCIAL_1MM"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "FID"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "Adafruit Feather ESP32-C6:FIDUCIAL_1MM"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Fiducial Alignment Points\n\nVarious fiducial points for machine vision alignment."
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "FIDUCIAL_1MM_1_0"
-				(polyline
-					(pts
-						(xy -0.762 0.762) (xy 0.762 -0.762)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.762) (xy -0.762 -0.762)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
 					)
 				)
 			)
@@ -36345,609 +35904,6 @@
 				)
 			)
 		)
-		(symbol "Adafruit Feather ESP32-C6-eagle-import:MAX17048/T"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "X"
-				(at -5.08 -10.16 0)
-				(effects
-					(font
-						(size 1.778 1.5113)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "Adafruit Feather ESP32-C6:TDFN8_2X2MM"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "MAX17048/T_1_0"
-				(polyline
-					(pts
-						(xy -10.16 -7.62) (xy -10.16 7.62)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -10.16 7.62) (xy 10.16 7.62)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy -10.16 -7.62)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 7.62) (xy 10.16 -7.62)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "MAX1704x"
-					(at 10.16 10.16 0)
-					(effects
-						(font
-							(size 1.778 1.5113)
-						)
-						(justify right top)
-					)
-				)
-				(pin power_in line
-					(at -12.7 -5.08 0)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -12.7 2.54 0)
-					(length 2.54)
-					(name "CELL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -12.7 5.08 0)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -12.7 -5.08 0)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 -5.08 180)
-					(length 2.54)
-					(name "~{ALRT}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 -2.54 180)
-					(length 2.54)
-					(name "QSTRT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 5.08 180)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 2.54 180)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -12.7 -5.08 0)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "THERMAL"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Adafruit Feather ESP32-C6-eagle-import:MCP73831/2"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -10.16 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.0795)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" ""
-				(at -10.16 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.0795)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "Adafruit Feather ESP32-C6:SOT23-5"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "MCP73831/2 LIPO Charger\n\n• VDD: 3.75 - 6V\n• Temp -40 - 85°C\n• Programmable Charge Rate: 15-500mA\n\nNOTE: STAT is a tri-state logic output on the MCP73831 and an open-drain output on the MCP73832.\n\nSOT23-5 with 4.2V output and tri-state logic on STAT = MCP73831T-2ACI/OT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "MCP73831/2_1_0"
-				(polyline
-					(pts
-						(xy -10.16 -5.08) (xy -10.16 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -10.16 -5.08) (xy -10.16 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -10.16 5.08) (xy 10.16 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -10.16 10.16) (xy -10.16 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -10.16 10.16) (xy 10.16 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -10.16) (xy -10.16 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy -10.16 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 10.16 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 5.08) (xy 10.16 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 10.16) (xy 10.16 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "-40-85°C"
-					(at 0 -9.525 0)
-					(effects
-						(font
-							(size 1.27 1.0795)
-						)
-						(justify left bottom)
-					)
-				)
-				(text "3.75-6V"
-					(at 0 -7.62 0)
-					(effects
-						(font
-							(size 1.27 1.0795)
-						)
-						(justify left bottom)
-					)
-				)
-				(text "LIPO Charger"
-					(at -6.35 6.35 0)
-					(effects
-						(font
-							(size 1.27 1.0795)
-						)
-						(justify left bottom)
-					)
-				)
-				(text "MCP73831/2"
-					(at -5.715 8.255 0)
-					(effects
-						(font
-							(size 1.27 1.0795)
-						)
-						(justify left bottom)
-					)
-				)
-				(text "Temp:"
-					(at -8.255 -9.525 0)
-					(effects
-						(font
-							(size 1.27 1.0795)
-						)
-						(justify left bottom)
-					)
-				)
-				(text "VDD:"
-					(at -8.255 -7.62 0)
-					(effects
-						(font
-							(size 1.27 1.0795)
-						)
-						(justify left bottom)
-					)
-				)
-				(pin output line
-					(at -12.7 -2.54 0)
-					(length 2.54)
-					(name "STAT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 12.7 -2.54 180)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 12.7 2.54 180)
-					(length 2.54)
-					(name "VBAT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -12.7 2.54 0)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 0 180)
-					(length 2.54)
-					(name "PROG"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Adafruit Feather ESP32-C6-eagle-import:MOSFET-P"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -37973,372 +36929,6 @@
 						(effects
 							(font
 								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Adafruit Feather ESP32-C6-eagle-import:SOLDERJUMPERCLOSED"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SJ"
-				(at -2.54 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.0795)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" ""
-				(at -2.54 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.0795)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "Adafruit Feather ESP32-C6:SOLDERJUMPER_CLOSEDWIRE"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "SMD Solder JUMPER\n\nSolder the two pads together to create a connection, or remove the solder to break it.\n\nREFLOW - Use this footprint for solder paste and reflow ovens. WAVE - Use this footprint for hand-soldering (larger pads).\n\nCLOSED - Has a trace between the two pads to ensure it is closed by default.  The trace needs to be cut to disable the jumper, and can be closed again by creating a solder bridge between the two pads."
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SOLDERJUMPERCLOSED_1_0"
-				(arc
-					(start -0.3808 0.635)
-					(mid -1.0159 0.0001)
-					(end -0.381 -0.635)
-					(stroke
-						(width 1.27)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -1.651 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.651 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.3808 -0.635)
-					(mid 1.0159 -0.0001)
-					(end 0.381 0.635)
-					(stroke
-						(width 1.27)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Adafruit Feather ESP32-C6-eagle-import:STEMMA_I2C_QTRA"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "CONN"
-				(at -3.81 8.255 0)
-				(effects
-					(font
-						(size 1.778 1.5113)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Value" ""
-				(at -3.81 -7.62 0)
-				(effects
-					(font
-						(size 1.778 1.5113)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "Adafruit Feather ESP32-C6:JST_SH4_RA"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "STEMMA_I2C_QTRA_1_0"
-				(polyline
-					(pts
-						(xy -3.81 -5.08) (xy 3.81 -5.08)
-					)
-					(stroke
-						(width 0.4064)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 7.62) (xy -3.81 -5.08)
-					)
-					(stroke
-						(width 0.4064)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 -5.08) (xy 3.81 7.62)
-					)
-					(stroke
-						(width 0.4064)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 7.62) (xy -3.81 7.62)
-					)
-					(stroke
-						(width 0.4064)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive inverted
-					(at 0 5.08 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive inverted
-					(at 0 2.54 0)
-					(length 2.54)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive inverted
-					(at 0 0 0)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive inverted
-					(at 0 -2.54 0)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(symbol "STEMMA_I2C_QTRA_2_0"
-				(pin bidirectional line
-					(at 0 0 0)
-					(length 5.08)
-					(name "MT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MT1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "STEMMA_I2C_QTRA_3_0"
-				(pin bidirectional line
-					(at 0 0 0)
-					(length 5.08)
-					(name "MT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MT2"
-						(effects
-							(font
-								(size 1.27 1.27)
 							)
 						)
 					)
@@ -39702,603 +38292,6 @@
 				)
 			)
 		)
-		(symbol "Adafruit Feather ESP32-C6-eagle-import:WS2812B_3535FULL"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "LED"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "Adafruit Feather ESP32-C6:LED3535_FULLPADS"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "WS2812B_3535FULL_1_0"
-				(polyline
-					(pts
-						(xy -7.62 -5.08) (xy 0 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 -2.54) (xy -7.62 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 10.16) (xy -7.62 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 2.54) (xy -5.08 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy -6.35 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy -5.08 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy -3.81 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy -3.81 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 7.62) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 2.54) (xy -5.08 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.54) (xy -1.27 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 5.08) (xy 0 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -5.08 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -2.54 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy 0 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 5.08) (xy -1.27 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 7.62) (xy -5.08 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -5.08) (xy 7.62 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -4.064) (xy 0 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 5.08) (xy -1.27 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 5.08) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 5.08) (xy 2.54 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 1.27 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 3.81 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 5.08) (xy 2.54 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 7.62) (xy -1.27 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 7.62) (xy 5.08 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 5.08) (xy 2.54 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 10.16) (xy -7.62 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 10.16) (xy 5.08 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 7.62 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 7.62 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 10.16) (xy 5.08 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "WS2812B"
-					(at -4.064 8.382 0)
-					(effects
-						(font
-							(size 1.27 1.0795)
-						)
-						(justify left bottom)
-					)
-				)
-				(pin input line
-					(at -12.7 -2.54 0)
-					(length 5.08)
-					(name "DI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 5.08 15.24 270)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 -2.54 180)
-					(length 5.08)
-					(name "DO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Adafruit Feather ESP32-C6-eagle-import:supply1_GND"
 			(power)
 			(exclude_from_sim no)
@@ -40910,18 +38903,6 @@
 		(uuid "25470daa-7569-437b-8ead-ee5fd7bc6ed3")
 	)
 	(junction
-		(at 360.68 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "29bbcc39-8c3e-4a8f-8542-a577c8fe9e1b")
-	)
-	(junction
-		(at 304.8 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "31832d5f-e596-413f-8190-d3c214323f24")
-	)
-	(junction
 		(at 335.28 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -40976,12 +38957,6 @@
 		(uuid "6849f296-77ae-4cfb-84f8-847e2e0fa9ab")
 	)
 	(junction
-		(at 304.8 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6916ecc6-5616-4f7f-ac4b-10098b9aeab3")
-	)
-	(junction
 		(at 186.69 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -41006,12 +38981,6 @@
 		(uuid "7dbb2750-6603-4e2a-a538-ca7f2990ac9b")
 	)
 	(junction
-		(at 284.48 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "84bbfb1b-378a-4c68-be00-6c013f7c40eb")
-	)
-	(junction
 		(at 185.42 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -41024,12 +38993,6 @@
 		(uuid "85d4ac4c-8d64-49fd-8123-ccb759c4e3f9")
 	)
 	(junction
-		(at 259.08 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8772cab0-ecc9-4638-90f2-0c5a3886a0f2")
-	)
-	(junction
 		(at 58.42 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -41040,18 +39003,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "92af6d67-a283-415f-9f9b-5dcf3c3d8cff")
-	)
-	(junction
-		(at 292.1 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "999c0dbb-557c-4696-ab43-8428b31d4d67")
-	)
-	(junction
-		(at 287.02 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "abe8b4f2-57a1-4b20-809a-0b2b38c92b8c")
 	)
 	(junction
 		(at 281.94 203.2)
@@ -41090,22 +39041,10 @@
 		(uuid "c95dd07f-4b79-4d69-9003-9d3e42c4ea30")
 	)
 	(junction
-		(at 327.66 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d8e9f485-6bda-41ac-b74f-98c4a94000d8")
-	)
-	(junction
 		(at 58.42 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f05a9a95-3e58-4099-833d-bd8e124b26c8")
-	)
-	(junction
-		(at 332.74 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f37086a9-eb93-4855-b8e9-2d9e83076b23")
 	)
 	(wire
 		(pts
@@ -41116,16 +39055,6 @@
 			(type solid)
 		)
 		(uuid "0453430f-f162-4ae5-a104-ce7e8a5670f9")
-	)
-	(wire
-		(pts
-			(xy 269.24 63.5) (xy 271.78 63.5)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "08aa6276-f3a0-48cf-9904-21f2fb974234")
 	)
 	(wire
 		(pts
@@ -41169,16 +39098,6 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 99.06) (xy 320.04 99.06)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "0b97af8e-ef5a-401b-96c7-3755ce5fe5a6")
-	)
-	(wire
-		(pts
 			(xy 220.98 205.74) (xy 200.66 205.74)
 		)
 		(stroke
@@ -41206,16 +39125,6 @@
 			(type solid)
 		)
 		(uuid "0fdd6e84-fdde-47a6-822c-4bfb2176e58a")
-	)
-	(wire
-		(pts
-			(xy 292.1 144.78) (xy 307.34 144.78)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "10afb3b8-f1df-4752-82c9-74f9c761583f")
 	)
 	(wire
 		(pts
@@ -41269,16 +39178,6 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 142.24) (xy 299.72 142.24)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "19e3a5e9-cca9-43c2-98d6-5025a88c0c51")
-	)
-	(wire
-		(pts
 			(xy 104.14 177.8) (xy 116.84 177.8)
 		)
 		(stroke
@@ -41316,16 +39215,6 @@
 			(type default)
 		)
 		(uuid "26a56537-02a9-4b2a-bd09-8748df8d8f61")
-	)
-	(wire
-		(pts
-			(xy 314.96 66.04) (xy 327.66 66.04)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "26e222ad-20c8-4a57-971e-1717c6c7ed89")
 	)
 	(wire
 		(pts
@@ -41439,16 +39328,6 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 63.5) (xy 327.66 66.04)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "3343d183-5011-4ce1-9546-04106d9b6779")
-	)
-	(wire
-		(pts
 			(xy 185.42 68.58) (xy 185.42 71.12)
 		)
 		(stroke
@@ -41456,16 +39335,6 @@
 			(type solid)
 		)
 		(uuid "341c6b4f-f48a-4646-b179-ea131ebfbd7c")
-	)
-	(wire
-		(pts
-			(xy 304.8 124.46) (xy 304.8 129.54)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "341da8df-49a0-49c6-a282-6a2e03fa323a")
 	)
 	(wire
 		(pts
@@ -41516,16 +39385,6 @@
 			(type solid)
 		)
 		(uuid "3a6f7bf0-6a02-45e1-b968-29465321624d")
-	)
-	(wire
-		(pts
-			(xy 304.8 129.54) (xy 304.8 142.24)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "3c4bedf5-c9c9-4020-b406-f3d92bbf704c")
 	)
 	(wire
 		(pts
@@ -41639,16 +39498,6 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 58.42) (xy 287.02 58.42)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "4c81d26c-723a-4e7b-af38-2959b5c4295e")
-	)
-	(wire
-		(pts
 			(xy 186.69 191.77) (xy 186.69 189.23)
 		)
 		(stroke
@@ -41676,26 +39525,6 @@
 			(type solid)
 		)
 		(uuid "4f3a45e6-58b9-4ead-9530-da8e590374eb")
-	)
-	(wire
-		(pts
-			(xy 281.94 137.16) (xy 287.02 137.16)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "5310c95b-93d1-4466-80fa-81bd9ddd92ec")
-	)
-	(wire
-		(pts
-			(xy 210.82 111.76) (xy 233.68 111.76)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "550497ee-5ebb-4982-8a87-66adc28106db")
 	)
 	(wire
 		(pts
@@ -41739,16 +39568,6 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 137.16) (xy 292.1 137.16)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "5939a5b0-573e-44ed-8e75-8ba5d54a6885")
-	)
-	(wire
-		(pts
 			(xy 147.32 55.88) (xy 152.4 55.88)
 		)
 		(stroke
@@ -41786,16 +39605,6 @@
 			(type solid)
 		)
 		(uuid "5e770dc0-ce67-4078-8e06-82acbf8f5ec5")
-	)
-	(wire
-		(pts
-			(xy 340.36 48.26) (xy 340.36 58.42)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "5f8809db-740b-4734-adb1-cc7443411303")
 	)
 	(wire
 		(pts
@@ -41849,16 +39658,6 @@
 	)
 	(wire
 		(pts
-			(xy 307.34 147.32) (xy 287.02 147.32)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "683f4bb4-3c87-4fa6-bc96-d6c749ec7604")
-	)
-	(wire
-		(pts
 			(xy 186.69 209.55) (xy 186.69 207.01)
 		)
 		(stroke
@@ -41866,16 +39665,6 @@
 			(type default)
 		)
 		(uuid "691c21c2-3ed2-4893-bf4d-f0622aad51af")
-	)
-	(wire
-		(pts
-			(xy 284.48 99.06) (xy 271.78 99.06)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "699b8335-5a82-407b-98e5-f20466eb114e")
 	)
 	(wire
 		(pts
@@ -41909,16 +39698,6 @@
 	)
 	(wire
 		(pts
-			(xy 332.74 60.96) (xy 332.74 58.42)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "6c17a8a6-d17d-4c17-99d9-e965b0df48be")
-	)
-	(wire
-		(pts
 			(xy 162.56 55.88) (xy 157.48 55.88)
 		)
 		(stroke
@@ -41949,16 +39728,6 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 48.26) (xy 360.68 58.42)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "70259de6-2447-40cf-9b83-828b54d612e3")
-	)
-	(wire
-		(pts
 			(xy 186.69 209.55) (xy 192.405 209.55)
 		)
 		(stroke
@@ -41986,16 +39755,6 @@
 			(type solid)
 		)
 		(uuid "728d4ee0-ab49-4f1e-a3ce-12b149f10910")
-	)
-	(wire
-		(pts
-			(xy 304.8 142.24) (xy 307.34 142.24)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "72969326-9f9a-4986-ae37-6eb227f430cf")
 	)
 	(wire
 		(pts
@@ -42056,16 +39815,6 @@
 			(type default)
 		)
 		(uuid "771bece7-93c1-46e2-9606-c9c5aa8b19d4")
-	)
-	(wire
-		(pts
-			(xy 259.08 63.5) (xy 259.08 58.42)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "78ad3e38-c602-4b68-b1a2-70bfbddee711")
 	)
 	(wire
 		(pts
@@ -42136,16 +39885,6 @@
 			(type solid)
 		)
 		(uuid "85c21eeb-1c3c-400b-9ffb-e8236d13fbd5")
-	)
-	(wire
-		(pts
-			(xy 327.66 66.04) (xy 327.66 73.66)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "874cf280-94df-4af0-a3be-f22093e140c5")
 	)
 	(wire
 		(pts
@@ -42229,16 +39968,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 58.42) (xy 332.74 58.42)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "8e8b8e88-8041-4b41-a408-2cf49d2764db")
-	)
-	(wire
-		(pts
 			(xy 157.48 55.88) (xy 152.4 55.88)
 		)
 		(stroke
@@ -42256,16 +39985,6 @@
 			(type solid)
 		)
 		(uuid "90c112ae-244b-4c38-8ccf-48020521e5ba")
-	)
-	(wire
-		(pts
-			(xy 292.1 144.78) (xy 292.1 137.16)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "946baefa-ed3e-44ef-b98c-2e4d3042afd3")
 	)
 	(wire
 		(pts
@@ -42309,16 +40028,6 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 63.5) (xy 259.08 63.5)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "97dc393b-86d6-4765-8ccc-d3852a36fbc3")
-	)
-	(wire
-		(pts
 			(xy 58.42 137.16) (xy 58.42 139.7)
 		)
 		(stroke
@@ -42336,16 +40045,6 @@
 			(type solid)
 		)
 		(uuid "9ae4e87b-29af-4c48-ae03-e122c6adbd18")
-	)
-	(wire
-		(pts
-			(xy 259.08 48.26) (xy 259.08 58.42)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "9afc6f00-339f-477b-a2d5-bce6c9d135be")
 	)
 	(wire
 		(pts
@@ -42386,16 +40085,6 @@
 			(type solid)
 		)
 		(uuid "9d2257ea-4c10-4961-99f8-2a10bda10be8")
-	)
-	(wire
-		(pts
-			(xy 332.74 68.58) (xy 332.74 73.66)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "9d904be1-3618-48a5-be96-1c66ca1ca47d")
 	)
 	(wire
 		(pts
@@ -42469,16 +40158,6 @@
 	)
 	(wire
 		(pts
-			(xy 307.34 149.86) (xy 281.94 149.86)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "b04f1d47-af8e-4389-a71f-354b634ffe2e")
-	)
-	(wire
-		(pts
 			(xy 185.42 55.88) (xy 185.42 50.8)
 		)
 		(stroke
@@ -42499,16 +40178,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 60.96) (xy 317.5 60.96)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "b34b202e-a125-4f6d-ab8f-7320b7434960")
-	)
-	(wire
-		(pts
 			(xy 157.48 66.04) (xy 160.02 66.04)
 		)
 		(stroke
@@ -42516,16 +40185,6 @@
 			(type solid)
 		)
 		(uuid "b3ccfc55-452a-4a67-bf0f-9e47919f5b56")
-	)
-	(wire
-		(pts
-			(xy 314.96 63.5) (xy 314.96 66.04)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "b4376403-36c4-4f53-8bd2-018416faafa6")
 	)
 	(wire
 		(pts
@@ -42559,16 +40218,6 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 149.86) (xy 281.94 147.32)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "b6b92d93-f6ed-4d2f-b3bf-ae06f2913192")
-	)
-	(wire
-		(pts
 			(xy 179.705 194.31) (xy 186.69 194.31)
 		)
 		(stroke
@@ -42599,16 +40248,6 @@
 	)
 	(wire
 		(pts
-			(xy 317.5 60.96) (xy 317.5 63.5)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "b8f18a41-2e55-4e0b-a883-5afc81b7c146")
-	)
-	(wire
-		(pts
 			(xy 86.36 55.88) (xy 93.98 55.88)
 		)
 		(stroke
@@ -42616,16 +40255,6 @@
 			(type solid)
 		)
 		(uuid "b905694d-846f-4c5b-8602-6540d6cc5ec8")
-	)
-	(wire
-		(pts
-			(xy 193.04 129.54) (xy 170.18 129.54)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "b9d8d946-67a4-4bf0-ac14-179739de5e1a")
 	)
 	(wire
 		(pts
@@ -42659,16 +40288,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 63.5) (xy 314.96 63.5)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "bc8d69d4-db23-4485-9e84-20175a644b62")
-	)
-	(wire
-		(pts
 			(xy 186.69 201.93) (xy 192.405 201.93)
 		)
 		(stroke
@@ -42676,16 +40295,6 @@
 			(type default)
 		)
 		(uuid "bf20d658-29b3-4bee-acdf-87a14ad17e64")
-	)
-	(wire
-		(pts
-			(xy 332.74 58.42) (xy 340.36 58.42)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "c069b0af-dc13-4c72-bc77-f1cea215755d")
 	)
 	(wire
 		(pts
@@ -42716,16 +40325,6 @@
 			(type solid)
 		)
 		(uuid "c10583e8-d0c6-4bdb-9634-91cfb9889255")
-	)
-	(wire
-		(pts
-			(xy 281.94 63.5) (xy 287.02 63.5)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "c248f67c-c1e9-475a-a0a5-f7309708ffcd")
 	)
 	(wire
 		(pts
@@ -42766,16 +40365,6 @@
 			(type solid)
 		)
 		(uuid "c73247fa-d288-4341-bc11-abf9dc9a1bf0")
-	)
-	(wire
-		(pts
-			(xy 284.48 96.52) (xy 284.48 99.06)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "ca785142-3bcd-419b-8d6c-c80c2fcd33fb")
 	)
 	(wire
 		(pts
@@ -42859,16 +40448,6 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 68.58) (xy 360.68 60.96)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "d21702c2-872f-4701-a2ac-be1a66060c91")
-	)
-	(wire
-		(pts
 			(xy 266.7 200.66) (xy 289.56 200.66)
 		)
 		(stroke
@@ -42906,16 +40485,6 @@
 			(type solid)
 		)
 		(uuid "d57a6aeb-a258-471a-a166-72867393eec2")
-	)
-	(wire
-		(pts
-			(xy 320.04 96.52) (xy 309.88 96.52)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "d69fe334-ba00-4108-a902-3c9f46952ea1")
 	)
 	(wire
 		(pts
@@ -42969,16 +40538,6 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 104.14) (xy 320.04 104.14)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "dc741ea2-9567-46ea-b334-d6b99715e8f2")
-	)
-	(wire
-		(pts
 			(xy 309.88 200.66) (xy 320.04 200.66)
 		)
 		(stroke
@@ -42996,16 +40555,6 @@
 			(type solid)
 		)
 		(uuid "dea65085-662b-48ac-901d-e9250b66080c")
-	)
-	(wire
-		(pts
-			(xy 259.08 58.42) (xy 271.78 58.42)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "e0649f7e-98c8-4af0-a2eb-623bf258bb89")
 	)
 	(wire
 		(pts
@@ -43209,16 +40758,6 @@
 	)
 	(wire
 		(pts
-			(xy 292.1 137.16) (xy 292.1 127)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "fb7d49e9-4ee1-4e75-b715-517dd2dd61fd")
-	)
-	(wire
-		(pts
 			(xy 147.32 40.64) (xy 147.32 43.18)
 		)
 		(stroke
@@ -43236,39 +40775,6 @@
 			(type solid)
 		)
 		(uuid "ff67c02e-a994-4999-a17f-e5c4b4014bb3")
-	)
-	(text "2.0K  = 500mA"
-		(exclude_from_sim no)
-		(at 314.96 50.8 0)
-		(effects
-			(font
-				(size 1.778 1.5113)
-			)
-			(justify left bottom)
-		)
-		(uuid "099e1c22-3a3c-4246-a42a-e90966f38e17")
-	)
-	(text "10K  = 100mA"
-		(exclude_from_sim no)
-		(at 314.96 45.72 0)
-		(effects
-			(font
-				(size 1.778 1.5113)
-			)
-			(justify left bottom)
-		)
-		(uuid "24cb0d4c-0bc8-4878-a727-5285509f97e0")
-	)
-	(text "1.0K  = 1000mA"
-		(exclude_from_sim no)
-		(at 314.96 53.34 0)
-		(effects
-			(font
-				(size 1.778 1.5113)
-			)
-			(justify left bottom)
-		)
-		(uuid "64660461-9422-4a73-89cf-5a9cc6efc45d")
 	)
 	(text "RESET"
 		(exclude_from_sim no)
@@ -43291,39 +40797,6 @@
 			(justify left bottom)
 		)
 		(uuid "8ffc413b-add5-4d20-a43f-e9899295c864")
-	)
-	(text "LIPO CHARGING"
-		(exclude_from_sim no)
-		(at 289.56 43.18 0)
-		(effects
-			(font
-				(size 1.778 1.5113)
-			)
-			(justify left bottom)
-		)
-		(uuid "ba3c6865-1a0b-491b-bfdc-63ec95714b46")
-	)
-	(text "5.0K  = 200mA"
-		(exclude_from_sim no)
-		(at 314.96 48.26 0)
-		(effects
-			(font
-				(size 1.778 1.5113)
-			)
-			(justify left bottom)
-		)
-		(uuid "c6e6b83f-6935-4e93-9ec1-4e115f978d08")
-	)
-	(text "NEOPIXEL"
-		(exclude_from_sim no)
-		(at 200.66 109.22 0)
-		(effects
-			(font
-				(size 1.778 1.5113)
-			)
-			(justify bottom)
-		)
-		(uuid "d88c05a6-cf5f-48b3-ac44-43deda040caa")
 	)
 	(text "LED"
 		(exclude_from_sim no)
@@ -43380,17 +40853,6 @@
 		)
 		(uuid "205c1e08-0888-4baa-a2b0-6e1bfa0560f6")
 	)
-	(label "SCL"
-		(at 312.42 96.52 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "26d4219d-24d8-4c9a-b5a3-52f6d7e8d0f4")
-	)
 	(label "IO8"
 		(at 144.78 193.04 0)
 		(fields_autoplaced yes)
@@ -43423,17 +40885,6 @@
 			(justify left bottom)
 		)
 		(uuid "340a2b21-8254-4ade-bb7a-b1d582a1573b")
-	)
-	(label "VSENSOR"
-		(at 292.1 140.97 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "3eb7e6e3-8df5-4602-af4d-2d2af9eef2ec")
 	)
 	(label "VSENSOR"
 		(at 358.14 185.42 0)
@@ -43478,17 +40929,6 @@
 			(justify left bottom)
 		)
 		(uuid "4f6c8947-4111-4404-9258-42d6a2c8ba5c")
-	)
-	(label "SCL"
-		(at 297.18 149.86 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "4fc381d2-6a45-4db8-932e-6b2ae81051f5")
 	)
 	(label "SCL"
 		(at 106.68 187.96 0)
@@ -43544,17 +40984,6 @@
 			(justify left bottom)
 		)
 		(uuid "61db289a-73ea-4d94-8fff-6516be72a0d1")
-	)
-	(label "SDA"
-		(at 297.18 147.32 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "644bc347-f3f4-4feb-b895-c85a7932765a")
 	)
 	(label "A4"
 		(at 200.66 193.04 0)
@@ -43842,28 +41271,6 @@
 		)
 		(uuid "c93eca02-88d9-4676-8ad7-f940d1b6c30b")
 	)
-	(label "VSENSOR"
-		(at 218.44 111.76 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "d024a706-7aec-4621-9de6-d1015bad9495")
-	)
-	(label "SDA"
-		(at 312.42 99.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "d5072b6d-9fd6-4b70-8f22-81833ec11f00")
-	)
 	(label "D-"
 		(at 35.56 208.28 0)
 		(fields_autoplaced yes)
@@ -43907,17 +41314,6 @@
 			(justify left bottom)
 		)
 		(uuid "e260c160-4585-4cbd-9ca0-6599ed34c716")
-	)
-	(label "IO9/BOOT/NEOPIX"
-		(at 170.18 129.54 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "e5fb6f71-e378-4d7c-9505-8611403e21f6")
 	)
 	(label "IO15"
 		(at 132.08 121.92 0)
@@ -44144,7 +41540,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0603-NO"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 58.42 116.84 0)
 			(effects
 				(font
@@ -44163,6 +41559,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 58.42 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C23186"
 			(at 58.42 116.84 0)
 			(effects
 				(font
@@ -44211,7 +41616,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0603-NO"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 68.58 134.62 0)
 			(effects
 				(font
@@ -44230,6 +41635,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 68.58 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C15849"
 			(at 68.58 134.62 0)
 			(effects
 				(font
@@ -44307,6 +41721,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C221676"
+			(at 55.88 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "A"
 			(uuid "d4784c49-c0fc-4d61-b61b-4cf38b024b4c")
 		)
@@ -44323,81 +41746,6 @@
 			(project ""
 				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
 					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:CON_JST_PH_2PIN_MT_BATT")
-		(at 358.14 58.42 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "02f05817-fca4-43dd-bad8-59f0dfda8911")
-		(property "Reference" "X1"
-			(at 364.49 64.135 90)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "JSTPH"
-			(at 364.49 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:JSTPH2_BATT"
-			(at 358.14 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 358.14 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 358.14 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4d362c92-f8d9-427d-871c-3c57c962a2dd")
-		)
-		(pin "2"
-			(uuid "cd3822be-a68c-400d-a740-4e07bd23da00")
-		)
-		(pin "NC2"
-			(uuid "4bd37073-cdc1-4b5e-81bd-e71e54513a6b")
-		)
-		(pin "NC1"
-			(uuid "cc85845c-4f93-471c-8ed8-5c027fd4c383")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "X1")
 					(unit 1)
 				)
 			)
@@ -44521,6 +41869,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C7207730"
+			(at 154.94 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "A"
 			(uuid "897c81c5-09c8-43c9-ba55-408e39153c26")
 		)
@@ -44582,6 +41939,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 218.44 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2905421"
 			(at 218.44 193.04 0)
 			(effects
 				(font
@@ -44714,75 +42080,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:RESISTOR_0603_NOOUT")
-		(at 276.86 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "14b0a48e-4942-41fc-a5fa-1672b3972da9")
-		(property "Reference" "R2"
-			(at 276.86 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "5.1K"
-			(at 276.86 63.5 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-					(thickness 0.2032)
-					(bold yes)
-				)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0603-NO"
-			(at 276.86 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 276.86 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 276.86 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "82935ce8-95db-451c-ba25-edffa7caf6f9")
-		)
-		(pin "2"
-			(uuid "3519c25a-62ea-468a-b299-998a88481b79")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Adafruit Feather ESP32-C6-eagle-import:CAP_CERAMIC0603_NO")
 		(at 218.44 66.04 0)
 		(unit 1)
@@ -44807,7 +42104,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0603-NO"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 218.44 66.04 0)
 			(effects
 				(font
@@ -44826,6 +42123,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 218.44 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C15849"
 			(at 218.44 66.04 0)
 			(effects
 				(font
@@ -45006,7 +42312,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0805-NO"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 185.42 66.04 0)
 			(effects
 				(font
@@ -45034,6 +42340,15 @@
 			)
 		)
 		(property "REV" "B"
+			(at 185.42 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C15850"
 			(at 185.42 66.04 0)
 			(effects
 				(font
@@ -45084,7 +42399,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0603-NO"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 109.22 116.84 0)
 			(effects
 				(font
@@ -45103,6 +42418,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 109.22 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C25803"
 			(at 109.22 116.84 0)
 			(effects
 				(font
@@ -45121,72 +42445,6 @@
 			(project ""
 				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
 					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:GND")
-		(at 332.74 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "21a988af-fc81-4483-8a64-3b385cce2e90")
-		(property "Reference" "#U$033"
-			(at 332.74 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 331.216 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 332.74 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 332.74 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 332.74 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3536075c-b4c5-46de-8417-5e586aa7dfe9")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "#U$033")
 					(unit 1)
 				)
 			)
@@ -45239,6 +42497,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 147.32 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C7202986"
 			(at 147.32 48.26 0)
 			(effects
 				(font
@@ -45400,9 +42667,9 @@
 		(mirror x)
 		(unit 4)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "24735829-794a-4a78-8827-156641d54925")
 		(property "Reference" "R3"
 			(at 284.48 208.28 0)
@@ -45441,6 +42708,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 281.94 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 281.94 208.28 0)
 			(effects
 				(font
@@ -45507,7 +42783,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0805-NO"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 203.2 66.04 0)
 			(effects
 				(font
@@ -45526,6 +42802,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 203.2 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C15850"
 			(at 203.2 66.04 0)
 			(effects
 				(font
@@ -45544,72 +42829,6 @@
 			(project ""
 				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
 					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:supply1_GND")
-		(at 299.72 139.7 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2e442638-f0de-4cd8-8885-b19773ab5cc0")
-		(property "Reference" "#GND01"
-			(at 299.72 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 302.26 137.16 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 299.72 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 299.72 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 299.72 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e95b94d7-6891-477a-ae5e-c913ec24fc1f")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "#GND01")
 					(unit 1)
 				)
 			)
@@ -45640,7 +42859,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0805-NO"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 228.6 66.04 0)
 			(effects
 				(font
@@ -45659,6 +42878,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 228.6 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C15850"
 			(at 228.6 66.04 0)
 			(effects
 				(font
@@ -45728,6 +42956,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 76.2 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C5736265"
 			(at 76.2 187.96 0)
 			(effects
 				(font
@@ -45995,72 +43232,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:VBAT")
-		(at 340.36 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "39aa35a9-1e0b-4c53-ba47-6ab2202fbad8")
-		(property "Reference" "#U$039"
-			(at 340.36 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBAT"
-			(at 338.836 44.704 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 340.36 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 340.36 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 340.36 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "64252a90-fcdc-4641-9f68-baa9d07893af")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "#U$039")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Adafruit Feather ESP32-C6-eagle-import:VBUS")
 		(at 137.16 180.34 0)
 		(unit 1)
@@ -46217,7 +43388,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0805-NO"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 193.04 66.04 0)
 			(effects
 				(font
@@ -46236,6 +43407,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 193.04 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C15850"
 			(at 193.04 66.04 0)
 			(effects
 				(font
@@ -46352,7 +43532,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0603-NO"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 81.28 55.88 0)
 			(effects
 				(font
@@ -46371,6 +43551,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 81.28 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C23186"
 			(at 81.28 55.88 0)
 			(effects
 				(font
@@ -46389,72 +43578,6 @@
 			(project ""
 				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
 					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:GND")
-		(at 284.48 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "517bf331-d1ec-448b-af9b-b3fbd6962ed0")
-		(property "Reference" "#U$09"
-			(at 284.48 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 282.956 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 284.48 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 284.48 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 284.48 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "434d6f57-9a7c-4567-81b5-eead9443f1d2")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "#U$09")
 					(unit 1)
 				)
 			)
@@ -46507,6 +43630,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x10, script generated"
+			(at 197.485 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2905418"
 			(at 197.485 199.39 0)
 			(effects
 				(font
@@ -46599,6 +43731,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x10, script generated"
+			(at 174.625 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2905418"
 			(at 174.625 191.77 0)
 			(effects
 				(font
@@ -46737,7 +43878,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0805-NO"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 210.82 66.04 0)
 			(effects
 				(font
@@ -46756,6 +43897,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 210.82 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C15850"
 			(at 210.82 66.04 0)
 			(effects
 				(font
@@ -46774,223 +43924,6 @@
 			(project ""
 				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
 					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:STEMMA_I2C_QTRA")
-		(at 304.8 124.46 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "58ffcb40-c148-433e-a0b0-8d8962284363")
-		(property "Reference" "CONN1"
-			(at 300.99 116.205 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Value" "JST SH"
-			(at 300.99 132.08 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:JST_SH4_RA"
-			(at 304.8 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 304.8 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 304.8 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "90a9453b-8623-48cb-91e0-275ae4e31fd3")
-		)
-		(pin "2"
-			(uuid "430d03ef-cbec-4d32-8f45-316a863e19eb")
-		)
-		(pin "3"
-			(uuid "f2e1bf1f-77f9-42ca-a7d0-ba4f51910cb0")
-		)
-		(pin "4"
-			(uuid "20fd73cb-52d7-47e2-b89e-cadd3a92f30b")
-		)
-		(pin "MT1"
-			(uuid "41e576b6-6086-4fa9-8640-4c8eef5d0e20")
-		)
-		(pin "MT2"
-			(uuid "923a9f86-0963-4101-afed-bb12932e1997")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "CONN1")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:LED0603_NOOUTLINE")
-		(at 266.7 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "59037dbe-b6bd-4139-b4ee-fb5d51b231d5")
-		(property "Reference" "CHG0"
-			(at 265.43 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-			)
-		)
-		(property "Value" "ORANGE"
-			(at 265.43 66.294 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:CHIPLED_0603_NOOUTLINE"
-			(at 266.7 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 266.7 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 266.7 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "A"
-			(uuid "969f8dce-9cb1-4ea3-84df-563fcbab7c2d")
-		)
-		(pin "C"
-			(uuid "1198a25b-f4a5-4a81-8a9a-33f9a95f60e1")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "CHG0")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:CAP_CERAMIC_0805MP")
-		(at 332.74 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5d4ce0f9-e39b-4f74-8e6c-8d556efbb846")
-		(property "Reference" "C12"
-			(at 330.45 64.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10uF"
-			(at 335.04 64.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:_0805MP"
-			(at 332.74 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 332.74 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 332.74 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7b806870-a23d-4f5c-9860-d8b103b4aa17")
-		)
-		(pin "2"
-			(uuid "bf34f37c-4024-424b-9c27-d64689690eb2")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -47050,6 +43983,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C221676"
+			(at 93.98 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "A"
 			(uuid "dc6c4d16-cfe1-438b-a5c5-80e8859ce45e")
 		)
@@ -47066,81 +44008,6 @@
 			(project ""
 				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
 					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:WS2812B_3535FULL")
-		(at 205.74 127 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5e91c266-4bf9-49c5-b117-0c3ddd04563b")
-		(property "Reference" "LED1"
-			(at 205.74 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "WS2812B_3535FULL"
-			(at 205.74 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:LED3535_FULLPADS"
-			(at 205.74 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 205.74 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a30b5672-6346-402a-adc7-b506175bd5cb")
-		)
-		(pin "2"
-			(uuid "cd105dda-f6d6-4a79-aa22-273abb9095e9")
-		)
-		(pin "3"
-			(uuid "1fb533e5-bfef-4a49-96fc-0d710bc5461c")
-		)
-		(pin "4"
-			(uuid "e1f411c6-580e-48d8-8cea-6283d3e52be9")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "LED1")
 					(unit 1)
 				)
 			)
@@ -47279,69 +44146,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:FIDUCIAL_1MM")
-		(at 381 248.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "61917415-7f87-4c2d-acd0-e5e2719ba134")
-		(property "Reference" "U$34"
-			(at 381 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "FIDUCIAL_1MM"
-			(at 381 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:FIDUCIAL_1MM"
-			(at 381 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 381 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 381 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "U$34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Adafruit Feather ESP32-C6-eagle-import:supply1_GND")
 		(at 370.84 210.82 0)
 		(mirror y)
@@ -47413,9 +44217,9 @@
 		(at 299.72 203.2 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "6499792d-b28a-4ae1-a5f1-c0377a369b93")
 		(property "Reference" "U5"
 			(at 292.1 197.104 0)
@@ -47471,6 +44275,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 299.72 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b8b23658-33a0-42f6-a813-74a321fde3b6")
 		)
@@ -47496,157 +44309,13 @@
 		)
 	)
 	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:CON_JST_PH_2PIN_MT_BATT")
-		(at 360.68 68.58 270)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6750e0bd-cd8f-4d00-8d8f-011f533c9200")
-		(property "Reference" "X1"
-			(at 366.268 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "JSTPH"
-			(at 366.268 70.231 90)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:JSTPH2_BATT"
-			(at 360.68 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 360.68 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 360.68 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1e1a87da-98bc-46ad-a52c-4aa379179ff2")
-		)
-		(pin "2"
-			(uuid "98e2f397-c27a-440a-b1e4-40cf6115c9e1")
-		)
-		(pin "NC2"
-			(uuid "bf2afd9c-63a0-42d7-a29a-b87a5140e075")
-		)
-		(pin "NC1"
-			(uuid "5e462575-40fd-4c48-8c75-5523151ed9eb")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "X1")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:RESISTOR_0603_NOOUT")
-		(at 322.58 63.5 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "69a2a587-a535-4b99-beb4-1bec868b6f1e")
-		(property "Reference" "R4"
-			(at 322.58 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "5.1K"
-			(at 322.58 63.5 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-					(thickness 0.2032)
-					(bold yes)
-				)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0603-NO"
-			(at 322.58 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 322.58 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 322.58 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "97fa734a-d6a4-466c-8f06-36ce668b39e2")
-		)
-		(pin "2"
-			(uuid "9e1e0ab3-8804-4eaa-866e-52e6b1c37088")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Adafruit Feather ESP32-C6-eagle-import:MOUNTINGHOLE2.5")
 		(at 391.16 248.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6cf94728-507f-4ae3-a230-f676a578f829")
 		(property "Reference" "U$32"
 			(at 391.16 248.92 0)
@@ -47693,97 +44362,19 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 391.16 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project ""
 				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
 					(reference "U$32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:MCP73831/2")
-		(at 299.72 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6d48f663-a9d4-4728-91c7-c8b595f040b4")
-		(property "Reference" "U3"
-			(at 289.56 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "MCP73831T-2ACI/OT"
-			(at 289.56 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:SOT23-5"
-			(at 299.72 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 299.72 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 299.72 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLC_ROTATION" "0"
-			(at 299.72 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d15a0218-b112-4dce-9036-5b918e424745")
-		)
-		(pin "2"
-			(uuid "2467bae1-d212-42c9-9d04-8ef598f73bfe")
-		)
-		(pin "3"
-			(uuid "0cf535c0-3847-456b-bcd5-05ad627cd1eb")
-		)
-		(pin "4"
-			(uuid "d9ec05ce-ea45-4d1b-b308-a4b2b8f72689")
-		)
-		(pin "5"
-			(uuid "325c3781-c112-4c40-a968-ad9aada16980")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -47816,7 +44407,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0603-NO"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 157.48 60.96 0)
 			(effects
 				(font
@@ -47835,6 +44426,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 157.48 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C25803"
 			(at 157.48 60.96 0)
 			(effects
 				(font
@@ -47931,7 +44531,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7763a483-1d21-4b55-9343-2054acbcedbc")
 		(property "Reference" "U$31"
 			(at 386.08 248.92 0)
@@ -47970,6 +44570,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 386.08 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 386.08 248.92 0)
 			(effects
 				(font
@@ -48146,7 +44755,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0603-NO"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 81.28 58.42 0)
 			(effects
 				(font
@@ -48165,6 +44774,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 81.28 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C23186"
 			(at 81.28 58.42 0)
 			(effects
 				(font
@@ -48255,89 +44873,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:STEMMA_I2C_QTRA")
-		(at 304.8 129.54 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8b207401-c1bc-4362-89a4-8ef691ff978f")
-		(property "Reference" "CONN1"
-			(at 300.99 121.285 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Value" "JST SH"
-			(at 300.99 137.16 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:JST_SH4_RA"
-			(at 304.8 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 304.8 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 304.8 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7e9809ac-5181-4237-a367-586da70f867a")
-		)
-		(pin "2"
-			(uuid "08749813-541f-424d-99f4-b0f01ffd9caf")
-		)
-		(pin "3"
-			(uuid "09ea45dd-3aee-4f6d-9238-c2c531efd450")
-		)
-		(pin "4"
-			(uuid "64aa9747-42be-4f3c-9f80-930caa5219c0")
-		)
-		(pin "MT1"
-			(uuid "5b7c756d-3fc8-4ec4-a59c-1cd1912b78fb")
-		)
-		(pin "MT2"
-			(uuid "e15a3862-01bd-44c8-8131-f2278a701195")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "CONN1")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Adafruit Feather ESP32-C6-eagle-import:GND")
 		(at 162.56 73.66 0)
 		(unit 1)
@@ -48398,72 +44933,6 @@
 			(project ""
 				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
 					(reference "#U$030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:VBAT")
-		(at 360.68 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "92752078-48ce-47f3-b821-1e718cdbd71f")
-		(property "Reference" "#U$016"
-			(at 360.68 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBAT"
-			(at 359.156 44.704 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 360.68 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 360.68 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 360.68 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "68077ee2-a1f0-478f-81b1-f3fcc2b67d14")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "#U$016")
 					(unit 1)
 				)
 			)
@@ -48596,156 +45065,6 @@
 			(project ""
 				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
 					(reference "#U$027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:FIDUCIAL_1MM")
-		(at 378.46 248.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "973815a4-bfb3-4cd1-9ba2-a0db6643d06c")
-		(property "Reference" "U$35"
-			(at 378.46 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "FIDUCIAL_1MM"
-			(at 378.46 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:FIDUCIAL_1MM"
-			(at 378.46 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 378.46 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 378.46 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "U$35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:RESISTOR_4PACK")
-		(at 281.94 142.24 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "979005db-c62e-4389-9c7f-2762b35a4540")
-		(property "Reference" "R3"
-			(at 279.4 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10K"
-			(at 281.94 142.24 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-					(thickness 0.2032)
-					(bold yes)
-				)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:RESPACK_4X0603"
-			(at 281.94 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 281.94 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 281.94 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "94923170-dde1-4c98-b7a8-81d7e96d4bbb")
-		)
-		(pin "8"
-			(uuid "9f93bd2e-ebdb-46fc-b104-749d677c0991")
-		)
-		(pin "2"
-			(uuid "2be206e0-e3b5-4df5-91ca-a7cb4207e6f9")
-		)
-		(pin "7"
-			(uuid "f6b9fe9a-40ce-4b36-88f1-25dcd1b5dc81")
-		)
-		(pin "3"
-			(uuid "c66a07e7-b596-4636-a86c-ea9e966f1f1b")
-		)
-		(pin "6"
-			(uuid "9b3f5ce1-11ce-43f2-9a20-1f7daeb1e683")
-		)
-		(pin "4"
-			(uuid "f004303f-d54a-4216-b905-2b942f497406")
-		)
-		(pin "5"
-			(uuid "03722655-1f0b-4a63-a1c1-f94983ed2364")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -48890,9 +45209,9 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "9cfe9e31-7d4c-4f30-b2e8-ccce7260fd00")
 		(property "Reference" "C11"
 			(at 322.33 204.49 90)
@@ -48937,6 +45256,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 320.04 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a7cb79e0-f38c-4d3e-aeaa-6672b72c60ac")
 		)
@@ -48947,72 +45275,6 @@
 			(project ""
 				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
 					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:GND")
-		(at 205.74 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a30f1aed-d1ea-470a-9e6d-fe76d59fc079")
-		(property "Reference" "#U$013"
-			(at 205.74 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 204.216 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 205.74 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2789aaf9-20c5-4ee2-a391-14bbf1b3fe2d")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "#U$013")
 					(unit 1)
 				)
 			)
@@ -49072,6 +45334,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C2905419"
+			(at 170.18 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b0e9d817-2b17-4b50-a471-149305f6967e")
 		)
@@ -49113,93 +45384,6 @@
 				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
 					(reference "JP3")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:RESISTOR_4PACK")
-		(at 287.02 142.24 90)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a72591d6-ea62-40f3-8788-f3675330ca85")
-		(property "Reference" "R3"
-			(at 284.48 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10K"
-			(at 287.02 142.24 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-					(thickness 0.2032)
-					(bold yes)
-				)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:RESPACK_4X0603"
-			(at 287.02 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 287.02 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 287.02 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cee3683e-dcb3-4062-a102-dd568e7d6a82")
-		)
-		(pin "8"
-			(uuid "02a5f249-f151-4dba-8b70-a1f8cea35b34")
-		)
-		(pin "2"
-			(uuid "2baa9d60-a417-4da8-915d-20ca3768ae47")
-		)
-		(pin "7"
-			(uuid "dd6fa32c-ac49-4848-9dac-55781a2070df")
-		)
-		(pin "3"
-			(uuid "fe4ef7bb-12c6-4ecd-b20a-6d3f001b8cc9")
-		)
-		(pin "6"
-			(uuid "9ad24514-4fa7-4f9c-af60-d8ef3ff14c49")
-		)
-		(pin "4"
-			(uuid "a26fbbb9-7519-45af-a8d8-766427c6e7b2")
-		)
-		(pin "5"
-			(uuid "c02b4066-7bbd-4e95-9928-35bab09ecec3")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "R3")
-					(unit 2)
 				)
 			)
 		)
@@ -49259,6 +45443,15 @@
 			)
 		)
 		(property "JLC_ROTATION" "0"
+			(at 172.72 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C51118"
 			(at 172.72 58.42 0)
 			(effects
 				(font
@@ -49358,79 +45551,13 @@
 		)
 	)
 	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:GND")
-		(at 327.66 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "aa68e79b-a5bb-47db-9b6a-abfd41ed7ab4")
-		(property "Reference" "#U$036"
-			(at 327.66 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 326.136 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 327.66 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 327.66 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 327.66 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1dd5c95c-1436-4b58-9729-38ee8ad4458e")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "#U$036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Adafruit Feather ESP32-C6-eagle-import:AHT20")
 		(at 353.06 200.66 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "aa7041ff-fb9e-4659-9c9c-30f5465b4ba6")
 		(property "Reference" "U4"
 			(at 346.71 193.04 0)
@@ -49469,6 +45596,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 353.06 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 353.06 200.66 0)
 			(effects
 				(font
@@ -49637,72 +45773,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:VBUS")
-		(at 259.08 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ae0e74f2-78d9-4d92-9ec1-cf050b9365c9")
-		(property "Reference" "#U$038"
-			(at 259.08 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 257.556 44.704 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 259.08 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 259.08 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 259.08 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "78374eec-b1e0-4778-9a80-c8621f7d3d01")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "#U$038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Adafruit Feather ESP32-C6-eagle-import:GND")
 		(at 104.14 215.9 0)
 		(unit 1)
@@ -49835,87 +45905,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:STEMMA_I2C_QTRA")
-		(at 307.34 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c9f0d4af-ac53-4847-97d7-20d80402db0f")
-		(property "Reference" "CONN1"
-			(at 303.53 139.065 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "JST SH"
-			(at 303.53 154.94 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:JST_SH4_RA"
-			(at 307.34 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 307.34 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 307.34 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2c63b020-a854-435b-92ed-c60a18d391e4")
-		)
-		(pin "2"
-			(uuid "00d6ce80-4b91-48df-b207-981c06f4d80a")
-		)
-		(pin "3"
-			(uuid "79ebd08b-b605-4e5b-838b-e3e62b74f0d9")
-		)
-		(pin "4"
-			(uuid "b1aa850a-c48e-4148-87ca-b8aa93958942")
-		)
-		(pin "MT1"
-			(uuid "f3611252-d81c-4994-acd0-4a9af5f0928c")
-		)
-		(pin "MT2"
-			(uuid "57397596-f087-443a-b3c3-f2c66e870a97")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "CONN1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Adafruit Feather ESP32-C6-eagle-import:3.3V")
 		(at 228.6 58.42 0)
 		(unit 1)
@@ -49976,72 +45965,6 @@
 			(project ""
 				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
 					(reference "#U$02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:GND")
-		(at 360.68 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cca94be7-0b33-460a-8ed2-fd09fbc66e4f")
-		(property "Reference" "#U$022"
-			(at 360.68 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 359.156 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 360.68 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 360.68 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 360.68 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7a6aa893-eea5-4b25-a163-c9f58bf4877e")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "#U$022")
 					(unit 1)
 				)
 			)
@@ -50180,96 +46103,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:MAX17048/T")
-		(at 297.18 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d2f29ac5-c6b0-4e0e-826d-cdf361ed8a3f")
-		(property "Reference" "X2"
-			(at 292.1 111.76 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "MAX17048/T"
-			(at 297.18 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:TDFN8_2X2MM"
-			(at 297.18 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 297.18 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 297.18 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "25fa75ec-1b8f-4422-a772-5e0656c6059a")
-		)
-		(pin "2"
-			(uuid "9bebca93-ec9f-4576-adcd-4f1a426eac72")
-		)
-		(pin "3"
-			(uuid "7fb9daaf-7cec-497b-897f-cdff7d078e91")
-		)
-		(pin "4"
-			(uuid "5274963e-a768-4485-ad33-d85941d9a75d")
-		)
-		(pin "5"
-			(uuid "66396415-5eec-427b-aba8-1c5d2f793330")
-		)
-		(pin "6"
-			(uuid "308c8aa6-2e5c-453d-8bc7-f7a09b3aba57")
-		)
-		(pin "7"
-			(uuid "a50b5978-d179-418e-abfb-8c724aad2f61")
-		)
-		(pin "8"
-			(uuid "d8db601b-23e3-43da-bab3-729d24241610")
-		)
-		(pin "THERMAL"
-			(uuid "bce15656-078c-4ece-a4d0-943457b156ee")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "X2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Adafruit Feather ESP32-C6-eagle-import:3.3V")
 		(at 109.22 109.22 0)
 		(unit 1)
@@ -50360,7 +46193,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0805-NO"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 152.4 66.04 0)
 			(effects
 				(font
@@ -50379,6 +46212,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 152.4 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C15850"
 			(at 152.4 66.04 0)
 			(effects
 				(font
@@ -50469,80 +46311,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:VBAT")
-		(at 271.78 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d650f3aa-9e92-4212-888e-18a882d3eedd")
-		(property "Reference" "#U$07"
-			(at 271.78 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBAT"
-			(at 270.256 95.504 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 271.78 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 271.78 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 271.78 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a97beb5c-3626-4011-94d0-58a0e6630a71")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "#U$07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Adafruit Feather ESP32-C6-eagle-import:RESISTOR_4PACK")
 		(at 330.2 187.96 0)
 		(mirror y)
 		(unit 3)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "dcf9470b-843c-479f-9a87-ea60e44bb34e")
 		(property "Reference" "R3"
 			(at 330.2 185.42 0)
@@ -50581,6 +46357,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 330.2 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
 			(at 330.2 187.96 0)
 			(effects
 				(font
@@ -50649,7 +46434,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0603-NO"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 132.08 63.5 0)
 			(effects
 				(font
@@ -50668,6 +46453,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 132.08 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C25803"
 			(at 132.08 63.5 0)
 			(effects
 				(font
@@ -50743,6 +46537,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C122863"
+			(at 137.16 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "A"
 			(uuid "0451fdec-dd42-47b8-b4ba-c56ee339c5d5")
 		)
@@ -50753,72 +46556,6 @@
 			(project ""
 				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
 					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:GND")
-		(at 320.04 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e70e3eba-9ab9-43a5-822a-965818da9d68")
-		(property "Reference" "#U$049"
-			(at 320.04 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 318.516 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 320.04 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 320.04 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 320.04 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f5fc1742-05d9-499f-81f8-e01f5a36eaaf")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "#U$049")
 					(unit 1)
 				)
 			)
@@ -50917,7 +46654,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:0603-NO"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 144.78 121.92 0)
 			(effects
 				(font
@@ -50936,6 +46673,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 144.78 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C23186"
 			(at 144.78 121.92 0)
 			(effects
 				(font
@@ -51020,150 +46766,6 @@
 			(project ""
 				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
 					(reference "#U$05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:CON_JST_PH_2PIN_MT_BATT")
-		(at 360.68 68.58 90)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f8260a1b-c1f5-4cbf-9a4b-0ecc2b57e805")
-		(property "Reference" "X1"
-			(at 355.092 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "JSTPH"
-			(at 355.092 66.929 90)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:JSTPH2_BATT"
-			(at 360.68 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 360.68 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 360.68 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ea608b30-ac5a-457c-a514-2b355b7b296a")
-		)
-		(pin "2"
-			(uuid "a47c9d4d-0502-48ca-af19-52aa8c94c94b")
-		)
-		(pin "NC2"
-			(uuid "5eebca85-e09f-4b2a-9fc2-637dce387a59")
-		)
-		(pin "NC1"
-			(uuid "4849690a-8f96-4448-92e6-9a4766ce5f28")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "X1")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Adafruit Feather ESP32-C6-eagle-import:SOLDERJUMPERCLOSED")
-		(at 276.86 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f88479ac-a16d-4d1f-a15d-c4cecc6a3f81")
-		(property "Reference" "SJ1"
-			(at 274.32 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "SOLDERJUMPERCLOSED"
-			(at 274.32 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "Adafruit Feather ESP32-C6:SOLDERJUMPER_CLOSEDWIRE"
-			(at 276.86 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 276.86 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 276.86 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8e8801a4-da6e-45de-bacd-ce3f007bedd9")
-		)
-		(pin "2"
-			(uuid "7adf5dec-67ee-44bc-8399-af072bf2b1cc")
-		)
-		(instances
-			(project ""
-				(path "/07d0dc9f-2a68-4826-9bca-1382bb35a733"
-					(reference "SJ1")
 					(unit 1)
 				)
 			)
@@ -51282,6 +46884,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 58.42 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2927039"
 			(at 58.42 53.34 0)
 			(effects
 				(font

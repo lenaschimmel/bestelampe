@@ -15,6 +15,8 @@ opt-level = "z"
 
 [features]
 default = ["std", "embassy", "esp-idf-svc/native"]
+feather-sparkfun = []
+feather-adafruit = []
 
 pio = ["esp-idf-svc/pio"]
 std = ["alloc", "esp-idf-svc/binstart", "esp-idf-svc/std"]
