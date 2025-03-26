@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Adafruit Feather ESP32-C6")(type "KiCad")(uri "$(KIPRJMOD)/Adafruit Feather ESP32-C6.pretty")(options "")(descr ""))
+)

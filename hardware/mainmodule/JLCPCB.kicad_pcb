@@ -6,8 +6,14 @@
 
   (paper "USLetter")
   (title_block
-    (rev "1")
-  )
+		(title "besteLampe! LED Main Moudule")
+    (date "2024-01-07")
+		(rev "1.0")
+		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
+		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
+		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
+    (comment 4 "Design for JLCPCB 1-2 Layer Service")
+	)
 
   (layers
     (0 "F.Cu" signal "Front")
@@ -20343,7 +20349,7 @@
     (stroke (width 0.1524) (type default)) (layer "F.SilkS") (tstamp d4763d6b-ab39-467a-8c86-50484d5b5ea7))
   (gr_rect (start 143.008 77.817) (end 143.7894 82.5246)
     (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp d4ff1b66-429f-4f17-85fc-0a0604c1a63d))
-  (gr_rect (start 135.1862 104.5454) (end 139.1318 103.764)
+  (gr_rect (start 135.1862 103.764) (end 139.1318 104.5454)
     (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp f220a9bd-c8e0-4b3f-a96b-49927c6f86de))
   (gr_line (start 123.444 54.61) (end 123.444 53.821)
     (stroke (width 0.1524) (type default)) (layer "F.SilkS") (tstamp f2742da5-1312-4599-98f1-aa9e61636d90))

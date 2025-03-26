@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TCA6408ARSVR
+D Low-Voltage 8-Bit I2C and SMBus I/O Expander
+K
+F http://www.ti.com/lit/gpn/tca6408a
+$ENDCMP
+#
+#End Doc Library

@@ -25,11 +25,14 @@ embassy = ["esp-idf-svc/embassy-sync", "esp-idf-svc/critical-section", "esp-idf-
 
 [dependencies]
 log = { version = "0.4", default-features = false }
-esp-idf-svc = { version = "0.48", default-features = false }
-it8951 = "0.2.0"
+esp-idf-svc = { version = "0.48.0", default-features = false }
+it8951 = { path="../it8951"}
 embedded-graphics = "0.8.1"
-esp-idf-hal = "0.43.1"
+esp-idf-hal = "0.43.0"
 embedded-hal = "1.0.0"
 
 [build-dependencies]
 embuild = "0.31.3"
+
+[patch.crates-io]
+cc = { git = "https://github.com/rust-lang/cc-rs", tag = "1.0.83" }

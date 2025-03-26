@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FXL6408UMX
+D Fully Configurable 8-Bit I2C-Controlled GPIO Expander
+K
+F http://www.onsemi.com/pub/Collateral/FXL6408-D.pdf
+$ENDCMP
+#
+#End Doc Library

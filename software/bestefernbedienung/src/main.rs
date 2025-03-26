@@ -1,12 +1,14 @@
 use std::error::Error;
-use esp_idf_hal::delay::Delay;
-use esp_idf_hal::gpio::*;
-use esp_idf_hal::spi::*;
-use esp_idf_hal::units::FromValueType;
 
-use esp_idf_hal::peripherals::Peripherals;
-use embedded_hal::spi::MODE_3;
-use esp_idf_hal::units::FromValueType::*;
+use esp_idf_hal::{
+    prelude::*,
+    delay::Delay,
+    gpio::*,
+    spi::*,
+    peripherals::Peripherals,
+};
+
+use embedded_hal::spi::MODE_0;
 
 use embedded_graphics::{
     pixelcolor::Gray4,
@@ -18,20 +20,25 @@ fn main() -> Result<(), Box<dyn Error>> {
     esp_idf_svc::sys::link_patches();
     esp_idf_svc::log::EspLogger::initialize_default();
 
+    println!("Programm is actually running.");
+
     let peripherals = Peripherals::take().unwrap();
 
-    let busy = PinDriver::input(peripherals.pins.gpio27);
-    let rst = PinDriver::output(peripherals.pins.gpio2); // MAIN_PWR_PINM
+    let busy = PinDriver::input(peripherals.pins.gpio27).unwrap();
+    let mut main_power  = PinDriver::output(peripherals.pins.gpio2).unwrap(); // MAIN_PWR_PINM
+    let rst  = PinDriver::output(peripherals.pins.gpio19).unwrap(); // This is one of the grove ports. The display driver wants a reset pin, but no GPIO is connected!
+
+    main_power.set_high().unwrap();
 
     let spi = peripherals.spi2;
-    let sclk = peripherals.pins.gpio14;
-    let sdo = peripherals.pins.gpio12; // Mosi == 12, not sure if sdo = mosi
-    let sdi = peripherals.pins.gpio13; // Miso == 13, not sure if sdi = miso
-    let cs = peripherals.pins.gpio15;
+    let sclk : AnyIOPin = peripherals.pins.gpio14.into();
+    let sdo  : AnyIOPin = peripherals.pins.gpio12.into(); // GPIO12 leads to pin 123 which is an input pin on the it8951
+    let sdi  : AnyIOPin = peripherals.pins.gpio13.into(); // GPIO13 leads to pin 124 which is an output pin on the it8951
+    let cs   : AnyIOPin = peripherals.pins.gpio15.into();
 
     let config = config::Config::new()
-        .baudrate(24.MegaHertz().into())
-        .data_mode(MODE_3);
+        .baudrate(MegaHertz(10).into())
+        .data_mode(MODE_0);
 
     
     let spi_device = SpiDeviceDriver::new_single(
@@ -44,8 +51,11 @@ fn main() -> Result<(), Box<dyn Error>> {
         &config,
     )?;
 
+    println!("SPI is initialized, driver will follow...");
+
     let vcom = 2300; // taken from https://github.com/m5stack/M5EPD/blob/0e63f701929ca033f12233633ae8a395f5cb5ef1/src/M5EPD_Driver.cpp#L64
     let driver = it8951::interface::IT8951SPIInterface::new(spi_device, busy, rst, Delay::new_default());
+    println!("driver is done, now creating epd...");
     let mut epd = it8951::IT8951::new(driver).init(vcom).unwrap();
 
     println!(

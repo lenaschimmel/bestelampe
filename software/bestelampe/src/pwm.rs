@@ -1,3 +1,18 @@
+// SPDX-FileCopyrightText: 2024 Lena Schimmel <mail@lenaschimmel.de>
+// SPDX-License-Identifier: CERN-OHL-S-2.0+
+// This file is part of besteLampe!.
+// 
+// besteLampe! is free software: you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the Free Software Foundation, 
+// either version 3 of the License, or (at your option) any later version.
+// 
+// besteLampe! is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+// without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+// See the GNU General Public License for more details.
+// 
+// You should have received a copy of the GNU General Public License along with besteLampe!.
+// If not, see <https://www.gnu.org/licenses/>. 
+
 use esp_idf_hal::ledc::LedcDriver;
 
 use esp_idf_sys::EspError;
@@ -46,9 +61,8 @@ impl XyColor {
 	}
 }
 
-
-
 pub struct Led<'p> {
+	index: usize,
 	driver: LedcDriver<'p>,
 	xy_color: XyColor,
 	//xyz_color: Xyz<f32>,
@@ -57,10 +71,10 @@ pub struct Led<'p> {
 }
 
 impl<'p> Led<'p> {
-	pub fn new(name: &'p str, driver: LedcDriver<'p>, x: f32, y: f32, max_brightness: f32) -> Self {
+	pub fn new(index: usize, name: &'p str, driver: LedcDriver<'p>, x: f32, y: f32, max_brightness: f32) -> Self {
 		let xy_color = XyColor {x, y};
 		//let xyz_color = xy_color.with_brightness(max_brightness);
-		return Self { name, driver, xy_color, max_brightness };
+		return Self { index, name, driver, xy_color, max_brightness };
 	}
 }
 
@@ -116,13 +130,15 @@ impl<'p> Pwm<'p> {
 		// but keep it on the same pin, or configure it as `off`. So if I have at most
 		// 4 LEDs active at all times, I could use up to 2 drivers for non-LED pins.
 
+		// with these 5 leds, only temperatures from 2150 to 6800 can be mapped
 
-		let led_r  = Rc::new(RefCell::new(Led::new( "R", driver_0, 0.630, 0.295,  25.0)));
-		let led_g  = Rc::new(RefCell::new(Led::new( "G", driver_1, 0.153, 0.682,  48.0)));
-		let led_b  = Rc::new(RefCell::new(Led::new( "B", driver_2, 0.146, 0.058,  48.0)));
-		let led_cw = Rc::new(RefCell::new(Led::new("CW", driver_3, 0.317, 0.318,  40.0)));
-		let led_ww = Rc::new(RefCell::new(Led::new("WW", driver_4, 0.485, 0.394,  29.0)));
-		let led_a  = Rc::new(RefCell::new(Led::new( "A", driver_5, 0.573, 0.421, 110.0)));
+		let led_r  = Rc::new(RefCell::new(Led::new(0, "R", driver_0, 0.6400, 0.3500, 165.0)));
+		let led_g  = Rc::new(RefCell::new(Led::new(1, "G", driver_1, 0.4070, 0.5370, 460.0)));
+		let led_b  = Rc::new(RefCell::new(Led::new(2, "B", driver_2, 0.1470, 0.1100, 130.0)));
+		let led_cw = Rc::new(RefCell::new(Led::new(3,"CW", driver_3, 0.3447, 0.3553, 310.0)));
+		//let led_ww = Rc::new(RefCell::new(Led::new(4,"WW", driver_4, 0.4334, 0.4030, 220.0)));
+		let led_ww = Rc::new(RefCell::new(Led::new(4,"WW", driver_4, 0.5066, 0.4158, 170.0)));
+		let led_pa  = Rc::new(RefCell::new(Led::new(5, "PA", driver_5, 0.5650, 0.4250, 230.0)));
 
 		let leds: Vec<Rc<RefCell<Led<'_>>>> = [
 			led_r.clone(),
@@ -130,19 +146,20 @@ impl<'p> Pwm<'p> {
 			led_b.clone(),
 			led_cw.clone(),
 			led_ww.clone(),
-			led_a.clone(),
+			led_pa.clone(),
 		].to_vec();
 
 		// TODO: implement triangulation for an arbitrary number of LED channels 
 		// (given as xy color). For now, these are just hardcoded values for the first prototype.
-		let t0 = LedTriangle::new(led_r.clone(), led_a.clone() , led_ww.clone());
-		let t1 = LedTriangle::new(led_g.clone(), led_a.clone() , led_ww.clone());
+		let t0 = LedTriangle::new(led_r.clone(), led_pa.clone() , led_ww.clone());
+		let t1 = LedTriangle::new(led_g.clone(), led_pa.clone() , led_ww.clone());
 		let t2 = LedTriangle::new(led_r.clone(), led_cw.clone(), led_ww.clone());
 		let t3 = LedTriangle::new(led_g.clone(), led_cw.clone(), led_ww.clone());
 		let t4 = LedTriangle::new(led_r.clone(), led_cw.clone(), led_b.clone() );
-		let t5 = LedTriangle::new(led_g.clone(), led_cw.clone(), led_b.clone() );
+		let t5 = LedTriangle::new(led_g.clone(), led_cw.clone(), led_b.clone() );	
 
 		let triangles = [
+			//t1, t3, t5
 			t0, t1, t2, t3, t4, t5
 		].to_vec();
 	
@@ -285,11 +302,9 @@ impl<'p> Pwm<'p> {
 	/// this is not really ok and should be changed to return an error.
 	/// Returns an EspError if the color is valid, but some kind of hardware failure happened.
 	pub fn set_color(self: &mut Self, color: Xyz<f32>) -> Result<(), EspError>  {
-		for i in 0..6 {
-			// TODO don't set all LEDs to 0, only those that are not used now
-			self.leds[i].borrow_mut().driver.set_duty(0)?;
-		}
 		let xy_color: XyColor = color.into();
+		let mut active_leds = Vec::<usize>::new();
+		let mut all_duties = [0u32; 8];
 		//info!("Target color: {:?} from {}", xy_color, color);
 		for triangle in &mut self.triangles {
 			//info!("Checking triangle...");
@@ -305,14 +320,30 @@ impl<'p> Pwm<'p> {
 					info!("Set {} to {} / {}. ", led.name, duty, max_duty);
 					//info!("Brightness of color {} is {}, max_brightness of LED is {}, which makes {}% of maximum.", 
 					//	color, color.y(), max_brightness, color.y() / max_brightness * 100.0);
-					led.driver.set_duty(duty)?;
+					let hpoint = led.index as u32 * 1000;
+					led.driver.set_duty_with_hpoint(duty, hpoint)?;
+					all_duties[led.index] = duty;
+
+					active_leds.push(led.index);
 				}
-				return Ok(());
+				break;
+				//return Ok(());
 			}
 		}
 
-		warn!("No triangle matched color {:?}!", xy_color);
-		return Ok(()); // Not really ok.
+		//info!("D: {:?}", all_duties);
+
+		// Turn off all LEDs that were not turned on just now.
+		for i in 0..5 {
+			if !active_leds.contains(&i) {
+				self.leds[i].borrow_mut().driver.set_duty(0)?;
+			}
+		}
+
+		if active_leds.is_empty() {
+			//warn!("No triangle matched color {:?}!", xy_color);
+		}
+		return Ok(()); 
 	}
 
 	/// Set the LEDs to light with a given color temperature (in K) and brightness ().
@@ -333,7 +364,7 @@ impl<'p> Pwm<'p> {
 	}
 
 	pub fn set_amber(self: &mut Self, brightness_up_to_one: f32) -> Result<(), EspError> {
-		for i in 0..5 {
+		for i in 0..6 {
 			self.leds[i].borrow_mut().driver.set_duty(0)?;
 		}
 		let amber_driver = &mut self.leds[5].borrow_mut().driver;
@@ -342,6 +373,7 @@ impl<'p> Pwm<'p> {
 	}
 
 	pub fn set_duties(self: &mut Self, brightness_up_to_one: &Vec<f32>) -> Result<(), EspError> {
+		info!("Set duties: {:?}", brightness_up_to_one);
 		for i in 0..6 {
 			let driver = &mut self.leds[i].borrow_mut().driver;
 			let target_duty = (driver.get_max_duty() as f32 * brightness_up_to_one[i]) as u32;

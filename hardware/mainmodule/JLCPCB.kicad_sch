@@ -3,13 +3,15 @@
   (uuid 366c4e60-fc00-4520-9ea0-7840d623b51d)
 
   (paper "USLetter")
-
   (title_block
-    (title "Beste Lampe Main Module")
+		(title "besteLampe! LED Main Moudule")
     (date "2024-01-07")
-    (rev "1")
-    (comment 1 "Design for JLCPCB 1-2 Layer Service")
-  )
+		(rev "1.0")
+		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
+		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
+		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
+    (comment 4 "Design for JLCPCB 1-2 Layer Service")
+	)
 
   (lib_symbols
     (symbol "74xx:74HCT244" (in_bom yes) (on_board yes)

@@ -1,0 +1,1092 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "3c83d749-446b-4fb6-8002-ac5e76d0fd14")
+	(paper "A4")
+	(title_block
+		(title "besteLampe! ABL Rigid Connector")
+		(date "2024-11-26")
+		(rev "1.1")
+		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
+		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
+		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
+	)
+	(lib_symbols
+		(symbol "009159008603906:009159008603906"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 16.51 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "009159008603906"
+				(at 16.51 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "009159008603906"
+				(at 16.51 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://datasheets.kyocera-avx.com/9159-600.pdf"
+				(at 16.51 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Standard Card Edge Connectors Dual Row Inverted Card Edge 2x4pos w/ Kapton"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "5.25"
+				(at 16.51 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "581-009159008603906"
+				(at 16.51 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/KYOCERA-AVX/009159008603906?qs=ST9lo4GX8V2gKYUgxLGO0Q%3D%3D"
+				(at 16.51 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Kyocera AVX"
+				(at 16.51 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "009159008603906"
+				(at 16.51 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "009159008603906_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -2.54 180)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -5.08 180)
+					(length 5.08)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -7.62 180)
+					(length 5.08)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 66.04 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3734a195-2115-4d70-9643-01c2382d70a3")
+	)
+	(junction
+		(at 45.72 56.515)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "373d2964-34de-431d-b7a1-0b5739fa3f02")
+	)
+	(junction
+		(at 66.04 56.515)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49984fa2-ce15-4b39-a72a-41a1eac8f993")
+	)
+	(junction
+		(at 66.04 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d9c9e45-e5fd-4812-9fab-2a1f4890e9c4")
+	)
+	(junction
+		(at 66.04 59.055)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb96f7d7-f632-459c-bcea-b691fbab0a55")
+	)
+	(junction
+		(at 45.72 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce7f696c-9ba6-4f31-8373-7a028c5e385d")
+	)
+	(wire
+		(pts
+			(xy 41.91 40.64) (xy 45.72 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11d05e08-4bc8-4111-930e-345267a64e21")
+	)
+	(wire
+		(pts
+			(xy 45.72 33.02) (xy 45.72 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12292998-853c-4c95-9921-e25e4296c3f4")
+	)
+	(wire
+		(pts
+			(xy 66.04 33.02) (xy 66.04 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14915428-158f-490e-ab48-01ac9c1e1e6c")
+	)
+	(wire
+		(pts
+			(xy 66.04 35.56) (xy 66.04 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17a9d830-06f8-4ada-af74-751d79741406")
+	)
+	(wire
+		(pts
+			(xy 45.72 53.975) (xy 45.72 56.515)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ae4b0b0-daf2-487c-8a20-cbabd1ffffc7")
+	)
+	(wire
+		(pts
+			(xy 66.04 59.055) (xy 69.85 59.055)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35d00dde-1001-4f98-8ba0-1b3e586f6150")
+	)
+	(wire
+		(pts
+			(xy 45.72 56.515) (xy 45.72 59.055)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d9e7b1a-30e7-440b-8fe8-65c756df7f23")
+	)
+	(wire
+		(pts
+			(xy 66.04 56.515) (xy 69.85 56.515)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6de9c1f4-be19-4cd8-8ac0-2a15cc2621eb")
+	)
+	(wire
+		(pts
+			(xy 69.85 61.595) (xy 66.04 61.595)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c601398-e647-440d-bb21-1557be1ba270")
+	)
+	(wire
+		(pts
+			(xy 69.85 40.64) (xy 66.04 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cb38c27-b404-4e59-97bb-05b6ccf437c7")
+	)
+	(wire
+		(pts
+			(xy 41.91 35.56) (xy 45.72 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e70574b-2893-4b5c-9cd2-8d7a8827b525")
+	)
+	(wire
+		(pts
+			(xy 41.91 56.515) (xy 45.72 56.515)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8da8998d-09d2-4628-b073-00b0b898dde7")
+	)
+	(wire
+		(pts
+			(xy 45.72 35.56) (xy 45.72 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9068292b-bea1-4464-90ea-15458f01787f")
+	)
+	(wire
+		(pts
+			(xy 66.04 56.515) (xy 66.04 59.055)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9caf3fd7-724e-408b-9ea1-d1e05c07204e")
+	)
+	(wire
+		(pts
+			(xy 66.04 53.975) (xy 66.04 56.515)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4418664-5659-455d-87e9-12c053b81322")
+	)
+	(wire
+		(pts
+			(xy 66.04 38.1) (xy 69.85 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd97ebd7-a9bd-4cab-907f-6f69c3da73fd")
+	)
+	(wire
+		(pts
+			(xy 41.91 61.595) (xy 45.72 61.595)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e445bd68-3c4b-4d68-b8a3-320980dcfd21")
+	)
+	(wire
+		(pts
+			(xy 66.04 35.56) (xy 69.85 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebe8a16a-9925-40d9-baa2-e02d33598bcb")
+	)
+	(label "VLED"
+		(at 69.85 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1273ce2c-1e16-4cef-b251-0cdb3f3e87ce")
+	)
+	(label "GND"
+		(at 41.91 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "17d30c84-fc22-4868-9eb7-6065f4efc919")
+	)
+	(label "SDA"
+		(at 69.85 61.595 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "515cba8f-c6ca-4b7e-a482-9f3b3b34c225")
+	)
+	(label "5V"
+		(at 69.85 59.055 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5cc3c08f-ebc2-4ff4-9765-0a8116cc712a")
+	)
+	(label "SCL"
+		(at 41.91 40.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9f4f18b8-5021-4f28-979e-c51e8eb68f98")
+	)
+	(label "SCL"
+		(at 41.91 61.595 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "aa8dd94e-9cf7-4f5c-9db3-a5fe1d813005")
+	)
+	(label "VLED"
+		(at 69.85 56.515 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7f6c495-e69b-423d-982f-e9e097cc88e3")
+	)
+	(label "5V"
+		(at 69.85 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bdb10160-4ed5-4574-b2fb-52e976ec7ed9")
+	)
+	(label "SDA"
+		(at 69.85 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d25b75ee-704d-4031-83a8-2dd6294edc10")
+	)
+	(label "GND"
+		(at 41.91 56.515 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "faeaff7c-b1e9-4fcc-a39f-b45c077327ac")
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 49.53 82.55 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3142a4c1-3eb0-4e7a-9702-942693bfcb92")
+		(property "Reference" "H2"
+			(at 52.07 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 52.07 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
+			(at 49.53 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 49.53 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "rigid_connector"
+				(path "/3c83d749-446b-4fb6-8002-ac5e76d0fd14"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 49.53 76.2 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41f22821-0dd9-44fb-ab93-a3ac58b2e2ab")
+		(property "Reference" "H1"
+			(at 52.07 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 52.07 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
+			(at 49.53 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 49.53 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "rigid_connector"
+				(path "/3c83d749-446b-4fb6-8002-ac5e76d0fd14"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "009159008603906:009159008603906")
+		(at 66.04 40.64 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c482dee3-ab31-4c80-8cbe-9d2c06adbf18")
+		(property "Reference" "J2"
+			(at 55.88 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "009159008603906"
+			(at 55.88 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "009159008603906:9159 Connector"
+			(at 49.53 -54.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/9159-600.pdf"
+			(at 49.53 -154.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Standard Card Edge Connectors Dual Row Inverted Card Edge 2x4pos w/ Kapton"
+			(at 66.04 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "5.25"
+			(at 49.53 -354.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "581-009159008603906"
+			(at 49.53 -454.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/KYOCERA-AVX/009159008603906?qs=ST9lo4GX8V2gKYUgxLGO0Q%3D%3D"
+			(at 49.53 -554.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Kyocera AVX"
+			(at 49.53 -654.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "009159008603906"
+			(at 49.53 -754.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "97251669-ee22-4ee9-866b-7227354e44d7")
+		)
+		(pin "6"
+			(uuid "fa81a5db-9cb8-44cb-8d34-350540c9a012")
+		)
+		(pin "4"
+			(uuid "e0fc94da-90ec-4683-9ee5-c4404327f43e")
+		)
+		(pin "1"
+			(uuid "73fa136e-6583-466e-b92e-6f93752e37db")
+		)
+		(pin "8"
+			(uuid "6d6c2016-f59d-40b7-bba7-f14cc3f0bc8a")
+		)
+		(pin "3"
+			(uuid "9d93770c-0bcd-455a-a717-5376620587ae")
+		)
+		(pin "2"
+			(uuid "be4de497-06d8-4979-92cb-16abb19e054c")
+		)
+		(pin "7"
+			(uuid "46fd4051-6aed-4899-90df-03ebd206b5f9")
+		)
+		(instances
+			(project "rigid_connector"
+				(path "/3c83d749-446b-4fb6-8002-ac5e76d0fd14"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "009159008603906:009159008603906")
+		(at 66.04 53.975 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c7f1dfe9-14d2-4a87-afa9-c11c8c46efc9")
+		(property "Reference" "J1"
+			(at 55.88 46.355 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "009159008603906"
+			(at 55.88 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "009159008603906:9159 Connector"
+			(at 49.53 148.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/9159-600.pdf"
+			(at 49.53 248.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Standard Card Edge Connectors Dual Row Inverted Card Edge 2x4pos w/ Kapton"
+			(at 66.04 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "5.25"
+			(at 49.53 448.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "581-009159008603906"
+			(at 49.53 548.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/KYOCERA-AVX/009159008603906?qs=ST9lo4GX8V2gKYUgxLGO0Q%3D%3D"
+			(at 49.53 648.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Kyocera AVX"
+			(at 49.53 748.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "009159008603906"
+			(at 49.53 848.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "f7eeaade-44d8-4b9c-b2ff-9b7a8d5bbb47")
+		)
+		(pin "6"
+			(uuid "24ab1b40-d299-4a35-af8d-b5aadc28b937")
+		)
+		(pin "4"
+			(uuid "53f1c9cb-1050-4fd3-9f9d-699e299c7ed5")
+		)
+		(pin "1"
+			(uuid "1fa3ea58-2edd-442c-9e32-9ce08b3e7a10")
+		)
+		(pin "8"
+			(uuid "82d8b7bb-147e-4b6f-ba9f-95920270cc29")
+		)
+		(pin "3"
+			(uuid "c1e34711-c306-4b7e-9b03-0980d54e0466")
+		)
+		(pin "2"
+			(uuid "2d0bbea5-fd4a-4748-84fa-c6a8cf7d70e5")
+		)
+		(pin "7"
+			(uuid "f17ac428-455b-4990-b897-b8f661ae67fd")
+		)
+		(instances
+			(project "rigid_connector"
+				(path "/3c83d749-446b-4fb6-8002-ac5e76d0fd14"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

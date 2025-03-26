@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 009159008603906
+#/19112145/1330328/2.50/8/3/Connector
+DEF 009159008603906 J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "009159008603906" 650 200 50 H V L CNN
+F2 "009159008603906" 650 100 50 H I L CNN
+F3 "https://datasheets.kyocera-avx.com/9159-600.pdf" 650 0 50 H I L CNN
+F4 "Standard Card Edge Connectors Dual Row Inverted Card Edge 2x4pos w/ Kapton" 650 -100 50 H I L CNN "Description"
+F5 "5.25" 650 -200 50 H I L CNN "Height"
+F6 "581-009159008603906" 650 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/KYOCERA-AVX/009159008603906?qs=ST9lo4GX8V2gKYUgxLGO0Q%3D%3D" 650 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Kyocera AVX" 650 -500 50 H I L CNN "Manufacturer_Name"
+F9 "009159008603906" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 800 0 200 L 50 50 0 0 P
+X 2 2 0 0 200 R 50 50 0 0 P
+X 3 3 800 -100 200 L 50 50 0 0 P
+X 4 4 0 -100 200 R 50 50 0 0 P
+X 5 5 800 -200 200 L 50 50 0 0 P
+X 6 6 0 -200 200 R 50 50 0 0 P
+X 7 7 800 -300 200 L 50 50 0 0 P
+X 8 8 0 -300 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 600 100 600 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

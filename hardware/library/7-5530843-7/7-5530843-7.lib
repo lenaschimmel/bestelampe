@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 7-5530843-7
+#/1060723/1330328/2.50/6/2/Connector
+DEF 7-5530843-7 J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "7-5530843-7" 650 200 50 H V L CNN
+F2 "755308437" 650 100 50 H I L CNN
+F3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773096_SEC03_CARD_EDGE&DocType=CS&DocLang=English" 650 0 50 H I L CNN
+F4 "Body Features: Primary Product Color Black | Configuration Features: Number of Signal Positions 0 | Number of Power Positions 6 | Keying & Polarized Position Locations 0 | Number of Positions 6 | Number of Dual Positions 3 | PCB Mount Orientation Vertical | Contact Features: Contact Mating Area Plating Material Thickness .76 MICM | Contact Mating Area Plating Material Thickness 30 MICIN | PCB Contact Termination Area Plating Material Finish Matte | Contact Mating Area Plating Material Gold | PCB Contact Ter" 650 -100 50 H I L CNN "Description"
+F5 "15.494" 650 -200 50 H I L CNN "Height"
+F6 "571-7-5530843-7" 650 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/7-5530843-7?qs=D%2FjeFm%2FW2iQ1%2F6zLIVw4Pg%3D%3D" 650 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "TE Connectivity" 650 -500 50 H I L CNN "Manufacturer_Name"
+F9 "7-5530843-7" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 800 0 200 L 50 50 0 0 P
+X 3 3 0 -100 200 R 50 50 0 0 P
+X 4 4 800 -100 200 L 50 50 0 0 P
+X 5 5 0 -200 200 R 50 50 0 0 P
+X 6 6 800 -200 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 600 100 600 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
