@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "besteLampe! LED Module E")
-		(date "2024-12-01")
-		(rev "3.0")
+		(date "2025-09-13")
+		(rev "4.0")
 		(comment 1 "See  https://lenaschimmel.de/besteLampe! for the source and more information")
 		(comment 2 "This source describes Open Hardware and is licensed under the CERN-OHL-S v2.")
 		(comment 3 "Copyright 2024 Lena Schimmel <mail@lenaschimmel.de>")
@@ -3895,6 +3895,12 @@
 		(uuid "e3c0ccb3-2ccd-4ab8-8a4c-1bc9ec4dede5")
 	)
 	(junction
+		(at 42.418 140.462)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4398662-e31b-4d77-a707-f37036769599")
+	)
+	(junction
 		(at 101.6 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4638,6 +4644,16 @@
 	)
 	(wire
 		(pts
+			(xy 42.418 150.622) (xy 42.418 140.462)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "447f38e3-da8f-4167-84e4-f409cff30128")
+	)
+	(wire
+		(pts
 			(xy 80.01 91.44) (xy 92.71 91.44)
 		)
 		(stroke
@@ -4705,6 +4721,16 @@
 			(type default)
 		)
 		(uuid "4a507f5e-738c-4360-896b-0f4a570cc29f")
+	)
+	(wire
+		(pts
+			(xy 39.878 150.622) (xy 42.418 150.622)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a775560-a7b2-4b28-b905-a580f35aac9a")
 	)
 	(wire
 		(pts
@@ -6935,6 +6961,71 @@
 			(project "LED_Module_E"
 				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
 					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.798 150.622 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "00383c0d-2b2a-4821-99c5-b5fdd7900a4b")
+		(property "Reference" "K19"
+			(at 34.798 144.907 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 34.798 147.447 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
+			(at 34.798 150.622 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.798 150.622 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.798 150.622 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b6bc33e8-cad4-4cda-97f9-f8676ae89d42")
+		)
+		(instances
+			(project "LED_Module_E"
+				(path "/271a71a9-d0cc-4466-ad75-113fb931f3c8"
+					(reference "K19")
 					(unit 1)
 				)
 			)
